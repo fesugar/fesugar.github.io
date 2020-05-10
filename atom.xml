@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.fesugar.com/"/>
-  <updated>2020-05-10T13:57:14.259Z</updated>
+  <updated>2020-05-10T14:58:38.834Z</updated>
   <id>https://www.fesugar.com/</id>
   
   <author>
@@ -21,21 +21,18 @@
     <link href="https://www.fesugar.com/zh-CN/2019/10/03/%E6%8F%90%E5%8F%96%E7%BD%91%E9%A1%B5%E6%A0%87%E9%A2%98.html"/>
     <id>https://www.fesugar.com/zh-CN/2019/10/03/%E6%8F%90%E5%8F%96%E7%BD%91%E9%A1%B5%E6%A0%87%E9%A2%98.html</id>
     <published>2019-10-03T08:39:33.000Z</published>
-    <updated>2020-05-10T13:57:14.259Z</updated>
+    <updated>2020-05-10T14:58:38.834Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;div&gt;
+      &lt;div&gt;
 &lt;li&gt;来源:&lt;a href=&quot;http://renwu.mingrisoft.com/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;明日科技&lt;/a&gt;&lt;/li&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;提取网页标题&quot;&gt;&lt;a
-        
-      
+&lt;h2 id=&quot;提取网页标题&quot;&gt;&lt;a href=&quot;#提取网页标题&quot; class=&quot;headerlink&quot; title=&quot;提取网页标题&quot;&gt;&lt;/a&gt;提取网页标题&lt;/h2&gt;&lt;h3 id=&quot;实例说明&quot;&gt;&lt;a href=&quot;#实例说明&quot; class=&quot;headerlink&quot; title=&quot;实例说明&quot;&gt;&lt;/a&gt;实例说明&lt;/h3&gt;&lt;p&gt;本实例实现了根据网址提取HTML网页标题的功能。运行程序，在文本框中输入正确的网址，单击”提取”按钮，即可将网页的标题显示在下面的文本框中。运行结果如图1所示。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://cdn.fesugar.com/2019/10/100319_0839_1-1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;图1 提取网页标题&lt;/p&gt;
+&lt;h3 id=&quot;技术要点&quot;&gt;&lt;a href=&quot;#技术要点&quot; class=&quot;headerlink&quot; title=&quot;技术要点&quot;&gt;&lt;/a&gt;技术要点&lt;/h3&gt;&lt;p&gt;实现本实例功能主要用到了&lt;br&gt;System.Net命名空间下的&lt;br&gt;WebRequest类的Create方法、GetResponse方法、&lt;br&gt;WebResponse类的GetResponseStream方法、&lt;br&gt;StreamReader System.Text.RegularExpressions命名空间下的Regex类的IsMatch方法、Match方法、&lt;br&gt;System.IO命名空间下的StreamReader类的ReadLine方法和Stream类。&lt;br&gt;System.Net命名空间下的类和方法、system.Text.RegularExpressions命名空间下类和方法在前面已经做过介绍，详细说明请参见实例515。&lt;br&gt;这里主要讲解一下Regex类的Match方法、System.IO命名空间下的StreamReader类和Stream类。 &lt;/p&gt;
     
     </summary>
     
@@ -52,21 +49,18 @@
     <link href="https://www.fesugar.com/zh-CN/2019/10/03/%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html"/>
     <id>https://www.fesugar.com/zh-CN/2019/10/03/%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html</id>
     <published>2019-10-03T08:17:12.000Z</published>
-    <updated>2020-05-10T09:40:26.185Z</updated>
+    <updated>2020-05-10T14:59:25.888Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;div&gt;
+      &lt;div&gt;
 &lt;li&gt;来源:&lt;a href=&quot;http://renwu.mingrisoft.com/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;明日科技&lt;/a&gt;&lt;/li&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;美化单选按钮控件&quot;&gt;&lt;a
-        
-      
+&lt;h2 id=&quot;美化单选按钮控件&quot;&gt;&lt;a href=&quot;#美化单选按钮控件&quot; class=&quot;headerlink&quot; title=&quot;美化单选按钮控件&quot;&gt;&lt;/a&gt;美化单选按钮控件&lt;/h2&gt;&lt;h3 id=&quot;实例说明&quot;&gt;&lt;a href=&quot;#实例说明&quot; class=&quot;headerlink&quot; title=&quot;实例说明&quot;&gt;&lt;/a&gt;实例说明&lt;/h3&gt;&lt;p&gt;用户使用C#自带的控件制作应用程序时，为了使界面更加美观，更具有特色，可以对控件的样式进行重绘，本实例将对单选按钮控件进行重绘，以用户自定义样式进行显示。实例运行效果如图1所示。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://cdn.fesugar.com/2019/10/100319_0816_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;图1 美化单选按钮控件&lt;/p&gt;
+&lt;h3 id=&quot;关键技术&quot;&gt;&lt;a href=&quot;#关键技术&quot; class=&quot;headerlink&quot; title=&quot;关键技术&quot;&gt;&lt;/a&gt;关键技术&lt;/h3&gt;&lt;p&gt;本实例在美化单选按钮控件时，主要是通过重绘单选框实现的，具体实现时，首先需要创建用户控件，然后在用户控件中使用Graphics类的DrawEllipse方法和FillEllipse方法实现重绘单选框操作。下面对本实例中用到的关键技术进行详细讲解。 &lt;/p&gt;
     
     </summary>
     
@@ -114,19 +108,19 @@
     <link href="https://www.fesugar.com/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86%20Mysql%20%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html"/>
     <id>https://www.fesugar.com/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86%20Mysql%20%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html</id>
     <published>2016-12-06T00:49:42.000Z</published>
-    <updated>2020-05-10T09:57:16.895Z</updated>
+    <updated>2020-05-10T15:01:21.762Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;1、说明：创建数据库 &lt;code&gt;Create DATABASE database-name&lt;/code&gt;&lt;/p&gt;
+      &lt;p&gt;1、说明：创建数据库 &lt;code&gt;Create DATABASE database-name&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;2、说明：删除数据库 &lt;code&gt;drop database dbname&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;3、说明：备份sql server
-        
-      
+&lt;p&gt;3、说明：备份sql server —&lt;br&gt;创建 备份数据的 device &lt;code&gt;USE master EXEC sp_addumpdevice &amp;#39;disk&amp;#39;, &amp;#39;testBack&amp;#39;, &amp;#39;c:\mssql7backup\MyNwind_1.dat&amp;#39;&lt;/code&gt; ---&lt;br&gt;开始 备份 &lt;code&gt;BACKUP DATABASE pubs TO testBack&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;4、说明：创建新表 &lt;code&gt;create table tabname(col1 type1 [not null] [primary key],col2 type2 [not null],..)&lt;/code&gt;&lt;br&gt;    根据已有的表创建新表：&lt;br&gt;    A：&lt;code&gt;create table tab_new like tab_old (使用旧表创建新表)&lt;/code&gt;&lt;br&gt;    B：&lt;code&gt;create table tab_new as select col1,col2… from tab_old definition only&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;5、说明：删除新表 &lt;code&gt;drop table tabname&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;6、说明：增加一个列 &lt;code&gt;Alter table tabname add column col type&lt;/code&gt; 注：列增加后将不能删除。DB2中列加上后数据类型也不能改变，唯一能改变的是增加varchar类型 的长度。&lt;/p&gt;
+&lt;p&gt;7、说明：添加主键： &lt;code&gt;Alter table tabname add primary key(col)&lt;/code&gt; 说明：删除主键： &lt;code&gt;Alter table tabname drop primary key(col)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;8、说明：创建索引：&lt;code&gt;create [unique] index idxname on tabname(col….)&lt;/code&gt; 删除索引：&lt;code&gt;drop index idxname&lt;/code&gt; 注：索引是不可更改的，想更改必须删除重新建。&lt;/p&gt;
+&lt;p&gt;9、说明：创建视图：&lt;code&gt;create view viewname as select statement&lt;/code&gt; 删除视图：&lt;code&gt;drop view viewname&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -170,17 +164,11 @@
     <link href="https://www.fesugar.com/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html"/>
     <id>https://www.fesugar.com/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html</id>
     <published>2016-10-13T04:54:45.000Z</published>
-    <updated>2020-05-10T01:14:34.540Z</updated>
+    <updated>2020-05-10T15:00:31.860Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h5 id=&quot;来看下合法性计算方法&quot;&gt;&lt;a href=&quot;#来看下合法性计算方法&quot; class=&quot;headerlink&quot; title=&quot;来看下合法性计算方法&quot;&gt;&lt;/a&gt;来看下合法性计算方法&lt;/h5&gt;&lt;h6
-        
-      
+      &lt;h5 id=&quot;来看下合法性计算方法&quot;&gt;&lt;a href=&quot;#来看下合法性计算方法&quot; class=&quot;headerlink&quot; title=&quot;来看下合法性计算方法&quot;&gt;&lt;/a&gt;来看下合法性计算方法&lt;/h5&gt;&lt;h6 id=&quot;1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。&quot;&gt;&lt;a href=&quot;#1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。&quot; class=&quot;headerlink&quot; title=&quot;1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。&quot;&gt;&lt;/a&gt;1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。&lt;/h6&gt;&lt;h6 id=&quot;2、将这17位数字和系数相乘的结果相加。&quot;&gt;&lt;a href=&quot;#2、将这17位数字和系数相乘的结果相加。&quot; class=&quot;headerlink&quot; title=&quot;2、将这17位数字和系数相乘的结果相加。&quot;&gt;&lt;/a&gt;2、将这17位数字和系数相乘的结果相加。&lt;/h6&gt;&lt;h6 id=&quot;3、用加出来和除以11，看余数是多少？&quot;&gt;&lt;a href=&quot;#3、用加出来和除以11，看余数是多少？&quot; class=&quot;headerlink&quot; title=&quot;3、用加出来和除以11，看余数是多少？&quot;&gt;&lt;/a&gt;3、用加出来和除以11，看余数是多少？&lt;/h6&gt;&lt;h6 id=&quot;4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X-－9－8－7－6－5－4－3－2。-即馀数0对应1，馀数1对应0，馀数2对应X…&quot;&gt;&lt;a href=&quot;#4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X-－9－8－7－6－5－4－3－2。-即馀数0对应1，馀数1对应0，馀数2对应X…&quot; class=&quot;headerlink&quot; title=&quot;4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X －9－8－7－6－5－4－3－2。(即馀数0对应1，馀数1对应0，馀数2对应X…)&quot;&gt;&lt;/a&gt;4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X －9－8－7－6－5－4－3－2。(即馀数0对应1，馀数1对应0，馀数2对应X…)&lt;/h6&gt;&lt;h6 id=&quot;5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。&quot;&gt;&lt;a href=&quot;#5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。&quot; class=&quot;headerlink&quot; title=&quot;5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。&quot;&gt;&lt;/a&gt;5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。&lt;/h6&gt;&lt;h6 id=&quot;例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。&quot;&gt;&lt;a href=&quot;#例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。&quot; class=&quot;headerlink&quot; title=&quot;例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。&quot;&gt;&lt;/a&gt;例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。&lt;/h6&gt;&lt;h6 id=&quot;首先我们得出前17位的乘积和【-5-7-3-9-0-10-1-5-0-8-2-4-1-2-9-1-2-6-0-3-0-7-5-9-0-10-8-5-0-8-1-4-1-2-】是189，然后用189除以11得出的结果是189-11-17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。&quot;&gt;&lt;a href=&quot;#首先我们得出前17位的乘积和【-5-7-3-9-0-10-1-5-0-8-2-4-1-2-9-1-2-6-0-3-0-7-5-9-0-10-8-5-0-8-1-4-1-2-】是189，然后用189除以11得出的结果是189-11-17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。&quot; class=&quot;headerlink&quot; title=&quot;首先我们得出前17位的乘积和【(5*7)+(3*9)+(0*10)+(1*5)+(0*8)+(2*4)+(1*2)+(9*1)+(2*6)+(0*3)+(0*7)+(5*9)+(0*10)+(8*5)+(0*8)+(1*4)+(1*2)】是189，然后用189除以11得出的结果是189/11=17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。&quot;&gt;&lt;/a&gt;首先我们得出前17位的乘积和【(5*7)+(3*9)+(0*10)+(1*5)+(0*8)+(2*4)+(1*2)+(9*1)+(2*6)+(0*3)+(0*7)+(5*9)+(0*10)+(8*5)+(0*8)+(1*4)+(1*2)】是189，然后用189除以11得出的结果是189/11=17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。&lt;/h6&gt;
     
     </summary>
     
@@ -230,17 +218,12 @@
     <link href="https://www.fesugar.com/zh-CN/2016/10/10/csharp%20VB.NET%20%E8%A7%A3%E6%9E%90%20JSON.html"/>
     <id>https://www.fesugar.com/zh-CN/2016/10/10/csharp%20VB.NET%20%E8%A7%A3%E6%9E%90%20JSON.html</id>
     <published>2016-10-10T01:19:54.000Z</published>
-    <updated>2020-05-10T03:29:43.374Z</updated>
+    <updated>2020-05-10T14:59:58.066Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;如何在 .NET 程序中解析 JSON 使用 Newtonsoft.Json 第三方类来操纵 Newtonsoft.Json 是.NET 下开源的json格式序列号和反序列化的类库 官方网站: &lt;a href=&quot;http://json.codeplex.com/&quot;
-        
-      
+      &lt;p&gt;如何在 .NET 程序中解析 JSON 使用 Newtonsoft.Json 第三方类来操纵 Newtonsoft.Json 是.NET 下开源的json格式序列号和反序列化的类库 官方网站: &lt;a href=&quot;http://json.codeplex.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://json.codeplex.com/&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight vb&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;Imports&lt;/span&gt; System.&lt;span class=&quot;keyword&quot;&gt;Text&lt;/span&gt;.RegularExpressions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;Imports&lt;/span&gt; Newtonsoft.Json&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;Imports&lt;/span&gt; Newtonsoft.Json.Linq&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; &lt;span class=&quot;doctag&quot;&gt;&amp;lt;summary&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; json序列化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; &lt;span class=&quot;doctag&quot;&gt;&amp;lt;/summary&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;Public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Class&lt;/span&gt; json&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; &lt;span class=&quot;doctag&quot;&gt;&amp;lt;summary&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; 解析JSON数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; &lt;span class=&quot;doctag&quot;&gt;&amp;lt;/summary&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; &lt;span class=&quot;doctag&quot;&gt;&amp;lt;param name=&quot;empData&quot;&amp;gt;&lt;/span&gt;源数据&lt;span class=&quot;doctag&quot;&gt;&amp;lt;/param&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; &lt;span class=&quot;doctag&quot;&gt;&amp;lt;param name=&quot;key&quot;&amp;gt;&lt;/span&gt;指定值下的数据，可省略。&lt;span class=&quot;doctag&quot;&gt;&amp;lt;/param&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;doctag&quot;&gt;&#39;&#39;&#39;&lt;/span&gt; &lt;span class=&quot;doctag&quot;&gt;&amp;lt;returns&amp;gt;&lt;/span&gt;0 非 json 数据&lt;span class=&quot;doctag&quot;&gt;&amp;lt;/returns&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;Public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Shared&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Function&lt;/span&gt; JsonDecode(&lt;span class=&quot;keyword&quot;&gt;ByVal&lt;/span&gt; empData, &lt;span class=&quot;keyword&quot;&gt;Optional&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;ByVal&lt;/span&gt; key1 = &lt;span class=&quot;literal&quot;&gt;Nothing&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;Optional&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;ByVal&lt;/span&gt; key2 = &lt;span class=&quot;literal&quot;&gt;Nothing&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;Optional&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;ByVal&lt;/span&gt; arry_i = &lt;span class=&quot;literal&quot;&gt;Nothing&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;As&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;String&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;Try&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;If&lt;/span&gt; IsJson(empData) = &lt;span class=&quot;literal&quot;&gt;False&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Then&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;If&lt;/span&gt; arry_i &lt;span class=&quot;keyword&quot;&gt;IsNot&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;Nothing&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;comment&quot;&gt;&#39;http://blog.csdn.net/goodelephant/article/details/24769421&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;keyword&quot;&gt;Return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;CType&lt;/span&gt;(JsonConvert.DeserializeObject(empData), JObject)(key1)(arry_i)(key2).ToString()   &lt;span class=&quot;comment&quot;&gt;&#39;这个是解析数组  下标。。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;End&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;If&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;If&lt;/span&gt; key1 = &lt;span class=&quot;literal&quot;&gt;Nothing&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Then&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;CType&lt;/span&gt;(JsonConvert.DeserializeObject(empData), JObject).ToString&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;If&lt;/span&gt; key2 = &lt;span class=&quot;literal&quot;&gt;Nothing&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Then&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;CType&lt;/span&gt;(JsonConvert.DeserializeObject(empData), JObject)(key1).ToString()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;Return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;CType&lt;/span&gt;(JsonConvert.DeserializeObject(empData), JObject)(key1)(key2).ToString()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;Catch&lt;/span&gt; ex &lt;span class=&quot;keyword&quot;&gt;As&lt;/span&gt; Exception&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;Return&lt;/span&gt; ex.Message&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;End&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Try&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;End&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;Function&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -261,17 +244,11 @@
     <link href="https://www.fesugar.com/zh-CN/2016/09/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B9%8B%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.html"/>
     <id>https://www.fesugar.com/zh-CN/2016/09/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B9%8B%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.html</id>
     <published>2016-09-23T12:32:22.000Z</published>
-    <updated>2020-05-10T03:17:52.434Z</updated>
+    <updated>2020-05-10T14:58:57.659Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;希尔排序是按照该算法的设计者的名字希尔
-        
-      
+      &lt;p&gt;希尔排序是按照该算法的设计者的名字希尔 命名的，其产生是希尔在插入排序的基础上改进的，可以说是一种特殊的插入排序。&lt;br&gt;下面先介绍一下插入排序的性质：&lt;br&gt;首先，插入排序算法对于已经有序的数据进行操作的时候，效率很高，可以达到线性排序的效率。&lt;br&gt;其次，插入排序进行排序的时候，每一趟排序只能移动一个数据。所以说这样的排序方法相对来说效率又比较低。&lt;br&gt;基于此性质，希尔排序的设计者发明了希尔排序算法，其基本思想是：&lt;br&gt;先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，分割子序列的方法就是设定一个增量，待当下的每个子序列有序的时候，将增量减一半（除以2，取整），再次进行子序列的排序。&lt;br&gt;依次进行，待整个序列中的记录基本上有序的时候，再对全体记录进行依次直接插入排序，此时增量减为1，因为直接插入排序在元素基本有序的情况下（根据上述第一点，接近最好的情况），效率是很高的。 &lt;/p&gt;
     
     </summary>
     
@@ -286,18 +263,11 @@
     <link href="https://www.fesugar.com/zh-CN/2016/04/05/BAT%E6%89%B9%E5%A4%84%E7%90%86%E4%BF%AE%E5%A4%8DWindows%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E5%9B%BE%E6%A0%87%E9%97%AE%E9%A2%98.html"/>
     <id>https://www.fesugar.com/zh-CN/2016/04/05/BAT%E6%89%B9%E5%A4%84%E7%90%86%E4%BF%AE%E5%A4%8DWindows%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E5%9B%BE%E6%A0%87%E9%97%AE%E9%A2%98.html</id>
     <published>2016-04-05T14:36:47.000Z</published>
-    <updated>2020-05-10T03:56:19.242Z</updated>
+    <updated>2020-05-10T22:17:30.907Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;XP 、Win7桌面快捷图标错误及exe文件错误关联的批处理修复方案 以前写的一个脚本&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
+      &lt;p&gt;XP 、Win7桌面快捷图标错误及exe文件错误关联的批处理修复方案&lt;br&gt;以前写的一个脚本&lt;/p&gt;
     
     </summary>
     
