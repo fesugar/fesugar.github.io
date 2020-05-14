@@ -23,22 +23,25 @@
     var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="来源:明日科技   实现无边框窗体的移动 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939">
+  <meta name="description" content="来源:明日科技   异步加载并播放声音文件实例说明一般情况下，在加载某些文件时，如果都进行同步加载，那么将浪费很多不必要的时间，因为有些文件并不是用户想要的，因此应该实现异步加载，只加载需要的文件。本实例实现了异步加载并播放声音的功能，实例运行结果如图1所示。 图1 异步加载并播放声音文件 关键技术本实例实现时主要用到SoundPlayer类，该类用来控制.wav文件中的声音播放。在播放.wav">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C# 无边框窗体的移动">
-<meta property="og:url" content="https://www.fesugar.com/zh-CN/2016/07/04/csharp%E6%97%A0%E8%BE%B9%E6%A1%86%E7%AA%97%E4%BD%93%E7%9A%84%E7%A7%BB%E5%8A%A8.html">
+<meta property="og:title" content="异步加载并播放声音文件">
+<meta property="og:url" content="https://www.fesugar.com/zh-CN/2019/07/18/csharp%20%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%B9%B6%E6%92%AD%E6%94%BE%E5%A3%B0%E9%9F%B3%E6%96%87%E4%BB%B6.html">
 <meta property="og:site_name" content="佛系糖果的博客">
-<meta property="og:description" content="来源:明日科技   实现无边框窗体的移动 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939">
+<meta property="og:description" content="来源:明日科技   异步加载并播放声音文件实例说明一般情况下，在加载某些文件时，如果都进行同步加载，那么将浪费很多不必要的时间，因为有些文件并不是用户想要的，因此应该实现异步加载，只加载需要的文件。本实例实现了异步加载并播放声音的功能，实例运行结果如图1所示。 图1 异步加载并播放声音文件 关键技术本实例实现时主要用到SoundPlayer类，该类用来控制.wav文件中的声音播放。在播放.wav">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.fesugar.com/2016/07/2016-07-04-07511010.png">
-<meta property="article:published_time" content="2016-07-04T07:51:28.000Z">
-<meta property="article:modified_time" content="2020-05-14T11:01:36.810Z">
+<meta property="og:image" content="https://cdn.fesugar.com/2019/07/2019-07-18-15094990.png">
+<meta property="og:image" content="https://cdn.fesugar.com/2019/07/2019-07-18-15095149.jpeg">
+<meta property="article:published_time" content="2019-07-18T15:10:28.000Z">
+<meta property="article:modified_time" content="2020-05-14T10:58:20.146Z">
 <meta property="article:author" content="fesugar">
+<meta property="article:tag" content=".NET">
+<meta property="article:tag" content="Visual Studio">
 <meta property="article:tag" content="C#">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.fesugar.com/2016/07/2016-07-04-07511010.png">
+<meta name="twitter:image" content="https://cdn.fesugar.com/2019/07/2019-07-18-15094990.png">
 
-<link rel="canonical" href="https://www.fesugar.com/zh-CN/2016/07/04/csharp%E6%97%A0%E8%BE%B9%E6%A1%86%E7%AA%97%E4%BD%93%E7%9A%84%E7%A7%BB%E5%8A%A8.html">
+<link rel="canonical" href="https://www.fesugar.com/zh-CN/2019/07/18/csharp%20%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%B9%B6%E6%92%AD%E6%94%BE%E5%A3%B0%E9%9F%B3%E6%96%87%E4%BB%B6.html">
 
 
 <script id="page-configurations">
@@ -51,7 +54,7 @@
   };
 </script>
 
-  <title>C# 无边框窗体的移动 | 佛系糖果的博客</title>
+  <title>异步加载并播放声音文件 | 佛系糖果的博客</title>
   
 
 
@@ -224,7 +227,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/07/04/csharp%E6%97%A0%E8%BE%B9%E6%A1%86%E7%AA%97%E4%BD%93%E7%9A%84%E7%A7%BB%E5%8A%A8.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/07/18/csharp%20%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%B9%B6%E6%92%AD%E6%94%BE%E5%A3%B0%E9%9F%B3%E6%96%87%E4%BB%B6.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -237,7 +240,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          C# 无边框窗体的移动
+          异步加载并播放声音文件
         </h1>
 
         <div class="post-meta">
@@ -247,14 +250,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-07-04 15:51:28" itemprop="dateCreated datePublished" datetime="2016-07-04T15:51:28+08:00">2016-07-04</time>
+              <time title="创建时间：2019-07-18 23:10:28" itemprop="dateCreated datePublished" datetime="2019-07-18T23:10:28+08:00">2019-07-18</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-14 19:01:36" itemprop="dateModified" datetime="2020-05-14T19:01:36+08:00">2020-05-14</time>
+                <time title="修改时间：2020-05-14 18:58:20" itemprop="dateModified" datetime="2020-05-14T18:58:20+08:00">2020-05-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -262,11 +265,11 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/csharp/" itemprop="url" rel="index"><span itemprop="name">csharp</span></a>
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/csharp/" itemprop="url" rel="index"><span itemprop="name">csharp</span></a>
                 </span>
             </span>
 
@@ -283,14 +286,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -306,9 +309,25 @@
 <li>来源:<a href="http://renwu.mingrisoft.com/" target="_blank" rel="external nofollow">明日科技</a></li>
 </div>
 
-<p>实现无边框窗体的移动</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Drawing;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.ComponentModel;</span><br><span class="line"><span class="keyword">using</span> System.Windows.Forms;</span><br><span class="line"><span class="keyword">using</span> System.Data;</span><br><span class="line"><span class="keyword">using</span> System.Runtime.InteropServices;  </span><br><span class="line"></span><br><span class="line">namespace Example013_无标题窗体的拖动</span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">	<span class="comment"><span class="doctag">///</span> Form1 的摘要说明。</span></span><br><span class="line">	<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">	public class Form1 : System.Windows.Forms.Form</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> 必需的设计器变量。</span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">		<span class="keyword">private</span> System.ComponentModel.Container components = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="title">Form1</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>		&#123;</span><br><span class="line">			<span class="comment">//</span></span><br><span class="line">			<span class="comment">// Windows 窗体设计器支持所必需的</span></span><br><span class="line">			<span class="comment">//</span></span><br><span class="line">			InitializeComponent();</span><br><span class="line"></span><br><span class="line">			<span class="comment">//</span></span><br><span class="line">			<span class="comment">// <span class="doctag">TODO:</span> 在 InitializeComponent 调用后添加任何构造函数代码</span></span><br><span class="line">			<span class="comment">//</span></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> 清理所有正在使用的资源。</span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">		<span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">Dispose</span>(<span class="params"> <span class="keyword">bool</span> disposing </span>)</span></span><br><span class="line"><span class="function"></span>		&#123;</span><br><span class="line">			<span class="keyword">if</span>( disposing )</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span> (components != <span class="literal">null</span>) </span><br><span class="line">				&#123;</span><br><span class="line">					components.Dispose();</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">base</span>.Dispose( disposing );</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="meta">#<span class="meta-keyword">region</span> Windows Form Designer generated code</span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> 设计器支持所需的方法 - 不要使用代码编辑器修改</span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> 此方法的内容。</span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">InitializeComponent</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>		&#123;</span><br><span class="line">            <span class="keyword">this</span>.SuspendLayout();</span><br><span class="line">            <span class="comment">// </span></span><br><span class="line">            <span class="comment">// Form1</span></span><br><span class="line">            <span class="comment">// </span></span><br><span class="line">            <span class="keyword">this</span>.AutoScaleBaseSize = <span class="keyword">new</span> System.Drawing.Size(<span class="number">6</span>, <span class="number">14</span>);</span><br><span class="line">            <span class="keyword">this</span>.ClientSize = <span class="keyword">new</span> System.Drawing.Size(<span class="number">292</span>, <span class="number">273</span>);</span><br><span class="line">            <span class="keyword">this</span>.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;</span><br><span class="line">            <span class="keyword">this</span>.Name = <span class="string">"Form1"</span>;</span><br><span class="line">            <span class="keyword">this</span>.Text = <span class="string">"Form1"</span>;</span><br><span class="line">            <span class="keyword">this</span>.MouseDown += <span class="keyword">new</span> System.Windows.Forms.MouseEventHandler(<span class="keyword">this</span>.Form1_MouseDown);</span><br><span class="line">            <span class="keyword">this</span>.ResumeLayout(<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="meta">#<span class="meta-keyword">endregion</span></span></span><br><span class="line"></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> 应用程序的主入口点。</span></span><br><span class="line">		<span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">		[<span class="meta">STAThread</span>]</span><br><span class="line">		<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>		&#123;</span><br><span class="line">			Application.Run(<span class="keyword">new</span> Form1());</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		[<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>)</span>]</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">ReleaseCapture</span>(<span class="params"></span>)</span>;</span><br><span class="line">		[<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>)</span>]</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">SendMessage</span>(<span class="params">IntPtr hwnd,<span class="keyword">int</span> wMsg,<span class="keyword">int</span> wParam,<span class="keyword">int</span> lParam</span>)</span>;</span><br><span class="line">																																						 </span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">const</span> <span class="keyword">int</span> WM_SYSCOMMAND=<span class="number">0x0112</span>;</span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">const</span> <span class="keyword">int</span> SC_MOVE=<span class="number">0xF010</span>;</span><br><span class="line">		<span class="keyword">public</span> <span class="keyword">const</span> <span class="keyword">int</span> HTCAPTION=<span class="number">0x0002</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_MouseDown</span>(<span class="params"><span class="keyword">object</span> sender, System.Windows.Forms.MouseEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>		&#123;</span><br><span class="line">			ReleaseCapture();</span><br><span class="line">			SendMessage(<span class="keyword">this</span>.Handle,WM_SYSCOMMAND,SC_MOVE+HTCAPTION, <span class="number">0</span>); </span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://cdn.fesugar.com/2016/07/2016-07-04-07511010.png" alt="QQ图片20160704154934"></p>
+<h2 id="异步加载并播放声音文件"><a href="#异步加载并播放声音文件" class="headerlink" title="异步加载并播放声音文件"></a>异步加载并播放声音文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>一般情况下，在加载某些文件时，如果都进行同步加载，那么将浪费很多不必要的时间，因为有些文件并不是用户想要的，因此应该实现异步加载，只加载需要的文件。本实例实现了异步加载并播放声音的功能，实例运行结果如图1所示。<br><img data-src="https://cdn.fesugar.com/2019/07/2019-07-18-15094990.png" alt=""> 图1 异步加载并播放声音文件</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时主要用到SoundPlayer类，该类用来控制.wav文件中的声音播放。在播放.wav文件前，首先定位该文件的位置，此时用到该类的SoundLocation属性，该属性的功能是获取或设置要加载的.wav文件的文件路径或URL。然后用到该类的LoadAsync方法，该方法的作用是使用新线程从流或Web资源中加载.wav文件。下面对本实例中用到的关键技术进行详细的讲解。<br>（1）SoundLocation属性 该属性值的类型是System.String，它的作用是从中加载.wav文件的文件路径或URL，如果不存在文件路径，则为String.Empty。默认为String.Empty。其语法格式如下： public string SoundLocation { get; set; }<br>（2）LoadAsync方法 该方法用来从流中或者Web资源中异步加载文件，其语法格式如下： public void LoadAsync() <img data-src="https://cdn.fesugar.com/2019/07/2019-07-18-15095149.jpeg" alt="提示"> 说明：程序中使用SoundPlayer类时，首先需要在命名空间区域添加System.Media命名空间。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AsynchronismLoadPlayVoice。<br>（2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加一个TextBox控件，用来显示所要播放的文件路径；添加两个Button控件，分别用来打开.wav文件和播放音乐文件。<br>（3）程序主要代码如下：</p>
+<pre><code class="chsarp">private void play_Click(object sender,EventArgs e)
+{
+    try
+    {
+        SoundPlayer player = new SoundPlayer();                //声明一个控制WAV文件的声音播放文件对象
+        player.SoundLocation = path.Text;                    //指定声音文件的路径
+        player.LoadAsync();                            //设置播放的方法
+        player.Play();                                //播放声音文件
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message);
+    }
+}
+</code></pre>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟008：使用Exception类捕捉异常。<br>所有.NET里的异常都可被称为Exception。虽然说异常多种多样，但基本上它们都是Exception。这个说法可以打一个简单比喻，就像是无论黑猫、白猫、花猫，它们都是“猫”一样。</p>
 
     </div>
 
@@ -344,7 +363,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.fesugar.com/zh-CN/2016/07/04/csharp%E6%97%A0%E8%BE%B9%E6%A1%86%E7%AA%97%E4%BD%93%E7%9A%84%E7%A7%BB%E5%8A%A8.html" title="C# 无边框窗体的移动">https://www.fesugar.com/zh-CN/2016/07/04/csharp无边框窗体的移动.html</a>
+    <a href="https://www.fesugar.com/zh-CN/2019/07/18/csharp%20%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%B9%B6%E6%92%AD%E6%94%BE%E5%A3%B0%E9%9F%B3%E6%96%87%E4%BB%B6.html" title="异步加载并播放声音文件">https://www.fesugar.com/zh-CN/2019/07/18/csharp 异步加载并播放声音文件.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -385,6 +404,8 @@
       <footer class="post-footer">
           
           <div class="post-tags">
+              <a href="/tags/NET/" rel="tag"><i class="fa fa-tag"></i> .NET</a>
+              <a href="/tags/Visual-Studio/" rel="tag"><i class="fa fa-tag"></i> Visual Studio</a>
               <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C#</a>
           </div>
 
@@ -394,12 +415,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/zh-CN/2016/07/04/csharp%20%20%E6%B8%90%E5%8F%98%E7%9A%84%E7%AA%97%E4%BD%93%E8%83%8C%E6%99%AF.html" rel="prev" title="C# 渐变的窗体背景">
-      <i class="fa fa-chevron-left"></i> C# 渐变的窗体背景
+    <a href="/zh-CN/2019/07/15/csharp%20%E6%8A%93%E5%8F%96%E9%BC%A0%E6%A0%87%E5%BD%A2%E7%8A%B6.html" rel="prev" title="抓取鼠标形状">
+      <i class="fa fa-chevron-left"></i> 抓取鼠标形状
     </a></div>
       <div class="post-nav-item">
-    <a href="/zh-CN/2016/07/04/csharp%E6%98%BE%E7%A4%BA%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C%E6%96%87%E5%AD%97.html" rel="next" title="C# 显示阴影效果文字">
-      C# 显示阴影效果文字 <i class="fa fa-chevron-right"></i>
+    <a href="/zh-CN/2019/09/10/DataGridView%E5%92%8CBindingSource%E5%A4%8D%E5%90%88%E6%8E%A7%E4%BB%B6.html" rel="next" title="DataGridView和BindingSource复合控件">
+      DataGridView和BindingSource复合控件 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -460,6 +481,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#异步加载并播放声音文件"><span class="nav-number">1.</span> <span class="nav-text">异步加载并播放声音文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例说明"><span class="nav-number">1.1.</span> <span class="nav-text">实例说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关键技术"><span class="nav-number">1.2.</span> <span class="nav-text">关键技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计过程"><span class="nav-number">1.3.</span> <span class="nav-text">设计过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#秘笈心法"><span class="nav-number">1.4.</span> <span class="nav-text">秘笈心法</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -484,9 +506,8 @@
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/tags/">
         <span class="site-state-item-count">11</span>
-        <span class="site-state-item-name">标签</span></a>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -759,7 +780,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'fesugar.github.io',
       owner       : 'fesugar',
       admin       : ['fesugar'],
-      id          : '14d41045915ba170cbf7b304beb4856b',
+      id          : '4f5590ebe6941dba7b7dc90bdcc45622',
         language: 'zh-CN',
       distractionFreeMode: true
     });
