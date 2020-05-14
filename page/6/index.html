@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
+<meta property="og:type" content="website">
+<meta property="og:title" content="佛系糖果的博客">
+<meta property="og:url" content="https://www.fesugar.com/page/6/index.html">
+<meta property="og:site_name" content="佛系糖果的博客">
+<meta property="og:description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="fesugar">
+<meta property="article:tag" content="fesugar">
+<meta property="article:tag" content="甜甜糖">
+<meta property="article:tag" content="甜甜糖个人博客">
+<meta property="article:tag" content="甜甜糖博客">
+<meta property="article:tag" content="如何做个人博客网站">
+<meta property="article:tag" content="严圣川">
+<meta property="article:tag" content="严圣川个人网站">
+<meta property="article:tag" content="佛系糖果">
+<meta property="article:tag" content="小程序">
+<meta property="article:tag" content="多线程c#">
+<meta property="article:tag" content=".net">
+<meta property="article:tag" content="c语言">
+<meta property="article:tag" content="vb">
+<meta property="article:tag" content="php">
+<meta property="article:tag" content="小程序radio样式">
+<meta property="article:tag" content="小程序开发">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.fesugar.com/page/6/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>佛系糖果的博客</title>
+  
+
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c708aaffb3b844ecd872db5ea0e68d8f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="佛系糖果的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">佛系糖果的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">行到水穷处，坐看云起时</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-knowledge">
+
+    <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" rel="section"><i class="fa fa-book fa-fw"></i>知识</a>
+
+  </li>
+        <li class="menu-item menu-item-study">
+
+    <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" rel="section"><i class="fa fa-edit fa-fw"></i>学习</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-comment fa-fw"></i>留言簿</a>
+
+  </li>
+        <li class="menu-item menu-item-weiyu">
+
+    <a href="/weiyu/" rel="section"><i class="fa fa-eye fa-fw"></i>微语</a>
+
+  </li>
+        <li class="menu-item menu-item-disclaimer">
+
+    <a href="/disclaimer/" rel="section"><i class="fa fa-bell fa-fw"></i>条款声明</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-coffee fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/fesugar" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/14/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-be-93-e5-87-ba-e5-88-b0-e5-90-8c-e4-b8-80sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/14/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-be-93-e5-87-ba-e5-88-b0-e5-90-8c-e4-b8-80sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html" class="post-title-link" itemprop="url">将多个Excel文件输出到同一Sql Server数据库</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-14 18:10:23" itemprop="dateCreated datePublished" datetime="2019-08-14T18:10:23+08:00">2019-08-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/14/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-be-93-e5-87-ba-e5-88-b0-e5-90-8c-e4-b8-80sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/14/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-be-93-e5-87-ba-e5-88-b0-e5-90-8c-e4-b8-80sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/14/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-be-93-e5-87-ba-e5-88-b0-e5-90-8c-e4-b8-80sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="将多个Excel文件输出到同一Sql-Server数据库"><a href="#将多个Excel文件输出到同一Sql-Server数据库" class="headerlink" title="将多个Excel文件输出到同一Sql Server数据库"></a>将多个Excel文件输出到同一Sql Server数据库</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了将多个Excel文件中的数据输出到同一Sql Server数据库中的功能。运行本实例，如图1所示，单击“选择”按钮，选择要读取的多个Excel文件；然后在“Sql Server数据库连接设置”区域对数据库连接信息进行设置；最后单击“导出”按钮，将多个Excel中的数据输出到同一Sql Server数据库中。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-14-1009175.png" alt=""> 图1 将多个Excel文件输出到同一Sql Server数据库</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在将多个Excel文件中的数据输出到同一Sql Server数据表时，主要用到了SqlBulkCopy类的WriteToServer方法，下面对其进行详细讲解。 SqlBulkCopy类使用户可以用其他源的数据有效批量加载到SQL Server数据表中，其WriteToServer方法用来将所有行从数据源复制到SqlBulkCopy对象的DestinationTableName属性（该属性用来指定服务器上目标表的名称）指定的目标表中，该方法有4种重载形式，本实例中用到的该方法的重载形式语法如下： public void WriteToServer(DataTable table) 参数说明 table：一个DataTable对象，它的行将被复制到目标表中。 说明：（1）Microsoft SQL Server提供了一个称为bcp的流行的命令提示符实用工具，用于将数据从一个表移动到另一个表（表既可以在同一个服务器上，也可以在不同服务器上）。SqlBulkCopy类允许编写提供类似功能的托管代码解决方案； （2）使用SqlBulkCopy类只能向SQL Server表写入数据，但是，数据源不限于SQL Server；可以使用任何数据源，只要数据可以加载到DataTable实例或者可以使用IDataReader对象读取数据。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为MultiExcelToSql。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加4个TextBox控件，分别用来显示选择的多个Excel文件路径、输入Sql Server服务器名、登录用户名和登录密码；添加两个CheckBox控件，用来选择Sql Server数据库的登录方式；添加一个ComboBox控件，用来选择要导入到的Sql Server数据库；添加3个Button控件，分别用来执行选择多个Excel文件、获取指定Sql Server服务器上的所有数据库和将多个Excel文件内容导入到同一Sql Server数据库的操作。 （3）程序主要代码如下： 选择完多个Excel文件，并对Sql Server服务器进行设置后，单击“导出”按钮，调用自定义的ImportDataToSql方法循环将多个Excel文件中的内容导出到同一个Sql Server数据库中。“导出”按钮的Click事件代码如下：</p>
+<p>private void btn_Export_Click(object sender, EventArgs e)<br>{<br>    string[] P_str_Names = txt_Path.Text.Split(‘,’);                //存储所有选择的Excel文件名<br>    string P_str_Name = “”;                            //存储遍历到的Excel文件名<br>    List<string> P_list_SheetNames = new List<string>();            //创建泛型集合对象，用来存储工作表名称<br>    for (int i = 0; i &lt; P_str_Names.Length - 1; i++)                //遍历所有选择的Excel文件名<br>    {<br>        P_str_Name = P_str_Names[i];                        //记录遍历到的Excel文件名<br>        P_list_SheetNames = GetSheetName(P_str_Name);            //获取Excel文件中的所有工作表名<br>        for (int j = 0; j &lt; P_list_SheetNames.Count; j++)            //遍历所有工作表<br>        {<br>            if (ckbox_Windows.Checked)                    //如果用Windows身份验证登录Sql Server<br>                ImportDataToSql(P_str_Name, P_list_SheetNames[j], “Data Source=” + txt_Server.Text + “;Initial Catalog =” + cbox_Server.Text + “;Integrated Security=SSPI;”);        //将工作表内容导出到Sql Server<br>            else if (ckbox_SQL.Checked)                    //如果用Sql Server身份验证登录Sql Server<br>//将工作表内容导出到Sql Server<br>                ImportDataToSql(P_str_Name, P_list_SheetNames[j], “Data Source=” + txt_Server.Text + “;Database=” + cbox_Server.Text + “;Uid=” + txt_Name.Text + “;Pwd=” + txt_Pwd.Text + “;”);<br>        }<br>    }<br>    MessageBox.Show(“已经将所有选择的Excel工作表导入到了Sql Server数据库中！”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>}</p>
+<p>上面的代码中用到了ImportDataToSql方法，该方法主要用来将Excel中指定工作表的内容导出到Sql Server数据库中。该方法中主要使用SqlBulkCopy对象WriteToServer方法对Sql Server数据库进行数据写入操作。ImportDataToSql方法实现代码如下：</p>
+<p>public void ImportDataToSql(string P_str_Excel, string P_str_SheetName, string P_str_SqlCon)<br>{<br>    DataSet myds = new DataSet();                                //创建数据集对象<br>    try<br>{<br>//获得全部数据<br>        string P_str_OledbCon = “Provider=Microsoft.Jet.OLEDB.4.0;Data Source=” + P_str_Excel + “;Extended Properties=Excel 8.0;”;<br>        OleDbConnection oledbcon = new OleDbConnection(P_str_OledbCon);        //创建Oledb数据库连接对象<br>        string P_str_ExcelSql = “”;                                //记录要执行的Excel查询语句<br>        OleDbDataAdapter oledbda = null;                            //创建Oledb数据桥接器对象<br>        P_str_ExcelSql = string.Format(“select * from [{0}$]“, P_str_SheetName);    //记录要执行的Excel查询语句<br>        oledbda = new OleDbDataAdapter(P_str_ExcelSql, P_str_OledbCon);        //使用数据桥接器执行Excel查询<br>        oledbda.Fill(myds, P_str_SheetName);                            //填充数据<br>//定义变量，用来记录创建表的SQL语句<br>        string P_str_CreateSql = string.Format(“create table {0}(“, P_str_SheetName);<br>        foreach (DataColumn c in myds.Tables[0].Columns)                    //遍历数据集中的所有行<br>        {<br>            P_str_CreateSql += string.Format(“[{0}] text,”, c.ColumnName);        //在表中创建字段<br>        }<br>        P_str_CreateSql = P_str_CreateSql + “)”;                        //完善创建表的SQL语句<br>        using (SqlConnection sqlcon = new SqlConnection(P_str_SqlCon))        //创建SQL数据库连接对象<br>        {<br>            sqlcon.Open();                                    //打开数据库连接<br>            SqlCommand sqlcmd = sqlcon.CreateCommand();                //创建执行命令对象<br>            sqlcmd.CommandText = P_str_CreateSql;                    //指定要执行的SQL语句<br>            sqlcmd.ExecuteNonQuery();                            //执行操作<br>            sqlcon.Close();                                    //关闭数据连接<br>        }<br>        using (SqlBulkCopy bcp = new SqlBulkCopy(P_str_SqlCon))            //用bcp导入数据<br>        {<br>            bcp.BatchSize = 100;                                //每次传输的行数<br>            bcp.DestinationTableName = P_str_SheetName;                //定义目标表<br>            bcp.WriteToServer(myds.Tables[0]);                        //将数据写入Sql Server数据表<br>        }<br>    }<br>    catch<br>    {<br>        MessageBox.Show(“Sql Server数据库中已经存在” + P_str_SheetName + “表！”, “警告”, MessageBoxButtons.OK, MessageBoxIcon.Warning);<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟043：程序中尽量不要使用太多嵌套for语句！ 由于嵌套for语句将消耗很大的资源，所以在实际开发项目时，能不使用嵌套for语句尽量不要使用。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/09/e5-ae-9e-e6-97-b6-e8-af-bb-e5-8f-96excel-e6-95-b0-e6-8d-ae-e5-88-b0sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/09/e5-ae-9e-e6-97-b6-e8-af-bb-e5-8f-96excel-e6-95-b0-e6-8d-ae-e5-88-b0sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html" class="post-title-link" itemprop="url">实时读取Excel数据到Sql Server数据库</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-09 23:47:17" itemprop="dateCreated datePublished" datetime="2019-08-09T23:47:17+08:00">2019-08-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/09/e5-ae-9e-e6-97-b6-e8-af-bb-e5-8f-96excel-e6-95-b0-e6-8d-ae-e5-88-b0sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/09/e5-ae-9e-e6-97-b6-e8-af-bb-e5-8f-96excel-e6-95-b0-e6-8d-ae-e5-88-b0sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/09/e5-ae-9e-e6-97-b6-e8-af-bb-e5-8f-96excel-e6-95-b0-e6-8d-ae-e5-88-b0sql-server-e6-95-b0-e6-8d-ae-e5-ba-93.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="实时读取Excel数据到Sql-Server数据库"><a href="#实时读取Excel数据到Sql-Server数据库" class="headerlink" title="实时读取Excel数据到Sql Server数据库"></a>实时读取Excel数据到Sql Server数据库</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了实时将Excel文件中的数据读取到Sql Server数据库中的功能。运行本实例，如图1所示，单击“选择”按钮，选择要读取的Excel文件；然后在“Sql Server数据库连接设置”区域对数据库连接信息进行设置；最后根据用户的意愿确定“是否自动执行”复选框是否选中，单击“导出”按钮，启动Timer计时器，在Timer计时器中实时将Excel中的数据读取到Sql Server数据库中。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-09-15465724.png" alt=""> 图1 实时读取Excel数据到Sql Server数据库</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在实现时，首先需要将用户配置信息写入到INI文件中，然后在程序启动时，判断程序是否自动运行，如果是，则在Timer计时器中实时将Excel中的数据读取到Sql Server数据库中，在读取过程中，主要使用SqlBulkCopy类的WriteToServer方法来进行实现。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为RealTimeExcelToSql。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加4个TextBox控件，分别用来显示选择的Excel文件路径、输入Sql Server服务器名、登录用户名和登录密码；添加3个CheckBox控件，分别用来选择Sql Server数据库的登录方式和设置程序是否自动执行；添加一个ComboBox控件，用来选择要导入到的Sql Server数据库；添加3个Button控件，分别用来执行选择Excel文件、获取指定Sql Server服务器上的所有数据库和将设置写入到系统配置文件的操作；添加一个Timer组件，用来实时将Excel文件内容写入到Sql Server数据库中。 （3）程序主要代码如下：</p>
+<p>private void timer1_Tick(object sender, EventArgs e)<br>{<br>    string P_str_Name = “”;                            //存储遍历到的Excel文件名<br>    List<string> P_list_SheetNames = new List<string>();            //创建泛型集合对象，用来存储工作表名称<br>    P_str_Name = txt_Path.Text;                            //记录遍历到的Excel文件名<br>    P_list_SheetNames = GetSheetName(P_str_Name);            //获取Excel文件中的所有工作表名<br>    for (int j = 0; j &lt; P_list_SheetNames.Count; j++)                //遍历所有工作表<br>    {<br>        if (ckbox_Windows.Checked)                        //如果用Windows身份验证登录Sql Server<br>            ImportDataToSql(P_str_Name, P_list_SheetNames[j], “Data Source=” + txt_Server.Text + “;Initial Catalog =” + cbox_Server.Text + “;Integrated Security=SSPI;”);                            //将工作表内容导出到Sql Server<br>        else if (ckbox_SQL.Checked)                        //如果用Sql Server身份验证登录Sql Server<br>            ImportDataToSql(P_str_Name, P_list_SheetNames[j], “Data Source=” + txt_Server.Text + “;Database=” + cbox_Server.Text + “;Uid=” + txt_Name.Text + “;Pwd=” + txt_Pwd.Text + “;”);                //将工作表内容导出到Sql Server<br>    }<br>    System.Threading.Thread.Sleep(60000);                    //使线程休眠1分钟<br>}</p>
+<p>说明：上面的代码中用到了ImportDataToSql方法，该方法主要用来将Excel工作表中的数据导入到Sql Server数据库中，关于该方法的详细代码请参见实例“将多个Excel文件输出到同一Sql Server数据库”中的设计过程。</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟044：Timer计时器组件的使用。 Timer组件是一个计时器组件，它主要用来按用户定义的时间间隔来引发事件，引发的事件一般为周期性的，每隔若干秒或若干毫秒执行一次。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/08/e5-9c-a8excel-e7-9a-84-e6-8c-87-e5-ae-9a-e8-8c-83-e5-9b-b4-e5-86-85-e6-90-9c-e7-b4-a2-e6-96-87-e6-9c-ac.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/08/e5-9c-a8excel-e7-9a-84-e6-8c-87-e5-ae-9a-e8-8c-83-e5-9b-b4-e5-86-85-e6-90-9c-e7-b4-a2-e6-96-87-e6-9c-ac.html" class="post-title-link" itemprop="url">在Excel的指定范围内搜索文本</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-08 22:26:56" itemprop="dateCreated datePublished" datetime="2019-08-08T22:26:56+08:00">2019-08-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/08/e5-9c-a8excel-e7-9a-84-e6-8c-87-e5-ae-9a-e8-8c-83-e5-9b-b4-e5-86-85-e6-90-9c-e7-b4-a2-e6-96-87-e6-9c-ac.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/08/e5-9c-a8excel-e7-9a-84-e6-8c-87-e5-ae-9a-e8-8c-83-e5-9b-b4-e5-86-85-e6-90-9c-e7-b4-a2-e6-96-87-e6-9c-ac.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/08/e5-9c-a8excel-e7-9a-84-e6-8c-87-e5-ae-9a-e8-8c-83-e5-9b-b4-e5-86-85-e6-90-9c-e7-b4-a2-e6-96-87-e6-9c-ac.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="在Excel的指定范围内搜索文本"><a href="#在Excel的指定范围内搜索文本" class="headerlink" title="在Excel的指定范围内搜索文本"></a>在Excel的指定范围内搜索文本</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了在Excel的指定范围内搜索文本的功能。运行本实例，如图1所示，首先单击上面工具栏中的“打开Excel文件”按钮，打开指定的Excel文件，并且选择要操作的工作表；然后在下面的工具栏中输入查找的范围及文本，单击“搜索”按钮，即可在指定工作表的指定范围内搜索文本，并将搜索到的文本以红色字体显示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-08-14260052.png" alt=""> 图1 在Excel的指定范围内搜索文本</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现在Excel的指定范围内搜索文本时，主要用到了Microsoft Excel自动化对象模型的Range对象的Find方法，下面对其进行详细讲解。 Range对象表示Excel数据表格中一定区域的单元格，该区域中可以包括一个单元格、多个连续的单元格以及多个不连续的单元格，其Find方法用来在Range对象中查找文本，并返回包含查找文本的单元格，该方法语法格式如下：</p>
+<p>Range Find([In] object What, [In, Optional] object After, [In, Optional] object LookIn, [In, Optional] object LookAt, [In, Optional] object SearchOrder, [In, Optional] XlSearchDirection SearchDirection, [In, Optional] object MatchCase, [In, Optional] object MatchByte, [In, Optional] object SearchFormat);</p>
+<p>Find方法语法中的参数说明如表1所示。 表1 Find方法语法中的参数说明</p>
+<p>参数</p>
+<p>描述</p>
+<p>What</p>
+<p>要搜索的文本</p>
+<p>After</p>
+<p>单个单元格，搜索区域将从该单元格之后开始</p>
+<p>LookIn</p>
+<p>要搜索的数据类型</p>
+<p>LookAt</p>
+<p>指定是否匹配整个单元格的内容</p>
+<p>SearchOrder</p>
+<p>指定按行或者列方式搜索</p>
+<p>SearchDirection</p>
+<p>指定向前或向后搜索</p>
+<p>MatchCase</p>
+<p>指定搜索时是否区分大小写</p>
+<p>MatchByte</p>
+<p>指定是否对双字节进行完全匹配</p>
+<p>SearchFormat</p>
+<p>指定搜索文本是否格式化</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为SearchTextInRange。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个ToolStrip控件，分别用来作为程序的两个工具栏，其中第一个工具栏用来选择Excel文件及其工作表，第二个工具栏用来输入查找范围、要查找的文本及执行查找操作；添加一个WebBrowser控件，用来显示Excel文件。 （3）程序主要代码如下：</p>
+<p>private void tsbtn_Query_Click(object sender, EventArgs e)<br>{<br>    CloseProcess(“EXCEL”);                                        //关闭所有Excel进程<br>    string P_str_Excel = tstxt_Excel.Text;                                //记录Excel文件路径<br>    string P_str_SheetName = tscbox_Sheet.Text;                            //记录选择的工作表名称<br>    object P_obj_Start = tstxt_Start.Text;                                //记录开始单元格<br>    object P_obj_End = tstxt_End.Text;                                    //记录结束单元格<br>object missing = System.Reflection.Missing.Value;                        //定义object缺省值<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();<br>    //打开Excel文件<br>    Microsoft.Office.Interop.Excel.Workbook workbook = excel.Workbooks.Open(P_str_Excel, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>Microsoft.Office.Interop.Excel.Worksheet worksheet;                            //声明工作表<br>//获取选择的工作表<br>worksheet = ((Microsoft.Office.Interop.Excel.Worksheet)workbook.Worksheets[P_str_SheetName]);<br>//定义查找范围<br>    Microsoft.Office.Interop.Excel.Range searchRange = worksheet.get_Range(P_obj_Start, P_obj_End);<br>    Microsoft.Office.Interop.Excel.Range currentRange = null;                    //定义当前找到的范围<br>    Microsoft.Office.Interop.Excel.Range firstRange = null;                        //定义找到的第一个范围<br>    object P_obj_Text = tstxt_Text.Text;                                    //记录要搜索的文本<br>    //搜索第一个匹配项，指定从其后开始搜索的单元格以外的所有参数<br>    currentRange = searchRange.Find(P_obj_Text, missing, Microsoft.Office.Interop.Excel.XlFindLookIn.xlValues, Microsoft.Office.Interop.Excel.XlLookAt.xlPart, Microsoft.Office.Interop.Excel.XlSearchOrder.xlByRows, Microsoft.Office.Interop.Excel.XlSearchDirection.xlNext, false, missing, missing);<br>    while (currentRange != null)                                        //一直搜索，直到没有匹配项<br>    {<br>        if (firstRange == null)                                        //如果第一个范围不包含任何值<br>        {<br>            firstRange = currentRange;                                    //记录当前范围<br>        }<br>        //如果查找范围的地址与第一个查找范围的地址匹配<br>        else if (currentRange.get_Address(missing, missing, Microsoft.Office.Interop.Excel.XlReferenceStyle.xlA1, missing, missing) == firstRange.get_Address(missing, missing, Microsoft.Office.Interop.Excel.XlReferenceStyle.xlA1, missing, missing))<br>        {<br>            break;                                                //退出<br>        }<br>        //为单元格加边框<br>        currentRange.BorderAround(Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous, Microsoft.Office.Interop.Excel.XlBorderWeight.xlThin, Microsoft.Office.Interop.Excel.XlColorIndex.xlColorIndexAutomatic, Color.Black.ToArgb());<br>        currentRange.Font.Color = System.Drawing.ColorTranslator.ToOle(Color.Red);        //设置搜索到的文本颜色<br>        currentRange.Font.Bold = true;                                    //设置搜索到的文本为粗体<br>        currentRange = searchRange.FindNext(currentRange);                    //查找下一处<br>    }<br>    MessageBox.Show(“搜索完毕！”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    excel.DisplayAlerts = false;                                        //设置保存Excel时不显示对话框<br>    workbook.Save();                                            //保存工作表<br>    CloseProcess(“EXCEL”);                                        //关闭所有Excel进程<br>    WBrowser_Excel.Navigate(P_str_Excel);                                //在窗体中重新显示Excel文件内容<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟047：Font对象的妙用！ 如果理解了实例中Font对象的使用方法，那么就可以轻松的设置其Name属性更改Excel文件中字体的名称，设置Size属性更改Excel文件中字体的大小，设置Color属性更改Excel文件中字体的颜色。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e5-88-97-e6-8e-92-e5-ba-8f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e5-88-97-e6-8e-92-e5-ba-8f.html" class="post-title-link" itemprop="url">利用Excel对数据进行多列排序</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-08 21:53:29" itemprop="dateCreated datePublished" datetime="2019-08-08T21:53:29+08:00">2019-08-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e5-88-97-e6-8e-92-e5-ba-8f.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e5-88-97-e6-8e-92-e5-ba-8f.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e5-88-97-e6-8e-92-e5-ba-8f.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>7.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>7 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用Excel对数据进行多列排序"><a href="#利用Excel对数据进行多列排序" class="headerlink" title="利用Excel对数据进行多列排序"></a>利用Excel对数据进行多列排序</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了在Excel中对数据进行多列排序的功能。运行本实例，首先单击上面工具栏中的“打开Excel文件”按钮，打开指定的Excel文件，并且选择要操作的工作表；然后在下面的工具栏中输入要排序的范围，单击“升序排序”按钮，对输入的多列范围进行升序排序，如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-08-13512611.png" alt=""> 图1 多列升序排序 单击“降序排序”按钮，对输入的多列范围进行降序排序，如图2所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-08-13512932.png" alt=""> 图2 多列降序排序</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现在Excel中对数据进行多列排序时，主要用到了Microsoft Excel自动化对象模型的Range对象的Sort方法，下面对其进行详细讲解。 Sort方法用来对Excel文件中的列进行排序，该方法语法格式如下：</p>
+<p>object Sort([In, Optional] object Key1,[In, Optional] XlSortOrder Order1,[In, Optional] object Key2,[In, Optional] object Type,[In, Optional] XlSortOrder Order2,[In, Optional] object Key3,[In, Optional] XlSortOrder Order3,[In, Optional] XlYesNoGuess Header,[In, Optional] object OrderCustom,[In, Optional] object MatchCase,[In, Optional] XlSortOrientation Orientation,[In, Optional] XlSortMethod SortMethod,[In, Optional] XlSortDataOption DataOption1, [In, Optional] XlSortDataOption DataOption2, [In, Optional] XlSortDataOption DataOption3);</p>
+<p>Sort方法语法中的参数说明如表1所示。 表1 Sort方法语法中的参数说明</p>
+<p>参数</p>
+<p>描述</p>
+<p>Key1</p>
+<p>指定要排序的第一列</p>
+<p>Order1</p>
+<p>指定第一列的排序方式</p>
+<p>Key2</p>
+<p>指定要排序的第二列</p>
+<p>Type</p>
+<p>指定对数据透视表进行排序时对哪些元素进行排序</p>
+<p>Order2</p>
+<p>指定第二列的排序方式</p>
+<p>Key3</p>
+<p>指定要排序的第3列</p>
+<p>Order3</p>
+<p>指定第3列的排序方式</p>
+<p>Header</p>
+<p>指定第一行是否包含页眉信息</p>
+<p>OrderCustom</p>
+<p>指定一个在自定义排序顺序列表中的从1开始的偏移量</p>
+<p>MatchCase</p>
+<p>指定排序时是否区分大小写</p>
+<p>Orientation</p>
+<p>指定排序方向</p>
+<p>SortMethod</p>
+<p>指定用于中文语言的排序方法</p>
+<p>DataOption1</p>
+<p>指定如何对Key1中指定的范围内的文本进行排序</p>
+<p>DataOption2</p>
+<p>指定如何对Key2中指定的范围内的文本进行排序</p>
+<p>DataOption3</p>
+<p>指定如何对Key3中指定的范围内的文本进行排序</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为SortMultiColumns。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个ToolStrip控件，分别用来作为程序的两个工具栏，其中第一个工具栏用来选择Excel文件及其工作表，第二个工具栏用来输入排序范围及执行升序排序、降序排序操作；添加一个WebBrowser控件，用来显示Excel文件。 （3）程序主要代码如下： 单击“升序排序”按钮，使用Excel.Range对象的Sort方法对指定的列进行升序排序，代码如下：</p>
+<p>private void tsbtn_ASCSort_Click(object sender, EventArgs e)<br>{<br>    CloseProcess(“EXCEL”);                                    //关闭所有Excel进程<br>    string P_str_Excel = tstxt_Excel.Text;                            //记录Excel文件路径<br>    string P_str_SheetName = tscbox_Sheet.Text;                        //记录选择的工作表名称<br>    object P_obj_Start = tstxt_Start.Text;                            //记录开始单元格<br>    object P_obj_End = tstxt_End.Text;                                //记录结束单元格<br>object missing = System.Reflection.Missing.Value;                    //定义object缺省值<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();<br>    //打开Excel文件<br>    Microsoft.Office.Interop.Excel.Workbook workbook = excel.Workbooks.Open(P_str_Excel, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>Microsoft.Office.Interop.Excel.Worksheet worksheet;                        //声明工作表<br>//获取选择的工作表<br>worksheet = ((Microsoft.Office.Interop.Excel.Worksheet)workbook.Worksheets[P_str_SheetName]);<br>//定义查找范围<br>    Microsoft.Office.Interop.Excel.Range searchRange = worksheet.get_Range(P_obj_Start, P_obj_End);<br>    switch (searchRange.Columns.Count)<br>    {<br>        case 1:<br>            //按1列升序排序<br>            searchRange.Sort(<br>     searchRange.Columns[1, missing], Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     missing, missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo, missing, missing,<br>     Microsoft.Office.Interop.Excel.XlSortOrientation.xlSortColumns,<br>     Microsoft.Office.Interop.Excel.XlSortMethod.xlPinYin,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal);<br>            break;<br>        case 2:<br>            //按2列升序排序<br>            searchRange.Sort(<br>     searchRange.Columns[1, missing], Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     searchRange.Columns[2, missing], missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo, missing, missing,<br>     Microsoft.Office.Interop.Excel.XlSortOrientation.xlSortColumns,<br>     Microsoft.Office.Interop.Excel.XlSortMethod.xlPinYin,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal);<br>            break;<br>        case 3:<br>        default:<br>            //按3列升序排序<br>            searchRange.Sort(<br>     searchRange.Columns[1, missing], Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     searchRange.Columns[2, missing], missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     searchRange.Columns[3, missing], Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending,<br>     Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo, missing, missing,<br>     Microsoft.Office.Interop.Excel.XlSortOrientation.xlSortColumns,<br>     Microsoft.Office.Interop.Excel.XlSortMethod.xlPinYin,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal);<br>            break;<br>    }<br>    excel.DisplayAlerts = false;                                    //设置保存Excel时不显示对话框<br>    workbook.Save();                                        //保存工作表<br>    CloseProcess(“EXCEL”);                                    //关闭所有Excel进程<br>    WBrowser_Excel.Navigate(P_str_Excel);                            //在窗体中重新显示Excel文件内容<br>}</p>
+<p>单击“降序排序”按钮，使用Excel.Range对象的Sort方法对指定的列进行降序排序，代码如下：</p>
+<p>private void tsbtn_DESCSort_Click(object sender, EventArgs e)<br>{<br>    CloseProcess(“EXCEL”);                                    //关闭所有Excel进程<br>    string P_str_Excel = tstxt_Excel.Text;                            //记录Excel文件路径<br>    string P_str_SheetName = tscbox_Sheet.Text;                        //记录选择的工作表名称<br>    object P_obj_Start = tstxt_Start.Text;                            //记录开始单元格<br>    object P_obj_End = tstxt_End.Text;                                //记录结束单元格<br>object missing = System.Reflection.Missing.Value;                    //定义object缺省值<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();<br>    //打开Excel文件<br>    Microsoft.Office.Interop.Excel.Workbook workbook = excel.Workbooks.Open(P_str_Excel, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>Microsoft.Office.Interop.Excel.Worksheet worksheet;                        //声明工作表<br>//获取选择的工作表<br>worksheet = ((Microsoft.Office.Interop.Excel.Worksheet)workbook.Worksheets[P_str_SheetName]);<br>//定义查找范围<br>    Microsoft.Office.Interop.Excel.Range searchRange = worksheet.get_Range(P_obj_Start, P_obj_End);<br>    switch (searchRange.Columns.Count)<br>    {<br>        case 1:<br>            //按1列降序排序<br>            searchRange.Sort(<br>     searchRange.Columns[1, missing], Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     missing, missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo, missing, missing,<br>     Microsoft.Office.Interop.Excel.XlSortOrientation.xlSortColumns,<br>     Microsoft.Office.Interop.Excel.XlSortMethod.xlPinYin,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal);<br>            break;<br>        case 2:<br>            //按2列降序排序<br>            searchRange.Sort(<br>     searchRange.Columns[1, missing], Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     searchRange.Columns[2, missing], missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo, missing, missing,<br>     Microsoft.Office.Interop.Excel.XlSortOrientation.xlSortColumns,<br>     Microsoft.Office.Interop.Excel.XlSortMethod.xlPinYin,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal);<br>            break;<br>        case 3:<br>        default:<br>            //按3列降序排序<br>            searchRange.Sort(<br>     searchRange.Columns[1, missing], Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     searchRange.Columns[2, missing], missing, Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     searchRange.Columns[3, missing], Microsoft.Office.Interop.Excel.XlSortOrder.xlDescending,<br>     Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo, missing, missing,<br>     Microsoft.Office.Interop.Excel.XlSortOrientation.xlSortColumns,<br>     Microsoft.Office.Interop.Excel.XlSortMethod.xlPinYin,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal,<br>     Microsoft.Office.Interop.Excel.XlSortDataOption.xlSortNormal);<br>            break;<br>    }<br>    excel.DisplayAlerts = false;                                    //设置保存Excel时不显示对话框<br>    workbook.Save();                                        //保存工作表<br>    CloseProcess(“EXCEL”);                                    //关闭所有Excel进程<br>    WBrowser_Excel.Navigate(P_str_Excel);                            //在窗体中重新显示Excel文件内容<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟048：巧用Excel对象的Sort方法对列进行排序！ Excel对象的Sort方法主要用来对Excel文件中的列进行排序，它可以分别对一列、两列或者3列数据进行排序。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/08/e5-b0-86-e6-95-b0-e6-8d-ae-e5-88-a9-e7-94-a8excel-e7-94-9f-e6-88-90-e5-9b-be-e8-a1-a8.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/08/e5-b0-86-e6-95-b0-e6-8d-ae-e5-88-a9-e7-94-a8excel-e7-94-9f-e6-88-90-e5-9b-be-e8-a1-a8.html" class="post-title-link" itemprop="url">将数据利用Excel生成图表</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-08 21:48:56" itemprop="dateCreated datePublished" datetime="2019-08-08T21:48:56+08:00">2019-08-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/08/e5-b0-86-e6-95-b0-e6-8d-ae-e5-88-a9-e7-94-a8excel-e7-94-9f-e6-88-90-e5-9b-be-e8-a1-a8.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/08/e5-b0-86-e6-95-b0-e6-8d-ae-e5-88-a9-e7-94-a8excel-e7-94-9f-e6-88-90-e5-9b-be-e8-a1-a8.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/08/e5-b0-86-e6-95-b0-e6-8d-ae-e5-88-a9-e7-94-a8excel-e7-94-9f-e6-88-90-e5-9b-be-e8-a1-a8.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="将数据利用Excel生成图表"><a href="#将数据利用Excel生成图表" class="headerlink" title="将数据利用Excel生成图表"></a>将数据利用Excel生成图表</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了在Excel中生成图表的功能。运行本实例，首先单击工具栏中的“打开Excel文件”按钮，打开指定的Excel文件，并且选择要操作的工作表；然后单击“生成图表”按钮，即可在指定的工作表中生成一个柱形图，如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-08-13473350.png" alt=""> 图1 将数据利用Excel生成图表</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现在Excel中生成图表时，主要用到了Microsoft Excel自动化对象模型的Chart对象的ChartWizard方法，下面对其进行详细讲解。 Chart对象是公开事件的图表对象，它可以绑定到数据，其ChartWizard方法用来修改给定Chart控件的属性，以便绘制一个新的图表，该方法语法格式如下：</p>
+<p>public void ChartWizard(Object Source,Object Gallery,Object Format,Object PlotBy,Object CategoryLabels,Object SeriesLabels,Object HasLegend,Object Title,Object CategoryTitle,Object ValueTitle,Object ExtraTitle)</p>
+<p>ChartWizard方法语法中的参数说明如表1所示。 表1 ChartWizard方法语法中的参数说明</p>
+<p>参数</p>
+<p>描述</p>
+<p>Source</p>
+<p>包含新图表的源数据的范围</p>
+<p>Gallery</p>
+<p>图表类型</p>
+<p>Format</p>
+<p>内置自动套用格式的选项编号</p>
+<p>PlotBy</p>
+<p>指定每个系列的数据是按行绘制还是按列绘制</p>
+<p>CategoryLabels</p>
+<p>指定源范围中包含类别标签的行数或列数</p>
+<p>SeriesLabels</p>
+<p>指定源范围中包含系列标签的行数或列数</p>
+<p>HasLegend</p>
+<p>指定是否包含图例</p>
+<p>Title</p>
+<p>指定标题文本</p>
+<p>CategoryTitle</p>
+<p>分类轴标题文本</p>
+<p>ValueTitle</p>
+<p>数值轴标题文本</p>
+<p>ExtraTitle</p>
+<p>三维图表的系列轴标题或二维图表的第二个数值轴标题</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为ExcelChart。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加一个ToolStrip控件，用来作为程序的工具栏，该工具栏用来选择Excel文件及其工作表，并执行生成图表操作；添加一个WebBrowser控件，用来显示Excel文件及生成的图表。 （3）程序主要代码如下：</p>
+<p>private void tsbtn_Build_Click(object sender, EventArgs e)<br>{<br>    CloseProcess(“EXCEL”);                                            //关闭所有Excel进程<br>object missing = System.Reflection.Missing.Value;                            //定义object缺省值<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();<br>    //打开Excel文件<br>    Microsoft.Office.Interop.Excel.Workbook workbook = excel.Workbooks.Open(tstxt_Excel.Text, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>Microsoft.Office.Interop.Excel.Worksheet worksheet;                                //声明工作表<br>//获取选择的工作表<br>    worksheet = ((Microsoft.Office.Interop.Excel.Worksheet)workbook.Worksheets[tscbox_Sheet.Text]);<br>    Microsoft.Office.Interop.Excel.Range searchRange = worksheet.get_Range(“A1”, “E1”);        //定义标题范围<br>    object[] P_obj_Items = { “编程词典”, “VC编程词典”, “JAVA编程词典”, “ASP.NET编程词典”, “C#编程词典” };<br>    searchRange.set_Value(missing, P_obj_Items);                                //绘制标题<br>    searchRange.Font.Bold = true;                                        //设置字体加粗<br>    searchRange.Font.Name = “宋体”;                                        //设置字体样式<br>    searchRange.Font.Size = 10;                                            //设置字体大小<br>    searchRange.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;    //设置标题对齐方式<br>    //获得要生成图表的数据<br>    for (int i = 0; i &lt; 13; i++)<br>    {<br>        worksheet.Cells[2 + i, 1] = i;<br>        worksheet.Cells[2 + i, 2] = i + 1;<br>        worksheet.Cells[2 + i, 3] = i + 2;<br>        worksheet.Cells[2 + i, 4] = i + 3;<br>        worksheet.Cells[2 + i, 5] = i + 4;<br>    }<br>    //创建Excel绘图对象<br>Microsoft.Office.Interop.Excel.Chart chart = (Microsoft.Office.Interop.Excel.Chart)workbook.Charts.Add(missing, missing, missing, missing);<br>//定义绘制图表范围<br>    Microsoft.Office.Interop.Excel.Range chartRange = worksheet.get_Range(“A1:A14”, “B1:E14”);<br>    //在指定范围绘制图表<br>    chart.ChartWizard(chartRange, Microsoft.Office.Interop.Excel.XlChartType.xl3DColumn, missing, Microsoft.Office.Interop.Excel.XlRowCol.xlColumns, 1, 1, true, “编程词典销量分析”, “月份”, “销量”, missing);<br>    excel.DisplayAlerts = false;                                            //设置保存Excel时不显示对话框<br>    workbook.Save();                                                //保存工作簿<br>    workbook.Close(false, missing, missing);                                    //关闭工作簿<br>    CloseProcess(“EXCEL”);                                            //关闭所有Excel进程<br>    WBrowser_Excel.Navigate(tstxt_Excel.Text);                                //在窗体中重新显示Excel文件内容<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟049：通过Cells属性为单元格赋值。 Excel对象的Cells属性用来指定Excel工作簿中单元格的内容，例如，下面的代码用来指定Excel工作簿中第一行第一列的单元格中的内容为“Excel”：</p>
+<p>excel.Cells[1, 1] = “Excel”;</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e8-a1-a8-e8-ae-a1-e7-ae-97.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e8-a1-a8-e8-ae-a1-e7-ae-97.html" class="post-title-link" itemprop="url">利用Excel对数据进行多表计算</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-08 21:43:33" itemprop="dateCreated datePublished" datetime="2019-08-08T21:43:33+08:00">2019-08-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e8-a1-a8-e8-ae-a1-e7-ae-97.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e8-a1-a8-e8-ae-a1-e7-ae-97.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e5-a4-9a-e8-a1-a8-e8-ae-a1-e7-ae-97.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用Excel对数据进行多表计算"><a href="#利用Excel对数据进行多表计算" class="headerlink" title="利用Excel对数据进行多表计算"></a>利用Excel对数据进行多表计算</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了利用Excel对数据进行多表计算的功能。运行本实例，如图1所示，首先单击上面工具栏中的“打开Excel模板”按钮，打开指定的Excel模板文件，并且选择要操作的工作表；然后在下面的工具栏中输入要计算的列和行，单击“合并计算”按钮，程序自动对Debug文件夹中的3个Excel文件进行合并计算，并体现在Excel模板文件中。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-08-13461332.png" alt=""> 图1 利用Excel对数据进行多表计算</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在实现对多个Excel工作表中的内容进行计算时，首先需要有一个固定的模板，以便使用户知道要对哪行哪列数据进行计算，然后需要使用Microsoft Excel自动化对象模型中的Range对象（使用Worksheet对象的Cells属性获得）的Text属性获取Excel工作表中指定单元格的内容，最后将获取到的内容进行相加，并且写入汇总Excel文件的相应单元格中即可，下面对本实例中用到的关键技术进行详细讲解。 （1）Worksheet对象的Cells属性 Worksheet对象是公开事件并用作控件的容器的Excel工作表对象，其Cells属性用来获取一个Range对象，该对象表示工作表上的所有单元格（不仅仅是当前正在使用的单元格）。Cells属性语法格式如下： [BrowsableAttribute(false)] public virtual Range Cells { get; } 参数说明 属性值：一个Range对象，表示工作表上的所有单元格（不仅仅是当前正在使用的单元格）。 （2）Range对象的Text属性 Range对象的Text属性用来获取指定单元格中的内容，其语法格式如下： object Text {get;} 参数说明 属性值：指定单元格的内容。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为CalMultiSheet。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个ToolStrip控件，分别用来作为程序的两个工具栏，其中第一个工具栏用来选择Excel模板文件及其工作表，第二个工具栏用来输入要计算的列、行及执行合并计算操作；添加一个WebBrowser控件，用来显示Excel文件。 （3）程序主要代码如下：</p>
+<p>private void CalcData(int P_int_Row, string P_str_Column)<br>{<br>    CloseProcess(“EXCEL”);                                //关闭所有Excel进程<br>    string P_str_workBook1 = Application.StartupPath + “\\Excel1.xls”;        //记录第一个要计算的工作簿路径<br>    string P_str_workBook2 = Application.StartupPath + “\\Excel2.xls”;        //记录第二个要计算的工作簿路径<br>    string P_str_workBook3 = Application.StartupPath + “\\Excel3.xls”;        //记录第三个要计算的工作簿路径<br>    string P_str_workBook4 = Application.StartupPath + “\\Sum.xls”;        //记录存储计算结果的工作簿路径<br>object missing = System.Reflection.Missing.Value;                //定义object缺省值<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.ApplicationClass excel1 = new Microsoft.Office.Interop.Excel.ApplicationClass();<br>    excel1.Visible = false;                                    //设置Excel文件隐藏<br>    //打开第一个计算的工作簿<br>    Microsoft.Office.Interop.Excel.Workbook workbook1 = excel1.Workbooks.Open(P_str_workBook1, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>    //记录要计算的第一个工作表<br>Microsoft.Office.Interop.Excel._Worksheet worksheet1 = (Microsoft.Office.Interop.Excel._Worksheet)workbook1.Worksheets.get_Item(tscbox_Sheet.Text);<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.ApplicationClass excel2 = new Microsoft.Office.Interop.Excel.ApplicationClass();<br>    excel2.Visible = false;                                    //设置Excel文件隐藏<br>    //打开第二个计算的工作簿<br>    Microsoft.Office.Interop.Excel.Workbook workbook2 = excel2.Workbooks.Open(P_str_workBook2, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>    //记录要计算的第二个工作表<br>Microsoft.Office.Interop.Excel._Worksheet worksheet2 = (Microsoft.Office.Interop.Excel._Worksheet)workbook2.Worksheets.get_Item(tscbox_Sheet.Text);<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.ApplicationClass excel3 = new Microsoft.Office.Interop.Excel.ApplicationClass();<br>    excel3.Visible = false;                                    //设置Excel文件隐藏<br>    //打开第三个计算的工作簿<br>    Microsoft.Office.Interop.Excel.Workbook workbook3 = excel3.Workbooks.Open(P_str_workBook3, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>    //记录要计算的第三个工作表<br>Microsoft.Office.Interop.Excel._Worksheet worksheet3 = (Microsoft.Office.Interop.Excel._Worksheet)workbook3.Worksheets.get_Item(tscbox_Sheet.Text);<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.ApplicationClass excel4 = new Microsoft.Office.Interop.Excel.ApplicationClass();<br>    excel4.Visible = false;                                    //设置Excel文件隐藏<br>    //打开存储计算结果的工作簿<br>    Microsoft.Office.Interop.Excel.Workbook workbook4 = excel4.Workbooks.Open(P_str_workBook4, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>    //记录要存储结算结果的工作表<br>    Microsoft.Office.Interop.Excel._Worksheet worksheet4 = (Microsoft.Office.Interop.Excel._Worksheet)workbook4.Worksheets.get_Item(tscbox_Sheet.Text);<br>    excel4.DisplayAlerts = false;                                //设置保存Excel时不显示对话框<br>    worksheet4.Activate();                                    //激活工作表<br>    Decimal P_dml_NumOne = 0;                            //获取第一个工作表的值<br>    Decimal P_dml_NumTwo = 0;                            //获取第二个工作表的值<br>    Decimal P_dml_NumThree = 0;                            //获取第三个工作表的值<br>    //判断指定单元格内容是否为空<br>    if (((Microsoft.Office.Interop.Excel.Range)worksheet1.Cells[P_int_Row, P_str_Column]).Text.ToString() == “” || ((Microsoft.Office.Interop.Excel.Range)worksheet1.Cells[P_int_Row, P_str_Column]).Text == null)<br>    {<br>        P_dml_NumOne = 0;                                //将第一个值设置为0<br>    }<br>    else<br>    {<br>        P_dml_NumOne = Convert.ToDecimal(((Microsoft.Office.Interop.Excel.Range)worksheet1.Cells[P_int_Row, P_str_Column]).Text);                                //记录第一个值<br>    }<br>    //判断指定单元格内容是否为空<br>    if (((Microsoft.Office.Interop.Excel.Range)worksheet2.Cells[P_int_Row, P_str_Column]).Text.ToString() == “” || ((Microsoft.Office.Interop.Excel.Range)worksheet2.Cells[P_int_Row, P_str_Column]).Text == null)<br>    {<br>        P_dml_NumTwo = 0;                                //将第二个值设置为0<br>    }<br>    else<br>    {<br>        P_dml_NumTwo = Convert.ToDecimal(((Microsoft.Office.Interop.Excel.Range)worksheet2.Cells[P_int_Row, P_str_Column]).Text);                                //记录第二个值<br>    }<br>    //判断指定单元格内容是否为空<br>    if (((Microsoft.Office.Interop.Excel.Range)worksheet3.Cells[P_int_Row, P_str_Column]).Text.ToString() == “” || ((Microsoft.Office.Interop.Excel.Range)worksheet3.Cells[P_int_Row, P_str_Column]).Text == null)<br>    {<br>        P_dml_NumThree = 0;                                //将第三个值设置为0<br>    }<br>    else<br>{<br>//记录第三个值<br>        P_dml_NumThree = Convert.ToDecimal(((Microsoft.Office.Interop.Excel.Range)worksheet3.Cells[P_int_Row, P_str_Column]).Text);<br>    }<br>    Decimal P_dml_Sum = P_dml_NumOne + P_dml_NumTwo + P_dml_NumThree;//计算总和<br>    try<br>{<br>//向工作簿的指定单元格中写入计算后的数据<br>        worksheet4.Cells[P_int_Row, P_str_Column] = P_dml_Sum.ToString();<br>        workbook4.Save();                                //保存Excel文件<br>    }<br>    catch<br>    {<br>        MessageBox.Show(“写入第” + P_int_Row.ToString() + “行，第” + P_str_Column + “列时出错！”);<br>    }<br>    finally<br>    {<br>        workbook4.Save();                                //保存Excel文件<br>        //退出打开的4个Excel文件<br>        excel1.Quit();<br>        excel2.Quit();<br>        excel3.Quit();<br>        excel4.Quit();<br>    }<br>    WBrowser_Excel.Navigate(P_str_workBook4);                    //在窗体中显示多表计算后的Excel文件<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟050：如何在程序中打开Excel文件？ 打开Excel文件时，可以使用Workbooks对象的Open方法来实现，该方法的第一个参数为要打开的Excel文件，其他的参数表示Excel的相关设置，实际使用时，直接用Missing.Value的值来表示即可。例如，本实例中打开指定Excel工作表的实现代码如下：</p>
+<p>Microsoft.Office.Interop.Excel.Workbook workbook1 = excel1.Workbooks.Open(P_str_workBook1, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e6-a0-bc-e5-bc-8f-e8-bd-ac-e6-8d-a2.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e6-a0-bc-e5-bc-8f-e8-bd-ac-e6-8d-a2.html" class="post-title-link" itemprop="url">利用Excel对数据进行格式转换</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-08 16:23:53" itemprop="dateCreated datePublished" datetime="2019-08-08T16:23:53+08:00">2019-08-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e6-a0-bc-e5-bc-8f-e8-bd-ac-e6-8d-a2.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e6-a0-bc-e5-bc-8f-e8-bd-ac-e6-8d-a2.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/08/e5-88-a9-e7-94-a8excel-e5-af-b9-e6-95-b0-e6-8d-ae-e8-bf-9b-e8-a1-8c-e6-a0-bc-e5-bc-8f-e8-bd-ac-e6-8d-a2.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用Excel对数据进行格式转换"><a href="#利用Excel对数据进行格式转换" class="headerlink" title="利用Excel对数据进行格式转换"></a>利用Excel对数据进行格式转换</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了利用Excel对数据进行格式转换的功能。运行本实例，如图1所示，首先选择查询条件，并输入查询关键字，单击“查询”按钮，在Sql Server数据库中执行查询，并将查询结果显示在数据表格控件中；然后单击“Excel格式转换”按钮，将数据表格控件中的查询结果输出到Excel文件中，并对Excel文件中的数据进行格式转换，这里将日期类型转换为长日期格式，数字转换为“000,000.00”格式，字符串格式化为使用双引号括起来，如图2所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-08-08232560.png" alt=""> 图1 利用Excel对数据进行格式转换 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-08-08232830.png" alt=""> 图2 格式转换之后的Excel文件</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在对数据进行格式转换时，主要是通过DataGridViewCell对象的ValueType属性判断DataGridView单元格中的数据类型来实现的，下面对其进行详细讲解。 DataGridViewCell对象表示DataGridView控件中的单个单元格，其ValueType属性用来获取或设置单元格中值的数据类型，该属性的语法格式如下： [BrowsableAttribute(false)] public virtual Type ValueType { get; set; } 参数说明 属性值：System.Type类型，表示单元格中值的数据类型。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为FormatDataInExcel。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加一个ComboBox控件，用来选择查询条件；添加一个TextBox控件，用来输入查询关键字；添加一个DataGridView控件，用来显示Sql Server数据库中的数据；添加两个Button控件，分别用来执行数据库查询操作，和将数据库查询结果输出到Excel文件并对不同的列进行格式转换的操作。 （3）程序主要代码如下：</p>
+<p>private void btn_Excel_Click(object sender, EventArgs e)<br>{<br>    if (dgv_Info.Rows.Count == 0)                        //判断是否有数据<br>        return;                                    //返回<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();<br>    excel.Application.Workbooks.Add(true);                    //在Excel中添加一个工作簿<br>    excel.Visible = true;                                //设置Excel显示<br>    //生成字段名称<br>    for (int i = 0; i &lt; dgv_Info.ColumnCount; i++)<br>    {<br>        excel.Cells[1, i + 1] = dgv_Info.Columns[i].HeaderText;        //将数据表格控件中的列表头填充到Excel中<br>    }<br>    //填充数据<br>    for (int i = 0; i &lt; dgv_Info.RowCount - 1; i++)                //遍历数据表格控件的所有行<br>    {<br>        for (int j = 0; j &lt; dgv_Info.ColumnCount; j++)            //遍历数据表格控件的所有列<br>        {<br>            if (dgv_Info[j, i].ValueType == typeof(string))            //判断遍历到的数据是否是字符串类型<br>            {<br>//格式化为字符串类型并填充Excel表格<br>                excel.Cells[i + 2, j + 1] = ““” + dgv_Info[j, i].Value.ToString().Trim() + “””;<br>            }<br>//判断遍历到的数据是否是16位或者32位数字类型<br>            else if (dgv_Info[j, i].ValueType == typeof(Int16) || dgv_Info[j, i].ValueType == typeof(Int32))<br>            {<br>//格式化为32位数字类型并填充Excel表格<br>                excel.Cells[i + 2, j + 1] = Convert.ToInt32(dgv_Info[j, i].Value).ToString(“N”);<br>            }<br>            else if (dgv_Info[j, i].ValueType == typeof(Int64))        //判断遍历到的数据是否是64位数字类型<br>            {<br>//格式化为64位数字类型并填充Excel表格<br>                excel.Cells[i + 2, j + 1] = Convert.ToInt64(dgv_Info[j, i].Value).ToString(“N”);<br>            }<br>            else if (dgv_Info[j, i].ValueType == typeof(DateTime))    //判断遍历到的数据是否是日期类型<br>            {<br>//格式化为长日期形式并填充Excel表格<br>                excel.Cells[i + 2, j + 1] = Convert.ToDateTime(dgv_Info[j, i].Value).ToLongDateString();<br>            }<br>            else<br>            {<br>                excel.Cells[i + 2, j + 1] = dgv_Info[j, i].Value.ToString();//填充Excel表格<br>            }<br>        }<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟051：方便的使用“对象初始化器”！ 从C#3.0版本开始，我们可以方便的使用“对象初始化器”对所有的对象进行初始化，对象初始化器允许我们在一条语句中为指定对象的多个字段和属性赋值。实例中使用了对象初始化器初始化对象，并将初始化后的对象添加到集合中。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/08/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e6-b1-87-e6-80-bb-e5-88-b0-e4-b8-80-e4-b8-aaexcel-e6-96-87-e4-bb-b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/08/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e6-b1-87-e6-80-bb-e5-88-b0-e4-b8-80-e4-b8-aaexcel-e6-96-87-e4-bb-b6.html" class="post-title-link" itemprop="url">将多个Excel文件汇总到一个Excel文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-08 16:21:41" itemprop="dateCreated datePublished" datetime="2019-08-08T16:21:41+08:00">2019-08-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/08/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e6-b1-87-e6-80-bb-e5-88-b0-e4-b8-80-e4-b8-aaexcel-e6-96-87-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/08/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e6-b1-87-e6-80-bb-e5-88-b0-e4-b8-80-e4-b8-aaexcel-e6-96-87-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/08/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e6-b1-87-e6-80-bb-e5-88-b0-e4-b8-80-e4-b8-aaexcel-e6-96-87-e4-bb-b6.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="将多个Excel文件汇总到一个Excel文件"><a href="#将多个Excel文件汇总到一个Excel文件" class="headerlink" title="将多个Excel文件汇总到一个Excel文件"></a>将多个Excel文件汇总到一个Excel文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了将多个Excel文件汇总到一个Excel文件的功能。运行本实例，如图1所示，单击第一个“选择”按钮，选择要汇总的多个Excel文件；单击第二个“选择”按钮，选择存放汇总数据的Excel文件；然后单击“汇总”按钮，将多个Excel文件汇总到一个Excel文件中；单击“查看”按钮，查看汇总数据之后的Excel文件。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-08-08210256.png" alt=""> 图1 将多个Excel文件汇总到一个Excel文件</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在实现将多个Excel文件的内容汇总到一个Excel文件时，主要用到了Microsoft Excel自动化对象模型的Worksheet对象的Copy方法，下面对其进行详细讲解。 Worksheet对象的Copy方法用来将工作表内容复制到工作簿中的另一个位置，也可以将工作表内容复制到其他的工作表中，其语法格式如下： public virtual void Copy(Object Before,Object After) 参数说明 Before：复制工作表的放置位置之后的工作表。如果指定After，则不能指定Before。 After：复制工作表的放置位置之前的工作表。如果指定Before，则不能指定After。 说明：如果Copy方法中既未指定Before，也未指定After，则Excel将创建一个包含复制工作表的新工作簿。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为MultiExcelToOneExcel。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个TextBox控件，分别用来显示选择的多个Excel文件路径和单个Excel文件路径；添加4个Button控件，分别用来执行选择多个Excel文件、选择单个Excel文件、将多个Excel文件汇总到一个Excel文件和查看汇总的Excel文件的操作。 （3）程序主要代码如下：</p>
+<p>private void btn_Gather_Click(object sender, EventArgs e)<br>{<br>    object missing = System.Reflection.Missing.Value;                    //定义object缺省值<br>    string[] P_str_Names = txt_MultiExcel.Text.Split(‘,’);                    //存储所有选择的Excel文件名<br>    string P_str_Name = “”;                                    //存储遍历到的Excel文件名<br>List<string> P_list_SheetNames = new List<string>();                    //创建泛型集合对象，用来存储工作表名称<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();<br>    //打开指定的Excel文件<br>Microsoft.Office.Interop.Excel.Workbook workbook = excel.Application.Workbooks.Open(txt_Excel.Text, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>//创建新工作表<br>    Microsoft.Office.Interop.Excel.Worksheet newWorksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Worksheets.Add(missing, missing, missing, missing);<br>    for (int i = 0; i &lt; P_str_Names.Length - 1; i++)                            //遍历所有选择的Excel文件名<br>    {<br>        P_str_Name = P_str_Names[i];                                    //记录遍历到的Excel文件名<br>        //指定要复制的工作簿<br>        Microsoft.Office.Interop.Excel.Workbook Tempworkbook = excel.Application.Workbooks.Open(P_str_Name, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>        P_list_SheetNames = GetSheetName(P_str_Name);                        //获取Excel文件中的所有工作表名<br>        for (int j = 0; j &lt; P_list_SheetNames.Count; j++)                        //遍历所有工作表<br>        {<br>            //指定要复制的工作表<br>            Microsoft.Office.Interop.Excel.Worksheet TempWorksheet = (Microsoft.Office.Interop.Excel.Worksheet)Tempworkbook.Sheets[P_list_SheetNames[j]];    //创建新工作表<br>            TempWorksheet.Copy(missing, newWorksheet);                    //将工作表内容复制到目标工作表中<br>        }<br>        Tempworkbook.Close(false, missing, missing);                        //关闭临时工作簿<br>    }<br>    workbook.Save();                                            //保存目标工作簿<br>    workbook.Close(false, missing, missing);                                //关闭目标工作簿<br>    MessageBox.Show(“已经将所有选择的Excel工作表汇总到了一个Excel工作表中！”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    CloseProcess(“EXCEL”);                                        //关闭所有Excel进程<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟052：在Excel文件中新增工作表。 在Excel文件中新增工作表时，可以使用Excel自动化对象模型的Worksheets对象的Add方法来实现，该方法主要用来为指定的工作簿添加工作表。例如，本实例中创建新工作表的实现代码如下： Microsoft.Office.Interop.Excel.Worksheet newWorksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Worksheets.Add(missing, missing, missing, missing);</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/06/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e8-87-aa-e5-8a-a8-e6-b1-87-e6-80-bb.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/06/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e8-87-aa-e5-8a-a8-e6-b1-87-e6-80-bb.html" class="post-title-link" itemprop="url">将多个Excel文件进行自动汇总</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-06 12:41:55" itemprop="dateCreated datePublished" datetime="2019-08-06T12:41:55+08:00">2019-08-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/06/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e8-87-aa-e5-8a-a8-e6-b1-87-e6-80-bb.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/06/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e8-87-aa-e5-8a-a8-e6-b1-87-e6-80-bb.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/06/e5-b0-86-e5-a4-9a-e4-b8-aaexcel-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e8-87-aa-e5-8a-a8-e6-b1-87-e6-80-bb.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="将多个Excel文件进行自动汇总"><a href="#将多个Excel文件进行自动汇总" class="headerlink" title="将多个Excel文件进行自动汇总"></a>将多个Excel文件进行自动汇总</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用C#代码实现了将多个Excel文件进行自动汇总的功能。运行本实例，如图1所示，单击第一个“选择”按钮，选择要汇总的多个Excel文件；单击第二个“选择”按钮，选择存放汇总数据的Excel文件；然后在“自动汇总设置”区域设置自动汇总时间，单击“设置”按钮，启动Timer计时器，在Timer计时器中实时判断当前时间是否与设置的自动汇总时间相同，如果相同，则自动将多个Excel文件汇总到一个Excel文件中；单击“查看”按钮，查看汇总数据之后的Excel文件。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-06-04410383.png" alt=""> 图1 将多个Excel文件进行自动汇总</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例主要实现自动将多个Excel文件数据汇总到一个Excel文件中，实现该功能时，首先需要把用户的设置写入到INI文件中，当程序启动时，在Timer计时器中判断系统当前时间是否与用户设置的时间相同，如果相同，则调用Microsoft Excel自动化对象模型的Worksheet对象的Copy方法自动将多个Excel文件的数据汇总到一个Excel文件中。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AutoMultiExcelToOneExcel。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个TextBox控件，分别用来显示选择的多个Excel文件路径和单个Excel文件路径；添加两个NumericUpDown控件，分别用来设置小时和分钟；添加4个Button控件，分别用来执行选择多个Excel文件、选择单个Excel文件、将定时设置写入到系统配置文件中和查看汇总的Excel文件的操作；添加一个Timer组件，用来实时检测当前时间是否与设置的时间相同，如果相同，则自动将多个Excel文件的内容汇总到一个Excel中。 （3）程序主要代码如下： 单击“设置”按钮，把用户设置的信息写入到系统INI文件中，并启动计时器。“设置”按钮的Click事件代码如下：</p>
+<p>private void btn_Set_Click(object sender, EventArgs e)<br>{<br>    WritePrivateProfileString(“Set”, “MultiExcel”, txt_MultiExcel.Text, M_str_Name);        //设置多个Excel文件路径<br>    WritePrivateProfileString(“Set”, “Excel”, txt_Excel.Text, M_str_Name);            //设置目标Excel文件路径<br>    WritePrivateProfileString(“Set”, “Hour”, nudown_Hour.Value.ToString(), M_str_Name);    //设置小时<br>    WritePrivateProfileString(“Set”, “Min”, nudown_Min.Value.ToString(), M_str_Name);    //设置分钟<br>    MessageBox.Show(“配置文件设置成功！”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    timer1.Start();                                                //启动计时器<br>}</p>
+<p>说明：上面的代码中用到了WritePrivateProfileString函数，该函数主要用来对INI文件进行写入和修改操作，关于该函数的详细代码请参见实例“每天定时将各地上报结果处理到Excel”中的设计过程。 在timer1组件的Tick事件中，首先判断当前时间是否与设置的时间相同，如果相同，则自动将多个Excel文件的数据汇总到一个Excel文件中。代码如下：</p>
+<p>private void timer1_Tick(object sender, EventArgs e)<br>{<br>    object missing = System.Reflection.Missing.Value;                        //定义object缺省值<br>    string[] P_str_Names = txt_MultiExcel.Text.Split(‘,’);                        //存储所有选择的Excel文件名<br>    string P_str_Name = “”;                                        //存储遍历到的Excel文件名<br>List<string> P_list_SheetNames = new List<string>();                        //创建泛型集合对象，用来存储工作表名称<br>//创建Excel对象<br>    Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();<br>    //打开指定的Excel文件<br>Microsoft.Office.Interop.Excel.Workbook workbook = excel.Application.Workbooks.Open(txt_Excel.Text, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);<br>//创建新工作表<br>    Microsoft.Office.Interop.Excel.Worksheet newWorksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Worksheets.Add(missing, missing, missing, missing);<br>    if (DateTime.Now.Hour == nudown_Hour.Value &amp;&amp; DateTime.Now.Minute == nudown_Min.Value)<br>    {<br>        for (int i = 0; i &lt; P_str_Names.Length - 1; i++)                        //遍历所有选择的Excel文件名<br>        {<br>            P_str_Name = P_str_Names[i];                                //记录遍历到的Excel文件名<br>            Microsoft.Office.Interop.Excel.Workbook Tempworkbook = excel.Application.Workbooks.Open(P_str_Name, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing, missing);//指定要复制的工作簿<br>            P_list_SheetNames = GetSheetName(P_str_Name);                    //获取Excel文件中的所有工作表名<br>            for (int j = 0; j &lt; P_list_SheetNames.Count; j++)                    //遍历所有工作表<br>            {<br>                //指定要复制的工作表<br>                Microsoft.Office.Interop.Excel.Worksheet TempWorksheet = (Microsoft.Office.Interop.Excel.Worksheet)Tempworkbook.Sheets[P_list_SheetNames[j]];    //创建新工作表<br>                TempWorksheet.Copy(missing, newWorksheet);                    //将工作表内容复制到目标工作表中<br>            }<br>            Tempworkbook.Close(false, missing, missing);                        //关闭临时工作簿<br>        }<br>    }<br>    workbook.Save();                                            //保存目标工作簿<br>    workbook.Close(false, missing, missing);                                //关闭目标工作簿<br>    MessageBox.Show(“程序在” + DateTime.Now.ToShortTimeString() + “分时自动汇总了多个Excel文件！”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    CloseProcess(“EXCEL”);                                        //关闭所有Excel进程<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟053：使用文件流对INI文件进行读写。 本实例使用系统API函数实现了对INI文件进行读写的功能，但是开发人员还可以使用文件流来对INI文件进行读写，其中主要用到StreamReader类和StreamWrite类。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/06/e5-af-b9-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/06/e5-af-b9-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html" class="post-title-link" itemprop="url">对文本文件进行加密与解密</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-06 12:38:07" itemprop="dateCreated datePublished" datetime="2019-08-06T12:38:07+08:00">2019-08-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/06/e5-af-b9-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/06/e5-af-b9-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/06/e5-af-b9-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="对文本文件进行加密与解密"><a href="#对文本文件进行加密与解密" class="headerlink" title="对文本文件进行加密与解密"></a>对文本文件进行加密与解密</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>在本实例的窗体中，首先选择要加密或解密的文本文件，然后单击“加密”或“解密”按钮对文本文件进行加密或解密。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-06-04370291.png" alt=""> 图1 对文本文件进行加密与解密</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时主要用到了System.Security.Cryptography命名空间下的RijndaelManaged类的CreateDecryptor方法、CreateEncryptor方法、CryptoStream类的Write方法。下面分别对它们进行详细讲解。 （1）RijndaelManaged类 该类是访问System.Security.Cryptography.Rijndael对称加密算法的托管版本，其语法格式如下： public sealed class RijndaelManaged : Rijndael 注意：此算法支持128、192或256位的密钥长度。 （2）CreateDecryptor方法 该方法位于RijndaelManaged类中，使用指定的Key和初始化向量（IV）创建对称的Rijndael解密器对象。其语法格式如下： public override IcryptoTransform　CreateDecryptor (byte[] rgbKey,byte[] rgbIV) 参数说明 rgbKey：用于对称算法的机密密钥。 rgbIV：用于对称算法的IV。 返回值：对称的Rijndael解密器对象。 （3）CreateEncryptor方法 该方法位于RijndaelManaged类中，使用指定的Key和初始化向量（IV）创建对称的Rijndael加密器对象。其语法格式如下： public override ICryptoTransform CreateEncryptor (byte[] rgbKey,byte[] rgbIV) 参数说明 rgbKe：用于对称算法的机密密钥。 rgbIV：用于对称算法的IV。 返回值：对称的Rijndael加密器对象。 （4）CryptoStream类 该类定义将数据流链接到加密转换的流，它的构造器语法格式如下： public CryptoStream (Stream stream,ICryptoTransform transform,CryptoStreamMode mode) 参数说明 stream：对其执行加密转换的流。 transform：要对流执行的加密转换。 mode：CryptoStreamMode枚举值之一。CryptoStreamMode枚举值及说明如表1所示。 表1 CryptoStreamMode枚举值及说明</p>
+<p>枚举值</p>
+<p>说明</p>
+<p>Read</p>
+<p>对加密流的读访问</p>
+<p>Write</p>
+<p>对加密流的写访问</p>
+<p>（5）CryptoStream类的Write方法 该方法将一个字节序列写入当前CryptoStream类中，并从当前位置写入指定的字节数。其语法格式如下： public override void Write (byte[] buffer,int offset,int count) 参数说明 buffer：字节数组。该方法将count个字节从buffer复制到当前流。 offset：buffer中的字节偏移量，从此偏移量开始将字节复制到当前流。 count：要写入当前流的字节数。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为EncryptTextFileOne。 （2）在默认Form1窗体中，主要添加一个TextBox控件，用来显示文件路径；添加一个OpenFileDialog控件，用来选择要加密或解密的文件；添加3个Button控件，用来执行加密、解密和选择文件操作。 （3）程序主要代码如下： 单击“加密”按钮实现对选择的文本文件进行加密，“加密”按钮的Click事件代码如下：</p>
+<p>private void button2_Click(object sender, EventArgs e)<br>{<br>    if (textBox1.Text == “”)                                    //若未选择要加密的文本文件<br>    { MessageBox.Show(“请选择要加密的文件”); }                        //如果没有选择则弹出提示<br>    else<br>    {<br>       try{<br>        string strPath = textBox1.Text;                                //加密文件的路径<br>        int intLent=strPath.LastIndexOf(“\&quot;)+1;                        //设置截取的起始位置<br>        int intLong = strPath.Length;                                //设置截取的长度<br>        string strName = strPath.Substring(intLent,intLong-intLent);            //要加密的文件名称<br>        int intTxt = strName.LastIndexOf(“.”);                            //设置截取的起始位置<br>        int intTextLeng = strName.Length;                            //设置截取的长度<br>        string strTxt = strName.Substring(intTxt,intTextLeng-intTxt);             //取出文件的扩展名<br>        strName = strName.Substring(0,intTxt);<br>        //加密后的文件名及路径<br>        string strOutName = strPath.Substring(0, strPath.LastIndexOf(“\&quot;) + 1) + strName + “Out” + strTxt;<br>//加密文件密钥<br>        byte[] key = { 24, 55, 102, 24, 98, 26, 67, 29, 84, 19, 37, 118, 104, 85, 121, 27, 93, 86, 24, 55, 102, 24, 98, 26, 67, 29, 9, 2, 49, 69, 73, 92 };<br>        byte[] IV ={ 22, 56, 82, 77, 84, 31, 74, 24, 55, 102, 24, 98, 26, 67, 29, 99 };<br>        RijndaelManaged myRijndael = new RijndaelManaged();<br>        FileStream fsOut = File.Open(strOutName, FileMode.Create, FileAccess.Write);<br>        FileStream fsIn = File.Open(strPath, FileMode.Open, FileAccess.Read);<br>//写入加密文本文件<br>        CryptoStream csDecrypt = new CryptoStream(fsOut, myRijndael.CreateEncryptor(key, IV), CryptoStreamMode.Write);<br>       BinaryReader br = new BinaryReader(fsIn);                        //创建阅读器来读加密文本<br>       csDecrypt.Write(br.ReadBytes((int)fsIn.Length), 0, (int)fsIn.Length);        //将数据写入加密文本<br>       csDecrypt.FlushFinalBlock();<br>       csDecrypt.Close();                                        //关闭CryptoStream对象<br>       fsIn.Close();                                            //关闭FileStream对象<br>       fsOut.Close();                                        //关闭FileStream对象<br>       if (MessageBox.Show(“加密成功!加密后的文件名及路径为:\n” + strOutName + “,是否册除源文件”, “信息提示”, MessageBoxButtons.YesNo) == DialogResult.Yes)<br>        {<br>            File.Delete(strPath);                                //删除指定文件<br>            textBox1.Text = “”;                                    //清空文本框<br>        }else<br>        { textBox1.Text = “”; }<br>    }<br>    catch (Exception ee)                                        //如果出现异常<br>    {<br>        MessageBox.Show(ee.Message);                            //输出异常信息<br>    }<br>    }<br>}</p>
+<p>单击“解密”按钮实现对加密的文本文件进行解密，“解密”按钮的Click事件代码如下：</p>
+<p>private void button3_Click(object sender, EventArgs e)<br>{<br>    if (textBox1.Text == “”)                                    //若未选择要解密的文件<br>    {<br>        MessageBox.Show(“请选择要解密的文件路径”);                    //如果没有选择则弹出提示<br>    }<br>    else<br>    {<br>        string strPath = textBox1.Text;                                //加密文件的路径<br>        int intLent = strPath.LastIndexOf(“\&quot;) + 1;                        //设置截取字符串的起始位置<br>        int intLong = strPath.Length;                                //设置截取长度<br>        string strName = strPath.Substring(intLent, intLong - intLent);            //要加密的文件名称<br>        int intTxt = strName.LastIndexOf(“.”);                            //截取字符串的起始位置<br>        int intTextLeng = strName.Length;                            //截取长度<br>        strName = strName.Substring(0, intTxt);                        //获取文件扩展名<br>        if (strName.LastIndexOf(“Out”) != -1)<br>        {<br>            strName = strName.Substring(0, strName.LastIndexOf(“Out”));<br>        }<br>        else<br>        {<br>            strName = strName + “In”;<br>        }<br>        //加密后的文件名及路径<br>        string strInName = strPath.Substring(0, strPath.LastIndexOf(“\&quot;) + 1) + strName + “.txt”;<br>//解密文件密钥<br>        byte[] key = { 24, 55, 102, 24, 98, 26, 67, 29, 84, 19, 37, 118, 104, 85, 121, 27, 93, 86, 24, 55, 102, 24, 98, 26, 67, 29, 9, 2, 49, 69, 73, 92 };<br>        byte[] IV ={ 22, 56, 82, 77, 84, 31, 74, 24, 55, 102, 24, 98, 26, 67, 29, 99 };<br>        RijndaelManaged myRijndael = new RijndaelManaged();                //创建RijndaelManaged对象<br>        //创建FileStream对象<br>        FileStream fsOut = File.Open(strPath, FileMode.Open, FileAccess.Read);<br>        CryptoStream csDecrypt = new CryptoStream(fsOut, myRijndael.CreateDecryptor(key, IV), CryptoStreamMode.Read);<br>        StreamReader sr = new StreamReader(csDecrypt);                    //把文件读出来<br>        StreamWriter sw = new StreamWriter(strInName);                    //解密后文件写入一个新文件<br>        sw.Write(sr.ReadToEnd());<br>        sw.Flush();<br>        sw.Close();<br>        sr.Close();<br>        fsOut.Close();<br>        if (MessageBox.Show(“解密成功!解密后的文件名及路径为:”+strInName+”，是否册除源文件”, “信息提示”, MessageBoxButtons.YesNo) == DialogResult.Yes)<br>        {<br>            File.Delete(strPath);                                //删除指定文件<br>            textBox1.Text = “”;                                    //清空文本框<br>        }<br>        else<br>        {<br>            textBox1.Text = “”;<br>        }<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟001：StreamWriter类的Flush方法。 在使用StreamWriter类的实例调用Write方法写入数据完毕之后，需要调用该实例的Flush，该方法实现清理当前编写器的所有缓冲区，并使所有缓冲数据写入基础流。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fesugar"
+      src="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+  <p class="site-author-name" itemprop="name">fesugar</p>
+  <div class="site-description" itemprop="description">个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">139</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fesugar" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fesugar" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fesugar@fesugar.com" title="E-Mail → mailto:fesugar@fesugar.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="//weibo.com/u/1756351303" target="_blank" rel="noopener" title="Weibo → &#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1756351303"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.fesugar.com/" title="http:&#x2F;&#x2F;www.fesugar.com&#x2F;">甜甜糖博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.allenlan.com/" title="http:&#x2F;&#x2F;www.allenlan.com&#x2F;" rel="noopener" target="_blank">不忘初心</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://my.oschina.net/u/2955242" title="https:&#x2F;&#x2F;my.oschina.net&#x2F;u&#x2F;2955242" rel="noopener" target="_blank">fesugar</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.mxxia.com/" title="http:&#x2F;&#x2F;www.mxxia.com" rel="noopener" target="_blank">梦想霞博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">苏ICP备15051349号-1 </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fesugar</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">380k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">5:45</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+
+  <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cys44eS01"></script>
+
+
+    </div>
+</body>
+</html>

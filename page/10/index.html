@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
+<meta property="og:type" content="website">
+<meta property="og:title" content="佛系糖果的博客">
+<meta property="og:url" content="https://www.fesugar.com/page/10/index.html">
+<meta property="og:site_name" content="佛系糖果的博客">
+<meta property="og:description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="fesugar">
+<meta property="article:tag" content="fesugar">
+<meta property="article:tag" content="甜甜糖">
+<meta property="article:tag" content="甜甜糖个人博客">
+<meta property="article:tag" content="甜甜糖博客">
+<meta property="article:tag" content="如何做个人博客网站">
+<meta property="article:tag" content="严圣川">
+<meta property="article:tag" content="严圣川个人网站">
+<meta property="article:tag" content="佛系糖果">
+<meta property="article:tag" content="小程序">
+<meta property="article:tag" content="多线程c#">
+<meta property="article:tag" content=".net">
+<meta property="article:tag" content="c语言">
+<meta property="article:tag" content="vb">
+<meta property="article:tag" content="php">
+<meta property="article:tag" content="小程序radio样式">
+<meta property="article:tag" content="小程序开发">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.fesugar.com/page/10/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>佛系糖果的博客</title>
+  
+
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c708aaffb3b844ecd872db5ea0e68d8f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="佛系糖果的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">佛系糖果的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">行到水穷处，坐看云起时</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-knowledge">
+
+    <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" rel="section"><i class="fa fa-book fa-fw"></i>知识</a>
+
+  </li>
+        <li class="menu-item menu-item-study">
+
+    <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" rel="section"><i class="fa fa-edit fa-fw"></i>学习</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-comment fa-fw"></i>留言簿</a>
+
+  </li>
+        <li class="menu-item menu-item-weiyu">
+
+    <a href="/weiyu/" rel="section"><i class="fa fa-eye fa-fw"></i>微语</a>
+
+  </li>
+        <li class="menu-item menu-item-disclaimer">
+
+    <a href="/disclaimer/" rel="section"><i class="fa fa-bell fa-fw"></i>条款声明</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-coffee fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/fesugar" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/07/07/e5-88-a9-e7-94-a8-e6-8a-98-e7-ba-bf-e5-9b-be-e5-88-86-e6-9e-90-e5-bd-a9-e7-a5-a8-e4-b8-ad-e5-a5-96-e6-83-85-e5-86-b5.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/07/07/e5-88-a9-e7-94-a8-e6-8a-98-e7-ba-bf-e5-9b-be-e5-88-86-e6-9e-90-e5-bd-a9-e7-a5-a8-e4-b8-ad-e5-a5-96-e6-83-85-e5-86-b5.html" class="post-title-link" itemprop="url">利用折线图分析彩票中奖情况</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-07-07 17:27:47" itemprop="dateCreated datePublished" datetime="2019-07-07T17:27:47+08:00">2019-07-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/07/07/e5-88-a9-e7-94-a8-e6-8a-98-e7-ba-bf-e5-9b-be-e5-88-86-e6-9e-90-e5-bd-a9-e7-a5-a8-e4-b8-ad-e5-a5-96-e6-83-85-e5-86-b5.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/07/07/e5-88-a9-e7-94-a8-e6-8a-98-e7-ba-bf-e5-9b-be-e5-88-86-e6-9e-90-e5-bd-a9-e7-a5-a8-e4-b8-ad-e5-a5-96-e6-83-85-e5-86-b5.html" class="cy_cmt_count" data-xid="zh-CN/2019/07/07/e5-88-a9-e7-94-a8-e6-8a-98-e7-ba-bf-e5-9b-be-e5-88-86-e6-9e-90-e5-bd-a9-e7-a5-a8-e4-b8-ad-e5-a5-96-e6-83-85-e5-86-b5.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用折线图分析彩票中奖情况"><a href="#利用折线图分析彩票中奖情况" class="headerlink" title="利用折线图分析彩票中奖情况"></a>利用折线图分析彩票中奖情况</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>经常看到彩票销售点会挂着折线图，将近期本销售点中奖金额信息清晰的表示出来。本实例将实现利用折线图分析彩票中奖情况的功能，运行本程序，选择要分析的起始日期和终止日期，单击“分析”按钮，即可将本时间段的彩票中奖情况使用折线图描绘出来。实例运行结果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/07/2019-07-07-09263521.png" alt=""> 图1 利用折线图分析彩票中奖情况</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例首先通过SQL语句从数据库中检索出相关数据，在绘制折线图时，将对应的数据进行计算，并以适当的比例将计算结果绘制，实现过程中主要使用Graphics类的DrawLines方法来绘制折线。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AnalyseLottery。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个DateTimePicker控件，分别用来选择起始日期和终止日期；添加一个Button控件，用来查询指定时间段的彩票中奖情况，并绘制折线图；添加两个Panel控件，分别用来显示绘制的折线图和彩票中奖详细列表。 （3）程序主要代码如下：</p>
+<p>private void DrowInfo(string SQL)<br>{<br>    try<br>    {<br>        System.Drawing.Bitmap bmp = new Bitmap(this.panel1.Width, this.panel1.Height);    //定义画布<br>        Graphics g = Graphics.FromImage(bmp);                            //创建Graphics对象<br>        g.Clear(Color.White);                                        //设置画布背景颜色<br>        Brush bru = new SolidBrush(Color.Blue);                            //创建Brush对象<br>        Pen p = new Pen(bru);                                        //定义画笔<br>        Font font = new Font(“Arial”, 9, FontStyle.Bold);                        //定义字体<br>        Conn();                                                //连接数据库<br>        cmd = new SqlCommand(SQL, con);                                //创建SqlCommand对象<br>        SqlDataReader dr = cmd.ExecuteReader();                            //创建SqlDataReader对象<br>        int i = 0;<br>        Pen pLine = new Pen(Color.Orange, 4.0f);                            //定义画笔<br>        string str = null;<br>        float f = 0.0f;<br>        while (dr.Read())                                            //开始读取数据库中的数据<br>        {<br>            i++;<br>            g.DrawString(dr[0].ToString().Substring(0, 7) + “月—“, font, bru, 10, 15.0f * i);    //绘制月份<br>            g.DrawString(dr[1].ToString(), font, bru, this.panel1.Width - 50, 15.0f * i);        //绘制每个月份的中奖情况<br>            str += dr[1].ToString() + “#”;<br>            f += Convert.ToSingle(dr[1].ToString());<br>        }<br>        dr.Close();                                                //关闭SqlDataReader对象<br>        this.panel1.BackgroundImage = bmp;                                //显示绘制的图像<br>        Bitmap bmpP = new Bitmap(this.panel3.Width, this.panel3.Height);            //定义画布<br>        Graphics gP = Graphics.FromImage(bmpP);                            //创建Graphics对象<br>        gP.Clear(Color.White);                                        //设置背景颜色<br>        Brush bruImg = new SolidBrush(Color.Orange);                        //定义笔刷<br>        Pen Pg = new Pen(bruImg, 1.0f);                                //定义画笔<br>        string[] strCount = str.Split(‘#’);<br>        int[] ICount = new int[strCount.Length];<br>        for (int l = 0; l &lt; strCount.Length - 1; l++)<br>        {<br>            ICount[l] = Convert.ToInt32(strCount[l]);<br>        }<br>        Point[] P = new Point[ICount.Length - 1];                            //用于存储直线的坐标<br>        for (int j = 0; j &lt; ICount.Length - 1; j++)<br>        {<br>            P[j].X = 35 + 28 * j;                                    //设置X坐标<br>            P[j].Y = this.panel3.Height - 20 - Convert.ToInt32(ICount[j] / f * (this.panel3.Height + 20));    //设置Y坐标<br>        }<br>        f = 0.0f;<br>        str = null;<br>        gP.DrawLines(new Pen(new SolidBrush(Color.Red)), P);                            //绘制走势图<br>        gP.DrawString(“分析结果走势图”, new Font(“宋体”, 16), bru, this.panel3.Width / 2 - 80, 10);        //绘制标题<br>        this.panel3.BackgroundImage = bmpP;                                        //显示绘制的图像<br>    }<br>    catch<br>    {<br>        MessageBox.Show(“此范围内没有任何信息！！！”);<br>        return;<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟009：return语句的使用。 return语句用于退出类的方法，把控制返回方法的调用者，如果方法有返回类型，return语句必须返回这个类型的值，如果方法没有返回类型，应使用没有表达式的return语句。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/07/07/e5-88-a9-e7-94-a8excel-e6-89-93-e5-8d-b0-e5-ad-a6-e7-94-9f-e4-bf-a1-e6-81-af-e6-8a-a5-e8-a1-a8.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/07/07/e5-88-a9-e7-94-a8excel-e6-89-93-e5-8d-b0-e5-ad-a6-e7-94-9f-e4-bf-a1-e6-81-af-e6-8a-a5-e8-a1-a8.html" class="post-title-link" itemprop="url">利用Excel打印学生信息报表</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-07-07 17:23:02" itemprop="dateCreated datePublished" datetime="2019-07-07T17:23:02+08:00">2019-07-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/07/07/e5-88-a9-e7-94-a8excel-e6-89-93-e5-8d-b0-e5-ad-a6-e7-94-9f-e4-bf-a1-e6-81-af-e6-8a-a5-e8-a1-a8.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/07/07/e5-88-a9-e7-94-a8excel-e6-89-93-e5-8d-b0-e5-ad-a6-e7-94-9f-e4-bf-a1-e6-81-af-e6-8a-a5-e8-a1-a8.html" class="cy_cmt_count" data-xid="zh-CN/2019/07/07/e5-88-a9-e7-94-a8excel-e6-89-93-e5-8d-b0-e5-ad-a6-e7-94-9f-e4-bf-a1-e6-81-af-e6-8a-a5-e8-a1-a8.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用Excel打印学生信息报表"><a href="#利用Excel打印学生信息报表" class="headerlink" title="利用Excel打印学生信息报表"></a>利用Excel打印学生信息报表</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>Microsoft Excel是微软公司提供的用于办公管理的应用软件，具有强大的报表统计等功能。本实例在打印学生信息时，通过将数据导入到Excel文件中进行打印。运行本实例，如图1所示，单击“输出Excel”按钮，DataGridView控件中的数据便以Excel文件方式打开，如图2所示，然后用户便可以用Excel自带的打印功能对学生信息进行打印。 <img data-src="https://cdn.fesugar.com/2019/07/2019-07-07-09220546.png" alt=""> 图1 利用Excel打印学生信息报表 <img data-src="https://cdn.fesugar.com/2019/07/2019-07-07-0922078.png" alt=""> 图2 输出的Excel报表</p>
+<h3 id="技术要点"><a href="#技术要点" class="headerlink" title="技术要点"></a>技术要点</h3><p>本实例中首先通过调用Microsoft Excel自动化对象模型的Workbooks对象的Add方法创建一个新的工作簿，然后通过设置Excel对象的Cells属性，向新建的工作簿中添加数据记录。下面对Workbooks对象的Add方法和Excel对象的Cells属性进行详细介绍。 （1）Workbooks对象的Add方法 该方法主要用来创建一个新的工作簿，其使用语法格式如下： Workbook Add([In, Optional] object Template); 参数说明如下。 Template：指定是否添加工作簿，如果为True，表示添加；否则，表示不添加。 返回值：返回Workbook类型，表示一个Excel工作簿。 （2）Excel对象的Cells属性 该属性用来指定Excel工作簿中单元格的内容。例如，下面的代码用来指定Excel工作簿中第一行第一列的单元格中的内容为“Excel”： excel.Cells[0, 0] = “Excel”;</p>
+<h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><p>（1）新建一个Windows应用程序，将其命名为PrintStudentInfo，默认主窗体为PrintStudentInfo。 （2）在PrintStudentInfo窗体中添加一个DataGridView控件和一个Button控件，其中，DataGridView控件用来显示数据库中的记录，Button控件用来将DataGridView控件中的数据以Excel格式输出。 （3）主要程序代码。 “输出Excel”按钮的Click事件实现代码如下：</p>
+<p>private void button1_Click(object sender, EventArgs e)<br>{<br>    ExportDataGridview(dataGridView1, true);             //将DataGridView控件中的数据导出到Excel<br>}<br>自定义方法ExportDataGridview用来实现将DataGridView控件中数据导出到Excel。代码如下：<br>public bool ExportDataGridview(DataGridView dgv, bool isShowExcle)<br>{<br>    if (dgv.Rows.Count == 0)                        //当DataGridView控件中没有数据时<br>        return false;                                 //返回false<br>    //建立Excel对象<br>    Excel.Application excel = new Excel.Application();    //实例化一个Excel对象<br>    excel.Application.Workbooks.Add(true);                 //添加内容<br>    excel.Visible = isShowExcle;                         //设置为显示Excel<br>    //生成字段名称<br>    for (int i = 0; i &lt; dgv.ColumnCount; i++)                //循环遍历DataGridView控件中的每一列<br>    {<br>        excel.Cells[1, i + 1] = dgv.Columns[i].HeaderText;     //向Excel中填充数据<br>    }<br>    //填充数据<br>    for (int i = 0; i &lt; dgv.RowCount - 1; i++)                //循环遍历DataGridView控件中的每一行<br>    {<br>        for (int j = 0; j &lt; dgv.ColumnCount; j++)            //循环遍历DataGridView控件中的每一列<br>        {<br>            if (dgv[j, i].ValueType == typeof(string))     //当当前数据类型为字符串时<br>            {<br>                excel.Cells[i + 2, j + 1] = “‘“ + dgv[j, i].Value.ToString();    //向Excel中填充数据<br>            }<br>            else                                            //当数据类型为其它类型时<br>            {<br>                excel.Cells[i + 2, j + 1] = dgv[j, i].Value.ToString();        //在Excel中直接显示内容<br>            }<br>        }<br>    }<br>    return true;                                                 //返回真<br>}</p>
+<p>  <img data-src="https://cdn.fesugar.com/2019/07/2019-07-07-09220892.png" alt="注意"> 注意：在程序中对Excel进行操作控制时，需要引用Excel动态链接库（Microsoft Excel 9.0 Object Library）。添加方法如下：选中当前项目，单击右键，选择“添加引用”选项，在弹出的“添加引用”对话框中选择“COM”选项卡，然后找到要引用的Excel动态链接库，单击“确定”按钮即可。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-a4-9a-e6-9b-b2-e7-ba-bf-e6-95-b0-e6-8d-ae-e5-88-86-e6-9e-90.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/04/16/csharp-e5-a4-9a-e6-9b-b2-e7-ba-bf-e6-95-b0-e6-8d-ae-e5-88-86-e6-9e-90.html" class="post-title-link" itemprop="url">csharp 多曲线数据分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-16 11:17:26" itemprop="dateCreated datePublished" datetime="2019-04-16T11:17:26+08:00">2019-04-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/04/16/csharp-e5-a4-9a-e6-9b-b2-e7-ba-bf-e6-95-b0-e6-8d-ae-e5-88-86-e6-9e-90.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-a4-9a-e6-9b-b2-e7-ba-bf-e6-95-b0-e6-8d-ae-e5-88-86-e6-9e-90.html" class="cy_cmt_count" data-xid="zh-CN/2019/04/16/csharp-e5-a4-9a-e6-9b-b2-e7-ba-bf-e6-95-b0-e6-8d-ae-e5-88-86-e6-9e-90.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="多曲线数据分析"><a href="#多曲线数据分析" class="headerlink" title="多曲线数据分析"></a>多曲线数据分析</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>在人事管理系统中经常会用到统计功能，如统计员工、工资、性别比例等。本实例使用多曲线对员工进行统计，分析公司内正式员工和试用员工的流动情况。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/04/2019-04-16-03153936.png" alt=""> 图1 多曲线数据分析</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时，首先需要通过SQL语句从数据库中检索出相关数据，然后将这些数据信息以适当的比例绘制成多曲线图，实现过程中主要使用Graphics类的DrawLines方法来绘制多曲线。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为MultiCurve。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加一个ComboBox控件，用来显示年度列表；添加一个Panel控件，用来显示绘制的多曲线图；添加一个Button控件，用来从数据库中查询信息，并根据查询的信息绘制多曲线图。 （3）程序主要代码如下：</p>
+<p>private void CreateImage(int ID)<br>{<br>    int height = 440, width = 600;                                        //设置画布宽和高<br>    System.Drawing.Bitmap image = new System.Drawing.Bitmap(width, height);    //创建画布<br>    Graphics g = Graphics.FromImage(image);                                //创建Graphics对象<br>    try<br>    {<br>        g.Clear(Color.White);                                        //清空图片背景色<br>        Font font = new System.Drawing.Font(“Arial”, 9, FontStyle.Regular);            //设置字体<br>        Font font1 = new System.Drawing.Font(“宋体”, 12, FontStyle.Regular);            //设置字体<br>        Font font2 = new System.Drawing.Font(“Arial”, 8, FontStyle.Regular);            //设置字体<br>        System.Drawing.Drawing2D.LinearGradientBrush brush = new System.Drawing.Drawing2D.LinearGradientBrush(new Rectangle(0, 0, image.Width, image.Height), Color.Blue, Color.Blue, 1.2f, true);                    //创建LinearGradientBrush对象<br>        g.FillRectangle(Brushes.AliceBlue, 0, 0, width, height);                    //绘制矩形框<br>        Brush brush1 = new SolidBrush(Color.Blue);                            //创建笔刷<br>        Brush brush2 = new SolidBrush(Color.SaddleBrown);                    //创建笔刷<br>        string str = “SELECT * FROM tb_curve WHERE Years=” + ID + “”;            //声明SQL语句<br>//建立数据库连接<br>        SqlConnection Con = new SqlConnection(“server=mrwxk\\wangxiaoke;pwd=;uid=sa;database=db_TomeOne”);<br>        Con.Open();                                            //打开数据库连接<br>        SqlCommand Com = new SqlCommand(str, Con);                        //创建SqlCommand对象<br>        SqlDataReader dr = Com.ExecuteReader();                            //创建SqlDataReader对象<br>        dr.Read();                                                //开始读取记录<br>        if (dr.HasRows)                                            //如果有记录<br>        {<br>            //绘制标题<br>            g.DrawString(“” + ID + “年公司内部人员统计表”, font1, brush1, new PointF(160, 30));<br>        }<br>        dr.Close();                                                //关闭SqlDataReader对象<br>        //画图片的边框线<br>        g.DrawRectangle(new Pen(Color.Blue), 0, 0, image.Width - 1, image.Height - 1);<br>        Pen mypen = new Pen(brush, 1);                                //创建画笔<br>        Pen mypen2 = new Pen(Color.Red, 2);                                //创建画笔<br>        int x = 60;<br>        for (int i = 0; i &lt; 12; i++)<br>        {<br>            g.DrawLine(mypen, x, 80, x, 340);                            //绘制纵向线条<br>            x = x + 40;<br>        }<br>        Pen mypen1 = new Pen(Color.Blue, 2);                            //创建画笔<br>        g.DrawLine(mypen1, x - 480, 80, x - 480, 340);                        //绘制线条<br>        int y = 106;<br>        for (int i = 0; i &lt; 9; i++)<br>        {<br>            g.DrawLine(mypen, 60, y, 540, y);                            //绘制横向线条<br>            y = y + 26;<br>        }<br>        g.DrawLine(mypen1, 60, y, 540, y);<br>        //x轴<br>        String[] n = {“  一月”, “  二月”, “  三月”, “  四月”, “  五月”, “  六月”, “  七月”,<br>             “  八月”, “  九月”, “  十月”, “十一月”, “十二月”};                //绘制月份<br>        x = 35;<br>        for (int i = 0; i &lt; 12; i++)<br>        {<br>            g.DrawString(n[i].ToString(), font, Brushes.Red, x, 348);                //设置文字内容及输出位置<br>            x = x + 40;<br>        }<br>        //y轴<br>        String[] m = {“900人”, “ 800人”, “ 700人”, “600人”, “ 565人”, “ 400人”, “ 300人”, “ 200人”,<br>             “ 100人”};                                            //绘制人数<br>        y = 100;<br>        for (int i = 0; i &lt; 9; i++)<br>        {<br>            g.DrawString(m[i].ToString(), font, Brushes.Red, 10, y);                 //设置文字内容及输出位置<br>            y = y + 26;<br>        }<br>        int[] Count1 = new int[12];<br>        int[] Count2 = new int[12];<br>        string[] NumChr = new string[12];<br>        string cmdtxt2 = “SELECT * FROM tb_curve WHERE Years=” + ID + “”;        //声明SQL语句<br>        SqlCommand Com1 = new SqlCommand(cmdtxt2, Con);                    //创建SqlCommand对象<br>        SqlDataAdapter da = new SqlDataAdapter();                            //创建SqlDataAdapter对象<br>        da.SelectCommand = Com1;<br>        DataSet ds = new DataSet();                                    //创建DataSet对象<br>        da.Fill(ds);                                                //Fill方法填充DataSet<br>        int j = 0;<br>        for (int i = 0; i &lt; 12; i++)<br>        {<br>            NumChr[i] = ds.Tables[0].Rows[0][i + 1].ToString();<br>        }<br>        for (j = 0; j &lt; 12; j++)<br>        {<br>            Count1[j] = Convert.ToInt32(NumChr[j].Split(‘|’)[0].ToString()) * 26 / 100;<br>        }<br>        for (int k = 0; k &lt; 12; k++)<br>        {<br>            Count2[k] = Convert.ToInt32(NumChr[k].Split(‘|’)[1].ToString()) * 26 / 100;<br>        }<br>        //显示折线效果<br>        SolidBrush mybrush = new SolidBrush(Color.Red);                        //创建SolidBrush对象<br>        Point[] points1 = new Point[12];<br>        points1[0].X = 60; points1[0].Y = 340 - Count1[0];<br>        points1[1].X = 100; points1[1].Y = 340 - Count1[1];<br>        points1[2].X = 140; points1[2].Y = 340 - Count1[2];<br>        points1[3].X = 180; points1[3].Y = 340 - Count1[3];<br>        points1[4].X = 220; points1[4].Y = 340 - Count1[4];<br>        points1[5].X = 260; points1[5].Y = 340 - Count1[5];<br>        points1[6].X = 300; points1[6].Y = 340 - Count1[6];<br>        points1[7].X = 340; points1[7].Y = 340 - Count1[7];<br>        points1[8].X = 380; points1[8].Y = 340 - Count1[8];<br>        points1[9].X = 420; points1[9].Y = 340 - Count1[9];<br>        points1[10].X = 460; points1[10].Y = 340 - Count1[10];<br>        points1[11].X = 565; points1[11].Y = 340 - Count1[11];<br>        g.DrawLines(mypen2, points1);                                    //绘制折线<br>        Pen mypen3 = new Pen(Color.Black, 2);                            //创建画笔<br>        Point[] points2 = new Point[12];<br>        points2[0].X = 60; points2[0].Y = 340 - Count2[0];<br>        points2[1].X = 100; points2[1].Y = 340 - Count2[1];<br>        points2[2].X = 140; points2[2].Y = 340 - Count2[2];<br>        points2[3].X = 180; points2[3].Y = 340 - Count2[3];<br>        points2[4].X = 220; points2[4].Y = 340 - Count2[4];<br>        points2[5].X = 260; points2[5].Y = 340 - Count2[5];<br>        points2[6].X = 300; points2[6].Y = 340 - Count2[6];<br>        points2[7].X = 340; points2[7].Y = 340 - Count2[7];<br>        points2[8].X = 380; points2[8].Y = 340 - Count2[8];<br>        points2[9].X = 420; points2[9].Y = 340 - Count2[9];<br>        points2[10].X = 460; points2[10].Y = 340 - Count2[10];<br>        points2[11].X = 565; points2[11].Y = 340 - Count2[11];<br>        g.DrawLines(mypen3, points2);                                    //绘制折线<br>        //绘制标识<br>        g.DrawRectangle(new Pen(Brushes.Red), 150, 370, 250, 50);                //绘制范围框<br>        g.FillRectangle(Brushes.Red, 250, 380, 20, 10);                        //绘制小矩形<br>        g.DrawString(“试用员工人数”, font2, Brushes.Red, 270, 380);                //绘制试用员工人数<br>        g.FillRectangle(Brushes.Black, 250, 400, 20, 10);                        //绘制小矩形<br>        g.DrawString(“正式员工人数”, font2, Brushes.Black, 270, 400);                //绘制正式员工人数<br>        this.panel1.BackgroundImage = image;                            //显示绘制的图像<br>    }<br>    catch<br>    { }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟010：使用try…catch语句捕获异常。 在大部分情况下，开发人员不希望异常状况发生导致程序结束，因此，可以使用try…catch程序语句块捕捉程序中的Exception对象，再使用自定义的程序逻辑处理异常状况。如果有需要，用户也可以使用多重try…catch语句块（如一个try块后跟一个或多个catch子句构成）。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/04/16/csharp-e7-bd-91-e7-ab-99-e4-ba-ba-e6-b0-94-e6-8c-87-e6-95-b0-e6-9b-b2-e7-ba-bf-e5-88-86-e6-9e-90.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/04/16/csharp-e7-bd-91-e7-ab-99-e4-ba-ba-e6-b0-94-e6-8c-87-e6-95-b0-e6-9b-b2-e7-ba-bf-e5-88-86-e6-9e-90.html" class="post-title-link" itemprop="url">csharp 网站人气指数曲线分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-16 11:10:29" itemprop="dateCreated datePublished" datetime="2019-04-16T11:10:29+08:00">2019-04-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/04/16/csharp-e7-bd-91-e7-ab-99-e4-ba-ba-e6-b0-94-e6-8c-87-e6-95-b0-e6-9b-b2-e7-ba-bf-e5-88-86-e6-9e-90.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/04/16/csharp-e7-bd-91-e7-ab-99-e4-ba-ba-e6-b0-94-e6-8c-87-e6-95-b0-e6-9b-b2-e7-ba-bf-e5-88-86-e6-9e-90.html" class="cy_cmt_count" data-xid="zh-CN/2019/04/16/csharp-e7-bd-91-e7-ab-99-e4-ba-ba-e6-b0-94-e6-8c-87-e6-95-b0-e6-9b-b2-e7-ba-bf-e5-88-86-e6-9e-90.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="网站人气指数曲线分析"><a href="#网站人气指数曲线分析" class="headerlink" title="网站人气指数曲线分析"></a>网站人气指数曲线分析</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>网站访问量可以决定网站的人气，那么对网站月访问量的统计分析，可以让网站管理员准确地判断网民上网的需求周期，从而调整网站的内容，更好地为广大网民服务。本实例通过对数据库中的数据进行分析，将每月份网站访问量以折线形式反映给用户。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/04/2019-04-16-03090799.png" alt=""> 图1 网站人气指数曲线分析</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例主要使用Graphics类的DrawLines方法来绘制网站人气指数曲线图。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为SiteVisterAnalyse。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加一个Panel控件，用于显示绘制的网站人气指数折线图。 （3）程序主要代码如下：</p>
+<p>private void drowPic()<br>{<br>    Graphics g = this.CreateGraphics();                                //创建Graphics对象<br>    g.Clear(Color.WhiteSmoke);                                    //设置背景色<br>    Pen p = new Pen(Color.Blue);                                    //绘制画笔<br>    //设置用到的字体<br>    Font fontO = new System.Drawing.Font(“Arial”, 9, FontStyle.Regular);<br>    Font fontT = new System.Drawing.Font(“华文新魏”, 16, FontStyle.Regular);<br>    Point pointStart = new Point(0, 0);                                //绘制边框与显示字体<br>    Size sizeWindows = new Size(this.Width - 8, this.Height - 34);                //创建Size对象<br>    Rectangle rect = new Rectangle(pointStart, sizeWindows);                //创建Rectangle对象<br>    g.DrawRectangle(p, rect);                                    //绘制矩形<br>    Brush brus = new SolidBrush(Color.Red);                            //创建笔刷<br>    g.DrawString(“网站人气指数曲线分析”, fontT, brus, this.Width / 2.00f - 150, 10.00f);<br>    //绘制网格线<br>    int x = this.Width / 10;<br>    int y = this.Height / 14;<br>    int z = this.Width / 10;<br>    int k = y * 12;<br>    //X<br>    for (int i = 0; i &lt; 12; i++)<br>    {<br>        g.DrawLine(p, x, y * 3 - 10, x, y * 12);                            //绘制水平线条<br>        x = x + (this.Width - 34) / 14;<br>    }<br>    //X轴<br>    String[] n = {“ 1月”, “ 2月”, “ 3月”, “ 4月”, “ 5月”, “ 6月”, “ 7月”,<br>     “ 8月”, “ 9月”, “10月”, “11月”, “12月”};                        //绘制月份<br>    x = this.Width / 10 - 16;<br>    for (int i = 0; i &lt; 12; i++)<br>    {<br>        g.DrawString(n[i].ToString(), fontO, Brushes.Red, x, y * 12);            //设置文字内容及输出位置<br>        x = x + (this.Width - 34) / 14;<br>    }<br>    //Y<br>    for (int i = 0; i &lt; 12; i++)<br>    {<br>        g.DrawLine(p, z, k, x + 10, k);                                //绘制垂直线条<br>        k = k - (y * 12) / 16;<br>    }<br>    //Y轴<br>    int h = k;<br>    String[] m = {“5565”,”5650”,”4565”, “4000”, “3565”, “3000”, “2565”, “2000”, “1565”, “1000”,<br>     “  565”};                                            //绘制Y轴显示的文字<br>    k = y * 12;<br>    for (int i = 0; i &lt; 11; i++)<br>    {<br>        g.DrawString(m[10 - i].ToString(), fontO, Brushes.Red, z - 35, k - y);        //开始绘制文字<br>        k = k - (y * 12) / 16;<br>    }<br>    int[] Count = new int[12];<br>    Pen mypen = new Pen(Color.Red, 2);                            //创建画笔<br>    Point[] points = new Point[12];<br>    x = this.Width / 10;<br>    k = y * 12;<br>    SqlConnection Con = new SqlConnection(“Server=mrwxk\\wangxiaoke;DataBase=db_TomeOne;Uid=sa;Pwd=”);<br>    string cmdtxt2 = “SELECT * FROM tb_reticulation”;                    //声明SQL语句<br>    SqlCommand Com1 = new SqlCommand(cmdtxt2, Con);                    //创建SqlCommand对象<br>    SqlDataAdapter da = new SqlDataAdapter();                        //创建SqlDataAdapter对象<br>    da.SelectCommand = Com1;<br>    DataSet ds = new DataSet();                                    //创建DataSet对象<br>    da.Fill(ds);                                            //Fill方法填充DataSet对象<br>    int j = 0;<br>    for (j = 0; j &lt; 12; j++)<br>    {<br>        //与Y轴数生成有关(y * 12)/16因为起始为565<br>        Count[j] = Convert.ToInt32(ds.Tables[0].Rows[0][j + 2].ToString()) * (y * 12) / 16 / 565;<br>    }<br>    //设置绘制曲线的坐标数组<br>    points[0].X = x; points[0].Y = k - Count[0];<br>    x = x + (this.Width - 34) / 14;<br>    points[1].X = x; points[1].Y = k - Count[1];<br>    x = x + (this.Width - 34) / 14;<br>    points[2].X = x; points[2].Y = k - Count[2];<br>    x = x + (this.Width - 34) / 14;<br>    points[3].X = x; points[3].Y = k - Count[3];<br>    x = x + (this.Width - 34) / 14;<br>    points[4].X = x; points[4].Y = k - Count[4];<br>    x = x + (this.Width - 34) / 14;<br>    points[5].X = x; points[5].Y = k - Count[5];<br>    x = x + (this.Width - 34) / 14;<br>    points[6].X = x; points[6].Y = k - Count[6];<br>    x = x + (this.Width - 34) / 14;<br>    points[7].X = x; points[7].Y = k - Count[7];<br>    x = x + (this.Width - 34) / 14;<br>    points[8].X = x; points[8].Y = k - Count[8];<br>    x = x + (this.Width - 34) / 14;<br>    points[9].X = x; points[9].Y = k - Count[9];<br>    x = x + (this.Width - 34) / 14;<br>    points[10].X = x; points[10].Y = k - Count[10];<br>    x = x + (this.Width - 34) / 14;<br>    points[11].X = x; points[11].Y = k - Count[11];<br>    g.DrawLines(mypen, points);                                    //绘制折线<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟011：使用DataSet对象作为数据集。 DataSet对象是ADO.NET的核心成员，它是支持ADO.NET断开式、分布式数据方案的核心对象，也是实现基于非连接的数据查询的核心组件。DataSet对象是创建在内存中的集合对象，它可以包含任意数量的数据表以及所有表的约束、索引和关系等，它实质上相当于在内存中的一个小型关系数据库。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e5-85-ac-e5-8f-b8-e7-94-b7-e5-a5-b3-e6-af-94-e7-8e-87.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e5-85-ac-e5-8f-b8-e7-94-b7-e5-a5-b3-e6-af-94-e7-8e-87.html" class="post-title-link" itemprop="url">csharp 利用饼型图分析公司男女比率</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-16 11:07:42" itemprop="dateCreated datePublished" datetime="2019-04-16T11:07:42+08:00">2019-04-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e5-85-ac-e5-8f-b8-e7-94-b7-e5-a5-b3-e6-af-94-e7-8e-87.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e5-85-ac-e5-8f-b8-e7-94-b7-e5-a5-b3-e6-af-94-e7-8e-87.html" class="cy_cmt_count" data-xid="zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e5-85-ac-e5-8f-b8-e7-94-b7-e5-a5-b3-e6-af-94-e7-8e-87.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用饼型图分析公司男女比率"><a href="#利用饼型图分析公司男女比率" class="headerlink" title="利用饼型图分析公司男女比率"></a>利用饼型图分析公司男女比率</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>开发人力资源管理系统时，利用饼图分析公司男女比例是最佳的选择。本实例对某公司的男女比例使用饼型图进行分析，实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/04/2019-04-16-03064288.png" alt=""> 图1 利用饼型图分析公司男女比率</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时主要用到了Graphics类的FillEllipse方法和FillPie方法，下面分别对它们进行详细讲解。 （1）FillEllipse方法 该方法用于填充Rectangle结构指定的边框所定义的椭圆的内部，其语法格式如下： public void FillEllipse(Brush brush,Rectangle rect) 参数说明 brush：确定填充特性的 Brush。 rect：Rectangle结构，它表示定义椭圆的边框。 （2）FillPie方法 该方法用于填充椭圆所定义的扇形区的内部，该椭圆由Rectangle结构和两条射线指定，其语法格式如下： public void FillPie(Brush brush,Rectangle rect,float startAngle,float sweepAngle) FillPie方法语法中的参数及说明如表1所示。 表1 FillPie方法语法中的参数及说明</p>
+<p>参数</p>
+<p>说明</p>
+<p>brush</p>
+<p>确定填充特性的Brush</p>
+<p>rect</p>
+<p>Rectangle结构，它表示定义该扇形区所属的椭圆的边框</p>
+<p>startAngle</p>
+<p>从x轴沿顺时针方向旋转到扇形区第一个边所测得的角度（以度为单位）</p>
+<p>sweepAngle</p>
+<p>从startAngle参数沿顺时针方向旋转到扇形区第二个边所测得的角度（以度为单位）</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为CAnalyseSex。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个Panel控件，分别用来显示绘制的饼型图和说明信息。 （3）程序主要代码如下：</p>
+<p>private void ShowPic(string SexCode,float f)<br>{<br>    Graphics g = this.panel1.CreateGraphics();                    //通过panel1控件创建一个Graphics对象<br>    Pen p=new Pen(new SolidBrush(Color.Blue));                //创建画笔<br>    Point p1=new Point(0,0);                            //创建Point对象<br>    Size s=new Size(this.panel1.Width,this.panel1.Height);            //创建Size对象<br>    Rectangle trct = new Rectangle(p1, s);                    //创建Rectangle对象<br>    g.FillEllipse(new SolidBrush(Color.Red), trct);                //绘制椭圆<br>    g.FillPie(new SolidBrush(Color.Blue), trct, 180, f*360);            //绘制扇形<br>    Graphics ginfo = this.panel2.CreateGraphics();                //通过panel2控件创建一个Graphics对象<br>    Font font=new Font(“宋体”,10,FontStyle.Regular);            //设置字体<br>//绘制性别<br>    ginfo.DrawString(SexCode +” “+f.ToString().Substring(0,4), font, new SolidBrush(Color.Blue), 0, 5);<br>    ginfo.DrawString(“女” + “ “ + (1.0 - Convert.ToDouble(f.ToString().Substring(0, 4))).ToString().Substring(0, 4), font, new SolidBrush(Color.Red), 0, 25);                                            //绘制比例<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟012：使用Color结构获取颜色。 Color结构表示一种ARGB颜色（alpha、红色、绿色、蓝色），现在已经命名的颜色都可以使用Color结构的属性来表示，例如，蓝色可以用Color.Blue来表示。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-ba-a7-e5-93-81-e5-b8-82-e5-9c-ba-e5-8d-a0-e6-9c-89-e7-8e-87.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-ba-a7-e5-93-81-e5-b8-82-e5-9c-ba-e5-8d-a0-e6-9c-89-e7-8e-87.html" class="post-title-link" itemprop="url">csharp 利用饼型图分析产品市场占有率</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-16 11:05:51" itemprop="dateCreated datePublished" datetime="2019-04-16T11:05:51+08:00">2019-04-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-ba-a7-e5-93-81-e5-b8-82-e5-9c-ba-e5-8d-a0-e6-9c-89-e7-8e-87.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-ba-a7-e5-93-81-e5-b8-82-e5-9c-ba-e5-8d-a0-e6-9c-89-e7-8e-87.html" class="cy_cmt_count" data-xid="zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-ba-a7-e5-93-81-e5-b8-82-e5-9c-ba-e5-8d-a0-e6-9c-89-e7-8e-87.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用饼型图分析产品市场占有率"><a href="#利用饼型图分析产品市场占有率" class="headerlink" title="利用饼型图分析产品市场占有率"></a>利用饼型图分析产品市场占有率</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>开发商品销售管理系统过程中，为了清晰了解产品在市场上的占有率，使用饼图分析产品市场占有率是最佳的选择。本实例通过利用饼型图分析某电子产品市场占有率，实例运行效果如图1所示。 图1 利用饼型图分析产品市场占有率</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在实现时，首先通过SQL语句统计商品在市场的占有率，并将其字段名与数量存放于Hashtable哈希表中，然后遍历“哈希表”计算出每种商品所占的比例，最后通过Graphics类的FillPie方法绘制饼型图。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为CAnalyseGoodsScale。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个Panel控件，分别用来显示绘制的饼型图和说明信息。 （3）程序主要代码如下：</p>
+<p>private void showPic(float f,Brush B)<br>{<br>    Graphics g = this.panel1.CreateGraphics();                        //通过panel1控件创建一个Graphics对象<br>    if (TimeNum == 0.0f)<br>    {<br>        g.FillPie(B, 0, 0, this.panel1.Width, this.panel1.Height, 0, f * 360);//绘制扇形<br>    }<br>    else<br>    {<br>        g.FillPie(B, 0, 0, this.panel1.Width, this.panel1.Height, TimeNum, f * 360);<br>    }<br>    TimeNum += f * 360;<br>}<br>private void Form1_Paint(object sender, PaintEventArgs e)                //在Paint事件中绘制窗体<br>{<br>    ht.Clear();<br>    Conn();                                            //连接数据库<br>    Random rnd = new Random();                            //生成随机数<br>    using (cmd = new SqlCommand(“select t_Name,sum(t_Num) as Num  from tb_14 group by t_Name”, con))<br>    {<br>        Graphics g2 = this.panel2.CreateGraphics();                    //通过panel2控件创建一个Graphics对象<br>        SqlDataReader dr = cmd.ExecuteReader();                    //创建SqlDataReader对象<br>        while (dr.Read())                                    //读取数据<br>        {<br>            ht.Add(dr[0],Convert.ToInt32(dr[1]));                    //将数据添加到Hashtable中<br>        }<br>        float[] flo = new float[ht.Count];<br>        int T = 0;<br>        foreach (DictionaryEntry de in ht)                        //遍历Hashtable<br>        {<br>            flo[T] = Convert.ToSingle((Convert.ToDouble(de.Value) / SumNum).ToString().Substring(0, 6));<br>Brush Bru = new SolidBrush(Color.FromArgb(rnd.Next(255), rnd.Next(255), rnd.Next(255)));<br>//绘制商品及百分比<br>            g2.DrawString(de.Key + “  “ + flo[T] * 100 + “%”, new Font(“Arial”, 8, FontStyle.Regular), Bru, 7, 5 + T * 18);<br>            showPic(flo[T], Bru);                            //调用showPic方法绘制饼型图<br>            T++;<br>        }<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟013：使用Paint事件实现窗体或控件的重绘！ 当重绘窗体或控件时会引发其Paint事件，该事件将PaintEventArgs的实例传递给用来处理Paint事件的方法，从而实现窗体或控件的重绘。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-a4-9a-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-bc-81-e4-b8-9a-e4-ba-ba-e5-8a-9b-e8-b5-84-e6-ba-90-e6-83-85-e5-86-b5.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-a4-9a-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-bc-81-e4-b8-9a-e4-ba-ba-e5-8a-9b-e8-b5-84-e6-ba-90-e6-83-85-e5-86-b5.html" class="post-title-link" itemprop="url">csharp 利用多饼型图分析企业人力资源情况</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-16 11:01:05" itemprop="dateCreated datePublished" datetime="2019-04-16T11:01:05+08:00">2019-04-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-a4-9a-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-bc-81-e4-b8-9a-e4-ba-ba-e5-8a-9b-e8-b5-84-e6-ba-90-e6-83-85-e5-86-b5.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-a4-9a-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-bc-81-e4-b8-9a-e4-ba-ba-e5-8a-9b-e8-b5-84-e6-ba-90-e6-83-85-e5-86-b5.html" class="cy_cmt_count" data-xid="zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-a4-9a-e9-a5-bc-e5-9e-8b-e5-9b-be-e5-88-86-e6-9e-90-e4-bc-81-e4-b8-9a-e4-ba-ba-e5-8a-9b-e8-b5-84-e6-ba-90-e6-83-85-e5-86-b5.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用多饼型图分析企业人力资源情况"><a href="#利用多饼型图分析企业人力资源情况" class="headerlink" title="利用多饼型图分析企业人力资源情况"></a>利用多饼型图分析企业人力资源情况</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>开发企业人力资源管理系统时，经常使用饼型图分析企业中各个阶层的人员情况，为了让用户更清晰地认识，本实例采用了多饼图表示法实现分析功能。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/04/2019-04-16-02594662.png" alt=""> 图1 利用多饼型图分析企业人力资源情况  </p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在实现时，首先通过SQL语句分别统计企业总人数和各个阶层人数，然后通过统计的比例绘制饼型图，实现过程中主要用到Graphics类的DrawLine方法、DrawString方法和FillPie方法。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为MultiCAnalyseHR。 （2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加一个Panel控件，用来显示绘制的多个饼型图。 （3）程序主要代码如下：</p>
+<p>private void ShowPic(int Sum)<br>{<br>    using (cmd = new SqlCommand(“select t_Point,sum(t_Num) from tb_manpower group by t_Point order by sum(t_Num) desc”, con))<br>    {<br>        Bitmap bmp = new Bitmap(this.panel1.Width, this.panel1.Height);                    //创建画布<br>        Graphics g = Graphics.FromImage(bmp);                                //创建Graphics对象<br>        cmd.Connection.Open();<br>        SqlDataReader dr = cmd.ExecuteReader();                                //创建SqlDataReader对象<br>        while (dr.Read())                                                //开始读取记录<br>        {<br>            float f = Convert.ToSingle(dr[1]) / Sum;<br>            string str = dr[0].ToString();<br>            drowPic(g, f, str);                                            //调用drowPic方法绘制饼图<br>        }<br>        //绘制线条<br>        g.DrawLine(new Pen(Color.Black), 0, this.panel1.Height / 2, this.panel1.Width, this.panel1.Height / 2);<br>        g.DrawLine(new Pen(Color.Black), this.panel1.Width / 2, 0, this.panel1.Width / 2, this.panel1.Height);<br>        this.panel1.BackgroundImage = bmp;                                    //显示绘制的图形<br>        dr.Close();                                                    //关闭SqlDataReader对象<br>        con.Close();                                                //关闭数据库连接<br>    }<br>}<br>private void drowPic(Graphics g, float f, string str)                                 //根据要求绘制饼图<br>{<br>    if (ConutNum == 0)                                                //如果ConutNum为0时执行<br>    {<br>        //绘制扇形<br>        g.FillPie(new SolidBrush(Color.Black), 0, 0, (this.panel1.Width) / 2, (this.panel1.Height - 10) / 2, 0, 360 * f);<br>//绘制文本<br>        g.DrawString(str, new Font(“宋体”, 10, FontStyle.Bold), new SolidBrush(Color.Black), (this.panel1.Width) / 2 - 70, 10);<br>        g.DrawString(Convert.ToString(f * 100).Substring(0, 5) + “%”, new Font(“宋体”, 10, FontStyle.Bold), new SolidBrush(Color.Black), (this.panel1.Width) / 2 - 70, 25);                                            //绘制文本<br>       floatNum = 360 * f;                                            //计算角度<br>       ConutNum += 1;                                                //使ConutNum为1<br>   }<br>   else if (Conu tNum == 1)                                            //如果ConutNum为1时执行<br>   {<br>//绘制扇形<br>g.FillPie(new SolidBrush(Color.DarkOrange), (this.panel1.Width) / 2, 0, (this.panel1.Width) / 2, (this.panel1.Height - 10) / 2, floatNum, 360 * f);<br>//绘制文本<br>       g.DrawString(str, new Font(“宋体”, 10, FontStyle.Bold), new SolidBrush(Color.DarkOrange), (this.panel1.Width) / 2 + 10, 10);<br>       g.DrawString(Convert.ToString(f * 100).Substring(0, 5) + “%”, new Font(“宋体”, 10, FontStyle.Bold), new SolidBrush(Color.DarkOrange), (this.panel1.Width) / 2 + 10, 25);                                            //绘制文本<br>        floatNum += 360 * f;                                            //计算角度<br>        ConutNum += 1;                                                // ConutNum为2<br>    }<br>    else if (ConutNum == 2)                                            // ConutNum为2时执行<br>    {<br>        g.FillPie(new SolidBrush(Color.Red), 0, (this.panel1.Height - 10) / 2 + 10, (this.panel1.Width) / 2, (this.panel1.Height - 10) / 2, floatNum, 360 * f);                                                            //绘制扇形<br>//绘制文本<br>        g.DrawString(str, new Font(“宋体”, 10, FontStyle.Bold), new SolidBrush(Color.Red), 10, (this.panel1.Height - 10) / 2 + 20);<br>        g.DrawString(Convert.ToString(f * 100).Substring(0, 5) + “%”, new Font(“宋体”, 10, FontStyle.Bold), new SolidBrush(Color.Red), 10, (this.panel1.Height - 10) / 2 + 35);                                            //绘制文本<br>        floatNum += 360 * f;                                            //计算角度<br>        ConutNum += 1;                                                // ConutNum为3<br>    }<br>    else if (ConutNum == 3)                                            // ConutNum为3时执行<br>    {<br>        g.FillPie(new SolidBrush(Color.Blue), (this.panel1.Width) / 2 - 10, (this.panel1.Height - 10) / 2 + 10, (this.panel1.Width) / 2, (this.panel1.Height - 10) / 2, floatNum, 360 * f);                                            //绘制扇形<br>        g.DrawString(str, new Font(“宋体”, 10, FontStyle.Bold), new SolidBrush(Color.Blue), (this.panel1.Width) / 2 + 10, (this.panel1.Height - 10) / 2 + 20);                                                            //绘制文本<br>        g.DrawString(Convert.ToString(f * 100).Substring(0, 5) + “%”, new Font(“宋体”, 10, FontStyle.Bold), new SolidBrush(Color.Blue), (this.panel1.Width) / 2 + 10, (this.panel1.Height - 10) / 2 + 35);                         //绘制文本<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟014：绘制多饼型图的实现原理！ 绘制多饼型图时，首先需要计算各个部分所占的比例，然后依次绘制各个部分在饼型图中所占的比例，在绘制过程中，从第一部分首先开始绘制，绘制结束后，记录其绘制的扇形结束位置，并以该位置为起点，开始绘制第二部分，依次类推，直到绘制完最后一部分，这样就实现了绘制多饼型图的功能。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-9b-be-e7-89-87-e5-af-b9-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-9b-be-e7-89-87-e5-af-b9-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html" class="post-title-link" itemprop="url">csharp 利用图片对文件进行加密与解密</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-16 10:55:59" itemprop="dateCreated datePublished" datetime="2019-04-16T10:55:59+08:00">2019-04-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-9b-be-e7-89-87-e5-af-b9-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-9b-be-e7-89-87-e5-af-b9-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html" class="cy_cmt_count" data-xid="zh-CN/2019/04/16/csharp-e5-88-a9-e7-94-a8-e5-9b-be-e7-89-87-e5-af-b9-e6-96-87-e4-bb-b6-e8-bf-9b-e8-a1-8c-e5-8a-a0-e5-af-86-e4-b8-8e-e8-a7-a3-e5-af-86.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="利用图片对文件进行加密与解密"><a href="#利用图片对文件进行加密与解密" class="headerlink" title="利用图片对文件进行加密与解密"></a>利用图片对文件进行加密与解密</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例在加密时，使用指定的图片生成加密密钥，然后对文本文件进行加密；在解密时，使用加密时的图片生成解密密钥，然后对加密的文本文件进行解密。在本实例的窗体中，首先打开一个图片，用来生成加密或解密的密钥，然后选择要加密或解密的文本文件，最后点击“加密”或“解密”按钮，实现对文本文件的加密或解密。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/04/2019-04-16-02535056.png" alt=""> 图1 利用图片对文件进行加密与解密</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>实现本实例，主要用到了RC2CryptoServiceProvider类、BinaryWriter类的Write方法、File类的Delete方法和Copy方法分别进行介绍。 （1）RC2CryptoServiceProvider类 该类定义访问RC2算法的加密服务提供程序（CSP）实现的包装对象，无法继承此类。 （2）BinaryWriter类 该类以二进制形式将基元类型写入流，并支持用特定的编码写入字符串。它的构造器语法格式如下： public BinaryWriter (Streamoutput) 参数说明 output：表示输出流。 （3）BinaryWriter类的Write方法 该方法将一个无符号字节写入当前流，并将流的位置提升一个字节。其语法格式如下： public virtual void Write (byte value) 参数说明 value：表示要写入的无符号字节。 （4）File类 该类提供用于创建、复制、删除、移动和打开文件的静态方法，并协助创建FileStream对象，该类是个静态类。 （5）File类的Delete方法 该方法删除指定的文件。如果指定的文件不存在，则引发异常。其语法格式如下： public static void Delete (string path) 参数说明 path：表示要删除的文件的名称。 （6）File类的Copy方法 该方法将现有文件复制到新文件，不允许改写同名的文件。其语法格式如下： public static void Copy (string sourceFileName,string destFileName) 参数说明 sourceFileName：要复制的文件。 destFileName：目标文件的名称，不能是一个目录或现有文件。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为EncryptTextFileTwo。 （2）在Form1窗体中，主要添加一个TextBox控件，用来显示加密或解密文件的路径；添加一个OpenFileDialog控件，用来选择要加密或解密的文件和打开密钥的图片；添加4个Button控件，用来执行加密、解密、打开文件和打开图片操作；添加一个PictureBox控件，用于显示密钥图片。 （3）程序主要代码如下： 单击“加密”按钮实现利用图片对文本文件进行加密，“加密”按钮的Click事件代码如下：</p>
+<p>private void button3_Click(object sender, EventArgs e)<br>{<br>    try<br>    {<br>        if (pictureBox1.ImageLocation==null)                            //判断是否选择了图片<br>        { MessageBox.Show(“请选择一幅图片用于加密”); return; }            //如果没有选择则弹出提示<br>        if (textBox1.Text == “”)                                    //若未选择需要加密的文件<br>        { MessageBox.Show(“请选择加密文件路径”); return; }                //如果没有选择则弹出提示<br>        //图片流<br>        FileStream fsPic = new FileStream(pictureBox1.ImageLocation, FileMode.Open, FileAccess.Read);<br>        //加密文件流<br>        FileStream fsText = new FileStream(textBox1.Text, FileMode.Open, FileAccess.Read);<br>        //初始化对称算法的密钥和向量<br>        byte[] bykey = new byte[16];                                //定义存储密钥的字节数组<br>        byte[] byIv = new byte[8];                                //定义存储向量的字节数组<br>        fsPic.Read(bykey, 0, 16);                                //把图片流写入密钥缓冲区<br>        fsPic.Read(byIv, 0, 8);                                    //把图片流写入向量缓冲区<br>        //临时加密文件<br>        string strPath = textBox1.Text;                                //加密文件的路径<br>        int intLent = strPath.LastIndexOf(“\&quot;) + 1;<br>        int intLong = strPath.Length;<br>        string strName = strPath.Substring(intLent, intLong - intLent);            //要加密的文件名称<br>        string strLinPath = “C:\&quot; + strName;                            //临时加密文件路径<br>        FileStream fsOut = File.Open(strLinPath, FileMode.Create, FileAccess.Write);<br>        //开始加密，首先创建RC2CryptoServiceProvider对象<br>        RC2CryptoServiceProvider desc = new RC2CryptoServiceProvider();<br>        BinaryReader br = new BinaryReader(fsText);                    //创建BinaryReader对象<br>        //创建CryptoStream对象，用于写入临时加密文件<br>        CryptoStream cs = new CryptoStream(fsOut, desc.CreateEncryptor(bykey, byIv), CryptoStreamMode.Write);<br>        cs.Write(br.ReadBytes((int)fsText.Length), 0, (int)fsText.Length);            //写入加密流<br>        cs.FlushFinalBlock();<br>        cs.Flush();<br>        cs.Close();<br>        fsPic.Close();<br>        fsText.Close();<br>        fsOut.Close();<br>        File.Delete(textBox1.Text.TrimEnd());                            //删除原文件<br>        File.Copy(strLinPath, textBox1.Text);                            //复制加密文件<br>        File.Delete(strLinPath);                                    //删除临时文件<br>        MessageBox.Show(“加密成功”);<br>        pictureBox1.ImageLocation = null;<br>        textBox1.Text = “”;<br>    }<br>    catch (Exception ee)<br>    {<br>        MessageBox.Show(ee.Message);<br>    }<br>}<br>单击“解密”按钮实现利用图片对加密的文本文件进行解密，“解密”按钮的Click事件代码如下：<br>private void button4_Click(object sender, EventArgs e)<br>{<br>    try<br>    {<br>        //图片流<br>        FileStream fsPic = new FileStream(pictureBox1.ImageLocation, FileMode.Open, FileAccess.Read);<br>        //解密文件流<br>        FileStream fsOut = File.Open(textBox1.Text, FileMode.Open, FileAccess.Read);<br>        //初始化对称算法的密钥和向量<br>        byte[] bykey = new byte[16];                                //定义存储密钥的字节数组<br>        byte[] byIv = new byte[8];                                //定义存储向量的字节数组<br>        fsPic.Read(bykey, 0, 16);                                //把图片流写入密钥缓冲区<br>        fsPic.Read(byIv, 0, 8);                                    //把图片流写入向量缓冲区<br>        //创建临时解密文件<br>        string strPath = textBox1.Text;                                //加密文件的路径<br>        int intLent = strPath.LastIndexOf(“\&quot;) + 1;                        //获取不含文件名的路径长度<br>        int intLong = strPath.Length;                                //获取含文件名的路径长度<br>        //获取要解密文件的名称，即加密文件的名称<br>        string strName = strPath.Substring(intLent, intLong - intLent);<br>        string strLinPath = “C:\&quot; + strName;                            //临时解密文件路径<br>        FileStream fs = new FileStream(strLinPath, FileMode.Create, FileAccess.Write);<br>        //开始解密，首先创建RC2CryptoServiceProvider对象<br>        RC2CryptoServiceProvider desc = new RC2CryptoServiceProvider();<br>        //创建CryptoStream对象，用于读取加密文件<br>        CryptoStream csDecrypt = new CryptoStream(fsOut, desc.CreateDecryptor(bykey, byIv), CryptoStreamMode.Read);<br>        BinaryReader sr = new BinaryReader(csDecrypt);                    //创建BinaryReader对象<br>        BinaryWriter sw = new BinaryWriter(fs);                        //创建BinaryWriter对象<br>        sw.Write(sr.ReadBytes(Convert.ToInt32(fsOut.Length)));                //写入解密流<br>        sw.Flush();<br>        sw.Close();<br>        sr.Close();<br>        fs.Close();<br>        fsOut.Close();<br>        fsPic.Close();<br>        csDecrypt.Flush();<br>        File.Delete(textBox1.Text.TrimEnd());                            //删除原文件<br>        File.Copy(strLinPath, textBox1.Text);                            //复制加密文件<br>        File.Delete(strLinPath);                                    //删除临时文件<br>        MessageBox.Show(“解密成功”);                            //弹出提示信息<br>        pictureBox1.ImageLocation = null;                            //清空图片<br>        textBox1.Text = “”;                                    //清空文本框<br>    }<br>    catch (Exception ee)                                        //如果出现异常<br>    {<br>        MessageBox.Show(ee.Message);                            //输出异常<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟002：使用CryptoStream类的FlushFinalBlock方法。 在调用CryptoStream类的Write方法写入加密或解密流之后，需要调用该类的FlushFinalBlock方法，该方法实现用缓冲区的当前状态更新基础数据源或储存库，随后清除缓冲区。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/04/14/csharp-e4-b8-8d-e5-87-ba-e7-8e-b0-e5-9c-a8-e4-bb-bb-e5-8a-a1-e6-a0-8f-e4-b8-8a-e7-9a-84-e7-a8-8b-e5-ba-8f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/04/14/csharp-e4-b8-8d-e5-87-ba-e7-8e-b0-e5-9c-a8-e4-bb-bb-e5-8a-a1-e6-a0-8f-e4-b8-8a-e7-9a-84-e7-a8-8b-e5-ba-8f.html" class="post-title-link" itemprop="url">csharp 不出现在任务栏上的程序</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-14 22:12:47" itemprop="dateCreated datePublished" datetime="2019-04-14T22:12:47+08:00">2019-04-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/04/14/csharp-e4-b8-8d-e5-87-ba-e7-8e-b0-e5-9c-a8-e4-bb-bb-e5-8a-a1-e6-a0-8f-e4-b8-8a-e7-9a-84-e7-a8-8b-e5-ba-8f.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/04/14/csharp-e4-b8-8d-e5-87-ba-e7-8e-b0-e5-9c-a8-e4-bb-bb-e5-8a-a1-e6-a0-8f-e4-b8-8a-e7-9a-84-e7-a8-8b-e5-ba-8f.html" class="cy_cmt_count" data-xid="zh-CN/2019/04/14/csharp-e4-b8-8d-e5-87-ba-e7-8e-b0-e5-9c-a8-e4-bb-bb-e5-8a-a1-e6-a0-8f-e4-b8-8a-e7-9a-84-e7-a8-8b-e5-ba-8f.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>705</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="不出现在任务栏上的程序"><a href="#不出现在任务栏上的程序" class="headerlink" title="不出现在任务栏上的程序"></a>不出现在任务栏上的程序</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>一般的Windows应用程序启动后，系统会在任务栏中添加一个工具按钮，表示程序正在运行，该按钮中的文字就是程序或窗口的标题名称。但是一些黑客程序和一些系统程序在启动后，任务栏中不会出现这些程序的按钮，这样的程序通常在后台运行，有时用户根本不会察觉，那么这是怎么实现的呢？本实例将介绍如何控制程序是否显示在任务栏中。运行结果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/04/2019-04-14-14112010.png" alt=""> 图1 不出现在任务栏上的程序</p>
+<h3 id="技术要点"><a href="#技术要点" class="headerlink" title="技术要点"></a>技术要点</h3><p>本实例通过使用Form类的ShowInTaskbar属性来控制程序是否显示在任务栏中。ShowInTaskbar属性用来获取或设置一个值，该值指示是否在Windows任务栏中显示窗体。其语法格式如下： public bool ShowInTaskbar { get; set; } 属性值：如果为True，则运行时在Windows任务栏中显示窗体，否则为False。默认为True。</p>
+<h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><p>（1）新建一个Windows应用程序，将其命名为“不出现在任务栏上的程序”，默认主窗体为Form1。 （2）在Form1窗体中添加两个RadioButton控件，用来控制程序图标是否出现在任务栏中。 （3）主要程序代码。</p>
+<p>private void Form1_Load(object sender, EventArgs e)<br>{<br>    if (radioButton1.Checked)                            //如果选中radioButton1<br>        this.ShowInTaskbar = true;                        //将ShowInTaskbar属性设为true，在任务栏显示<br>    else                                                //否则<br>        this.ShowInTaskbar = false;                        //将ShowInTaskbar属性设为false，不在任务栏显示<br>}</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/04/14/csharp-e4-bd-bf-e7-94-a8-e6-ad-a3-e5-88-99-e8-a1-a8-e8-be-be-e5-bc-8f-e9-aa-8c-e8-af-81url.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/04/14/csharp-e4-bd-bf-e7-94-a8-e6-ad-a3-e5-88-99-e8-a1-a8-e8-be-be-e5-bc-8f-e9-aa-8c-e8-af-81url.html" class="post-title-link" itemprop="url">csharp 使用正则表达式验证URL</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-14 21:59:37" itemprop="dateCreated datePublished" datetime="2019-04-14T21:59:37+08:00">2019-04-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/04/14/csharp-e4-bd-bf-e7-94-a8-e6-ad-a3-e5-88-99-e8-a1-a8-e8-be-be-e5-bc-8f-e9-aa-8c-e8-af-81url.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/04/14/csharp-e4-bd-bf-e7-94-a8-e6-ad-a3-e5-88-99-e8-a1-a8-e8-be-be-e5-bc-8f-e9-aa-8c-e8-af-81url.html" class="cy_cmt_count" data-xid="zh-CN/2019/04/14/csharp-e4-bd-bf-e7-94-a8-e6-ad-a3-e5-88-99-e8-a1-a8-e8-be-be-e5-bc-8f-e9-aa-8c-e8-af-81url.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>933</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="使用正则表达式验证URL"><a href="#使用正则表达式验证URL" class="headerlink" title="使用正则表达式验证URL"></a>使用正则表达式验证URL</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>在浏览网页时，可以在浏览器的地址栏中输入网址信息并按下<Enter>键跳转到指定网页，如果用户输入的网址不正确，则无法显示网页信息。实例中使用了正则表达式判断用户输入的网址信息是否正确。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/04/2019-04-14-13582411.png" alt=""> 图1 使用正则表达式验证URL  </p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例重点在于向读者介绍怎样使用正则表达式验证URL，下面对其进行详细讲解。 实例中主要用到了Regex类的IsMatch方法，此方法的使用已经在实例“使用正则表达式验证电话号码”中进行了详细讲解。下面对实例中使用的正则表达式进行详细讲解。 从图2中可以看到，详细的描述了”http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]<em>)?”正则表达式，其中http(s)?表示匹配字符串“http”或“https”；[\w-]+\.表示匹配一个或多个以单词字符和连接符号“-”组成的字符串开头的，以字符“.”结尾的字符串；(/[\w- ./?%&amp;=]</em>)?表示匹配出现零次或一次由单词字符“-”、“/”、“.”、“?”、“%”、“&amp;”、“=”组成的长度至少为1的字符串。 图2 正则表达式</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为ValidateURL。 （2）更改默认窗体Form1的Name属性为Frm_Main，向窗体中添加一个TextBox控件，用于输入网址；添加一个Button按钮，用于验证网址格式是否正确。 （3）程序主要代码如下：</p>
+<p>public bool IsUrl(string str_url)</p>
+<p>{</p>
+<pre><code>return System.Text.RegularExpressions.Regex.IsMatch(str_url,                                                  //使用正则表达式判断是否匹配</code></pre><p>@”http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?”);</p>
+<p>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title=" 秘笈心法"></a><img data-src="https://cdn.fesugar.com/2019/04/2019-04-14-13584214.png" alt=""> 秘笈心法</h3><p>心法领悟058：使用正则表达式验证用户名格式是否正确！ 程序运行过程中，经常需要用户注册信息，以得到相应的操作权限，如果在用户注册的过程中，用户添写的用户名格式不正确，有可能会带来不必要的麻烦，使用正则表达式验证用户名格式将是一种不错的选择！</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/9/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/11/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fesugar"
+      src="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+  <p class="site-author-name" itemprop="name">fesugar</p>
+  <div class="site-description" itemprop="description">个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">139</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fesugar" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fesugar" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fesugar@fesugar.com" title="E-Mail → mailto:fesugar@fesugar.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="//weibo.com/u/1756351303" target="_blank" rel="noopener" title="Weibo → &#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1756351303"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.fesugar.com/" title="http:&#x2F;&#x2F;www.fesugar.com&#x2F;">甜甜糖博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.allenlan.com/" title="http:&#x2F;&#x2F;www.allenlan.com&#x2F;" rel="noopener" target="_blank">不忘初心</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://my.oschina.net/u/2955242" title="https:&#x2F;&#x2F;my.oschina.net&#x2F;u&#x2F;2955242" rel="noopener" target="_blank">fesugar</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.mxxia.com/" title="http:&#x2F;&#x2F;www.mxxia.com" rel="noopener" target="_blank">梦想霞博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">苏ICP备15051349号-1 </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fesugar</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">380k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">5:45</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+
+  <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cys44eS01"></script>
+
+
+    </div>
+</body>
+</html>

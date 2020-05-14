@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
+<meta property="og:type" content="website">
+<meta property="og:title" content="佛系糖果的博客">
+<meta property="og:url" content="https://www.fesugar.com/page/13/index.html">
+<meta property="og:site_name" content="佛系糖果的博客">
+<meta property="og:description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="fesugar">
+<meta property="article:tag" content="fesugar">
+<meta property="article:tag" content="甜甜糖">
+<meta property="article:tag" content="甜甜糖个人博客">
+<meta property="article:tag" content="甜甜糖博客">
+<meta property="article:tag" content="如何做个人博客网站">
+<meta property="article:tag" content="严圣川">
+<meta property="article:tag" content="严圣川个人网站">
+<meta property="article:tag" content="佛系糖果">
+<meta property="article:tag" content="小程序">
+<meta property="article:tag" content="多线程c#">
+<meta property="article:tag" content=".net">
+<meta property="article:tag" content="c语言">
+<meta property="article:tag" content="vb">
+<meta property="article:tag" content="php">
+<meta property="article:tag" content="小程序radio样式">
+<meta property="article:tag" content="小程序开发">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.fesugar.com/page/13/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>佛系糖果的博客</title>
+  
+
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c708aaffb3b844ecd872db5ea0e68d8f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="佛系糖果的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">佛系糖果的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">行到水穷处，坐看云起时</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-knowledge">
+
+    <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" rel="section"><i class="fa fa-book fa-fw"></i>知识</a>
+
+  </li>
+        <li class="menu-item menu-item-study">
+
+    <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" rel="section"><i class="fa fa-edit fa-fw"></i>学习</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-comment fa-fw"></i>留言簿</a>
+
+  </li>
+        <li class="menu-item menu-item-weiyu">
+
+    <a href="/weiyu/" rel="section"><i class="fa fa-eye fa-fw"></i>微语</a>
+
+  </li>
+        <li class="menu-item menu-item-disclaimer">
+
+    <a href="/disclaimer/" rel="section"><i class="fa fa-bell fa-fw"></i>条款声明</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-coffee fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/fesugar" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/c-e9-80-9a-e7-94-a8-e6-95-b0-e6-8d-ae-e5-ba-93-e6-93-8d-e4-bd-9c-e7-b1-bb.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/18/c-e9-80-9a-e7-94-a8-e6-95-b0-e6-8d-ae-e5-ba-93-e6-93-8d-e4-bd-9c-e7-b1-bb.html" class="post-title-link" itemprop="url">C#通用数据库操作类</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-18 18:23:17" itemprop="dateCreated datePublished" datetime="2016-10-18T18:23:17+08:00">2016-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/10/18/c-e9-80-9a-e7-94-a8-e6-95-b0-e6-8d-ae-e5-ba-93-e6-93-8d-e4-bd-9c-e7-b1-bb.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/10/18/c-e9-80-9a-e7-94-a8-e6-95-b0-e6-8d-ae-e5-ba-93-e6-93-8d-e4-bd-9c-e7-b1-bb.html" class="cy_cmt_count" data-xid="zh-CN/2016/10/18/c-e9-80-9a-e7-94-a8-e6-95-b0-e6-8d-ae-e5-ba-93-e6-93-8d-e4-bd-9c-e7-b1-bb.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>76</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>各种搜集数据库操作完整类，在一篇博文留言中发现了一个开源的 Dbhelper 试了下，用起来很爽。。。 博文地址 <a href="http://www.cnblogs.com/podolski/p/5152537.html" target="_blank" rel="noopener">波多尔斯基</a> <img data-src="https://cdn.fesugar.com/2016/10/2016-10-18-10232965.png" alt="8720161018181711"> DbHelper 开源地址 <a href="https://devlib.codeplex.com/SourceControl/latest#Main/Source/DevLib.Data/DbHelper.cs" target="_blank" rel="noopener">DevLib</a> <img data-src="https://cdn.fesugar.com/2016/10/2016-10-18-10241644.png" alt="8720161018182238"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/c-mysqlhelper-e7-b1-bb.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/18/c-mysqlhelper-e7-b1-bb.html" class="post-title-link" itemprop="url">C# MySqlHelper 类</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-18 18:12:50" itemprop="dateCreated datePublished" datetime="2016-10-18T18:12:50+08:00">2016-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+                </span>
+            </span>
+
+          
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>30k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>27 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>using System;<br>using System.Data;<br>using System.IO;<br>using System.Linq;<br>using System.Text;<br>using MySql.Data.MySqlClient;</p>
+<p>namespace Helpers<br>{<br>    /// <summary><br>    /// MySqlHelper操作类<br>    /// </summary><br>    public sealed partial class MySqlHelper<br>    {<br>        /// <summary><br>        /// 批量操作每批次记录数<br>        /// </summary><br>        public static int BatchSize = 2000;</p>
+<pre><code>    /// &lt;summary&gt;
+    /// 超时时间
+    /// &lt;/summary&gt;
+    public static int CommandTimeOut = 600;
+
+    /// &lt;summary&gt;
+    ///初始化MySqlHelper实例
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    public MySqlHelper(string connectionString)
+    {
+        this.ConnectionString = connectionString;
+    }
+
+    /// &lt;summary&gt;
+    /// 数据库连接字符串
+    /// &lt;/summary&gt;
+    public string ConnectionString { get; set; }
+
+    #region 实例方法
+
+    #region ExecuteNonQuery
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回影响的行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回影响的行数&lt;/returns&gt;
+    public int ExecuteNonQuery(string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteNonQuery(ConnectionString, CommandType.Text, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回影响的行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回影响的行数&lt;/returns&gt;
+    public int ExecuteNonQuery(CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteNonQuery(ConnectionString, commandType, commandText, parms);
+    }
+
+    #endregion ExecuteNonQuery
+
+    #region ExecuteScalar
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;typeparam name=&quot;T&quot;&gt;返回对象类型&lt;/typeparam&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    public T ExecuteScalar&lt;T&gt;(string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteScalar&lt;T&gt;(ConnectionString, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    public object ExecuteScalar(string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteScalar(ConnectionString, CommandType.Text, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    public object ExecuteScalar(CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteScalar(ConnectionString, commandType, commandText, parms);
+    }
+
+    #endregion ExecuteScalar
+
+    #region ExecuteDataReader
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回只读数据集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回只读数据集&lt;/returns&gt;
+    private MySqlDataReader ExecuteDataReader(string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataReader(ConnectionString, CommandType.Text, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回只读数据集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回只读数据集&lt;/returns&gt;
+    private MySqlDataReader ExecuteDataReader(CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataReader(ConnectionString, commandType, commandText, parms);
+    }
+    #endregion
+
+    #region ExecuteDataRow
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行&lt;/returns&gt;
+    public DataRow ExecuteDataRow(string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataRow(ConnectionString, CommandType.Text, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行&lt;/returns&gt;
+    public DataRow ExecuteDataRow(CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataRow(ConnectionString, commandType, commandText, parms);
+    }
+
+    #endregion ExecuteDataRow
+
+    #region ExecuteDataTable
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一个数据表
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一个数据表&lt;/returns&gt;
+    public DataTable ExecuteDataTable(string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataTable(ConnectionString, CommandType.Text, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一个数据表
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一个数据表&lt;/returns&gt;
+    public DataTable ExecuteDataTable(CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(ConnectionString, commandType, commandText, parms).Tables\[0\];
+    }
+
+    #endregion ExecuteDataTable
+
+    #region ExecuteDataSet
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集&lt;/returns&gt;
+    public DataSet ExecuteDataSet(string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(ConnectionString, CommandType.Text, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集&lt;/returns&gt;
+    public DataSet ExecuteDataSet(CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(ConnectionString, commandType, commandText, parms);
+    }
+
+    #endregion ExecuteDataSet
+
+    #region 批量操作
+
+    /// &lt;summary&gt;
+    /// 使用MySqlDataAdapter批量更新数据
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;table&quot;&gt;数据表&lt;/param&gt;
+    public void BatchUpdate(DataTable table)
+    {
+        BatchUpdate(ConnectionString, table);
+    }
+
+    /// &lt;summary&gt;
+    ///大批量数据插入,返回成功插入行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;table&quot;&gt;数据表&lt;/param&gt;
+    /// &lt;returns&gt;返回成功插入行数&lt;/returns&gt;
+    public int BulkInsert(DataTable table)
+    {
+        return BulkInsert(ConnectionString, table);
+    }
+
+    #endregion 批量操作
+
+    #endregion 实例方法
+
+    #region 静态方法
+
+    private static void PrepareCommand(MySqlCommand command, MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, string commandText, MySqlParameter\[\] parms)
+    {
+        if (connection.State != ConnectionState.Open) connection.Open();
+
+        command.Connection = connection;
+        command.CommandTimeout = CommandTimeOut;
+        // 设置命令文本(存储过程名或SQL语句)
+        command.CommandText = commandText;
+        // 分配事务
+        if (transaction != null)
+        {
+            command.Transaction = transaction;
+        }
+        // 设置命令类型.
+        command.CommandType = commandType;
+        if (parms != null &amp;&amp; parms.Length &gt; 0)
+        {
+            //预处理MySqlParameter参数数组，将为NULL的参数赋值为DBNull.Value;
+            foreach (MySqlParameter parameter in parms)
+            {
+                if ((parameter.Direction == ParameterDirection.InputOutput || parameter.Direction == ParameterDirection.Input) &amp;&amp; (parameter.Value == null))
+                {
+                    parameter.Value = DBNull.Value;
+                }
+            }
+            command.Parameters.AddRange(parms);
+        }
+    }
+
+    #region ExecuteNonQuery
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回影响的行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回影响的行数&lt;/returns&gt;
+    public static int ExecuteNonQuery(string connectionString, string commandText, params MySqlParameter\[\] parms)
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            return ExecuteNonQuery(connection, CommandType.Text, commandText, parms);
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回影响的行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回影响的行数&lt;/returns&gt;
+    public static int ExecuteNonQuery(string connectionString, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            return ExecuteNonQuery(connection, commandType, commandText, parms);
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回影响的行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回影响的行数&lt;/returns&gt;
+    public static int ExecuteNonQuery(MySqlConnection connection, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteNonQuery(connection, null, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回影响的行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回影响的行数&lt;/returns&gt;
+    public static int ExecuteNonQuery(MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteNonQuery(transaction.Connection, transaction, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回影响的行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回影响的行数&lt;/returns&gt;
+    private static int ExecuteNonQuery(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        MySqlCommand command = new MySqlCommand();
+        PrepareCommand(command, connection, transaction, commandType, commandText, parms);
+        int retval = command.ExecuteNonQuery();
+        command.Parameters.Clear();
+        return retval;
+    }
+
+    #endregion ExecuteNonQuery
+
+    #region ExecuteScalar
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;typeparam name=&quot;T&quot;&gt;返回对象类型&lt;/typeparam&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    public static T ExecuteScalar&lt;T&gt;(string connectionString, string commandText, params MySqlParameter\[\] parms)
+    {
+        object result = ExecuteScalar(connectionString, commandText, parms);
+        if (result != null)
+        {
+            return (T)Convert.ChangeType(result, typeof(T)); ;
+        }
+        return default(T);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    public static object ExecuteScalar(string connectionString, string commandText, params MySqlParameter\[\] parms)
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            return ExecuteScalar(connection, CommandType.Text, commandText, parms);
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    public static object ExecuteScalar(string connectionString, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            return ExecuteScalar(connection, commandType, commandText, parms);
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    public static object ExecuteScalar(MySqlConnection connection, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteScalar(connection, null, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    public static object ExecuteScalar(MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteScalar(transaction.Connection, transaction, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行第一列
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一行第一列&lt;/returns&gt;
+    private static object ExecuteScalar(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        MySqlCommand command = new MySqlCommand();
+        PrepareCommand(command, connection, transaction, commandType, commandText, parms);
+        object retval = command.ExecuteScalar();
+        command.Parameters.Clear();
+        return retval;
+    }
+
+    #endregion ExecuteScalar
+
+    #region ExecuteDataReader
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回只读数据集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回只读数据集&lt;/returns&gt;
+    private static MySqlDataReader ExecuteDataReader(string connectionString, string commandText, params MySqlParameter\[\] parms)
+    {
+        MySqlConnection connection = new MySqlConnection(connectionString);
+        return ExecuteDataReader(connection, null, CommandType.Text, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回只读数据集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回只读数据集&lt;/returns&gt;
+    private static MySqlDataReader ExecuteDataReader(string connectionString, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        MySqlConnection connection = new MySqlConnection(connectionString);
+        return ExecuteDataReader(connection, null, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回只读数据集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回只读数据集&lt;/returns&gt;
+    private static MySqlDataReader ExecuteDataReader(MySqlConnection connection, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataReader(connection, null, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回只读数据集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回只读数据集&lt;/returns&gt;
+    private static MySqlDataReader ExecuteDataReader(MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataReader(transaction.Connection, transaction, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回只读数据集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回只读数据集&lt;/returns&gt;
+    private static MySqlDataReader ExecuteDataReader(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        MySqlCommand command = new MySqlCommand();
+        PrepareCommand(command, connection, transaction, commandType, commandText, parms);
+        return command.ExecuteReader(CommandBehavior.CloseConnection);
+    }
+
+    #endregion
+
+    #region ExecuteDataRow
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;,返回结果集中的第一行&lt;/returns&gt;
+    public static DataRow ExecuteDataRow(string connectionString, string commandText, params MySqlParameter\[\] parms)
+    {
+        DataTable dt = ExecuteDataTable(connectionString, CommandType.Text, commandText, parms);
+        return dt.Rows.Count &gt; 0 ? dt.Rows\[0\] : null;
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;,返回结果集中的第一行&lt;/returns&gt;
+    public static DataRow ExecuteDataRow(string connectionString, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        DataTable dt = ExecuteDataTable(connectionString, commandType, commandText, parms);
+        return dt.Rows.Count &gt; 0 ? dt.Rows\[0\] : null;
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;,返回结果集中的第一行&lt;/returns&gt;
+    public static DataRow ExecuteDataRow(MySqlConnection connection, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        DataTable dt = ExecuteDataTable(connection, commandType, commandText, parms);
+        return dt.Rows.Count &gt; 0 ? dt.Rows\[0\] : null;
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一行
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;,返回结果集中的第一行&lt;/returns&gt;
+    public static DataRow ExecuteDataRow(MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        DataTable dt = ExecuteDataTable(transaction, commandType, commandText, parms);
+        return dt.Rows.Count &gt; 0 ? dt.Rows\[0\] : null;
+    }
+
+    #endregion ExecuteDataRow
+
+    #region ExecuteDataTable
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一个数据表
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一个数据表&lt;/returns&gt;
+    public static DataTable ExecuteDataTable(string connectionString, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(connectionString, CommandType.Text, commandText, parms).Tables\[0\];
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一个数据表
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一个数据表&lt;/returns&gt;
+    public static DataTable ExecuteDataTable(string connectionString, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(connectionString, commandType, commandText, parms).Tables\[0\];
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一个数据表
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一个数据表&lt;/returns&gt;
+    public static DataTable ExecuteDataTable(MySqlConnection connection, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(connection, commandType, commandText, parms).Tables\[0\];
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一个数据表
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一个数据表&lt;/returns&gt;
+    public static DataTable ExecuteDataTable(MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(transaction, commandType, commandText, parms).Tables\[0\];
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集中的第一个数据表
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;tableName&quot;&gt;数据表名称&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集中的第一个数据表&lt;/returns&gt;
+    public static DataTable ExecuteEmptyDataTable(string connectionString, string tableName)
+    {
+        return ExecuteDataSet(connectionString, CommandType.Text, string.Format(&quot;select * from {0} where 1=-1&quot;, tableName)).Tables\[0\];
+    }
+
+    #endregion ExecuteDataTable
+
+    #region ExecuteDataSet
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集&lt;/returns&gt;
+    public static DataSet ExecuteDataSet(string connectionString, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(connectionString, CommandType.Text, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集&lt;/returns&gt;
+    public static DataSet ExecuteDataSet(string connectionString, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            return ExecuteDataSet(connection, commandType, commandText, parms);
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集&lt;/returns&gt;
+    public static DataSet ExecuteDataSet(MySqlConnection connection, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(connection, null, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集&lt;/returns&gt;
+    public static DataSet ExecuteDataSet(MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        return ExecuteDataSet(transaction.Connection, transaction, commandType, commandText, parms);
+    }
+
+    /// &lt;summary&gt;
+    /// 执行SQL语句,返回结果集
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connection&quot;&gt;数据库连接&lt;/param&gt;
+    /// &lt;param name=&quot;transaction&quot;&gt;事务&lt;/param&gt;
+    /// &lt;param name=&quot;commandType&quot;&gt;命令类型(存储过程,命令文本, 其它.)&lt;/param&gt;
+    /// &lt;param name=&quot;commandText&quot;&gt;SQL语句或存储过程名称&lt;/param&gt;
+    /// &lt;param name=&quot;parms&quot;&gt;查询参数&lt;/param&gt;
+    /// &lt;returns&gt;返回结果集&lt;/returns&gt;
+    private static DataSet ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, string commandText, params MySqlParameter\[\] parms)
+    {
+        MySqlCommand command = new MySqlCommand();
+
+        PrepareCommand(command, connection, transaction, commandType, commandText, parms);
+        MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+
+        DataSet ds = new DataSet();
+        adapter.Fill(ds);
+        if (commandText.IndexOf(&quot;@&quot;) &gt; 0)
+        {
+            commandText = commandText.ToLower();
+            int index = commandText.IndexOf(&quot;where &quot;);
+            if (index &lt; 0)
+            {
+                index = commandText.IndexOf(&quot;\\nwhere&quot;);
+            }
+            if (index &gt; 0)
+            {
+                ds.ExtendedProperties.Add(&quot;SQL&quot;, commandText.Substring(0, index - 1));  //将获取的语句保存在表的一个附属数组里，方便更新时生成CommandBuilder
+            }
+            else
+            {
+                ds.ExtendedProperties.Add(&quot;SQL&quot;, commandText);  //将获取的语句保存在表的一个附属数组里，方便更新时生成CommandBuilder
+            }
+        }
+        else
+        {
+            ds.ExtendedProperties.Add(&quot;SQL&quot;, commandText);  //将获取的语句保存在表的一个附属数组里，方便更新时生成CommandBuilder
+        }
+
+        foreach (DataTable dt in ds.Tables)
+        {
+            dt.ExtendedProperties.Add(&quot;SQL&quot;, ds.ExtendedProperties\[&quot;SQL&quot;\]);
+        }
+
+        command.Parameters.Clear();
+        return ds;
+    }
+
+    #endregion ExecuteDataSet
+
+    #region 批量操作
+
+    /// &lt;summary&gt;
+    ///使用MySqlDataAdapter批量更新数据
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;table&quot;&gt;数据表&lt;/param&gt;
+    public static void BatchUpdate(string connectionString, DataTable table)
+    {
+        MySqlConnection connection = new MySqlConnection(connectionString);
+
+        MySqlCommand command = connection.CreateCommand();
+        command.CommandTimeout = CommandTimeOut;
+        command.CommandType = CommandType.Text;
+        MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+        MySqlCommandBuilder commandBulider = new MySqlCommandBuilder(adapter);
+        commandBulider.ConflictOption = ConflictOption.OverwriteChanges;
+
+        MySqlTransaction transaction = null;
+        try
+        {
+            connection.Open();
+            transaction = connection.BeginTransaction();
+            //设置批量更新的每次处理条数
+            adapter.UpdateBatchSize = BatchSize;
+            //设置事物
+            adapter.SelectCommand.Transaction = transaction;
+
+            if (table.ExtendedProperties\[&quot;SQL&quot;\] != null)
+            {
+                adapter.SelectCommand.CommandText = table.ExtendedProperties\[&quot;SQL&quot;\].ToString();
+            }
+            adapter.Update(table);
+            transaction.Commit();/////提交事务
+        }
+        catch (MySqlException ex)
+        {
+            if (transaction != null) transaction.Rollback();
+            throw ex;
+        }
+        finally
+        {
+            connection.Close();
+            connection.Dispose();
+        }
+    }
+
+    /// &lt;summary&gt;
+    ///大批量数据插入,返回成功插入行数
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;connectionString&quot;&gt;数据库连接字符串&lt;/param&gt;
+    /// &lt;param name=&quot;table&quot;&gt;数据表&lt;/param&gt;
+    /// &lt;returns&gt;返回成功插入行数&lt;/returns&gt;
+    public static int BulkInsert(string connectionString, DataTable table)
+    {
+        if (string.IsNullOrEmpty(table.TableName)) throw new Exception(&quot;请给DataTable的TableName属性附上表名称&quot;);
+        if (table.Rows.Count == 0) return 0;
+        int insertCount = 0;
+        string tmpPath = Path.GetTempFileName();
+        string csv = DataTableToCsv(table);
+        File.WriteAllText(tmpPath, csv);
+        using (MySqlConnection conn = new MySqlConnection(connectionString))
+        {
+            MySqlTransaction tran = null;
+            try
+            {
+                conn.Open();
+                tran = conn.BeginTransaction();
+                MySqlBulkLoader bulk = new MySqlBulkLoader(conn)
+                {
+                    FieldTerminator = &quot;,&quot;,
+                    FieldQuotationCharacter = &apos;&quot;&apos;,
+                    EscapeCharacter = &apos;&quot;&apos;,
+                    LineTerminator = &quot;\\r\\n&quot;,
+                    FileName = tmpPath,
+                    NumberOfLinesToSkip = 0,
+                    TableName = table.TableName,
+                };
+                bulk.Columns.AddRange(table.Columns.Cast&lt;DataColumn&gt;().Select(colum =&gt; colum.ColumnName).ToList());
+                insertCount = bulk.Load();
+                tran.Commit();
+            }
+            catch (MySqlException ex)
+            {
+                if (tran != null) tran.Rollback();
+                throw ex;
+            }
+        }
+        File.Delete(tmpPath);
+        return insertCount;
+    }
+
+    /// &lt;summary&gt;
+    ///将DataTable转换为标准的CSV
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;table&quot;&gt;数据表&lt;/param&gt;
+    /// &lt;returns&gt;返回标准的CSV&lt;/returns&gt;
+    private static string DataTableToCsv(DataTable table)
+    {
+        //以半角逗号（即,）作分隔符，列为空也要表达其存在。
+        //列内容如存在半角逗号（即,）则用半角引号（即&quot;&quot;）将该字段值包含起来。
+        //列内容如存在半角引号（即&quot;）则应替换成半角双引号（&quot;&quot;）转义，并用半角引号（即&quot;&quot;）将该字段值包含起来。
+        StringBuilder sb = new StringBuilder();
+        DataColumn colum;
+        foreach (DataRow row in table.Rows)
+        {
+            for (int i = 0; i &lt; table.Columns.Count; i++)
+            {
+                colum = table.Columns\[i\];
+                if (i != 0) sb.Append(&quot;,&quot;);
+                if (colum.DataType == typeof(string) &amp;&amp; row\[colum\].ToString().Contains(&quot;,&quot;))
+                {
+                    sb.Append(&quot;\\&quot;&quot; + row\[colum\].ToString().Replace(&quot;\\&quot;&quot;, &quot;\\&quot;\\&quot;&quot;) + &quot;\\&quot;&quot;);
+                }
+                else sb.Append(row\[colum\].ToString());
+            }
+            sb.AppendLine();
+        }
+
+        return sb.ToString();
+    }
+
+    #endregion 批量操作
+
+    #endregion 静态方法
+}</code></pre><p>}</p>
+<p>MySqlHelper.cs</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/14/e5-85-b3-e4-ba-8ec-json-e6-95-b0-e6-8d-ae-e4-bc-a0-e9-80-92-e6-96-b9-e5-bc-8f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/14/e5-85-b3-e4-ba-8ec-json-e6-95-b0-e6-8d-ae-e4-bc-a0-e9-80-92-e6-96-b9-e5-bc-8f.html" class="post-title-link" itemprop="url">关于C# JSON 数据传递方式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-14 22:58:53" itemprop="dateCreated datePublished" datetime="2016-10-14T22:58:53+08:00">2016-10-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/10/14/e5-85-b3-e4-ba-8ec-json-e6-95-b0-e6-8d-ae-e4-bc-a0-e9-80-92-e6-96-b9-e5-bc-8f.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/10/14/e5-85-b3-e4-ba-8ec-json-e6-95-b0-e6-8d-ae-e4-bc-a0-e9-80-92-e6-96-b9-e5-bc-8f.html" class="cy_cmt_count" data-xid="zh-CN/2016/10/14/e5-85-b3-e4-ba-8ec-json-e6-95-b0-e6-8d-ae-e4-bc-a0-e9-80-92-e6-96-b9-e5-bc-8f.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我们都知道在互联网发展的初期时代,那时候采用的还是C/S架构的程序。 那么软件和软件传递的数据格式也从普通的文本转换到了XML这种格式化的存储格式文本。 那么在互联网移动互联网时代,这种C/S传递XML这种格式文件显然是不行的。 那么今天就来搞搞JSON。 我们来看看百度百科的解释： <a href="http://baike.baidu.com/view/136475.htm" target="_blank" rel="noopener">JSON</a>(<a href="http://baike.baidu.com/view/16168.htm" target="_blank" rel="noopener">JavaScript</a> Object Notation) 是一种轻量级的数据交换格式。它基于<a href="http://baike.baidu.com/view/810176.htm" target="_blank" rel="noopener">ECMAScript</a>的一个子集。 JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括<a href="http://baike.baidu.com/subview/10075/6770152.htm" target="_blank" rel="noopener">C</a>、C++、<a href="http://baike.baidu.com/view/6590.htm" target="_blank" rel="noopener">C#</a>、<a href="http://baike.baidu.com/subview/29/12654100.htm" target="_blank" rel="noopener">Java</a>、JavaScript、<a href="http://baike.baidu.com/view/46614.htm" target="_blank" rel="noopener">Perl</a>、<a href="http://baike.baidu.com/view/21087.htm" target="_blank" rel="noopener">Python</a>等）。这些特性使JSON成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成(一般用于提升网络传输速率)。 百度百科链接:<a href="http://baike.baidu.com/link?url=iu5RKjFjmnM5DtVOSTzMl8MsTxdhPCCkKWOyMnsI4zP9DPSC_Bxf-J8ZvgTymL0lfaao21iY9z_40TalfJHhLK" target="_blank" rel="noopener">http://baike.baidu.com/link?url=iu5RKjFjmnM5DtVOSTzMl8MsTxdhPCCkKWOyMnsI4zP9DPSC_Bxf-J8ZvgTymL0lfaao21iY9z_40TalfJHhLK</a> 那么显然这种语言格式非常适合传递和解析，并且支持多种语言。 一个简单的JSON数据格式: 他包含了 一个KEY 和值 。写法是: {“KEY”:”VALUE”} <img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-03591839.jpg" alt="0df431adcbef760976059b952edda3cc7cd99ea9"> 那么JSON 如果不支持负责的数据格式,那样显然是无法替代XML来作为传递的。 数组: [value,value] <img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-03593478.jpg" alt="86d6277f9e2f0708c909280ae924b899a901f2a8"> 复杂的集合:list ,map 等 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-0359473.jpg" alt="91ef76c6a7efce1bcb20cac0af51f3deb48f65b4"> 更加复杂的结合体: <img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-04005035.jpg" alt="cefc1e178a82b90186abc139738da9773912efb2"> 再复杂一点: <img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-04001530.jpg" alt="b8014a90f603738d66370e28b31bb051f819ecbf"> 显然，看到这里 ,JSON的传递显然会符合你的要求: 我们再来看下标准的写法:一个标准的Map&lt;List<Object>&gt; 写法。 非常清晰</p>
+<p>{<br>    “people”:[<br>        {“firstName”:”Brett”,”lastName”:”McLaughlin”,”email”:”aaaa”},<br>        {“firstName”:”Jason”,”lastName”:”Hunter”,”email”:”bbbb”},<br>        {“firstName”:”Elliotte”,”lastName”:”Harold”,”email”:”cccc”}<br>    ]</p>
+<p>一个复杂的Object 类:</p>
+<p>{<br>    “programmers”: [{<br>        “firstName”: “Brett”,<br>        “lastName”: “McLaughlin”,<br>        “email”: “aaaa”<br>    }, {<br>        “firstName”: “Jason”,<br>        “lastName”: “Hunter”,<br>        “email”: “bbbb”<br>    }, {<br>        “firstName”: “Elliotte”,<br>        “lastName”: “Harold”,<br>        “email”: “cccc”<br>    }],<br>    “authors”: [{<br>        “firstName”: “Isaac”,<br>        “lastName”: “Asimov”,<br>        “genre”: “sciencefiction”<br>    }, {<br>        “firstName”: “Tad”,<br>        “lastName”: “Williams”,<br>        “genre”: “fantasy”<br>    }, {<br>        “firstName”: “Frank”,<br>        “lastName”: “Peretti”,<br>        “genre”: “christianfiction”<br>    }],<br>    “musicians”: [{<br>        “firstName”: “Eric”,<br>        “lastName”: “Clapton”,<br>        “instrument”: “guitar”<br>    }, {<br>        “firstName”: “Sergei”,<br>        “lastName”: “Rachmaninoff”,<br>        “instrument”: “piano”<br>    }]<br>}</p>
+<p>说了这么多，开始正题,用C# 去操作JSON 然后进行传递数据，那么今天的教程只会写到如何生成和解析JSON 数据 在C#中操作JSON 数据的类库有很多,这里我们用到Newtonsoft.Json.dll 这个动态库。 那么引入进去之后我们就要开始干活了，在Java 中常常喜欢讲操作以Utils 定义,而C#喜欢用Helper 来定义。那还是遵循C#的归还,我们来定义一个 JsonHelper.cs</p>
+<p>using Newtonsoft.Json;<br>using Newtonsoft.Json.Converters;<br>using System.IO;</p>
+<p>namespace Helper<br>{<br>    public class JsonHelper<br>    {<br>        /// <summary><br>        /// 将对象序列化为JSON格式<br>        /// </summary><br>        /// <param name="o">对象</param><br>        /// <returns>json字符串</returns><br>        public static string SerializeObject(object o)<br>        {<br>            string json = JsonConvert.SerializeObject(o);<br>            return json;<br>        }</p>
+<pre><code>    /// &lt;summary&gt;
+    /// 解析JSON字符串生成对象实体
+    /// &lt;/summary&gt;
+    /// &lt;typeparam name=&quot;T&quot;&gt;对象类型&lt;/typeparam&gt;
+    /// &lt;param name=&quot;json&quot;&gt;json字符串(eg.{&quot;ID&quot;:&quot;112&quot;,&quot;Name&quot;:&quot;石子儿&quot;})&lt;/param&gt;
+    /// &lt;returns&gt;对象实体&lt;/returns&gt;
+    public static T DeserializeJsonToObject&lt;T&gt;(string json) where T : class
+    {
+        JsonSerializer serializer = new JsonSerializer();
+        StringReader sr = new StringReader(json);
+        object o = serializer.Deserialize(new JsonTextReader(sr), typeof(T));
+        T t = o as T;
+        return t;
+    }
+
+    /// &lt;summary&gt;
+    /// 解析JSON数组生成对象实体集合
+    /// &lt;/summary&gt;
+    /// &lt;typeparam name=&quot;T&quot;&gt;对象类型&lt;/typeparam&gt;
+    /// &lt;param name=&quot;json&quot;&gt;json数组字符串(eg.\[{&quot;ID&quot;:&quot;112&quot;,&quot;Name&quot;:&quot;石子儿&quot;}\])&lt;/param&gt;
+    /// &lt;returns&gt;对象实体集合&lt;/returns&gt;
+    public static List&lt;T&gt; DeserializeJsonToList&lt;T&gt;(string json) where T : class
+    {
+        JsonSerializer serializer = new JsonSerializer();
+        StringReader sr = new StringReader(json);
+        object o = serializer.Deserialize(new JsonTextReader(sr), typeof(List&lt;T&gt;));
+        List&lt;T&gt; list = o as List&lt;T&gt;;
+        return list;
+    }
+
+    /// &lt;summary&gt;
+    /// 反序列化JSON到给定的匿名对象.
+    /// &lt;/summary&gt;
+    /// &lt;typeparam name=&quot;T&quot;&gt;匿名对象类型&lt;/typeparam&gt;
+    /// &lt;param name=&quot;json&quot;&gt;json字符串&lt;/param&gt;
+    /// &lt;param name=&quot;anonymousTypeObject&quot;&gt;匿名对象&lt;/param&gt;
+    /// &lt;returns&gt;匿名对象&lt;/returns&gt;
+    public static T DeserializeAnonymousType&lt;T&gt;(string json, T anonymousTypeObject)
+    {
+        T t = JsonConvert.DeserializeAnonymousType(json, anonymousTypeObject);
+        return t;
+    }
+}</code></pre><p>}</p>
+<p>文中大多数是用实体转换过来的。那么我们在操作JSON 的时候最归还的做法是定义一个类,然后将该类实例化,最后进行转换。 如一个学生类:</p>
+<p>namespace bean<br>{<br>    public class bean<br>    {<br>        /// <summary><br>        /// 该操作ID 方便操作<br>        /// </summary><br>        private String id;</p>
+<pre><code>public String Id
+{
+    get { return id; }
+    set { id = value; }
+}
+/// &lt;summary&gt;
+/// name
+/// &lt;/summary&gt;
+private String name;
+
+public String Name
+{
+    get { return name; }
+    set { name= value; }
+}
+
+/// &lt;summary&gt;
+/// age
+/// &lt;/summary&gt;
+private int age;
+
+public int age
+{
+    get { return age; }
+    set { age= value; }
+}</code></pre><p>} }</p>
+<p>然后我们将类实例化:</p>
+<p>Bean bean = new Bean();<br>bean.Id = “1234”;<br>bean.name = “test”;<br>bean.age = 12;</p>
+<p>这步搞定之后,我们就需要生成JSON 数据了:</p>
+<p>String json = JsonHelper.SerializeObject(bean);</p>
+<p>OK,那么这样就生成成功了，我们来看看</p>
+<p>{“id”:”1234”,”name”:”test”,”age”:12}</p>
+<p>显然这样是非常直观的，那么我们再将反转成对象。</p>
+<p>Bean bean = (Bean)JsonHelper.DeserializeJsonToObject({“id”:”1234”,”name”:”test”,”age”:12});</p>
+<p>非常简单对不对。ok 这里我们就完成了JSON 的简单操作。更加复杂的LIST 和Map 这些可以参照API 自行解决。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html" class="post-title-link" itemprop="url">18位身份证号码合法性计算</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-13 12:54:45" itemprop="dateCreated datePublished" datetime="2016-10-13T12:54:45+08:00">2016-10-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 23:00:31" itemprop="dateModified" datetime="2020-05-10T23:00:31+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html" class="cy_cmt_count" data-xid="zh-CN/2016/10/13/18位身份证号码合法性计算.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h5 id="来看下合法性计算方法"><a href="#来看下合法性计算方法" class="headerlink" title="来看下合法性计算方法"></a>来看下合法性计算方法</h5><h6 id="1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。"><a href="#1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。" class="headerlink" title="1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。"></a>1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。</h6><h6 id="2、将这17位数字和系数相乘的结果相加。"><a href="#2、将这17位数字和系数相乘的结果相加。" class="headerlink" title="2、将这17位数字和系数相乘的结果相加。"></a>2、将这17位数字和系数相乘的结果相加。</h6><h6 id="3、用加出来和除以11，看余数是多少？"><a href="#3、用加出来和除以11，看余数是多少？" class="headerlink" title="3、用加出来和除以11，看余数是多少？"></a>3、用加出来和除以11，看余数是多少？</h6><h6 id="4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X-－9－8－7－6－5－4－3－2。-即馀数0对应1，馀数1对应0，馀数2对应X…"><a href="#4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X-－9－8－7－6－5－4－3－2。-即馀数0对应1，馀数1对应0，馀数2对应X…" class="headerlink" title="4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X －9－8－7－6－5－4－3－2。(即馀数0对应1，馀数1对应0，馀数2对应X…)"></a>4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X －9－8－7－6－5－4－3－2。(即馀数0对应1，馀数1对应0，馀数2对应X…)</h6><h6 id="5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。"><a href="#5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。" class="headerlink" title="5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。"></a>5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。</h6><h6 id="例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。"><a href="#例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。" class="headerlink" title="例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。"></a>例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。</h6><h6 id="首先我们得出前17位的乘积和【-5-7-3-9-0-10-1-5-0-8-2-4-1-2-9-1-2-6-0-3-0-7-5-9-0-10-8-5-0-8-1-4-1-2-】是189，然后用189除以11得出的结果是189-11-17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。"><a href="#首先我们得出前17位的乘积和【-5-7-3-9-0-10-1-5-0-8-2-4-1-2-9-1-2-6-0-3-0-7-5-9-0-10-8-5-0-8-1-4-1-2-】是189，然后用189除以11得出的结果是189-11-17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。" class="headerlink" title="首先我们得出前17位的乘积和【(5*7)+(3*9)+(0*10)+(1*5)+(0*8)+(2*4)+(1*2)+(9*1)+(2*6)+(0*3)+(0*7)+(5*9)+(0*10)+(8*5)+(0*8)+(1*4)+(1*2)】是189，然后用189除以11得出的结果是189/11=17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。"></a>首先我们得出前17位的乘积和【(5*7)+(3*9)+(0*10)+(1*5)+(0*8)+(2*4)+(1*2)+(9*1)+(2*6)+(0*3)+(0*7)+(5*9)+(0*10)+(8*5)+(0*8)+(1*4)+(1*2)】是189，然后用189除以11得出的结果是189/11=17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。</h6>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/12/ajax%20jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99%20Uncaught%20SyntaxError%20Unexpected%20token.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/12/ajax%20jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99%20Uncaught%20SyntaxError%20Unexpected%20token.html" class="post-title-link" itemprop="url">ajax jsonp跨域请求数据出错 Uncaught SyntaxError: Unexpected token :</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-12 23:32:39" itemprop="dateCreated datePublished" datetime="2016-10-12T23:32:39+08:00">2016-10-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 11:45:13" itemprop="dateModified" datetime="2020-05-10T11:45:13+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/10/12/ajax%20jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99%20Uncaught%20SyntaxError%20Unexpected%20token.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/10/12/ajax%20jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99%20Uncaught%20SyntaxError%20Unexpected%20token.html" class="cy_cmt_count" data-xid="zh-CN/2016/10/12/ajax jsonp跨域请求数据出错 Uncaught SyntaxError Unexpected token.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>374</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>解决使用 ajax 的 jsonp 出现 Uncaught SyntaxError: Unexpected token :   偶然使用 ajax 处理 jsonp 时居然提示“Uncaught SyntaxError: Unexpected token :“ 检查了json数据没有问题，搜集了一番发现使用回掉的方式可以解决  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">    type: <span class="string">"get"</span>,</span><br><span class="line">    url: <span class="string">"xxxxxx"</span>,</span><br><span class="line">    dataType: <span class="string">"jsonp"</span>,</span><br><span class="line">    jsonp: <span class="string">"callback"</span>,</span><br><span class="line">    jsonpCallback: <span class="string">"success"</span>,</span><br><span class="line">    success: <span class="function"><span class="keyword">function</span>(<span class="params">json</span>) </span>&#123;</span><br><span class="line">        $(<span class="string">"msg"</span>).html(json.data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>  需要注意服务端这样写 php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$_GET[<span class="string">'callback'</span>].<span class="string">"("</span>.json_encode($json).<span class="string">")"</span>;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/10/csharp%20VB.NET%20%E8%A7%A3%E6%9E%90%20JSON.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/10/csharp%20VB.NET%20%E8%A7%A3%E6%9E%90%20JSON.html" class="post-title-link" itemprop="url">C# VB .NET 解析 JSON</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-10 09:19:54" itemprop="dateCreated datePublished" datetime="2016-10-10T09:19:54+08:00">2016-10-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 22:59:58" itemprop="dateModified" datetime="2020-05-10T22:59:58+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/10/10/csharp%20VB.NET%20%E8%A7%A3%E6%9E%90%20JSON.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/10/10/csharp%20VB.NET%20%E8%A7%A3%E6%9E%90%20JSON.html" class="cy_cmt_count" data-xid="zh-CN/2016/10/10/csharp VB.NET 解析 JSON.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>如何在 .NET 程序中解析 JSON 使用 Newtonsoft.Json 第三方类来操纵 Newtonsoft.Json 是.NET 下开源的json格式序列号和反序列化的类库 官方网站: <a href="http://json.codeplex.com/" target="_blank" rel="noopener">http://json.codeplex.com/</a></p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Imports</span> System.<span class="keyword">Text</span>.RegularExpressions</span><br><span class="line"><span class="keyword">Imports</span> Newtonsoft.Json</span><br><span class="line"><span class="keyword">Imports</span> Newtonsoft.Json.Linq</span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> json序列化</span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">Public</span> <span class="keyword">Class</span> json</span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> 解析JSON数据</span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="empData"&gt;</span>源数据<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="key"&gt;</span>指定值下的数据，可省略。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;returns&gt;</span>0 非 json 数据<span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line">    <span class="keyword">Public</span> <span class="keyword">Shared</span> <span class="keyword">Function</span> JsonDecode(<span class="keyword">ByVal</span> empData, <span class="keyword">Optional</span> <span class="keyword">ByVal</span> key1 = <span class="literal">Nothing</span>, <span class="keyword">Optional</span> <span class="keyword">ByVal</span> key2 = <span class="literal">Nothing</span>, <span class="keyword">Optional</span> <span class="keyword">ByVal</span> arry_i = <span class="literal">Nothing</span>) <span class="keyword">As</span> <span class="built_in">String</span></span><br><span class="line">        <span class="keyword">Try</span></span><br><span class="line">            <span class="keyword">If</span> IsJson(empData) = <span class="literal">False</span> <span class="keyword">Then</span> <span class="keyword">Return</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">If</span> arry_i <span class="keyword">IsNot</span> <span class="literal">Nothing</span> <span class="keyword">Then</span></span><br><span class="line">                <span class="comment">'http://blog.csdn.net/goodelephant/article/details/24769421</span></span><br><span class="line">                <span class="keyword">Return</span> <span class="built_in">CType</span>(JsonConvert.DeserializeObject(empData), JObject)(key1)(arry_i)(key2).ToString()   <span class="comment">'这个是解析数组  下标。。</span></span><br><span class="line">            <span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            <span class="keyword">If</span> key1 = <span class="literal">Nothing</span> <span class="keyword">Then</span> <span class="keyword">Return</span> <span class="built_in">CType</span>(JsonConvert.DeserializeObject(empData), JObject).ToString</span><br><span class="line"></span><br><span class="line">            <span class="keyword">If</span> key2 = <span class="literal">Nothing</span> <span class="keyword">Then</span> <span class="keyword">Return</span> <span class="built_in">CType</span>(JsonConvert.DeserializeObject(empData), JObject)(key1).ToString()</span><br><span class="line"></span><br><span class="line">            <span class="keyword">Return</span> <span class="built_in">CType</span>(JsonConvert.DeserializeObject(empData), JObject)(key1)(key2).ToString()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">Catch</span> ex <span class="keyword">As</span> Exception</span><br><span class="line">            <span class="keyword">Return</span> ex.Message</span><br><span class="line">        <span class="keyword">End</span> <span class="keyword">Try</span></span><br><span class="line">    <span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/zh-CN/2016/10/10/csharp%20VB.NET%20%E8%A7%A3%E6%9E%90%20JSON.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/09/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B9%8B%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/09/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B9%8B%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.html" class="post-title-link" itemprop="url">排序算法之希尔排序</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-23 20:32:22" itemprop="dateCreated datePublished" datetime="2016-09-23T20:32:22+08:00">2016-09-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 22:58:57" itemprop="dateModified" datetime="2020-05-10T22:58:57+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/09/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B9%8B%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/09/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B9%8B%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.html" class="cy_cmt_count" data-xid="zh-CN/2016/09/23/排序算法之希尔排序.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>希尔排序是按照该算法的设计者的名字希尔 命名的，其产生是希尔在插入排序的基础上改进的，可以说是一种特殊的插入排序。<br>下面先介绍一下插入排序的性质：<br>首先，插入排序算法对于已经有序的数据进行操作的时候，效率很高，可以达到线性排序的效率。<br>其次，插入排序进行排序的时候，每一趟排序只能移动一个数据。所以说这样的排序方法相对来说效率又比较低。<br>基于此性质，希尔排序的设计者发明了希尔排序算法，其基本思想是：<br>先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，分割子序列的方法就是设定一个增量，待当下的每个子序列有序的时候，将增量减一半（除以2，取整），再次进行子序列的排序。<br>依次进行，待整个序列中的记录基本上有序的时候，再对全体记录进行依次直接插入排序，此时增量减为1，因为直接插入排序在元素基本有序的情况下（根据上述第一点，接近最好的情况），效率是很高的。 </p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/zh-CN/2016/09/23/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B9%8B%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/07/06/c-e8-87-aa-e5-ae-9a-e4-b9-89-e9-bc-a0-e6-a0-87-e5-85-89-e6-a0-87.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/07/06/c-e8-87-aa-e5-ae-9a-e4-b9-89-e9-bc-a0-e6-a0-87-e5-85-89-e6-a0-87.html" class="post-title-link" itemprop="url">C# 自定义鼠标光标</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-07-06 09:07:33" itemprop="dateCreated datePublished" datetime="2016-07-06T09:07:33+08:00">2016-07-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/07/06/c-e8-87-aa-e5-ae-9a-e4-b9-89-e9-bc-a0-e6-a0-87-e5-85-89-e6-a0-87.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/07/06/c-e8-87-aa-e5-ae-9a-e4-b9-89-e9-bc-a0-e6-a0-87-e5-85-89-e6-a0-87.html" class="cy_cmt_count" data-xid="zh-CN/2016/07/06/c-e8-87-aa-e5-ae-9a-e4-b9-89-e9-bc-a0-e6-a0-87-e5-85-89-e6-a0-87.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>自定义鼠标光标的方法</p>
+<p>using System;<br>using System.Drawing;<br>using System.Collections;<br>using System.ComponentModel;<br>using System.Windows.Forms;<br>using System.Data;<br>using System.Runtime.InteropServices;</p>
+<p>namespace Example027_显示动画光标<br>{<br>    /// <summary><br>    /// Form1 的摘要说明。<br>    /// </summary><br>    public class Form1 : System.Windows.Forms.Form<br>    {<br>        /// <summary><br>        /// 必需的设计器变量。<br>        /// </summary><br>        private System.ComponentModel.Container components = null;</p>
+<pre><code>    public Form1()
+    {
+        //
+        // Windows 窗体设计器支持所必需的
+        //
+        InitializeComponent();
+
+        //
+        // TODO: 在 InitializeComponent 调用后添加任何构造函数代码
+        //
+    }
+
+    /// &lt;summary&gt;
+    /// 清理所有正在使用的资源。
+    /// &lt;/summary&gt;
+    protected override void Dispose( bool disposing )
+    {
+        if( disposing )
+        {
+            if (components != null) 
+            {
+                components.Dispose();
+            }
+        }
+        base.Dispose( disposing );
+    }
+
+    #region Windows Form Designer generated code
+    /// &lt;summary&gt;
+    /// 设计器支持所需的方法 \- 不要使用代码编辑器修改
+    /// 此方法的内容。
+    /// &lt;/summary&gt;
+    private void InitializeComponent()
+    {
+        // 
+        // Form1
+        // 
+        this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+        this.ClientSize = new System.Drawing.Size(292, 273);
+        this.Name = &quot;Form1&quot;;
+        this.Text = &quot;Form1&quot;;
+        this.Load += new System.EventHandler(this.Form1_Load);
+
+    }
+    #endregion
+
+    /// &lt;summary&gt;
+    /// 应用程序的主入口点。
+    /// &lt;/summary&gt;
+    \[STAThread\]
+    static void Main() 
+    {
+        Application.Run(new Form1());
+    }
+    \[DllImport(&quot;user32&quot;)\]
+    private static extern IntPtr SetCursor(IntPtr hCursor);
+    \[DllImport(&quot;user32&quot;)\]
+    private static extern IntPtr LoadCursorFromFile(string lpFileName);
+    const int WM_SETCURSOR = 0x0020;
+
+    private void Form1_Load(object sender, System.EventArgs e)
+    {
+        IntPtr hCursor;
+        hCursor=LoadCursorFromFile(&quot;..\\..\\pic.ani&quot;);
+        SetCursor(hCursor);    
+    }
+
+    protected override void WndProc(ref System.Windows.Forms.Message m)
+    {
+        switch(m.Msg)
+        {
+            case WM_SETCURSOR:
+                IntPtr hCursor;
+                hCursor=LoadCursorFromFile(&quot;..\\..\\pic.ani&quot;);
+                SetCursor(hCursor);    
+                break;
+            default:
+                base.WndProc(ref m);
+                break;
+        }
+    }
+}</code></pre><p>}</p>
+<p><img data-src="https://cdn.fesugar.com/2016/07/2016-07-06-01103899.png" alt="QQ图片20160706085555"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/07/05/c-e6-a8-a1-e6-8b-9f-e6-8c-89-e9-94-ae-e6-93-8d-e4-bd-9c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/07/05/c-e6-a8-a1-e6-8b-9f-e6-8c-89-e9-94-ae-e6-93-8d-e4-bd-9c.html" class="post-title-link" itemprop="url">C# 模拟按键操作</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-07-05 09:29:12" itemprop="dateCreated datePublished" datetime="2016-07-05T09:29:12+08:00">2016-07-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/07/05/c-e6-a8-a1-e6-8b-9f-e6-8c-89-e9-94-ae-e6-93-8d-e4-bd-9c.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/07/05/c-e6-a8-a1-e6-8b-9f-e6-8c-89-e9-94-ae-e6-93-8d-e4-bd-9c.html" class="cy_cmt_count" data-xid="zh-CN/2016/07/05/c-e6-a8-a1-e6-8b-9f-e6-8c-89-e9-94-ae-e6-93-8d-e4-bd-9c.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在控件获取焦点的情况下模拟按键操作</p>
+<p>using System;<br>using System.Drawing;<br>using System.Collections;<br>using System.ComponentModel;<br>using System.Windows.Forms;<br>using System.Data;</p>
+<p>namespace Example108_模拟键盘操作<br>{<br>    /// <summary><br>    /// Form1 的摘要说明。<br>    /// </summary><br>    public class Form1 : System.Windows.Forms.Form<br>    {<br>        private System.Windows.Forms.RichTextBox richTextBox1;<br>        private System.Windows.Forms.Button button1;<br>        /// <summary><br>        /// 必需的设计器变量。<br>        /// </summary><br>        private System.ComponentModel.Container components = null;</p>
+<pre><code>    public Form1()
+    {
+        //
+        // Windows 窗体设计器支持所必需的
+        //
+        InitializeComponent();
+
+        //
+        // TODO: 在 InitializeComponent 调用后添加任何构造函数代码
+        //
+    }
+
+    /// &lt;summary&gt;
+    /// 清理所有正在使用的资源。
+    /// &lt;/summary&gt;
+    protected override void Dispose( bool disposing )
+    {
+        if( disposing )
+        {
+            if (components != null) 
+            {
+                components.Dispose();
+            }
+        }
+        base.Dispose( disposing );
+    }
+
+    #region Windows Form Designer generated code
+    /// &lt;summary&gt;
+    /// 设计器支持所需的方法 \- 不要使用代码编辑器修改
+    /// 此方法的内容。
+    /// &lt;/summary&gt;
+    private void InitializeComponent()
+    {
+        this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+        this.button1 = new System.Windows.Forms.Button();
+        this.SuspendLayout();
+        // 
+        // richTextBox1
+        // 
+        this.richTextBox1.Location = new System.Drawing.Point(8, 8);
+        this.richTextBox1.Name = &quot;richTextBox1&quot;;
+        this.richTextBox1.Size = new System.Drawing.Size(248, 160);
+        this.richTextBox1.TabIndex = 0;
+        this.richTextBox1.Text = &quot;richTextBox1&quot;;
+        // 
+        // button1
+        // 
+        this.button1.Location = new System.Drawing.Point(184, 176);
+        this.button1.Name = &quot;button1&quot;;
+        this.button1.TabIndex = 1;
+        this.button1.Text = &quot;Key&quot;;
+        this.button1.Click += new System.EventHandler(this.button1_Click);
+        // 
+        // Form1
+        // 
+        this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+        this.ClientSize = new System.Drawing.Size(264, 205);
+        this.Controls.AddRange(new System.Windows.Forms.Control\[\] {
+                                                                      this.button1,
+                                                                      this.richTextBox1});
+        this.Name = &quot;Form1&quot;;
+        this.Text = &quot;Form1&quot;;
+        this.ResumeLayout(false);
+
+    }
+    #endregion
+
+    /// &lt;summary&gt;
+    /// 应用程序的主入口点。
+    /// &lt;/summary&gt;
+    \[STAThread\]
+    static void Main() 
+    {
+        Application.Run(new Form1());
+    }
+
+    private void button1_Click(object sender, System.EventArgs e)
+    {
+        this.richTextBox1.Focus();
+        SendKeys.Send(&quot;^a&quot;);
+        SendKeys.Send(&quot;{DEL}&quot;);
+        SendKeys.Send(&quot;+(ec)&quot;);
+        SendKeys.Send(&quot;{ENTER}&quot;);
+        SendKeys.Send(&quot;+ec&quot;);
+        SendKeys.Send(&quot;{ENTER}&quot;);
+        SendKeys.Send(&quot;{h 10}&quot;);
+        SendKeys.Send(&quot;{ENTER}&quot;);
+    }
+
+}</code></pre><p>}</p>
+<p><img data-src="https://cdn.fesugar.com/2016/07/2016-07-05-01284473.png" alt="C# 模拟按键操作"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/07/05/c-e8-ae-a9-e5-85-b6-e7-a8-8b-e5-ba-8f-e5-8f-aa-e8-83-bd-e5-8d-95-e5-ae-9e-e4-be-8b-e8-bf-90-e8-a1-8c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/07/05/c-e8-ae-a9-e5-85-b6-e7-a8-8b-e5-ba-8f-e5-8f-aa-e8-83-bd-e5-8d-95-e5-ae-9e-e4-be-8b-e8-bf-90-e8-a1-8c.html" class="post-title-link" itemprop="url">C# 让其程序只能单实例运行</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-07-05 09:24:25" itemprop="dateCreated datePublished" datetime="2016-07-05T09:24:25+08:00">2016-07-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/07/05/c-e8-ae-a9-e5-85-b6-e7-a8-8b-e5-ba-8f-e5-8f-aa-e8-83-bd-e5-8d-95-e5-ae-9e-e4-be-8b-e8-bf-90-e8-a1-8c.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/07/05/c-e8-ae-a9-e5-85-b6-e7-a8-8b-e5-ba-8f-e5-8f-aa-e8-83-bd-e5-8d-95-e5-ae-9e-e4-be-8b-e8-bf-90-e8-a1-8c.html" class="cy_cmt_count" data-xid="zh-CN/2016/07/05/c-e8-ae-a9-e5-85-b6-e7-a8-8b-e5-ba-8f-e5-8f-aa-e8-83-bd-e5-8d-95-e5-ae-9e-e4-be-8b-e8-bf-90-e8-a1-8c.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>使用 CreateMutex 互斥解决单实例运行</p>
+<p>using System;<br>using System.Drawing;<br>using System.Collections;<br>using System.ComponentModel;<br>using System.Windows.Forms;<br>using System.Data;<br>using System.Threading;<br>using System.Runtime.InteropServices;</p>
+<p>namespace Example104_使程序只能够运行一个<br>{<br>    /// <summary><br>    /// Form1 的摘要说明。<br>    /// </summary><br>    public class Form1 : System.Windows.Forms.Form<br>    {<br>        /// <summary><br>        /// 必需的设计器变量。<br>        /// </summary><br>        private System.ComponentModel.Container components = null;</p>
+<pre><code>    public Form1()
+    {
+        //
+        // Windows 窗体设计器支持所必需的
+        //
+        InitializeComponent();
+
+        //
+        // TODO: 在 InitializeComponent 调用后添加任何构造函数代码
+        //
+    }
+
+    /// &lt;summary&gt;
+    /// 清理所有正在使用的资源。
+    /// &lt;/summary&gt;
+    protected override void Dispose( bool disposing )
+    {
+        if( disposing )
+        {
+            if (components != null) 
+            {
+                components.Dispose();
+            }
+        }
+        base.Dispose( disposing );
+    }
+
+    #region Windows Form Designer generated code
+    /// &lt;summary&gt;
+    /// 设计器支持所需的方法 \- 不要使用代码编辑器修改
+    /// 此方法的内容。
+    /// &lt;/summary&gt;
+    private void InitializeComponent()
+    {
+        // 
+        // Form1
+        // 
+        this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+        this.ClientSize = new System.Drawing.Size(272, 189);
+        this.Name = &quot;Form1&quot;;
+        this.Text = &quot;Form1&quot;;
+
+    }
+    #endregion
+
+    /// &lt;summary&gt;
+    /// 应用程序的主入口点。
+    /// &lt;/summary&gt;
+
+    \[StructLayout( LayoutKind.Sequential)\]
+    public class SECURITY_ATTRIBUTES 
+    {
+        public int nLength; 
+        public int lpSecurityDescriptor; 
+        public int bInheritHandle; 
+    }
+
+    \[System.Runtime.InteropServices.DllImport(&quot;kernel32&quot;)\]
+    private static extern int GetLastError();
+    \[System.Runtime.InteropServices.DllImport(&quot;kernel32&quot;)\]
+    private static extern IntPtr CreateMutex(SECURITY_ATTRIBUTES lpMutexAttributes,bool bInitialOwner,string lpName);
+    \[System.Runtime.InteropServices.DllImport(&quot;kernel32&quot;)\]
+    private static extern int ReleaseMutex(IntPtr hMutex);
+    const int ERROR\_ALREADY\_EXISTS = 0183;
+
+    \[STAThread\]
+    static void Main() 
+    {
+        IntPtr hMutex;
+        hMutex=CreateMutex(null,false,&quot;test&quot;);
+        if (GetLastError()!=ERROR\_ALREADY\_EXISTS)
+        {
+            Application.Run(new Form1());
+        }
+        else
+        {
+            MessageBox.Show(&quot;本程序只允许同时运行一个&quot;);
+            ReleaseMutex(hMutex);
+        }
+    }
+}</code></pre><p>}</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/12/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/14/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fesugar"
+      src="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+  <p class="site-author-name" itemprop="name">fesugar</p>
+  <div class="site-description" itemprop="description">个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">139</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fesugar" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fesugar" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fesugar@fesugar.com" title="E-Mail → mailto:fesugar@fesugar.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="//weibo.com/u/1756351303" target="_blank" rel="noopener" title="Weibo → &#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1756351303"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.fesugar.com/" title="http:&#x2F;&#x2F;www.fesugar.com&#x2F;">甜甜糖博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.allenlan.com/" title="http:&#x2F;&#x2F;www.allenlan.com&#x2F;" rel="noopener" target="_blank">不忘初心</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://my.oschina.net/u/2955242" title="https:&#x2F;&#x2F;my.oschina.net&#x2F;u&#x2F;2955242" rel="noopener" target="_blank">fesugar</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.mxxia.com/" title="http:&#x2F;&#x2F;www.mxxia.com" rel="noopener" target="_blank">梦想霞博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">苏ICP备15051349号-1 </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fesugar</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">380k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">5:45</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+
+  <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cys44eS01"></script>
+
+
+    </div>
+</body>
+</html>

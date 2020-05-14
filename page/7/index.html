@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
+<meta property="og:type" content="website">
+<meta property="og:title" content="佛系糖果的博客">
+<meta property="og:url" content="https://www.fesugar.com/page/7/index.html">
+<meta property="og:site_name" content="佛系糖果的博客">
+<meta property="og:description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="fesugar">
+<meta property="article:tag" content="fesugar">
+<meta property="article:tag" content="甜甜糖">
+<meta property="article:tag" content="甜甜糖个人博客">
+<meta property="article:tag" content="甜甜糖博客">
+<meta property="article:tag" content="如何做个人博客网站">
+<meta property="article:tag" content="严圣川">
+<meta property="article:tag" content="严圣川个人网站">
+<meta property="article:tag" content="佛系糖果">
+<meta property="article:tag" content="小程序">
+<meta property="article:tag" content="多线程c#">
+<meta property="article:tag" content=".net">
+<meta property="article:tag" content="c语言">
+<meta property="article:tag" content="vb">
+<meta property="article:tag" content="php">
+<meta property="article:tag" content="小程序radio样式">
+<meta property="article:tag" content="小程序开发">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.fesugar.com/page/7/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>佛系糖果的博客</title>
+  
+
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c708aaffb3b844ecd872db5ea0e68d8f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="佛系糖果的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">佛系糖果的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">行到水穷处，坐看云起时</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-knowledge">
+
+    <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" rel="section"><i class="fa fa-book fa-fw"></i>知识</a>
+
+  </li>
+        <li class="menu-item menu-item-study">
+
+    <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" rel="section"><i class="fa fa-edit fa-fw"></i>学习</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-comment fa-fw"></i>留言簿</a>
+
+  </li>
+        <li class="menu-item menu-item-weiyu">
+
+    <a href="/weiyu/" rel="section"><i class="fa fa-eye fa-fw"></i>微语</a>
+
+  </li>
+        <li class="menu-item menu-item-disclaimer">
+
+    <a href="/disclaimer/" rel="section"><i class="fa fa-bell fa-fw"></i>条款声明</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-coffee fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/fesugar" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8rot13-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8rot13-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html" class="post-title-link" itemprop="url">使用ROT13算法加密解密文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-06 12:35:45" itemprop="dateCreated datePublished" datetime="2019-08-06T12:35:45+08:00">2019-08-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8rot13-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8rot13-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/06/e4-bd-bf-e7-94-a8rot13-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="使用ROT13算法加密解密文件"><a href="#使用ROT13算法加密解密文件" class="headerlink" title="使用ROT13算法加密解密文件"></a>使用ROT13算法加密解密文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>文件加密可以避免造成重要信息的泄漏，复杂的加密算法可以将信息加密得非常繁杂，但是对于一般的应用，没有必要作类似于PGP、RSA或DES等复杂的加密算法，本实例介绍使用ROT13这种简单的加密和解密算法。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-06-0434508.png" alt=""> 图1 使用ROT13算法加密解密文件</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例主要是用Convert类的ToChar方法来获取单个字符的Unicode编码，然后将字母的前13个和后13个对调，实现加密的功能。 ToChar方法返回指定的Unicode字符值；不执行任何实际的转换。其语法格式如下： public static char ToChar (char value) 参数说明 value：一个Unicode字符。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为ROT13Encrypt。 （2）在默认窗体Form1中添加两个文本框，分别用来显示原始数据和解密后的数据；添加两个Button控件，分别用来实现加密和解密数据。 （3）程序主要代码如下：</p>
+<p>private void button1_Click(object sender, EventArgs e)                        //使用ROT13算法加密数据<br>{<br>    textBox2.Text= ROT13Encode(textBox1.Text);<br>}<br>public string ROT13Encode(string InputText)                            //ROT13算法<br>{<br>    char tem_Character;                                        //定义字符变量<br>    int UnicodeChar;                                        //表示一个Unicode字符<br>    string EncodedText = “”;                                    //表示加密或解密后的字符串<br>    //遍历字符串中的所有字符，只能加密字符串，无法加密汉字<br>    for (int i = 0; i &lt; InputText.Length; i++)<br>    {<br>        tem_Character = System.Convert.ToChar(InputText.Substring(i, 1));        //获取字符串中指定的字符<br>        UnicodeChar = (int)tem_Character;                            //获取当前字符的Unicode编码<br>        if (UnicodeChar &gt;= 97 &amp;&amp; UnicodeChar &lt;= 109)                    //对字符进行加密<br>        {<br>            UnicodeChar = UnicodeChar + 13;<br>        }<br>        else if (UnicodeChar &gt;= 110 &amp;&amp; UnicodeChar &lt;= 122)                //对字符进行解密<br>        {<br>            UnicodeChar = UnicodeChar - 13;<br>        }<br>        else if (UnicodeChar &gt;= 65 &amp;&amp; UnicodeChar &lt;= 77)                    //对字符进行加密<br>        {<br>            UnicodeChar = UnicodeChar + 13;<br>        }<br>        else if (UnicodeChar &gt;= 78 &amp;&amp; UnicodeChar &lt;= 90)                    //对字符进行解密<br>        {<br>            UnicodeChar = UnicodeChar - 13;<br>        }<br>        EncodedText = EncodedText + (char)UnicodeChar;                    //返回设置后的字符<br>    }<br>    return EncodedText;<br>}<br>private void button2_Click(object sender, EventArgs e)                        //使用ROT13算法解密数据<br>{<br>    textBox2.Text = ROT13Encode(textBox2.Text);<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟003：关于ROT13加密算法的总结。 ROT13是一种简单的加密方式，主要是把26个英文字母的前13个和后13个对调，起到一定的英文文字加密保护作用。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-af-b9-e7-a7-b0-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-af-b9-e7-a7-b0-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html" class="post-title-link" itemprop="url">使用对称算法加密解密文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-06 12:33:43" itemprop="dateCreated datePublished" datetime="2019-08-06T12:33:43+08:00">2019-08-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-af-b9-e7-a7-b0-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-af-b9-e7-a7-b0-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-af-b9-e7-a7-b0-e7-ae-97-e6-b3-95-e5-8a-a0-e5-af-86-e8-a7-a3-e5-af-86-e6-96-87-e4-bb-b6.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="使用对称算法加密解密文件"><a href="#使用对称算法加密解密文件" class="headerlink" title="使用对称算法加密解密文件"></a>使用对称算法加密解密文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用对称算法实现加密和解密文件，在本实例的对称算法加密窗体中，首先选择原文件路径，然后输入加密密码和加密后文件路径，最后单击“加密”按钮实现对原文件加密，如图1所示。在本实例的对称算法解密窗体中，首先选择要解密的原文件路径，然后输入解密密码和解密后文件路径，最后单击“解密”按钮实现对原文件解密，如图2所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-06-04322917.png" alt=""> 图1 对称算法加密窗体 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-06-04323346.png" alt=""> 图2 对称算法解密窗体</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例主要用到了DESCryptoServiceProvider类的CreateDecryptor方法和CryptoStream类的相关方法，关于CryptoStream类的相关方法请参考“对文本文件进行加密与解密”，下面主要对DESCryptoServiceProvider类的CreateDecryptor方法进行详细讲解。 DESCryptoServiceProvider类的CreateDecryptor方法使用指定的SymmetricAlgorithm.Key 属性和初始化向量SymmetricAlgorithm.IV来创建对称解密器对象。其语法格式如下： public abstract ICryptoTransform CreateDecryptor(byte[] rgbKey, byte[] rgbIV) 参数说明 rgbKey：用于对称算法的密钥。 rgbIV：用于对称算法的初始化向量。 返回值：返回对称解密器对象。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，解决方案命名为SymmetricalEncrypt，项目名称命名为EncryptFile，作为实现加密的项目。然后添加一个新项目，命名为UnEncryptFile，作为实现解密的项目。 （2）在EncryptFile项目的默认窗体Form1中，添加3个文本框，分别用来显示原文件路径、输入加密密码和输入加密后的文件路径；添加两个Button控件，分别用来选择原文件和实现对文件的加密。对于UnEncryptFile项目的默认窗体Form1，该窗体上控件的设置情况可参考EncryptFile项目中Form1窗体的设置。 （3）程序主要代码如下： 在EncryptFile项目的默认窗体Form1中，单击“加密”按钮实现对原文件的加密，具体代码如下：</p>
+<p>private void button2_Click(object sender, EventArgs e)<br>{<br>    string myFile = textBox1.Text;                                    //获取原文件路径<br>    string myPassword = textBox2.Text;                                    //获取加密密码<br>    string myEnFile = textBox3.Text;                                    //获取加密后的文件路径<br>    try<br>    {<br>        byte[] myIV = { 0x12, 0x34, 0x56, 0x78, 0x90, 0xAB, 0xCD, 0xEF };            //设置向量<br>        byte[] myKey = System.Text.Encoding.UTF8.GetBytes(myPassword);            //设置密钥<br>        //原文件的文件流<br>        FileStream myInStream = new FileStream(myFile, FileMode.Open, FileAccess.Read);<br>        //加密后文件的文件流<br>        FileStream myOutStream = new FileStream(myEnFile, FileMode.OpenOrCreate, FileAccess.Write);<br>        myOutStream.SetLength(0);                                    //初始文件流的长度<br>        byte[] myBytes = new byte[100];                                //定义缓冲区<br>        long myInLength = 0;                                        //定义不断变化的流的长度<br>        long myLength = myInStream.Length;                                //获取原文件的文件流的长度<br>        DES myProvider = new DESCryptoServiceProvider();                    //定义标准的加密算法实例<br>//实现将数据流链接到加密转换的流<br>        CryptoStream myCryptoStream = new CryptoStream(myOutStream, myProvider.CreateEncryptor(myKey, myIV), CryptoStreamMode.Write);<br>        //从原文件流中每次读取100个字节，然后写入加密转换的流<br>        while (myInLength &lt; myLength)<br>        {<br>            int mylen = myInStream.Read(myBytes, 0, 100);                    //读取原文件流<br>            myCryptoStream.Write(myBytes, 0, mylen);                        //写入加密转换的流<br>            myInLength += mylen;                                    //计算写入的流长度<br>        }<br>        myCryptoStream.Close();                                    //关闭资源<br>        myInStream.Close();<br>        myOutStream.Close();<br>        MessageBox.Show(“加密文件成功！”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    }<br>    catch (Exception ex)<br>    {<br>        MessageBox.Show(ex.Message, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    }<br>}</p>
+<p>在UnEncryptFile项目的默认窗体Form1中，单击“解密”按钮实现对原文件的解密，具体代码如下：</p>
+<p>private void button2_Click(object sender, EventArgs e)<br>{<br>    string str1 = textBox1.Text;                                        //获取原文件路径<br>    string strPwd = textBox2.Text;                                    //获取解密密码<br>    string str2 = textBox3.Text;                                        //获取解密后的文件路径<br>    try<br>    {<br>        byte[] myIV = { 0x12, 0x34, 0x56, 0x78, 0x90, 0xAB, 0xCD, 0xEF };            //设置向量<br>        byte[] myKey = System.Text.Encoding.UTF8.GetBytes(strPwd);                //设置密钥<br>        //原文件的文件流<br>        FileStream myFileIn = new FileStream(str1, FileMode.Open, FileAccess.Read);<br>        //解密后文件的文件流<br>        FileStream myFileOut = new FileStream(str2, FileMode.OpenOrCreate, FileAccess.Write);<br>        myFileOut.SetLength(0);                                    //初始化文件流的长度<br>        byte[] myBytes = new byte[100];                                //定义缓冲区<br>        long myLength = myFileIn.Length;                                //获取原文件流的长度<br>        long myInLength = 0;                                        //定义不断变化的流的长度<br>        DES myProvider = new DESCryptoServiceProvider();                    //定义标准的加密算法实例<br>//实现将数据流链接到解密转换的流<br>        CryptoStream myDeStream = new CryptoStream(myFileOut, myProvider.CreateDecryptor(myKey, myIV), CryptoStreamMode.Write);<br>        //从原文件流中每次读取100个字节，然后写入解密转换的流<br>        while (myInLength &lt; myLength)<br>        {<br>            int mylen = myFileIn.Read(myBytes, 0, 100);                        /读取原文件流<br>            myDeStream.Write(myBytes, 0, mylen);                            //写入解密转换的流<br>            myInLength += mylen;                                    //计算写入的流长度<br>        }<br>        myDeStream.Close();                                        //关闭资源<br>        myFileOut.Close();<br>        myFileIn.Close();<br>        MessageBox.Show(“解密文件成功！”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    }<br>    catch (Exception ex)<br>    {<br>        MessageBox.Show(ex.Message, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟004：关于加密与解密过程的总结。 从上面的两段加密和解密代码中可以看出，加密与解密的过程基本相同。首先都是获取原文件的文件流和加密（或解密）后的文件流，然后将原数据流链接到加密（或解密）转换的流，最后把原文件流写入加密（或解密）转换的流。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-8f-a3-e4-bb-a4-e5-8a-a0-e5-af-86-e5-8f-af-e6-89-a7-e8-a1-8c-e6-96-87-e4-bb-b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-8f-a3-e4-bb-a4-e5-8a-a0-e5-af-86-e5-8f-af-e6-89-a7-e8-a1-8c-e6-96-87-e4-bb-b6.html" class="post-title-link" itemprop="url">使用口令加密可执行文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-06 12:28:57" itemprop="dateCreated datePublished" datetime="2019-08-06T12:28:57+08:00">2019-08-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-8f-a3-e4-bb-a4-e5-8a-a0-e5-af-86-e5-8f-af-e6-89-a7-e8-a1-8c-e6-96-87-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-8f-a3-e4-bb-a4-e5-8a-a0-e5-af-86-e5-8f-af-e6-89-a7-e8-a1-8c-e6-96-87-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/06/e4-bd-bf-e7-94-a8-e5-8f-a3-e4-bb-a4-e5-8a-a0-e5-af-86-e5-8f-af-e6-89-a7-e8-a1-8c-e6-96-87-e4-bb-b6.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="使用口令加密可执行文件"><a href="#使用口令加密可执行文件" class="headerlink" title="使用口令加密可执行文件"></a>使用口令加密可执行文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>exe可执行文件的加密是软件加密技术的一个重要部分，本实例讲解如何在C#中使用口令加密exe可执行文件。运行本实例，如果用户选择的是exe文件，则输入加密口令，单击“加密”按钮，加密选择的exe文件；如果用户选择的是mrexe文件，则输入加密时用的口令，单击“打开”按钮，打开加密过的exe文件。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-06-04272713.png" alt=""> 图1 使用口令加密可执行文件</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>使用口令加密可执行文件，顾名思义就是在打开加密过的可执行文件时，需要先输入口令，然后才能打开，这时就需要将使用口令加密过的可执行文件的菜单项写入到注册表中，以便打开使用口令加密过的可执行文件时直接弹出“输入口令”对话框。在使用口令加密过的可执行文件的菜单项写入到注册表中时，需要用到RegistryKey类的CreateSubKey方法和SetValue方法，下面分别对它们进行详细讲解。 （1）CreateSubKey方法 RegistryKey类表示Windows注册表中的项级节点，它位于Microsoft.Win32命名空间下，其CreateSubKey方法主要用来创建一个新子项或打开一个现有子项以进行写访问，语法格式如下： public RegistryKey CreateSubKey(string subkey) 参数说明 subkey：要创建或打开的子项的名称或路径。 返回值：RegistryKey对象，表示新建的子项或null（如果操作失败）。如果为subkey指定了零长度字符串，则返回当前的RegistryKey对象。 技巧：要获取RegistryKey的实例，请使用Registry类的静态成员之一。 （2）SetValue方法 SetValue方法用来设置注册表项中的名称/值对的值，其语法格式如下： public void SetValue(string name,Object value) name：要存储的值的名称。 value：要存储的数据。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为EncryptExe。 （2）在默认窗体Form1中主要添加如表1所示的控件。 表1 Form1窗体主要用到的控件及说明</p>
+<p>控件类型</p>
+<p>控件名称</p>
+<p>属性设置</p>
+<p>说 明</p>
+<p>textBox1</p>
+<p>无</p>
+<p>显示选择的加密或解密EXE文件</p>
+<p>textBox2</p>
+<p>PasswordChar属性设置为*</p>
+<p>输入加密或解密密码</p>
+<p>button1</p>
+<p>Text属性设置为“…”</p>
+<p>选择要加密或解密的EXE文件</p>
+<p>button2</p>
+<p>Text属性设置为“加密”</p>
+<p>加密EXE文件</p>
+<p>button3</p>
+<p>Text属性设置为“打开”</p>
+<p>打开加密后的EXE文件</p>
+<p>openFileDialog1</p>
+<p>无</p>
+<p>显示扫描进度</p>
+<p>（3）程序主要代码如下： Form1窗体加载时，首先将exe加密文件菜单写入到注册表中，然后判断系统中是否有打开的exe加密文件，如果有，则将其显示到“请选择Exe文件”文本框中，实现代码如下：</p>
+<p>private void Form1_Load(object sender, EventArgs e)<br>{<br>    FileMenu(Application.ExecutablePath + “,0”, Application.ExecutablePath);            //在注册表中创建exe加密文件菜单项<br>    string[] str = Environment.GetCommandLineArgs();                        //记录系统中的打开项<br>    try<br>    {<br>        string strFile = “”;                                            //用来记录文件名<br>        for (int i = 2; i &lt; str.Length; i++)<br>            strFile += str[i];                                         //为文件名赋值<br>        FileInfo FInfo = new FileInfo(strFile);                             //创建FileInfo对象<br>        if (FInfo.Extension.ToLower() == “.mrexe”)<br>            textBox1.Text = strFile;                                     //显示文件名<br>    }<br>    catch { }<br>}</p>
+<p>向注册表中写入exe加密文件菜单时用到FileMenu方法，该方法为自定义的无返回值类型方法，主要用来向注册表中写入exe加密文件菜单，它有两个string类型的参数，分别用来表示exe加密程序环境变量及exe加密程序路径。FileMenu方法实现代码如下：</p>
+<p>//创建快捷菜单<br>public static void FileMenu(string strPath, string strName)<br>{<br>    try<br>{<br>    //在注册表中创建exe加密文件子键<br>        Registry.ClassesRoot.CreateSubKey(“.mrexe”);<br>        RegistryKey RKey1 = Registry.ClassesRoot.OpenSubKey(“.mrexe”, true);         //打开新创建的子键<br>        RKey1.SetValue(“”, “mrexefile”);                                //为新创建的子键赋值<br>        RKey1.Close();                                            //关闭子键<br>        Registry.ClassesRoot.CreateSubKey(“mrexefile”);                        //创建mrexefile子键<br>        RegistryKey RKey2 = Registry.ClassesRoot.OpenSubKey(“mrexefile”, true);         //打开mrexefile子键<br>        RKey2.CreateSubKey(“DefaultIcon”);                                //创建DefaultIcon子键<br>        RKey2.CreateSubKey(“shell”);                                    //创建shell子键<br>        RKey2.Close();                                            //关闭子键<br>        //打开子键<br>        RegistryKey RKey3 = Registry.ClassesRoot.OpenSubKey(“mrexefile\\DefaultIcon”, true);<br>        RKey3.SetValue(“”, strPath);                                     //为子键设置值<br>        RKey3.Close();                                            //关闭子键<br>        //打开子键<br>        RegistryKey RKey4 = Registry.ClassesRoot.OpenSubKey(“mrexefile\\shell”, true);<br>        RKey4.CreateSubKey(“使用口令打开”);                            //创建子键<br>        RKey4.Close();                                            //关闭子键<br>        //打开子键<br>        RegistryKey RKey5 = Registry.ClassesRoot.OpenSubKey(“mrexefile\\shell\\使用口令打开”, true);<br>        RKey5.CreateSubKey(“command”);                                //创建子键<br>        RKey5.Close();                                            //关闭子键<br>        //打开子键<br>        RegistryKey RKey6 = Registry.ClassesRoot.OpenSubKey(“mrexefile\\shell\\使用口令打开\\command”, true);<br>        RKey6.SetValue(“”, strName + “ \\F %1”);                            //为子键设置值<br>        RKey6.Close();                                            //关闭子键<br>    }<br>    catch{}<br>}</p>
+<p>注意：对注册表进行操作时，需要添加Microsoft.Win32命名空间。 单击“加密”按钮，首先判断是否选择要加密的exe文件，如果已经选择，则使用用户输入的加密密码对选择的exe文件进行加密，执行成功后弹出信息提示。“加密”按钮的Click事件代码如下：</p>
+<p>//加密EXE文件<br>private void button2_Click(object sender, EventArgs e)<br>{<br>    string strPwd = textBox2.Text;                                    //记录加密密码<br>    byte[] btRKey = new byte[0];                                     //定义一个字节数组，用来记录加密密码<br>    if (strPwd.Length == 6)                                         //判断密码位数<br>    {<br>        btRKey = new byte[] { (byte)strPwd[0], (byte)strPwd[1], (byte)strPwd[2], (byte)strPwd[3], (byte)strPwd[4], (byte)strPwd[5], (byte)strPwd[0], (byte)strPwd[1] };                                                //记录加密密码<br>    }<br>    if (strPwd.Length == 7)<br>    {<br>        btRKey = new byte[] { (byte)strPwd[0], (byte)strPwd[1], (byte)strPwd[2], (byte)strPwd[3], (byte)strPwd[4], (byte)strPwd[5], (byte)strPwd[6], (byte)strPwd[0] };<br>    }<br>    if (strPwd.Length &gt;= 8)<br>    {<br>        btRKey = new byte[] { (byte)strPwd[0], (byte)strPwd[1], (byte)strPwd[2], (byte)strPwd[3], (byte)strPwd[4], (byte)strPwd[5], (byte)strPwd[6], (byte)strPwd[7] };<br>}<br>    //创建FileStream对象<br>    FileStream FStream = new FileStream(textBox1.Text, FileMode.Open, FileAccess.Read);<br>    //创建一个FileStream对象，用来创建加密文件<br>    FileStream NewFStream = new FileStream(textBox1.Text + “.mrexe”, FileMode.OpenOrCreate, FileAccess.Write);<br>    NewFStream.SetLength((long)0);                                     //设置加密文件初始长度为0<br>    byte[] buffer = new byte[0x400];                                     //定义一个字节数组<br>    int MinNum = 0;                                             //设置加密位置从0开始<br>    long length = FStream.Length;                                     //记录文件长度<br>    int MaxNum = (int)(length / ((long)0x400));                             //计算文件最大值<br>DES myDES = new DESCryptoServiceProvider();                            //创建DES加密流对象<br>//创建CryptoStream加密流对象<br>    CryptoStream CStream = new CryptoStream(NewFStream, myDES.CreateEncryptor(btRKey, btRKey), CryptoStreamMode.Write);<br>    while (MinNum &lt; length)<br>    {<br>        int count = FStream.Read(buffer, 0, 0x400);                             //对要加密的文件进行流读取<br>        CStream.Write(buffer, 0, count);                                 //向加密流中写入数据<br>        MinNum += count;                                         //记录已经读取的数据位置<br>    }<br>    CStream.Close();<br>    NewFStream.Close();<br>    FStream.Close();<br>    File.Delete(textBox1.Text);                                         //删除旧文件<br>    MessageBox.Show(“使用口令加密可执行文件成功！”, “信息提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>}</p>
+<p>单击“打开”按钮，首先使用用户输入的解密密码对加密过的exe文件进行解密，然后使用Process类的Start方法打开解密过的exe文件。“打开”按钮的Click事件代码如下：</p>
+<p>//解密EXE文件<br>private void button3_Click(object sender, EventArgs e)<br>{<br>    string strPwd = textBox2.Text;                                    //记录解密密码<br>    FileStream FStream = null;                                         //声明FileStream对象，用来记录旧文件<br>    FileStream NewFStream = null;                                     //声明FileStream对象，用来记录新文件<br>    CryptoStream CStream = null;                                     //声明CryptoStream对象，用来解密文件<br>    try<br>    {<br>        try<br>        {<br>            byte[] btRKey = new byte[0];                                 //定义一个字节数组，用来记录解密密码<br>            if (strPwd.Length == 6)                                     //判断密码位数<br>            {<br>                btRKey = new byte[] { (byte)strPwd[0], (byte)strPwd[1], (byte)strPwd[2], (byte)strPwd[3], (byte)strPwd[4], (byte)strPwd[5], (byte)strPwd[0], (byte)strPwd[1] };                                    //记录解密密码<br>            }<br>            if (strPwd.Length == 7)<br>            {<br>                btRKey = new byte[] { (byte)strPwd[0], (byte)strPwd[1], (byte)strPwd[2], (byte)strPwd[3], (byte)strPwd[4], (byte)strPwd[5], (byte)strPwd[6], (byte)strPwd[0] };<br>            }<br>            if (strPwd.Length &gt;= 8)<br>            {<br>                btRKey = new byte[] { (byte)strPwd[0], (byte)strPwd[1], (byte)strPwd[2], (byte)strPwd[3], (byte)strPwd[4], (byte)strPwd[5], (byte)strPwd[6], (byte)strPwd[7] };<br>            }<br>            //创建FileStream对象<br>            FStream = new FileStream(textBox1.Text, FileMode.Open, FileAccess.Read);<br>            //获取新文件名<br>            string strNewFile = textBox1.Text.Substring(0, textBox1.Text.Length - 6);<br>            //创建解密文件<br>            NewFStream = new FileStream(strNewFile, FileMode.OpenOrCreate, FileAccess.Write);<br>            NewFStream.SetLength((long)0);                             //设置解密文件初始长度为0<br>            byte[] buffer = new byte[0x400];                                 //定义一个字节数组<br>            int MinNum = 0;                                        //设置解密位置从0开始<br>            long length = FStream.Length;                                 //记录文件长度<br>            int MaxNum = (int)(length / ((long)0x400));                        //计算文件最大值<br>            DES myDES = new DESCryptoServiceProvider();                    //创建DES加解密对象<br>            //创建CryptoStream加解密流对象<br>            CStream = new CryptoStream(NewFStream, myDES.CreateDecryptor(btRKey, btRKey), CryptoStreamMode.Write);<br>            while (MinNum &lt; length)<br>            {<br>                int count = FStream.Read(buffer, 0, 0x400);                     //对要解密的文件进行流读取<br>                CStream.Write(buffer, 0, count);                             //向解密流中写入数据<br>                MinNum += count;                                     //记录已经读取的数据位置<br>            }<br>            CStream.Close();<br>            FStream.Close();<br>            NewFStream.Close();<br>            File.Delete(textBox1.Text);                                //删除加密文件<br>            System.Diagnostics.Process.Start(strNewFile);                        //打开解密后的exe文件<br>        }<br>        catch<br>        {<br>            MessageBox.Show(“口令错误！”, “信息提示”, MessageBoxButtons.OK, MessageBoxIcon.Error);<br>            textBox2.Focus();<br>        }<br>    }<br>    finally<br>    {<br>        CStream.Close();<br>        FStream.Close();<br>        NewFStream.Close();<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟005：获取文件的扩展名。 在处理文件操作的应用程序中，获取文件的扩展名信息很重要，可以使用FileInfo类的Extension属性获取文件的扩展名，本实例中使用该属性来判断指定文件是否为加密后的mrexe文件。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html" class="post-title-link" itemprop="url">如何使用GZip压缩文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-03 12:58:03" itemprop="dateCreated datePublished" datetime="2019-08-03T12:58:03+08:00">2019-08-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="如何使用GZip压缩文件"><a href="#如何使用GZip压缩文件" class="headerlink" title="如何使用GZip压缩文件"></a>如何使用GZip压缩文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用GZipStream类的Write方法实现对文件的压缩，在本实例的窗体中，首先选择要压缩的源文件，然后输入压缩文件的名称，最后单击“压缩”按钮实现将指定的文件压缩为GZip格式。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-03-04573020.png" alt=""> 图1 使用GZip压缩文件 注意：当压缩文件时，不需要指明压缩文件的扩展名，程序会自动为压缩文件设置扩展名(gzip)。</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>GZipStream类位于System.IO.Compression命名空间下，提供用于压缩和解压缩流的方法和属性。该类用来表示GZip数据格式，这种数据格式包括一个检测数据损坏的循环冗余校验值。当使用GZipStream类构造一个压缩流后，就可以使用该类的Write方法写数据，从而实现压缩文件功能。下面将介绍该类的Write方法。 Write方法实现从指定的字节数组中将要压缩的字节写入基础流，其语法格式如下： public override void Write(byte[] array, int offset, int count) Write方法语法中的参数说明如表1所示。 表1 Write方法语法中的参数说明</p>
+<p>参数</p>
+<p>说明</p>
+<p>array</p>
+<p>用于存储要压缩字节的数组</p>
+<p>offset</p>
+<p>数组中开始读取的位置</p>
+<p>count</p>
+<p>压缩的字节数</p>
+<p>返回值</p>
+<p>无返回值</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为GZipFile。 （2）在默认窗体Form中添加两个TextBox控件，分别用来显示源文件路径及输入压缩文件名称；添加两个Button按钮，分别用来选择要压缩的文件及实现压缩文件。 （3）主要程序代码如下：</p>
+<p>private void button2_Click(object sender, EventArgs e)<br>{<br>    if (String.IsNullOrEmpty(textBox1.Text))                //若未选择源文件<br>    {<br>        MessageBox.Show(“请选择源文件!”,”信息提示”);<br>        return;<br>    }<br>    if (String.IsNullOrEmpty(textBox2.Text))                //若未输入压缩文件名称<br>    {<br>        MessageBox.Show(“请输入压缩文件名!”, “信息提示”);<br>        return;<br>    }<br>    string str1 = textBox1.Text;                        //获取源文件路径<br>    string str2 = textBox2.Text.Trim()+”.gzip”;                //获取压缩文件的名称<br>    byte[] myByte = null;                            //定义字节数组引用<br>    FileStream myStream = null;                        //表示源文件的文件流<br>    FileStream myDesStream = null;                    //表示压缩文件的文件流<br>    GZipStream myComStream = null;                    //表示压缩流<br>    try<br>    {<br>        //获取源文件的文件流<br>        myStream = new FileStream(str1, FileMode.Open, FileAccess.Read, FileShare.Read);<br>        myByte = new byte[myStream.Length];            //根据源文件流的大小创建缓冲区<br>        myStream.Read(myByte, 0, myByte.Length);            //把源文件的文件流写入缓冲区<br>        //创建压缩文件的文件流<br>        myDesStream = new FileStream(str2, FileMode.OpenOrCreate, FileAccess.Write);<br>        //根据压缩文件的文件流生成压缩流<br>        myComStream = new GZipStream(myDesStream, CompressionMode.Compress, true);<br>        myComStream.Write(myByte, 0, myByte.Length);        //把源文件的文件流写入压缩流<br>        MessageBox.Show(“压缩文件完成！”);<br>    }<br>    catch { }<br>    finally<br>    {<br>        myStream.Close();<br>        myComStream.Close();<br>        myDesStream.Close();<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟006：创建压缩流 通过创建GZipStream对象来创建压缩流时，需要给构造方法的第二个参数传入CompressionMode.Compress枚举值。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e8-a7-a3-e5-8e-8b-e6-96-87-e4-bb-b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e8-a7-a3-e5-8e-8b-e6-96-87-e4-bb-b6.html" class="post-title-link" itemprop="url">如何使用GZip解压文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-03 12:56:27" itemprop="dateCreated datePublished" datetime="2019-08-03T12:56:27+08:00">2019-08-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e8-a7-a3-e5-8e-8b-e6-96-87-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e8-a7-a3-e5-8e-8b-e6-96-87-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8gzip-e8-a7-a3-e5-8e-8b-e6-96-87-e4-bb-b6.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="如何使用GZip解压文件"><a href="#如何使用GZip解压文件" class="headerlink" title="如何使用GZip解压文件"></a>如何使用GZip解压文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用GZipStream类的Read方法实现对文件的解压，在本实例的窗体中，首先选择要解压的GZip格式文件，然后输入解压文件的名称，最后单击“解压”按钮实现解压GZip格式的文件。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-03-04560077.png" alt=""> 图1 使用GZip解压文件</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>若要使用GZipStream类构造一个解压缩流，则需要该类的Read方法读取数据，从而实现解压缩文件功能。下面将介绍该类的Read方法。 Read方法实现将若干解压缩的字节读入指定的字节数组，其语法格式如下： public override int Read(byte[] array, int offset, int count) Read方法语法中的参数说明如表1所示。 表1 Read方法语法中的参数说明</p>
+<p>参数</p>
+<p>说明</p>
+<p>array</p>
+<p>用于存储解压缩的字节的数组</p>
+<p>offset</p>
+<p>数组中开始读取的位置</p>
+<p>count</p>
+<p>解压缩的字节数</p>
+<p>返回值</p>
+<p>解压缩到字节数组中的字节数。如果已到达流的末尾，则返回 0 或已读取的字节数</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为UnGzipFile。 （2）在默认窗体Form中添加两个TextBox控件，分别用来显示GZip文件路径、输入解压文件名称；添加两个Button按钮，分别用来选择Gzip格式文件及实现解压文件。 （3）程序主要代码如下：</p>
+<p>private void button2_Click(object sender, EventArgs e)<br>{<br>    if (String.IsNullOrEmpty(textBox1.Text))                        //若未选择gzip文件<br>    {<br>        MessageBox.Show(“请选择GZIP文件!”, “信息提示”);<br>        return;<br>    }<br>    if (String.IsNullOrEmpty(textBox2.Text))                        //若未输入解压文件名<br>    {<br>        MessageBox.Show(“请输入解压文件名!”, “信息提示”);<br>        return;<br>    }<br>    string str1 = textBox1.Text;                                //获取gzip文件的名称<br>    string str2 = textBox2.Text.Trim();                            //获取解压文件名<br>    byte[] myByte = null;                                    //定义字节数组引用<br>    FileStream myStream = null;                                //表示gzip文件的文件流<br>    FileStream myDesStream = null;                            //表示解压文件的文件流<br>    GZipStream myDeComStream = null;                        //表示解压缩流<br>    try<br>    {<br>        myStream = new FileStream(str1, FileMode.Open);                //获取gzip文件的文件流<br>        //根据gzip文件的文件流生成解压缩流<br>        myDeComStream = new GZipStream(myStream, CompressionMode.Decompress, true);<br>        myByte = new byte[4];                                //创建4个字节大小的缓冲区<br>        int myPosition = (int)myStream.Length - 4;<br>        myStream.Position = myPosition;                        //设置此流的当前位置<br>        myStream.Read(myByte, 0, 4);                            //读入4个字节到缓冲区<br>        myStream.Position = 0;                                //重新设置此流的当前位置<br>        int myLength = BitConverter.ToInt32(myByte, 0);<br>        byte[] myData = new byte[myLength + 100];                    //创建缓冲区<br>        int myOffset = 0;                                    //表示解压缩流的开始读取位置<br>        int myTotal = 0;                                    //表示从解压缩流中总共读取的字节数<br>        while (true)<br>        {<br>            //从解压缩流中读取数据写入缓冲区<br>            int myBytesRead = myDeComStream.Read(myData, myOffset, 100);<br>            if (myBytesRead == 0)                            //若读取解压缩流结束<br>                break;<br>            myOffset += myBytesRead;                        //设置新的起始位置<br>            myTotal += myBytesRead;                            //获取总共读取的字节数<br>        }<br>        myDesStream = new FileStream(str2, FileMode.Create);            //创建解压文件的文件流<br>        myDesStream.Write(myData, 0, myTotal);                    //把缓冲区中的数据写入文件流<br>        myDesStream.Flush();<br>        MessageBox.Show(“解压文件完成！”);<br>    }<br>    catch { }<br>    finally<br>    {<br>        myStream.Close();<br>        myDeComStream.Close();<br>        myDesStream.Close();<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟007：创建解压缩流 通过创建GZipStream对象来创建解压缩流时，需要给构造方法的第二个参数传入CompressionMode.Decompress枚举值。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8winrar-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8winrar-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html" class="post-title-link" itemprop="url">如何使用WinRAR压缩文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-03 12:00:38" itemprop="dateCreated datePublished" datetime="2019-08-03T12:00:38+08:00">2019-08-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8winrar-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8winrar-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/03/e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8winrar-e5-8e-8b-e7-bc-a9-e6-96-87-e4-bb-b6.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="如何使用WinRAR压缩文件"><a href="#如何使用WinRAR压缩文件" class="headerlink" title="如何使用WinRAR压缩文件"></a>如何使用WinRAR压缩文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例通过使用C#语言执行WinRAR软件的压缩命令来实现压缩文件。运行本实例，首先在窗体中选择要压缩的源文件，然后输入压缩文件的名称，最后单击“压缩”按钮实现将指定的文件压缩为rar格式。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-03-0400108.png" alt=""> 图1 使用WinRAR压缩文件</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>WinRAR软件可以使用命令行模式实现对文件的压缩，本实例使用的压缩文件的语法格式如下： WinRAR a rarFile sourceFile WinRAR软件的压缩命令参数及说明如表1所示。 表1 WinRAR软件的压缩命令参数及说明</p>
+<p>参数</p>
+<p>说明</p>
+<p>WinRAR</p>
+<p>WinRAR软件的执行命令</p>
+<p>a</p>
+<p>WinRAR软件的压缩命令，表示添加文件到压缩文件</p>
+<p>rarFile</p>
+<p>压缩文件的名称</p>
+<p>sourceFile</p>
+<p>被压缩的文件</p>
+<p><img data-src="https://cdn.fesugar.com/2019/08/2019-08-03-04001410.jpeg" alt="提示"> 说明：压缩文件时，生成的压缩文件位于被压缩文件所在的目录。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为WinRARFile。 （2）在默认窗体Form1中添加两个TextBox控件，分别用来显示源文件路径及输入压缩文件名称；添加两个Button按钮，分别用来选择要压缩的文件及实现压缩文件。 （3）程序主要代码如下：</p>
+<p>private void button3_Click(object sender, EventArgs e)<br>{<br>    if (String.IsNullOrEmpty(textBox1.Text))                                //若未选择源文件<br>    {<br>        MessageBox.Show(“请选择源文件!”, “信息提示”);<br>        return;<br>    }<br>    if (String.IsNullOrEmpty(textBox2.Text))                                //若未输入压缩文件名<br>    {<br>        MessageBox.Show(“请输入压缩文件名!”, “信息提示”);<br>        return;<br>    }<br>    String myRar;                                                //表示WinRAR.exe所在路径<br>    RegistryKey myReg;                                            //声明RegistryKey引用<br>    Object myObj;                                                //声明Object引用<br>    String myInfo;                                                //表示压缩命令的字符串<br>    ProcessStartInfo myStartInfo;                                        //声明ProcessStartInfo引用<br>    Process myProcess;                                            //声明Process类的引用<br>    string strRar;                                                //表示压缩文件名<br>    string strFile;                                                //表示源文件名<br>    try<br>    {<br>        //检索注册表HKEY_CLASSES_ROOT基项下的指定子项<br>        myReg = Registry.ClassesRoot.OpenSubKey(@”Applications\WinRAR.exe\Shell\Open\Command”);<br>        //检索子项中与指定名称关联的值<br>        myObj = myReg.GetValue(“”);<br>        //获取包含WinRAR.exe文件所在路径的字符串<br>        myRar = myObj.ToString();<br>        myReg.Close();                                            //关闭指定的注册表项<br>        //获取WinRAR.exe文件所在的完整路径<br>        myRar = myRar.Substring(1, myRar.Length - 7);<br>        strRar = textBox2.Text.Trim() + “.rar”;                                //设置压缩文件的名称<br>        strFile = textBox1.Text.Substring(textBox1.Text.LastIndexOf(“\&quot;)+1);            //获取源文件的名称<br>        myInfo = “ a “ + strRar + “ “ + strFile + “”;                            //设置压缩命令<br>        myStartInfo = new ProcessStartInfo();                                //创建ProcessStartInfo对象<br>        myStartInfo.FileName = myRar;                                //设置要启动应用程序的路径<br>        myStartInfo.Arguments = myInfo;                                //设置启动程序时的命令参数<br>        myStartInfo.WindowStyle = ProcessWindowStyle.Hidden;                    //隐藏进程窗口<br>        //设置要启动的进程的初始目录<br>        myStartInfo.WorkingDirectory = textBox1.Text.Substring(0, textBox1.Text.LastIndexOf(“\&quot;));<br>        myProcess = new Process();                                    //新建进程<br>        //设置要传递给进程的Start方法的属性<br>        myProcess.StartInfo = myStartInfo;<br>        myProcess.Start();                                        //启动进程<br>        myProcess.WaitForExit();                                    //等待关闭进程<br>        myProcess.Close();                                        //释放进程资源<br>        MessageBox.Show(“压缩文件成功！”);<br>    }<br>    catch(Exception ex)<br>    {<br>        throw ex;<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟008：隐藏启动进程时使用的窗口。 当启动一个进程之后，若不希望显示进程运行时的窗口，可以通过设置当前进程的WindowStyle属性值为ProcessWindowStyle.Hidden来实现。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/03/e5-88-9b-e5-bb-ba-e4-b8-80-e4-b8-aa-e6-96-87-e4-bb-b6-e7-94-a8-e4-ba-8e-e5-86-99-e5-85-a5utf-8-e7-bc-96-e7-a0-81-e7-9a-84-e6-96-87-e6-9c-ac.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/03/e5-88-9b-e5-bb-ba-e4-b8-80-e4-b8-aa-e6-96-87-e4-bb-b6-e7-94-a8-e4-ba-8e-e5-86-99-e5-85-a5utf-8-e7-bc-96-e7-a0-81-e7-9a-84-e6-96-87-e6-9c-ac.html" class="post-title-link" itemprop="url">创建一个文件用于写入UTF-8编码的文本</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-03 11:30:30" itemprop="dateCreated datePublished" datetime="2019-08-03T11:30:30+08:00">2019-08-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/03/e5-88-9b-e5-bb-ba-e4-b8-80-e4-b8-aa-e6-96-87-e4-bb-b6-e7-94-a8-e4-ba-8e-e5-86-99-e5-85-a5utf-8-e7-bc-96-e7-a0-81-e7-9a-84-e6-96-87-e6-9c-ac.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/03/e5-88-9b-e5-bb-ba-e4-b8-80-e4-b8-aa-e6-96-87-e4-bb-b6-e7-94-a8-e4-ba-8e-e5-86-99-e5-85-a5utf-8-e7-bc-96-e7-a0-81-e7-9a-84-e6-96-87-e6-9c-ac.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/03/e5-88-9b-e5-bb-ba-e4-b8-80-e4-b8-aa-e6-96-87-e4-bb-b6-e7-94-a8-e4-ba-8e-e5-86-99-e5-85-a5utf-8-e7-bc-96-e7-a0-81-e7-9a-84-e6-96-87-e6-9c-ac.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="创建一个文件用于写入UTF-8编码的文本"><a href="#创建一个文件用于写入UTF-8编码的文本" class="headerlink" title="创建一个文件用于写入UTF-8编码的文本"></a>创建一个文件用于写入UTF-8编码的文本</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例实现创建一个UTF-8编码格式的文件（以创建文本文件为例），首先在窗体中设置文件路径，然后输入要写入文本文件的内容，最后单击“创建”按钮实现将文本内容以UTF-8编码格式写入文本文件。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-03-03300052.png" alt=""> 图1 创建一个文件用于写入UTF-8编码的文本</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时主要用到了File类的CreateText方法和StreamWriter类的WriteLine方法，下面分别对它们进行详细讲解。 （1）File类的CreateText方法 该方法实现创建或打开一个文件用于写入 UTF-8 编码的文本。其语法格式如下： public static StreamWriter CreateText(string path) 参数说明 path：要打开以进行写入的文件。 返回值：一个 System.IO.StreamWriter，它使用 UTF-8 编码写入指定的文件。 （2）StreamWriter类的WriteLine方法 该方法实现将后跟行结束符的字符串写入文本流。该方法的重载形式有多种，本实例用到方法如下： public virtual void WriteLine(string value) 参数说明 value：要写入的字符串。如果 value 为 null，则仅写入行结束字符。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-03-03300453.png" alt="说明"> 说明：本实例创建的文件为UTF-8编码格式的文本文件（*.txt）。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为WriteUTF8File。 （2）在默认窗体Form1中添加两个文本框，分别用来设置文件路径和输入要写入文件的内容；添加两个Button控件，分别用来设置文件路径和创建并写入文件内容。 （3）程序主要代码如下：</p>
+<p>private void button2_Click(object sender, EventArgs e)<br>{<br>    if (String.IsNullOrEmpty(textBox1.Text.Trim()))                //若文件路径为空<br>    {<br>        MessageBox.Show(“请设置文件路径！”);<br>        return;<br>    }<br>    if (String.IsNullOrEmpty(textBox2.Text.Trim()))                //若文本内容为空<br>    {<br>        MessageBox.Show(“请输入文件内容！”);<br>        return;<br>    }<br>    if (!File.Exists(textBox1.Text))<br>    {<br>        using (StreamWriter sw = File.CreateText(textBox1.Text))        //创建用于写入 UTF-8 编码的文本<br>        {<br>            sw.WriteLine(textBox2.Text);                    //把字符串写入文本流<br>            MessageBox.Show(“文件创建成功”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>        }<br>    }<br>    else<br>    {<br>        MessageBox.Show(“该文件已经存在”, “提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟001：using语句的使用。 使用using语句创建实现了IDisposable接口的类，当using语句块结束后，程序会自动调用IDisposable接口的Dispose方法来销毁创建的实例。本实例代码中的StreamWriter类实现了IDisposable接口，所以使用using语句将其进行创建。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/02/e5-90-91-e6-96-87-e4-bb-b6-e4-b8-ad-e5-86-99-e5-85-a5-e8-bf-bd-e5-8a-a0-e6-95-b0-e6-8d-ae.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/02/e5-90-91-e6-96-87-e4-bb-b6-e4-b8-ad-e5-86-99-e5-85-a5-e8-bf-bd-e5-8a-a0-e6-95-b0-e6-8d-ae.html" class="post-title-link" itemprop="url">向文件中写入追加数据</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-02 20:06:40" itemprop="dateCreated datePublished" datetime="2019-08-02T20:06:40+08:00">2019-08-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/02/e5-90-91-e6-96-87-e4-bb-b6-e4-b8-ad-e5-86-99-e5-85-a5-e8-bf-bd-e5-8a-a0-e6-95-b0-e6-8d-ae.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/02/e5-90-91-e6-96-87-e4-bb-b6-e4-b8-ad-e5-86-99-e5-85-a5-e8-bf-bd-e5-8a-a0-e6-95-b0-e6-8d-ae.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/02/e5-90-91-e6-96-87-e4-bb-b6-e4-b8-ad-e5-86-99-e5-85-a5-e8-bf-bd-e5-8a-a0-e6-95-b0-e6-8d-ae.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="向文件中写入追加数据"><a href="#向文件中写入追加数据" class="headerlink" title="向文件中写入追加数据"></a>向文件中写入追加数据</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用StreamWriter类的Write方法实现向文件中写入数据，首先选择要写入数据的文件，然后在窗体下方的TextBox控件中输入要写入的内容，最后单击“写入”按钮写入数据。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-02-12061083.png" alt=""> 图1 向文件中写入追加数据</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例主要用到了StreamWriter类的构造方法和Write方法，下面对本实例中用到的关键技术进行详细讲解。 （1）StreamReader类的构造方法 该方法实现使用默认编码和缓冲区大小，为指定路径上的指定文件初始化StreamWriter 类的新实例。其语法格式如下： public StreamWriter(string path) 参数说明 path：要向其中写入的完整文件路径。 （2）StreamWriter类的Write方法 该方法实现将字符串写入流，该方法的重载形式有多种。本实例的方法如下： public override void Write(string value) 参数说明 value：要写入流的字符串。如果 value 为空，则不写入任何内容。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AddDataToFile。 （2）在默认窗体Form1中添加两个文本框，分别用来显示文件路径和输入要写入文件的内容；添加Button控件，分别用来打开指定文件和向该文件中写入内容。 （3）程序主要代码如下：</p>
+<p>private void button2_Click(object sender, EventArgs e)<br>{<br>    if (String.IsNullOrEmpty(textBox1.Text.Trim()))                        //若未选择文件<br>    {<br>        MessageBox.Show(“请设置文件”);<br>        return;<br>    }<br>    if (String.IsNullOrEmpty(textBox2.Text.Trim()))                        //若未输入要写入文件的内容<br>    {<br>        MessageBox.Show(“请输入要写入的文件内容”);<br>        return;<br>    }<br>    try<br>    {<br>        StreamWriter SWriter = new StreamWriter(textBox1.Text);                //创建StreamWriter对象<br>        SWriter.Write(textBox2.Text);                                //向文件中写入指定的内容<br>        SWriter.Close();                                        //关闭StreamWriter对象和基础流<br>        MessageBox.Show(“写入文件成功！”);<br>    }<br>    catch (Exception ex)<br>    {<br>        MessageBox.Show(ex.Message);<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟008：使用StreamWriter类写文本文件。 StreamWriter类实现了TextWriter抽象类，常用来向文本文件中写入数据。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/02/e5-b0-86-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bd-ac-e6-8d-a2-e6-88-90-e7-bd-91-e9-a1-b5-e6-96-87-e4-bb-b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/02/e5-b0-86-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bd-ac-e6-8d-a2-e6-88-90-e7-bd-91-e9-a1-b5-e6-96-87-e4-bb-b6.html" class="post-title-link" itemprop="url">将文本文件转换成网页文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-02 20:05:00" itemprop="dateCreated datePublished" datetime="2019-08-02T20:05:00+08:00">2019-08-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/02/e5-b0-86-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bd-ac-e6-8d-a2-e6-88-90-e7-bd-91-e9-a1-b5-e6-96-87-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/02/e5-b0-86-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bd-ac-e6-8d-a2-e6-88-90-e7-bd-91-e9-a1-b5-e6-96-87-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/02/e5-b0-86-e6-96-87-e6-9c-ac-e6-96-87-e4-bb-b6-e8-bd-ac-e6-8d-a2-e6-88-90-e7-bd-91-e9-a1-b5-e6-96-87-e4-bb-b6.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="将文本文件转换成网页文件"><a href="#将文本文件转换成网页文件" class="headerlink" title="将文本文件转换成网页文件"></a>将文本文件转换成网页文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>在“东方网页王”和Microsoft Word等软件中，用户只要在其中添加一些文字和图片等元素，就会自动生成一个网页。实际上，生成网页的技术并不难，因为网页文件本质上就是带有HTML控制符号的纯文本文件，用户只要在文本文件的前后加上HTML语言标识符，并保存为.htm文件即可。实例运行效果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-02-12023119.png" alt=""> 图1 将文本文件转换成网页文件</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现将RichTextBox控件中的文本转换为网页格式的文本，主要用到了RichTextBox控件的AppendText方法和SaveFile方法，下面对本实例中用到的关键技术进行详细讲解。 （1）RichTextBox控件的AppendText方法 该方法实现向文本框的当前文本追加文本。其语法格式如下： public void AppendText(string text) 参数说明 text：要向文本框的当前内容追加的文本。 （2）RichTextBox控件的SaveFile方法 该方法实现将RichTextBox 中的内容保存到特定类型的文件中。其语法格式如下： public void SaveFile(string path, RichTextBoxStreamType fileType) 参数说明 path：要保存的文件的名称和位置。 fileType：RichTextBoxStreamType类型的枚举值之一，其枚举值及说明如表1所示。 表1 RichTextBoxStreamType枚举值及说明</p>
+<p>枚举值</p>
+<p>说明</p>
+<p>RichText</p>
+<p>RTF 格式流</p>
+<p>PlainText</p>
+<p>用空格代替对象链接与嵌入 (OLE) 对象的纯文本流</p>
+<p>RichNoOleObjs</p>
+<p>用空格代替 OLE 对象的丰富文本格式（RTF 格式）流</p>
+<p>TextTextOleObjs</p>
+<p>具有 OLE 对象的文本表示形式的纯文本流</p>
+<p>UnicodePlainText</p>
+<p>包含用空格代替对象链接与嵌入 (OLE) 对象的文本流</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为ConvertTxtToWeb。 （2）在默认窗体Form1中添加一个RichTextBox控件，用来显示网页的文本和HTML语言标识符；添加一个Button控件，用来生成网页。 （3）程序主要代码如下：</p>
+<p>private void button1_Click(object sender, EventArgs e)<br>{<br>    try<br>{<br>    //设置网页显示的文本<br>        string strContent = “明日科技有限公司是一家以计算机软件技术为核心的高科技企业，多年来始终致力于行业管理软件开发、数字化出版物制作、计算机网络系统综合应用以及行业电子商务网站开发领域，涉及生产、管理、控制、仓储、物流、营销、服务等行业。公司拥有软件开发和项目实施方面的资深专家和学习型技术团队，多年来积累了丰富的技术文档和学习资料，公司的开发团队不仅是开拓进取的技术实践者，更致力于成为技术的普及和传播者。”;<br>        string strCompany = “吉林省明日科技有限公司”;<br>        string strWeb = “<a href="http://www.mingrisoft.com&quot;" target="_blank" rel="noopener">www.mingrisoft.com&quot;</a>;<br>        string strFileName = “公司网页.htm”;<br>        richTextBox1.Clear();<br>        richTextBox1.AppendText(“<HTML>“);                                //添加网页的HTML语言标识符<br>        richTextBox1.AppendText(“<HEAD>“);                                //设置网页的HEAD元素<br>        richTextBox1.AppendText(“<TITLE>“);                                //设置网页的TITLE元素<br>        richTextBox1.AppendText(strCompany);                                //添加网页的标题内容<br>        richTextBox1.AppendText(“</TITLE>“);<br>        richTextBox1.AppendText(“</HEAD>“);<br>        richTextBox1.AppendText(“<BODY BGCOLOR='TAN'>“);<br>        richTextBox1.AppendText(“<CENTER>“);                                //设置文本居中的标记<br>        richTextBox1.AppendText(“<H2>“ + strCompany + “</H2>“);<br>        String strHyper = “<H4><A HREF='" + strWeb + "'>欢迎访问明日科技公司网站：”;<br>        richTextBox1.AppendText(strHyper + strWeb + “</A></H4>“);<br>        richTextBox1.AppendText(“</CENTER>“);<br>        richTextBox1.AppendText(strContent);<br>        richTextBox1.AppendText(“</BODY>“);<br>        richTextBox1.AppendText(“</HTML>“);<br>        richTextBox1.SaveFile(strFileName, RichTextBoxStreamType.PlainText);            //保存文本框的内容为纯文本流<br>        System.Diagnostics.Process.Start(strFileName);                            //通过文档名启动进程资源<br>    }<br>    catch (Exception ex)<br>    {<br>        MessageBox.Show(ex.Message, “信息提示”, MessageBoxButtons.OK, MessageBoxIcon.Information);<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟009：通过指定文档来启动进程资源。 调用Process.Start方法可实现通过指定文档来启动进程资源，并将资源与新的Process 组件关联。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/02/e5-88-9b-e5-bb-ba-e5-b9-b6-e5-86-99-e5-85-a5-e4-ba-8c-e8-bf-9b-e5-88-b6-e6-96-87-e4-bb-b6-e6-95-b0-e6-8d-ae.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/08/02/e5-88-9b-e5-bb-ba-e5-b9-b6-e5-86-99-e5-85-a5-e4-ba-8c-e8-bf-9b-e5-88-b6-e6-96-87-e4-bb-b6-e6-95-b0-e6-8d-ae.html" class="post-title-link" itemprop="url">创建并写入二进制文件数据</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-02 19:56:37" itemprop="dateCreated datePublished" datetime="2019-08-02T19:56:37+08:00">2019-08-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/08/02/e5-88-9b-e5-bb-ba-e5-b9-b6-e5-86-99-e5-85-a5-e4-ba-8c-e8-bf-9b-e5-88-b6-e6-96-87-e4-bb-b6-e6-95-b0-e6-8d-ae.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/08/02/e5-88-9b-e5-bb-ba-e5-b9-b6-e5-86-99-e5-85-a5-e4-ba-8c-e8-bf-9b-e5-88-b6-e6-96-87-e4-bb-b6-e6-95-b0-e6-8d-ae.html" class="cy_cmt_count" data-xid="zh-CN/2019/08/02/e5-88-9b-e5-bb-ba-e5-b9-b6-e5-86-99-e5-85-a5-e4-ba-8c-e8-bf-9b-e5-88-b6-e6-96-87-e4-bb-b6-e6-95-b0-e6-8d-ae.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="创建并写入二进制文件数据"><a href="#创建并写入二进制文件数据" class="headerlink" title="创建并写入二进制文件数据"></a>创建并写入二进制文件数据</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例实现创建并写入二进制文件数据，首先选择要创建的文件的目录，然后设置文件的名称，最后单击“创建”按钮。实例运行结果如图1所示。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-02-1156032.png" alt=""> 图1 创建并写入二进制文件数据</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时主要用到了BinaryWriter类的构造方法和Write方法，下面对本实例中用到的关键技术进行详细讲解。 （1）BinaryWriter类的构造法方法 该方法实现基于所提供的流，用 UTF-8 作为字符串编码来初始化BinaryWriter 类的新实例。其语法格式如下： public BinaryWriter(Stream output) 参数说明 output：表示输出流。 （2）BinaryWriter类的Write方法 该方法实现将 4 字节有符号整数写入当前流，并将流的位置提升 4 个字节。该方法语法格式如下： public virtual void Write(int value) 参数说明 value：要写入的 4 字节有符号整数。 <img data-src="https://cdn.fesugar.com/2019/08/2019-08-02-11560620.png" alt="注意"> 注意：为了与其它文件类型进行区分，本实例中创建的文件均以bin为扩展名。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为WriteBinaryFile。 （2）在默认窗体Form1中添加两个TextBox控件，分别用来设置文件路径和文件名称；添加两个Button控件，分别用来选择文件路径和创建二进制文件。 （3）程序主要代码如下：</p>
+<p>private void button2_Click(object sender, EventArgs e)<br>{<br>    if (String.IsNullOrEmpty(textBox1.Text.Trim()))                    //若文件路径为空<br>    {<br>        MessageBox.Show(“请选择文件路径”);<br>        return;<br>    }<br>    if (String.IsNullOrEmpty(textBox2.Text.Trim()))                    //若文件名称为空<br>    {<br>        MessageBox.Show(“请设置文件名称”);<br>        return;<br>    }<br>    try<br>{<br>    //创建文件流对象<br>        FileStream myStream = new FileStream(textBox1.Text + “\&quot; + textBox2.Text+”.bin”, FileMode.Create);<br>        BinaryWriter myWriter = new BinaryWriter(myStream);            //创建BinaryWriter对象以写入二进制文件<br>        for (int i = 0; i &lt; 10; i++)//<br>        {<br>            myWriter.Write(i);                                //将整数写入当前流<br>        }<br>        myWriter.Close();                                //关闭当前资源和基础流<br>        myStream.Close();                                //关闭文件流<br>        MessageBox.Show(“创建并写入成功！”);<br>    }<br>    catch(Exception ex)<br>    {<br>        MessageBox.Show(ex.Message);<br>    }<br>}</p>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟011：以创建模式创建FileStream对象。 通常使用FileStream类的构造方法来创建一个已知文件的文件流，若把构造方法的枚举参数值改为FileMode.Create，则会以创建模式创建FileStream对象，这样程序将创建一个新文件。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fesugar"
+      src="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+  <p class="site-author-name" itemprop="name">fesugar</p>
+  <div class="site-description" itemprop="description">个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">139</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fesugar" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fesugar" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fesugar@fesugar.com" title="E-Mail → mailto:fesugar@fesugar.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="//weibo.com/u/1756351303" target="_blank" rel="noopener" title="Weibo → &#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1756351303"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.fesugar.com/" title="http:&#x2F;&#x2F;www.fesugar.com&#x2F;">甜甜糖博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.allenlan.com/" title="http:&#x2F;&#x2F;www.allenlan.com&#x2F;" rel="noopener" target="_blank">不忘初心</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://my.oschina.net/u/2955242" title="https:&#x2F;&#x2F;my.oschina.net&#x2F;u&#x2F;2955242" rel="noopener" target="_blank">fesugar</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.mxxia.com/" title="http:&#x2F;&#x2F;www.mxxia.com" rel="noopener" target="_blank">梦想霞博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">苏ICP备15051349号-1 </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fesugar</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">380k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">5:45</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+
+  <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cys44eS01"></script>
+
+
+    </div>
+</body>
+</html>
