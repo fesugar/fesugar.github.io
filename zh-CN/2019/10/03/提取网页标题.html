@@ -32,7 +32,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.fesugar.com/2019/10/100319_0839_1-1.png">
 <meta property="article:published_time" content="2019-10-03T08:39:33.000Z">
-<meta property="article:modified_time" content="2020-05-10T14:58:38.834Z">
+<meta property="article:modified_time" content="2020-05-14T09:19:57.508Z">
 <meta property="article:author" content="fesugar">
 <meta property="article:tag" content="fesugar">
 <meta property="article:tag" content="甜甜糖">
@@ -269,7 +269,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 22:58:38" itemprop="dateModified" datetime="2020-05-10T22:58:38+08:00">2020-05-10</time>
+                <time title="修改时间：2020-05-14 17:19:57" itemprop="dateModified" datetime="2020-05-14T17:19:57+08:00">2020-05-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -314,7 +314,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -353,10 +353,10 @@
 <p>l 返回值：输入流中的下一行；如果到达了输入流的末尾，则为空引用。</p>
 <p>（5）Stream类  此类提供字节序列的一般视图。</p>
 <h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><p>（1）新建一个Windows应用程序，将其命名为”提取网页标题”，默认窗体为Form1。 （2）在Form1窗体中主要添加两个TextBox控件，用于输入网址和显示网页标题信息；添加一个Button控件，用来执行提取网页标题信息的操作。<br>（3）主要程序代码。 提取网页标题的实现代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">private void button1_Click(object sender, EventArgs e)</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    if (textBox1.Text &#x3D;&#x3D; &quot;&quot;)                                        &#x2F;&#x2F;如果文本框为空</span><br><span class="line"></span><br><span class="line">    &#123; MessageBox.Show(&quot;请输入网址&quot;); return; &#125;                        &#x2F;&#x2F;提示输入网址</span><br><span class="line"></span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        if (ValidateDate1(textBox1.Text.TrimEnd()))</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">            string strl;                                        &#x2F;&#x2F;存储编码</span><br><span class="line"></span><br><span class="line">            WebRequest wb &#x3D; WebRequest.Create(textBox1.Text.Trim());    &#x2F;&#x2F;请求资源</span><br><span class="line"></span><br><span class="line">            WebResponse webRed &#x3D; wb.GetResponse();                &#x2F;&#x2F;响应请求</span><br><span class="line"></span><br><span class="line">            Stream redweb &#x3D; webRed.GetResponseStream();            &#x2F;&#x2F;返回数据存入流中</span><br><span class="line"></span><br><span class="line">            StreamReader sr &#x3D; new StreamReader(redweb, Encoding.Default);     &#x2F;&#x2F;从流中读出数据</span><br><span class="line"></span><br><span class="line">            StringBuilder sb &#x3D; new StringBuilder();                    &#x2F;&#x2F;可变字符</span><br><span class="line"></span><br><span class="line">            while ((strl &#x3D; sr.ReadLine()) !&#x3D; null)</span><br><span class="line"></span><br><span class="line">            &#123;</span><br><span class="line"></span><br><span class="line">                sb.Append(strl);                                &#x2F;&#x2F;读出数据存入可变字符中</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            Getstr(sb.ToString());                                &#x2F;&#x2F;调用正则表达式方法读出标题</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        else &#123; MessageBox.Show(&quot;请输入正确的网址&quot;); return; &#125;;            &#x2F;&#x2F;网址不合法则提示输入正确网址</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button1_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (textBox1.Text == <span class="string">""</span>)                                        <span class="comment">//如果文本框为空</span></span><br><span class="line"></span><br><span class="line">    &#123; MessageBox.Show(<span class="string">"请输入网址"</span>); <span class="keyword">return</span>; &#125;                        <span class="comment">//提示输入网址</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (ValidateDate1(textBox1.Text.TrimEnd()))</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">string</span> strl;                                        <span class="comment">//存储编码</span></span><br><span class="line"></span><br><span class="line">            WebRequest wb = WebRequest.Create(textBox1.Text.Trim());    <span class="comment">//请求资源</span></span><br><span class="line"></span><br><span class="line">            WebResponse webRed = wb.GetResponse();                <span class="comment">//响应请求</span></span><br><span class="line"></span><br><span class="line">            Stream redweb = webRed.GetResponseStream();            <span class="comment">//返回数据存入流中</span></span><br><span class="line"></span><br><span class="line">            StreamReader sr = <span class="keyword">new</span> StreamReader(redweb, Encoding.Default);     <span class="comment">//从流中读出数据</span></span><br><span class="line"></span><br><span class="line">            StringBuilder sb = <span class="keyword">new</span> StringBuilder();                    <span class="comment">//可变字符</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span> ((strl = sr.ReadLine()) != <span class="literal">null</span>)</span><br><span class="line"></span><br><span class="line">            &#123;</span><br><span class="line"></span><br><span class="line">                sb.Append(strl);                                <span class="comment">//读出数据存入可变字符中</span></span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            Getstr(sb.ToString());                                <span class="comment">//调用正则表达式方法读出标题</span></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span> &#123; MessageBox.Show(<span class="string">"请输入正确的网址"</span>); <span class="keyword">return</span>; &#125;;            <span class="comment">//网址不合法则提示输入正确网址</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>自定义方法Getstr用来实现提取网页标题功能。代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void Getstr(string strUrl)                                    &#x2F;&#x2F;自定义方法用于获取网页标题</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    string d &#x3D; @&quot;&lt;title&gt;(?&lt;title&gt;\[^&lt;\]*)&lt;&#x2F;title&gt;&quot;;                         &#x2F;&#x2F;设置提取的类型</span><br><span class="line"></span><br><span class="line">    textBox2.Text &#x3D; Regex.Match(strUrl, d).ToString();                &#x2F;&#x2F;获取网页标题</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Getstr</span>(<span class="params"><span class="keyword">string</span> strUrl</span>)                                    <span class="comment">//自定义方法用于获取网页标题</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">string</span> d = <span class="string">@"&lt;title&gt;(?&lt;title&gt;[^&lt;]*)&lt;/title&gt;"</span>;                         <span class="comment">//设置提取的类型</span></span><br><span class="line"></span><br><span class="line">    textBox2.Text = Regex.Match(strUrl, d).ToString();                <span class="comment">//获取网页标题</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -437,13 +437,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/zh-CN/2019/10/03/e4-bd-bf-e5-ad-90-e7-aa-97-e4-bd-93-e6-9c-80-e5-a4-a7-e5-8c-96-e6-98-be-e7-a4-ba.html" rel="prev" title="使子窗体最大化显示">
-      <i class="fa fa-chevron-left"></i> 使子窗体最大化显示
+    <a href="/zh-CN/2019/10/03/%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html" rel="prev" title="美化单选按钮控件">
+      <i class="fa fa-chevron-left"></i> 美化单选按钮控件
     </a></div>
-      <div class="post-nav-item">
-    <a href="/zh-CN/2019/10/03/e5-88-b6-e4-bd-9c-e8-87-aa-e5-b7-b1-e7-9a-84-e7-bd-91-e7-bb-9c-e6-b5-8f-e8-a7-88-e8-bd-af-e4-bb-b6.html" rel="next" title="制作自己的网络浏览软件">
-      制作自己的网络浏览软件 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -522,7 +519,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">139</span>
+          <span class="site-state-item-count">47</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -533,7 +530,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -605,13 +602,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">380k</span>
+    <span title="站点总字数">178k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">5:45</span>
+    <span title="站点阅读时长">2:42</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>

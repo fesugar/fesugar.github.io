@@ -234,7 +234,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/10/03/e5-ae-9e-e7-8e-b0-e6-b0-94-e6-b3-a1-e6-8f-90-e7-a4-ba-e7-aa-97-e5-8f-a3.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/01/13/CMD%20%E8%84%9A%E6%9C%AC%E5%B8%A6%E5%8F%82%E6%95%B0%E8%BF%90%E8%A1%8C.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -248,7 +248,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2019/10/03/e5-ae-9e-e7-8e-b0-e6-b0-94-e6-b3-a1-e6-8f-90-e7-a4-ba-e7-aa-97-e5-8f-a3.html" class="post-title-link" itemprop="url">实现气泡提示窗口</a>
+            <a href="/zh-CN/2019/01/13/CMD%20%E8%84%9A%E6%9C%AC%E5%B8%A6%E5%8F%82%E6%95%B0%E8%BF%90%E8%A1%8C.html" class="post-title-link" itemprop="url">CMD 脚本带参数运行</a>
         </h2>
 
         <div class="post-meta">
@@ -258,341 +258,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-10-03 16:20:44" itemprop="dateCreated datePublished" datetime="2019-10-03T16:20:44+08:00">2019-10-03</time>
+              <time title="创建时间：2019-01-13 12:43:35" itemprop="dateCreated datePublished" datetime="2019-01-13T12:43:35+08:00">2019-01-13</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:06" itemprop="dateModified" datetime="2020-05-10T03:27:06+08:00">2020-05-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/zh-CN/2019/10/03/e5-ae-9e-e7-8e-b0-e6-b0-94-e6-b3-a1-e6-8f-90-e7-a4-ba-e7-aa-97-e5-8f-a3.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/10/03/e5-ae-9e-e7-8e-b0-e6-b0-94-e6-b3-a1-e6-8f-90-e7-a4-ba-e7-aa-97-e5-8f-a3.html" class="cy_cmt_count" data-xid="zh-CN/2019/10/03/e5-ae-9e-e7-8e-b0-e6-b0-94-e6-b3-a1-e6-8f-90-e7-a4-ba-e7-aa-97-e5-8f-a3.html" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="实现气泡提示窗口"><a href="#实现气泡提示窗口" class="headerlink" title="实现气泡提示窗口"></a>实现气泡提示窗口</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>气泡提示因为它的美观友好被大多数用户所接受，用户所喜爱的就是程序员要实现的。本实例实现了任务栏气泡提示，运行本实例，效果如图1所示，在主窗体中单击”提示”按钮，在任务栏中会出现一个托盘图标，在图标的右上方会出现相应的提示，如图2所示；单击”关闭”按钮，气泡提示和托盘图标同时消失。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/10/100319_0820_1.png" alt=""></p>
-<p>图1 实现气泡提示窗口</p>
-<p><img data-src="https://cdn.fesugar.com/2019/10/100319_0820_2.png" alt=""></p>
-<p>图2 气泡提示窗口</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时主要用到了NotifyIcon控件的ShowBalloonTip方法，下面对其进行详细讲解。</p>
-<p>NotifyIcon控件表示在通知区域中创建图标的控件，其ShowBalloonTip方法用于在任务栏中持续显示具有指定标题、文本和图标的气球提示指定的时间，该方法常用语法格式如下：</p>
-<p>Void NotifyIcon.ShowBalloonTip(int timeout,string tipTitle,string tipText,ToolTipIcon tipIcon);</p>
-<p>ShowBalloonTip方法语法中的参数及说明如表1所示。</p>
-<p>表1 ShowBalloonTip方法语法中的参数及说明</p>
-<p>参数</p>
-<p>描述</p>
-<p>timeout</p>
-<p>表示气球提示显示的时间长度</p>
-<p>tipTitle</p>
-<p>表示要在气球提示上显示的标题</p>
-<p>tipText</p>
-<p>表示要在气球提示上显示的文本</p>
-<p>tipIcon</p>
-<p>表示气球提示的图标</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为BubbleShowForm。</p>
-<p>（2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个Button控件，分别用来显示气泡提示和关闭气泡提示。</p>
-<p>（3）程序主要代码如下：</p>
-<p>private void clewButton_Click(object sender,EventArgs e)</p>
-<p>{</p>
-<p>this.notifyIcon1.Visible = true;                    //设置提示控件可见</p>
-<p>//显示气泡提示</p>
-<p>this.notifyIcon1.ShowBalloonTip(1000,”当前时间：”,DateTime.Now.ToLocalTime().ToString(),ToolTipIcon.Info);</p>
-<p>}</p>
-<p>private void closeButton_Click(object sender,EventArgs e)</p>
-<p>{</p>
-<p>this.notifyIcon1.Visible = false;                    //设置提示控件不可见</p>
-<p>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟010：任务栏通知区域中图标的作用。</p>
-<p>任务栏通知区域中的图标是一些进程的快捷方式，这些进程在计算机后台运行，如防病毒程序或音量控制等，这些进程不会具有自己的用户界面。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/10/03/e4-bb-8e-e6-a1-8c-e9-9d-a2-e5-8f-b3-e4-b8-8b-e8-a7-92-e6-98-be-e7-a4-ba-e7-9a-84popup-e7-aa-97-e5-8f-a3-e6-8f-90-e9-86-92.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2019/10/03/e4-bb-8e-e6-a1-8c-e9-9d-a2-e5-8f-b3-e4-b8-8b-e8-a7-92-e6-98-be-e7-a4-ba-e7-9a-84popup-e7-aa-97-e5-8f-a3-e6-8f-90-e9-86-92.html" class="post-title-link" itemprop="url">从桌面右下角显示的Popup窗口提醒</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-03 16:20:13" itemprop="dateCreated datePublished" datetime="2019-10-03T16:20:13+08:00">2019-10-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:06" itemprop="dateModified" datetime="2020-05-10T03:27:06+08:00">2020-05-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/zh-CN/2019/10/03/e4-bb-8e-e6-a1-8c-e9-9d-a2-e5-8f-b3-e4-b8-8b-e8-a7-92-e6-98-be-e7-a4-ba-e7-9a-84popup-e7-aa-97-e5-8f-a3-e6-8f-90-e9-86-92.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/10/03/e4-bb-8e-e6-a1-8c-e9-9d-a2-e5-8f-b3-e4-b8-8b-e8-a7-92-e6-98-be-e7-a4-ba-e7-9a-84popup-e7-aa-97-e5-8f-a3-e6-8f-90-e9-86-92.html" class="cy_cmt_count" data-xid="zh-CN/2019/10/03/e4-bb-8e-e6-a1-8c-e9-9d-a2-e5-8f-b3-e4-b8-8b-e8-a7-92-e6-98-be-e7-a4-ba-e7-9a-84popup-e7-aa-97-e5-8f-a3-e6-8f-90-e9-86-92.html" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="从桌面右下角显示的Popup窗口提醒"><a href="#从桌面右下角显示的Popup窗口提醒" class="headerlink" title="从桌面右下角显示的Popup窗口提醒"></a>从桌面右下角显示的Popup窗口提醒</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>Popup窗口提醒实际上就是在屏幕右下角弹出的提示窗口，它的应用十分广范，如程序的升级、提示当天工作内容等，本实例将制作一个动态显示和隐藏的Popup窗口提醒。实例运行效果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/10/100319_0820_Popup1.png" alt=""></p>
-<p>图1 从桌面右下角显示的Popup窗口提醒</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例主要是使用API函数AnimateWindow来动态显示指定的窗体，并用Control类的SetBounds方法设置窗体的边界。下面对本实例中用到的关键技术进行详细讲解。</p>
-<p>（1）AnimateWindow函数</p>
-<p>该函数主要用来实现窗体的动画效果，其声明语法如下：</p>
-<p>[DllImportAttribute(“user32.dll”)]</p>
-<p>private static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);</p>
-<p>参数说明</p>
-<p>R hwnd：IntPtr，标窗口句柄。</p>
-<p> dwTime：动画的持续时间，数值越大动画效果的时间就越长。</p>
-<p>} dwFlags：动画效果类型选项，其常量如表1所示。</p>
-<p>表1 dwFlags参数的常量值及说明</p>
-<p>常量</p>
-<p>值</p>
-<p>说明</p>
-<p>AW_SLIDE</p>
-<p>0x00040000</p>
-<p>使用滑动类型。缺省则为滚动动画类型。当使用AW_CENTER标志时，这个标志就被忽略</p>
-<p>AW_ACTIVE</p>
-<p>0x00020000</p>
-<p>激活窗口。在使用AW_HIDE标志后不要使用这个标志</p>
-<p>AW_BLEND</p>
-<p>0x00080000</p>
-<p>使用淡入效果。只有当hWnd为顶层窗口的时候才可以使用此标志</p>
-<p>AW_HIDE</p>
-<p>0x00010000</p>
-<p>隐藏窗口，缺省则显示窗口</p>
-<p>AW_CENTER</p>
-<p>0x00000010</p>
-<p>若使用AW_HIDE标志，则使窗口向内重叠；若未使用AW_HIDE标志，则使窗口向外扩展</p>
-<p>AW_HOR_POSITIVE</p>
-<p>0x00000001</p>
-<p>自左向右显示窗口。该标志可以在滚动动画和滑动动画中使用。当使用AW_CENTER标志时，该标志将被忽略</p>
-<p>AW_HOR_NEGATIVE</p>
-<p>0x00000002</p>
-<p>自右向左显示窗口。当使用AW_CENTER 标志时该标志被忽略</p>
-<p>AW_VER_POSITIVE</p>
-<p>0x00000004</p>
-<p>自顶向下显示窗口。该标志可以在滚动动画和滑动动画中使用。当使用AW_CENTER标志时，该标志将被忽略</p>
-<p>AW_VER_NEGATIVE</p>
-<p>0x00000008</p>
-<p>自下向上显示窗口。该标志可以在滚动动画和滑动动画中使用。当使用AW_CENTER标志时，该标志将被忽略</p>
-<p>（2）SetBounds方法</p>
-<p>该方法将控件的边界设置为指定位置和大小，其语法格式如下：</p>
-<p>public void SetBounds (int x,int y, int width,int height)</p>
-<p>SetBounds方法语法中的参数及说明如表2所示。</p>
-<p>表2 SetBounds方法语法中的参数及说明</p>
-<p>参数</p>
-<p>描述</p>
-<p>x</p>
-<p>控件的新Left属性值</p>
-<p>y</p>
-<p>控件的新Top属性值</p>
-<p>width</p>
-<p>控件的新Width属性值</p>
-<p>height</p>
-<p>控件的新Height属性值</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为PopupForm。</p>
-<p>（2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加两个Button控件，分别用来显示和关闭Popup提醒窗口。</p>
-<p>（3）在项目中添加一个Windows窗体，默认名称为Frm_Info.cs，用来作为提醒窗口，该窗口中添加一个PictureBox控件，用来执行关闭窗体操作；添加一个ImageList组件，用来存储程序中用到的图片资源。</p>
-<p>（4）程序主要代码如下：</p>
-<p>Frm_Info窗体中，自定一个ShowForm方法，主要用来实现从桌面右下角显示Popup提醒窗口的功能，代码如下：</p>
-<p>public void ShowForm()</p>
-<p>{</p>
-<p>switch (this.FormNowState)</p>
-<p>{</p>
-<p>case FormState.Hide:</p>
-<p>if (this.Height &lt;= this.Rect.Height - 192)                            //当窗体没有完全显示时</p>
-<p>this.SetBounds(Rect.X, this.Top - 192, Rect.Width, this.Height + 192);        //使窗体不断上移</p>
-<p>else</p>
-<p>{</p>
-<p>this.SetBounds(Rect.X,Rect.Y,Rect.Width,Rect.Height);                //设置当前窗体的边界</p>
-<p>}</p>
-<p>AnimateWindow(this.Handle, 800, AW_SLIDE + AW_VER_NEGATIVE);    //动态显示窗体</p>
-<p>break;</p>
-<p>}</p>
-<p>}</p>
-<p>Frm_Info窗体中，自定一个CloseForm方法，该方法中首先调用API函数AnimateWindow动画隐藏窗体，然后将窗体的状态设置为隐藏，代码如下：</p>
-<p>public void CloseForm()</p>
-<p>{</p>
-<p>AnimateWindow(this.Handle,800,AW_SLIDE + AW_VER_POSITIVE + AW_HIDE);    //动画隐藏窗体</p>
-<p>this.FormNowState = FormState.Hide;                                //设定当前窗体状态为隐藏</p>
-<p>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟011：使用Screen类获取桌面的大小。</p>
-<p>Screen类表示单个系统上的一个或多个显示设备，其PrimaryScreen属性用来获取主显示，该属性返回一个Screen对象，而调用Screen对象的WorkingArea属性可以获取显示器的工作区，也就是桌面的大小。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/10/03/%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2019/10/03/%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html" class="post-title-link" itemprop="url">美化单选按钮控件</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-03 16:17:12" itemprop="dateCreated datePublished" datetime="2019-10-03T16:17:12+08:00">2019-10-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 22:59:25" itemprop="dateModified" datetime="2020-05-10T22:59:25+08:00">2020-05-10</time>
+                <time title="修改时间：2020-05-14 16:49:08" itemprop="dateModified" datetime="2020-05-14T16:49:08+08:00">2020-05-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -614,8 +287,8 @@
       <span class="post-meta-item-text">Changyan：</span>
     
     
-      <a title="changyan" href="/zh-CN/2019/10/03/%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/10/03/%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html" class="cy_cmt_count" data-xid="zh-CN/2019/10/03/美化单选按钮控件.html" itemprop="commentCount"></span>
+      <a title="changyan" href="/zh-CN/2019/01/13/CMD%20%E8%84%9A%E6%9C%AC%E5%B8%A6%E5%8F%82%E6%95%B0%E8%BF%90%E8%A1%8C.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/01/13/CMD%20%E8%84%9A%E6%9C%AC%E5%B8%A6%E5%8F%82%E6%95%B0%E8%BF%90%E8%A1%8C.html" class="cy_cmt_count" data-xid="zh-CN/2019/01/13/CMD 脚本带参数运行.html" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -626,14 +299,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>7.4k</span>
+              <span>865</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>7 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -645,17 +318,652 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <div>
-<li>来源:<a href="http://renwu.mingrisoft.com/" target="_blank" rel="external nofollow">明日科技</a></li>
-</div>
+          <p>CMD 脚本加参数运行示例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line">SET DIR=%~dp0%</span><br><span class="line">SET ARGS=%*</span><br><span class="line"><span class="keyword">if</span> NOT <span class="string">'%1'</span>==<span class="string">''</span> SET ARGS=%ARGS:<span class="string">"=\\"</span>%</span><br><span class="line"><span class="keyword">if</span> <span class="string">'%1'</span>==<span class="string">'/?'</span> goto usage</span><br><span class="line"><span class="keyword">if</span> <span class="string">'%1'</span>==<span class="string">'-?'</span> goto usage</span><br><span class="line"><span class="keyword">if</span> <span class="string">'%1'</span>==<span class="string">'?'</span> goto usage</span><br><span class="line"><span class="keyword">if</span> <span class="string">'%1'</span>==<span class="string">'/help'</span> goto usage</span><br><span class="line"><span class="keyword">if</span> <span class="string">'%1'</span>==<span class="string">'help'</span> goto usage</span><br><span class="line"></span><br><span class="line">@PowerShell -NonInteractive -NoProfile -ExecutionPolicy Bypass -Command ^</span><br><span class="line"> <span class="string">"&amp; Import-Module '%DIR%..\\Pester.psm1';  &amp; &#123; Invoke-Pester -EnableExit %ARGS%&#125;"</span></span><br><span class="line"></span><br><span class="line">goto finish</span><br><span class="line">:usage</span><br><span class="line"><span class="keyword">if</span> NOT <span class="string">'%2'</span>==<span class="string">''</span> goto <span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> To run pester <span class="keyword">for</span> tests, just call pester or runtests with no arguments</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">echo</span> Example: pester</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">echo</span> For Detailed <span class="built_in">help</span> information, call pester <span class="built_in">help</span> with a <span class="built_in">help</span> topic. See</span><br><span class="line"><span class="built_in">echo</span> <span class="built_in">help</span> topic about_Pester <span class="keyword">for</span> a list of all topics at the end</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"><span class="built_in">echo</span> Example: pester <span class="built_in">help</span> about_Pester</span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line">goto finish</span><br><span class="line"></span><br><span class="line">:<span class="built_in">help</span></span><br><span class="line">@PowerShell -NonInteractive -NoProfile -ExecutionPolicy Bypass -Command ^</span><br><span class="line">  <span class="string">"&amp; Import-Module '%DIR%..\\Pester.psm1'; &amp; &#123; Get-Help %2&#125;"</span></span><br><span class="line"></span><br><span class="line">:finish</span><br><span class="line"><span class="built_in">exit</span> /B %errorlevel%</span><br></pre></td></tr></table></figure>
+      
+    </div>
 
-<h2 id="美化单选按钮控件"><a href="#美化单选按钮控件" class="headerlink" title="美化单选按钮控件"></a>美化单选按钮控件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>用户使用C#自带的控件制作应用程序时，为了使界面更加美观，更具有特色，可以对控件的样式进行重绘，本实例将对单选按钮控件进行重绘，以用户自定义样式进行显示。实例运行效果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/10/100319_0816_1.png" alt=""></p>
-<p>图1 美化单选按钮控件</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在美化单选按钮控件时，主要是通过重绘单选框实现的，具体实现时，首先需要创建用户控件，然后在用户控件中使用Graphics类的DrawEllipse方法和FillEllipse方法实现重绘单选框操作。下面对本实例中用到的关键技术进行详细讲解。 </p>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/01/13/CMD%20%E8%8E%B7%E5%8F%96%20WinRE%20%E7%8A%B6%E6%80%81.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2019/01/13/CMD%20%E8%8E%B7%E5%8F%96%20WinRE%20%E7%8A%B6%E6%80%81.html" class="post-title-link" itemprop="url">CMD 获取 WinRE 状态</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-13 12:33:37" itemprop="dateCreated datePublished" datetime="2019-01-13T12:33:37+08:00">2019-01-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 17:19:56" itemprop="dateModified" datetime="2020-05-14T17:19:56+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2019/01/13/CMD%20%E8%8E%B7%E5%8F%96%20WinRE%20%E7%8A%B6%E6%80%81.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2019/01/13/CMD%20%E8%8E%B7%E5%8F%96%20WinRE%20%E7%8A%B6%E6%80%81.html" class="cy_cmt_count" data-xid="zh-CN/2019/01/13/CMD 获取 WinRE 状态.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>249</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>查询 bcdedit /enum 启动项的 ‘recoveryenabled’ 字段判断 Windows RE 开启状态</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"> <span class="keyword">for</span> /f <span class="string">"tokens=1,2 delims= "</span> %%i <span class="keyword">in</span> (<span class="string">'bcdedit /enum'</span>) <span class="keyword">do</span> (</span><br><span class="line">  <span class="keyword">if</span> /i <span class="string">'%%i'</span>==<span class="string">'recoveryenabled'</span> (</span><br><span class="line">    <span class="keyword">if</span> /i <span class="string">'%%j'</span>==<span class="string">'yes'</span> (<span class="built_in">echo</span> [%time%][%~n0] WinRE is Enabled&amp; <span class="built_in">exit</span> /b 0)</span><br><span class="line">  )</span><br><span class="line"> )</span><br><span class="line"> <span class="built_in">echo</span> [%time%][%~n0] WinRE is Disabled</span><br><span class="line"> <span class="built_in">exit</span> /b 1</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/09/06/csharp%20%20%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2018/09/06/csharp%20%20%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html" class="post-title-link" itemprop="url">C# 设置计算机名称</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-09-06 10:37:32" itemprop="dateCreated datePublished" datetime="2018-09-06T10:37:32+08:00">2018-09-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 17:09:23" itemprop="dateModified" datetime="2020-05-14T17:09:23+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2018/09/06/csharp%20%20%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2018/09/06/csharp%20%20%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html" class="cy_cmt_count" data-xid="zh-CN/2018/09/06/csharp  设置计算机名称.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>632</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>设置修改当前计算机名称  </p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> System.ComponentModel;</span><br><span class="line"><span class="keyword">using</span> System.Windows.Forms;</span><br><span class="line"><span class="keyword">using</span> Microsoft.VisualBasic.Devices;</span><br><span class="line"><span class="keyword">using</span> System.Runtime.InteropServices;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">ModifyComputerName</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">Frm_Main</span> : <span class="title">Form</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Frm_Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"kernel32.dll"</span>)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">int</span> <span class="title">SetComputerName</span>(<span class="params"><span class="keyword">string</span> ipComputerName</span>)</span>;<span class="comment">//重写API函数</span></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Frm_Main_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            Computer computer = <span class="keyword">new</span> Computer();<span class="comment">//创建计算机对象</span></span><br><span class="line">            textBox1.Text = computer.Name;<span class="comment">//显示计算机名称</span></span><br><span class="line"></span><br><span class="line">            SetComputerName(textBox2.Text);<span class="comment">//修改计算机名称</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%20%20%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2018/01/25/csharp%20%20%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html" class="post-title-link" itemprop="url">C# 获取鼠标按键数量</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-25 13:37:45" itemprop="dateCreated datePublished" datetime="2018-01-25T13:37:45+08:00">2018-01-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 17:03:48" itemprop="dateModified" datetime="2020-05-14T17:03:48+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2018/01/25/csharp%20%20%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2018/01/25/csharp%20%20%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html" class="cy_cmt_count" data-xid="zh-CN/2018/01/25/csharp  获取鼠标按键数量.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>510</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">引入DLL函数</span><br><span class="line"></span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>, EntryPoint = <span class="meta-string">"GetSystemMetrics"</span>)</span>]</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">GetSystemMetrics</span>(<span class="params"><span class="keyword">int</span> intcount</span>)</span>;</span><br></pre></td></tr></table></figure>
+<p>完整代码，创建一个窗体拖入一个文本框控件</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">const</span> <span class="keyword">int</span> SM_CMOUSEBUTTONS = <span class="number">43</span>;<span class="comment">//定义一个常量值</span></span><br><span class="line"></span><br><span class="line">[<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>, EntryPoint = <span class="meta-string">"GetSystemMetrics"</span>)</span>]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">GetSystemMetrics</span>(<span class="params"><span class="keyword">int</span> intcount</span>)</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Form1</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    InitializeComponent();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> jishu = GetSystemMetrics(SM_CMOUSEBUTTONS); <span class="comment">//获取鼠标按键数</span></span><br><span class="line">    textBox1.Text = Convert.ToString(jishu);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%20%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2018/01/25/csharp%20%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html" class="post-title-link" itemprop="url">C# 获取光标闪烁频率</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-25 12:44:02" itemprop="dateCreated datePublished" datetime="2018-01-25T12:44:02+08:00">2018-01-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 16:53:35" itemprop="dateModified" datetime="2020-05-14T16:53:35+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2018/01/25/csharp%20%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2018/01/25/csharp%20%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html" class="cy_cmt_count" data-xid="zh-CN/2018/01/25/csharp 获取光标闪烁频率.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>409</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>引入DLL函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[DllImport(&quot;user32.dll&quot;, EntryPoint &#x3D; &quot;GetCaretBlinkTime&quot;)]</span><br><span class="line"></span><br><span class="line">public extern static int GetDoubleClickTime();</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">完整代码，创建一个窗体拖入一个文本框控件</span><br><span class="line"></span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>, EntryPoint = <span class="meta-string">"GetCaretBlinkTime"</span>)</span>]</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">GetCaretBlinkTime</span>(<span class="params"></span>)</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Form1</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>private void Form1_Load(object sender, EventArgs e)
+{
+    textBox1.Text = Convert.ToString(GetDoubleClickTime());
+}</code></pre><p><img data-src="https://cdn.fesugar.com/2018/01/2018-01-25-04364497.png" alt=""></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%20%20%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2018/01/25/csharp%20%20%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html" class="post-title-link" itemprop="url">C# 获取鼠标双击间隔时间</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-25 12:37:51" itemprop="dateCreated datePublished" datetime="2018-01-25T12:37:51+08:00">2018-01-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 17:05:51" itemprop="dateModified" datetime="2020-05-14T17:05:51+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2018/01/25/csharp%20%20%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2018/01/25/csharp%20%20%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html" class="cy_cmt_count" data-xid="zh-CN/2018/01/25/csharp  获取鼠标双击间隔时间.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>420</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">引入DLL函数</span><br><span class="line"></span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>, EntryPoint = <span class="meta-string">"GetDoubleClickTime"</span>)</span>]</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">GetDoubleClickTime</span>(<span class="params"></span>)</span>;</span><br><span class="line"></span><br><span class="line">完整代码，创建一个窗体拖入一个文本框控件</span><br><span class="line"></span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>, EntryPoint = <span class="meta-string">"GetDoubleClickTime"</span>)</span>]</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">GetDoubleClickTime</span>(<span class="params"></span>)</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Form1</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            textBox1.Text = Convert.ToString(GetDoubleClickTime());</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://cdn.fesugar.com/2018/01/2018-01-25-04364497.png" alt=""></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86%20Mysql%20%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86%20Mysql%20%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html" class="post-title-link" itemprop="url">收集整理 Mysql 的一些用法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-12-06 08:49:42" itemprop="dateCreated datePublished" datetime="2016-12-06T08:49:42+08:00">2016-12-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 17:19:57" itemprop="dateModified" datetime="2020-05-14T17:19:57+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86%20Mysql%20%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86%20Mysql%20%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html" class="cy_cmt_count" data-xid="zh-CN/2016/12/06/收集整理 Mysql 的一些用法.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>13k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>12 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1、说明：创建数据库 <code>Create DATABASE database-name</code></p>
+<p>2、说明：删除数据库 <code>drop database dbname</code></p>
+<p>3、说明：备份sql server —<br>创建 备份数据的 device <code>USE master EXEC sp_addumpdevice &#39;disk&#39;, &#39;testBack&#39;, &#39;c:\mssql7backup\MyNwind_1.dat&#39;</code> —<br>开始 备份 <code>BACKUP DATABASE pubs TO testBack</code></p>
+<p>4、说明：创建新表 <code>create table tabname(col1 type1 [not null] [primary key],col2 type2 [not null],..)</code><br>    根据已有的表创建新表：<br>    A：<code>create table tab_new like tab_old (使用旧表创建新表)</code><br>    B：<code>create table tab_new as select col1,col2… from tab_old definition only</code></p>
+<p>5、说明：删除新表 <code>drop table tabname</code></p>
+<p>6、说明：增加一个列 <code>Alter table tabname add column col type</code> 注：列增加后将不能删除。DB2中列加上后数据类型也不能改变，唯一能改变的是增加varchar类型 的长度。</p>
+<p>7、说明：添加主键： <code>Alter table tabname add primary key(col)</code> 说明：删除主键： <code>Alter table tabname drop primary key(col)</code></p>
+<p>8、说明：创建索引：<code>create [unique] index idxname on tabname(col….)</code> 删除索引：<code>drop index idxname</code> 注：索引是不可更改的，想更改必须删除重新建。</p>
+<p>9、说明：创建视图：<code>create view viewname as select statement</code> 删除视图：<code>drop view viewname</code></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/zh-CN/2019/10/03/%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html#more" rel="contents">
+              <a class="btn" href="/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86%20Mysql%20%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -679,7 +987,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/09/10/e5-88-b6-e4-bd-9cvista-e9-a3-8e-e6-a0-bc-e7-9a-84-e6-97-a5-e5-8e-86.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/an-error-occurred-during-local-report-processing.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -693,7 +1001,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2019/09/10/e5-88-b6-e4-bd-9cvista-e9-a3-8e-e6-a0-bc-e7-9a-84-e6-97-a5-e5-8e-86.html" class="post-title-link" itemprop="url">制作Vista风格的日历</a>
+            <a href="/zh-CN/2016/10/18/an-error-occurred-during-local-report-processing.html" class="post-title-link" itemprop="url">An error occurred during local report processing</a>
         </h2>
 
         <div class="post-meta">
@@ -703,14 +1011,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-09-10 23:34:01" itemprop="dateCreated datePublished" datetime="2019-09-10T23:34:01+08:00">2019-09-10</time>
+              <time title="创建时间：2016-10-18 18:40:32" itemprop="dateCreated datePublished" datetime="2016-10-18T18:40:32+08:00">2016-10-18</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+                <time title="修改时间：2020-05-10 11:52:40" itemprop="dateModified" datetime="2020-05-10T11:52:40+08:00">2020-05-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -718,7 +1026,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
                 </span>
             </span>
 
@@ -732,8 +1040,8 @@
       <span class="post-meta-item-text">Changyan：</span>
     
     
-      <a title="changyan" href="/zh-CN/2019/09/10/e5-88-b6-e4-bd-9cvista-e9-a3-8e-e6-a0-bc-e7-9a-84-e6-97-a5-e5-8e-86.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/09/10/e5-88-b6-e4-bd-9cvista-e9-a3-8e-e6-a0-bc-e7-9a-84-e6-97-a5-e5-8e-86.html" class="cy_cmt_count" data-xid="zh-CN/2019/09/10/e5-88-b6-e4-bd-9cvista-e9-a3-8e-e6-a0-bc-e7-9a-84-e6-97-a5-e5-8e-86.html" itemprop="commentCount"></span>
+      <a title="changyan" href="/zh-CN/2016/10/18/an-error-occurred-during-local-report-processing.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/10/18/an-error-occurred-during-local-report-processing.html" class="cy_cmt_count" data-xid="zh-CN/2016/10/18/an-error-occurred-during-local-report-processing.html" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -744,382 +1052,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>5.2k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>5 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="制作Vista风格的日历"><a href="#制作Vista风格的日历" class="headerlink" title="制作Vista风格的日历"></a>制作Vista风格的日历</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>在人们的日常生活中，查询日期是非常普遍的，本实例将制作一个简单的Vista风格的日历，只显示当前系统日期的年、月、日，以及当前日期所对应的甲子年和农历。实例运行结果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1533_Vista1.png" alt=""></p>
-<p>图1 制作Vista风格的日历</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例主要使用DateTime结构来获取当前系统的日期，以及获取日期中的年、月、日，然后用ChineseLunisolarCalendar类的GetSexagenaryYear方法获取指定日期的甲子年。下面对本实例中用到的关键技术进行详细讲解。 （1）DateTime结构 该结构表示时间上的一刻，通常以日期和当天的时间表示，本实例主要使用其相关属性获取日期中的年、月、日等信息。DateTime结构的常用属性及说明如表1所示。 表1 DateTime结构的常用属性及说明</p>
-<p>属性</p>
-<p>说明</p>
-<p>Date</p>
-<p>获取DateTime结构的日期部分</p>
-<p>Day</p>
-<p>获取DateTime结构所表示的日期为该月中的第几天</p>
-<p>DayOfWeek</p>
-<p>获取DateTime结构所表示的日期是星期几</p>
-<p>DayOfYear</p>
-<p>获取DateTime结构所表示的日期是该年中的第几天</p>
-<p>Hour</p>
-<p>获取DateTime结构所表示日期的小时部分</p>
-<p>Millisecond</p>
-<p>获取DateTime结构所表示日期的毫秒部分</p>
-<p>Minute</p>
-<p>获取DateTime结构所表示日期的分钟部分</p>
-<p>Month</p>
-<p>获取DateTime结构所表示日期的月份部分</p>
-<p>Now</p>
-<p>获取一个 DateTime 对象，该对象设置为此计算机上的当前日期和时间，表示为本地时间</p>
-<p>TimeOfDay</p>
-<p>获取DateTime结构的当天的时间</p>
-<p>Today</p>
-<p>获取当前日期</p>
-<p>Year</p>
-<p>获取DateTime结构所表示日期的年份部分</p>
-<p>（2）ChineseLunisolarCalendar类的GetSexagenaryYear方法  该方法用于计算与指定日期对应的甲子（60年）循环中的年，其语法格式如下：</p>
-<p>public virtual int GetSexagenaryYear (DateTime time)</p>
-<p>参数说明 R time：要读取的DateTime对象。  返回值：甲子循环中的一个从1到60的数字，它与date参数对应。</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为BeautifulCalendar。 （2）更改默认窗体Form1的Name属性为Frm_Main，设置其FormBorderStyle属性为None，BackColor属性和TransparencyKey属性为Color.red，以便使窗体处于透明状态。 （3）在当前项目中添加一个用户控件，将其命名为DateTimeControl。 （4）程序主要代码如下： 在dateTimeControl控件的”代码编辑”窗口中设置变量和常量值，代码如下：</p>
-<p>int yy = 0;                                                //年</p>
-<p>int mm = 0;                                                //月</p>
-<p>int dd = 0;                                                 //日</p>
-<p>string yymm = “”;                                            //当前年月</p>
-<p>public const string CelestialStem = “甲乙丙丁戊己庚辛壬癸”;</p>
-<p>public const string TerrestrialBranch = “子丑寅卯辰巳午未申酉戌亥”;</p>
-<p>public const string Animals = “鼠牛虎兔龙蛇马羊猴鸡狗猪”;</p>
-<p>public const string ChineseNumber = “〇一二三四五六七八九”;</p>
-<p>在dateTimeControl控件的Paint事件中，将当前日期的年、月、日，以及相应的农历年份在指定的位置进行绘制。实现代码如下：</p>
-<p>private void DateTimeControl_Paint(object sender, PaintEventArgs e)<br>{<br>    Image img = new Bitmap(Properties.Resources.backdrop1);                //从资源文件中读取背景图片<br>    e.Graphics.DrawImageUnscaled(img, new Point(0, 0));                    //绘制背景图片<br>    yymm = yy.ToString() + “年” + “ “ + mm.ToString() + “月”;                //记录当前的年月<br>    Font Myfont = new Font(“幼圆”, 12, FontStyle.Bold);                    //设置字体样式<br>    float Date_Y = (this.Width - StringSize(yymm, Myfont, true)) / 2F;            //设置文本的显示位置<br>                                                                                  //绘制日期<br>    e.Graphics.DrawString(yymm, Myfont, new SolidBrush(Color.White), new PointF(Date_Y, 20F));<br>    Myfont = new Font(“新宋体”, 65, FontStyle.Bold);                        //设置天的字体样式<br>    float Date_D = (this.Width - StringSize(dd.ToString(), Myfont, true)) / 2F;         //设置文本的位置<br>                                                                                        //绘制天<br>    e.Graphics.DrawString(dd.ToString(), Myfont, new SolidBrush(Color.Black), new PointF(Date_D + 3, 30F));<br>    //绘制天的阴影<br>    e.Graphics.DrawString(dd.ToString(), Myfont, new SolidBrush(Color.White), new PointF(Date_D, 30F));<br>    string MyWeek = GetDayOfWeekString(this.Date);                    //获取今天是周几<br>    Myfont = new Font(“幼圆”, 12, FontStyle.Bold);                        //设置周的字体样式<br>    Date_Y = (this.Width - StringSize(MyWeek, Myfont, true)) / 2F;                //设置文本的位置<br>                                                                                  //绘制今天是周几<br>    e.Graphics.DrawString(MyWeek, Myfont, new SolidBrush(Color.White), new PointF(Date_Y, 110F));<br>    int tem_n = calendar.GetSexagenaryYear(Date);                        //获取今天在那个甲子年中<br>                                                                         //获取农历年干支<br>    string Armour = CelestialStem.Substring((tem_n - 1) % 10, 1) + TerrestrialBranch.Substring((tem_n - 1) % 12, 1);<br>    tem_n = calendar.GetSexagenaryYear(Date);                        //获取今天在那个甲子年中<br>    string Resemble = Animals.Substring((tem_n - 1) % 12, 1);                //获取生肖<br>                                                                             //农历日期<br>    string tem_embolism = “”;                                    //记录是否为闰年<br>    string tem_Lunardata = “”;                                    //记录农历日期<br>    GetLunarCalendar(Date, out tem_embolism, out tem_Lunardata);            //获取农历的相关信息<br>                                                                            //记录农历的信息<br>    string LunarInfo = Armour + Resemble + tem_embolism + “ “ + LunarYear(Date.Year) + “年” + tem_Lunardata;<br>    Myfont = new Font(“黑体”, 7.5F);                                //设置文本的字体样式<br>    Date_Y = (this.Width - StringSize(LunarInfo, Myfont, true)) / 2F;            //设置农历的显示位置<br>                                                                                 //绘制农历<br>    e.Graphics.DrawString(LunarInfo, Myfont, new SolidBrush(Color.White), new PointF(Date_Y, 130F));<br>}</p>
-<p>自定义方法LunarYear将获取的农历年份转换成大写形式。实现代码如下：</p>
-<p>/// <summary><br>/// 将农历年份转换成大写<br>/// </summary><br>/// <param name="date">阳历年份</param><br>/// <returns>农历年份</returns><br>public string LunarYear(int Y)<br>{<br>    string m_LunarYearText = “”;<br>    StringBuilder sb = new StringBuilder();                            //创建StringBuilder对象<br>    int year = Y;                                            //记录年份<br>    int d;<br>    do<br>    {<br>        d = year % 10;                                        //获取年份的最后一位数字<br>        sb.Insert(0, ChineseNumber[d]);                            //将数字转换成大写<br>        year = year / 10;                                        //舍去年份的最后一个数字<br>    } while (year &gt; 0);                                        //如果年份大于0,继续循环<br>    m_LunarYearText = sb.ToString();                                //获取获当前年份的大写<br>    return m_LunarYearText;<br>}</p>
-<p>自定义方法GetLunarCalendar根据指定的日期获取当前日期是否为闰年，以及该日期所对应的农历日期，并用embolism和Lunardata参数返回。代码如下：</p>
-<p>/// <summary><br>/// 获取对应日期的农历及其他信息<br>/// </summary><br>/// <param name="dtDay">农历日期</param><br>/// <returns>农历信息</returns><br>public static void GetLunarCalendar(DateTime dtDay, out string embolism, out string Lunardata)<br>{<br>    string sYear = dtDay.Year.ToString();                            //获取当前日期的年份<br>    string sMonth = dtDay.Month.ToString();                            //获取当前日期的月份<br>    string sDay = dtDay.Day.ToString();                                //获取当前日期的日<br>    int year;<br>    int month;<br>    int day;<br>    try<br>    {<br>        year = int.Parse(sYear);                                    //将年转换成32位整数<br>        month = int.Parse(sMonth);                                //将月转换成32位整数<br>        day = int.Parse(sDay);                                    //将日转换成32位整数<br>    }<br>    catch<br>    {<br>        year = DateTime.Now.Year;                                //获取系统时间的年份<br>        month = DateTime.Now.Month;                            //获取系统时间的月份<br>        day = DateTime.Now.Day;                                //获取系统时间的日<br>    }<br>    int nTheDate;<br>    int nIsEnd;<br>    int k, m, n, nBit, i;<br>    string calendar = string.Empty;<br>    //计算到初始时间1921年2月8日的天数：1921-2-8(正月初一)<br>    nTheDate = (year - 1921) * 365 + (year - 1921) / 4 + day + MonthAdd[month - 1] - 38;<br>    if ((year % 4 == 0) &amp;&amp; (month &gt; 2))<br>        nTheDate += 1;<br>    //计算天干，地支，月，日<br>    nIsEnd = 0;<br>    m = 0;<br>    k = 0;<br>    n = 0;<br>    while (nIsEnd != 1)<br>    {<br>        if (LunarData[m] &lt; 4095)<br>            k = 11;<br>        else<br>            k = 12;<br>        n = k;<br>        while (n &gt;= 0)<br>        {<br>            //获取LunarData[m]的第n个二进制位的值<br>            nBit = LunarData[m];<br>            for (i = 1; i &lt; n + 1; i++)<br>                nBit = nBit / 2;<br>            nBit = nBit % 2;<br>            if (nTheDate &lt;= (29 + nBit))<br>            {<br>                nIsEnd = 1;<br>                break;<br>            }<br>            nTheDate = nTheDate - 29 - nBit;<br>            n = n - 1;<br>        }<br>        if (nIsEnd == 1)<br>            break;<br>        m = m + 1;<br>    }<br>    year = 1921 + m;<br>    month = k - n + 1;<br>    day = nTheDate;<br>    #region 格式化日期显示为三月廿四<br>    if (k == 12)<br>    {<br>        if (month == LunarData[m] / 65536 + 1)<br>            month = 1 - month;<br>        else if (month &gt; LunarData[m] / 65536 + 1)<br>            month = month - 1;<br>    }<br>    //农历月<br>    if (month &lt; 1)<br>    {<br>        embolism = “闰”;<br>        Lunardata = MonthName[-1 * month].ToString() + “月”;<br>    }<br>    else<br>    {<br>        embolism = “”;<br>        Lunardata = MonthName[month].ToString() + “月”;<br>    }<br>    //农历日<br>    Lunardata += DayName[day].ToString();<br>    #endregion<br>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟009：使用DateTime.Now属性获取系统时间！ 使用DateTime.Now属性可以方便的获取系统时间，而且可以使用格式化方式方便的得到系统时间的字符串表示形式，代码如下：</p>
-<p>string P_str = DateTime.Now.ToString(“yyyy年M月d日h时m分s秒fff毫秒”);</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/09/10/datagridview-e5-92-8cbindingsource-e5-a4-8d-e5-90-88-e6-8e-a7-e4-bb-b6.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2019/09/10/datagridview-e5-92-8cbindingsource-e5-a4-8d-e5-90-88-e6-8e-a7-e4-bb-b6.html" class="post-title-link" itemprop="url">DataGridView和BindingSource复合控件</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-10 23:32:58" itemprop="dateCreated datePublished" datetime="2019-09-10T23:32:58+08:00">2019-09-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/zh-CN/2019/09/10/datagridview-e5-92-8cbindingsource-e5-a4-8d-e5-90-88-e6-8e-a7-e4-bb-b6.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/09/10/datagridview-e5-92-8cbindingsource-e5-a4-8d-e5-90-88-e6-8e-a7-e4-bb-b6.html" class="cy_cmt_count" data-xid="zh-CN/2019/09/10/datagridview-e5-92-8cbindingsource-e5-a4-8d-e5-90-88-e6-8e-a7-e4-bb-b6.html" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="DataGridView和BindingSource复合控件"><a href="#DataGridView和BindingSource复合控件" class="headerlink" title="DataGridView和BindingSource复合控件"></a>DataGridView和BindingSource复合控件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>复合控件是封装在公共容器内的 Windows 窗体控件的集合，这种控件通常称为用户控件，其中包含的子控件称为构成控件。复合控件包含与每个构成控件相关联的所有固有功能，允许程序设计人员有选择地公开和绑定它们的属性。本实例将使用DataGridView控件和BindingSource控件制作复合控件来显示学生档案信息，实例运行效果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1532_DataGridVie1.png" alt=""></p>
-<p>图1 DataGridView和BindingSource复合控件</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时主要用到了DataGridView控件和BindingSource组件，下面分别对它们进行详细讲解。 （1）DataGridView控件 DataGridView控件，又称为数据表格控件，它提供一种强大而灵活的以表格形式显示数据的方式，可以使用DataGridView控件来显示少量数据的只读视图，也可以对其进行缩放以显示特大数据集的可编辑视图。使用DataGridView控件，可以显示和编辑来自多种不同类型的数据源的表格数据。将数据绑定到DataGridView控件非常简单和直观，在大多数情况下，只需设置DataSource属性即可。另外，DataGridView控件具有极高的可配置性和可扩展性，它提供有大量的属性、方法和事件，可以用来对该控件的外观和行为进行自定义。当需要在Windows窗体应用程序中显示表格数据时，首先考虑使用DataGridView控件。若要以小型网格显示只读值或者使用户能够编辑具有数百万条记录的表，DataGridView控件将提供可以方便地进行编程以及有效地利用内存的解决方案。 DataGridView控件的常用属性及说明如表1所示。 表1 DataGridView控件的常用属性及说明</p>
-<p>属性</p>
-<p>说明</p>
-<p>AllowUserToAddRows</p>
-<p>获取或设置一个值，该值指示是否向用户显示添加行的选项</p>
-<p>AllowUserToDeleteRows</p>
-<p>获取或设置一个值，该值指示是否允许用户从DataGridView中删除行</p>
-<p>AlternatingRowsDefaultCellStyle</p>
-<p>获取或设置应用于DataGridView的奇数行的默认单元格样式</p>
-<p>ColumnCount</p>
-<p>获取或设置DataGridView中显示的列数</p>
-<p>Columns</p>
-<p>获取一个包含控件中所有列的集合</p>
-<p>CurrentCell</p>
-<p>获取或设置当前处于活动状态的单元格</p>
-<p>CurrentRow</p>
-<p>获取包含当前单元格的行</p>
-<p>DataMember</p>
-<p>获取或设置数据源中DataGridView显示其数据的列表或表的名称</p>
-<p>DataSource</p>
-<p>获取或设置DataGridView所显示数据的数据源</p>
-<p>MultiSelect</p>
-<p>获取或设置一个值，该值指示是否允许用户一次选择DataGridView的多个单元格、行或列</p>
-<p>NewRowIndex</p>
-<p>获取新记录所在行的索引</p>
-<p>RowCount</p>
-<p>获取或设置DataGridView中显示的行数</p>
-<p>Rows</p>
-<p>获取一个集合，该集合包含DataGridView控件中的所有行</p>
-<p>SortOrder</p>
-<p>获取一个值，该值指示是按升序或降序对DataGridView控件中的项进行排序，还是不排序</p>
-<p>DataGridView控件的常用事件及说明如表2所示。  表2 DataGridView控件的常用事件及说明</p>
-<p>事件</p>
-<p>说明</p>
-<p>CellClick</p>
-<p>在单元格的任何部分被单击时发生</p>
-<p>CellContentClick</p>
-<p>在单元格中的内容被单击时发生</p>
-<p>CellContentDoubleClick</p>
-<p>在用户双击单元格的内容时发生</p>
-<p>CellDoubleClick</p>
-<p>在用户双击单元格中的任何位置时发生</p>
-<p>CellMouseClick</p>
-<p>在用户用鼠标单击单元格中的任何位置时发生</p>
-<p>CellMouseDoubleClick</p>
-<p>在双击DataGridView中的单元格时发生</p>
-<p>Sorted</p>
-<p>在DataGridView控件完成排序操作时发生</p>
-<p>（2）BindingSource组件  BindingSource组件，又称为数据源绑定组件，它主要用于封装窗体的数据源。 BindingSource组件的常用属性及说明如表3所示。 表3 BindingSource组件的常用属性及说明</p>
-<p>属性</p>
-<p>说明</p>
-<p>AllowNew</p>
-<p>获取或设置一个值，该值指示是否可以使用AddNew方法向列表中添加项</p>
-<p>AllowRemove</p>
-<p>获取一个值，它指示是否可从基础列表中移除项</p>
-<p>Count</p>
-<p>获取基础列表中的总项数</p>
-<p>Current</p>
-<p>获取列表中的当前项</p>
-<p>DataMember</p>
-<p>获取或设置连接器当前绑定到的数据源中的特定列表</p>
-<p>DataSource</p>
-<p>获取或设置连接器绑定到的数据源</p>
-<p>Item</p>
-<p>获取或设置指定索引处的列表元素</p>
-<p>List</p>
-<p>获取连接器绑定到的列表</p>
-<p>Position</p>
-<p>获取或设置基础列表中当前项的索引</p>
-<p>Sort</p>
-<p>获取或设置用于排序的列名称以及用于查看数据源中的行的排序顺序</p>
-<p>SortDirection</p>
-<p>获取列表中项的排序方向</p>
-<p>SupportsSearching</p>
-<p>获取一个值，它指示数据源是否支持使用Find方法进行搜索</p>
-<p>SupportsSorting</p>
-<p>获取一个值，它指示数据源是否支持排序</p>
-<p>BindingSource组件的常用方法及说明如表4所示。  表4 BindingSource组件的常用方法及说明</p>
-<p>方法</p>
-<p>说明</p>
-<p>Add</p>
-<p>将现有项添加到内部列表中</p>
-<p>AddNew</p>
-<p>向基础列表添加新项</p>
-<p>ApplySort</p>
-<p>使用指定的排序说明对数据源进行排序</p>
-<p>Clear</p>
-<p>从列表中移除所有元素</p>
-<p>CopyTo</p>
-<p>将List中的内容复制到指定数组，从指定索引值处开始</p>
-<p>Find</p>
-<p>在数据源中查找指定的项</p>
-<p>GetEnumerator</p>
-<p>检索List的一个枚举数</p>
-<p>IndexOf</p>
-<p>搜索指定的对象，并返回整个列表中第一个匹配项的索引</p>
-<p>Insert</p>
-<p>将一项插入列表中指定的索引处</p>
-<p>MoveFirst</p>
-<p>移至列表中的第一项</p>
-<p>MoveLast</p>
-<p>移至列表中的最后一项</p>
-<p>MoveNext</p>
-<p>移至列表中的下一项</p>
-<p>MovePrevious</p>
-<p>移至列表中的上一项</p>
-<p>Remove</p>
-<p>从列表中移除指定的项</p>
-<p>RemoveAt</p>
-<p>移除此列表中指定索引处的项</p>
-<p>RemoveCurrent</p>
-<p>从列表中移除当前项</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为ComplexControl。 （2）在当前项目中添加一个用户控件，将其命名为UserControl1。在用户控件中添加一个DataGridView 控件和一个BindingSource组件，并在DataGridView 控件的Columns属性中添加描述学生信息的字段。 （3）程序主要代码如下：</p>
-<p>public void BindData()<br>{<br>    //创建数据库连接对象<br>    SqlConnection con = new SqlConnection(“server=mrwxk\\wangxiaoke;uid=sa;pwd=;database=db_TomeOne;”);<br>    con.Open();                                            //打开数据库连接<br>    SqlDataAdapter sda = new SqlDataAdapter(“Select * From tb_Student”, con);        //创建桥接器对象<br>    DataTable dt = new DataTable();                                //创建DataTable对象<br>    try<br>    {<br>        sda.Fill(dt);                                        //填充DataTable<br>    }<br>    catch (Exception ex)<br>    {<br>        throw ex;                                            //抛出异常<br>    }<br>    bindingSource1.DataSource = dt;                                //指定BindingSource数据源<br>    dataGridView1.DataSource = bindingSource1;                        //将BindingSource指定给DataGridView<br>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟010：使DataGridView单元格中的内容换行！ 通过设置DataGridView控件的DefaultCellStyle属性的WrapMode属性可以实现单元格文本换行功能，代码如下：</p>
-<p>dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/09/10/e5-b0-86word-e6-96-87-e6-a1-a3-e5-b5-8c-e5-85-a5-e5-88-b0winform-e7-aa-97-e4-bd-93-e4-b8-ad.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2019/09/10/e5-b0-86word-e6-96-87-e6-a1-a3-e5-b5-8c-e5-85-a5-e5-88-b0winform-e7-aa-97-e4-bd-93-e4-b8-ad.html" class="post-title-link" itemprop="url">将Word文档嵌入到WinForm窗体中</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-10 23:31:09" itemprop="dateCreated datePublished" datetime="2019-09-10T23:31:09+08:00">2019-09-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/zh-CN/2019/09/10/e5-b0-86word-e6-96-87-e6-a1-a3-e5-b5-8c-e5-85-a5-e5-88-b0winform-e7-aa-97-e4-bd-93-e4-b8-ad.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/09/10/e5-b0-86word-e6-96-87-e6-a1-a3-e5-b5-8c-e5-85-a5-e5-88-b0winform-e7-aa-97-e4-bd-93-e4-b8-ad.html" class="cy_cmt_count" data-xid="zh-CN/2019/09/10/e5-b0-86word-e6-96-87-e6-a1-a3-e5-b5-8c-e5-85-a5-e5-88-b0winform-e7-aa-97-e4-bd-93-e4-b8-ad.html" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
+              <span>485</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1138,15 +1071,118 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="将Word文档嵌入到WinForm窗体中"><a href="#将Word文档嵌入到WinForm窗体中" class="headerlink" title="将Word文档嵌入到WinForm窗体中"></a>将Word文档嵌入到WinForm窗体中</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>Office是我们日常工作中经常用到的办公软件，然而，随着信息技术的飞速发展，已经有越来越多的人使用Word写作文档、使用Excel制做报表、使用OutLook方便的收发电子邮件。一切的操作都是这么轻松，实例中将会介绍怎样使用C#在Form窗体中显示Word文档，运行效果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1531_WordWinFo1.png" alt=""></p>
-<p>图1 将Word文档嵌入到WinForm窗体中</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例重点在于向读者介绍怎样使用WebBrowser控件显示Word文档，下面对本实例中所用到的关键技术进行详细讲解。 WebBrowser控件是Windows窗体应用程序的标准控件，使用WebBrowser控件可以在窗体中显示网页信息，通过WebBrowser控件的Navigate方法可以将指定位置的文档加载到WebBrowser控件中，该方法常用的语法格式如下：</p>
-<p>public void Navigate(string urlString)</p>
-<p>参数说明 R urlString：要加载的文档的URL地址。</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为WordInForm。 （2）更改默认窗体Form1的Name属性为Frm_Main，更改Text属性为”将Word文档嵌入到WinForm窗体中”，并向窗体中添加一个MenuStrip菜单控件，向菜单中添加两个菜单项”打开”和”退出”分别用于打开Word文档和退出应用程序；向窗体中添加WebBrowser控件，此控件用于显示Word文档。 （3）程序主要代码如下：</p>
-<p>private void 打开ToolStripMenuItem_Click(object sender, EventArgs e)<br>{<br>    OpenFileDialog P_GetFile = new OpenFileDialog();                            //创建打开文件对话框对象<br>    DialogResult P_dr = P_GetFile.ShowDialog();                                //显示打开文件对话框<br>    if (P_dr == DialogResult.OK)                                            //是否单击确定<br>    {<br>        WebBrowser.Navigate(P_GetFile.FileName);                                //打开Word文档并显示<br>    }<br>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟001：使用WebBrowser控件轻松的在窗体中浏览网页信息！ WebBrowser控件可以在Windows窗体客户端应用程序中显示网页，使用WebBrowser控件显示网页信息非常方便，只需执行Navigate方法，并在方法参数中加入网址信息字符串即可！</p>
+          <p>在.net平台使用 RDLC 进行报表开发，本机测试正常，到别的机器不是没反应就是报 An error occurred during local report processing 等错误<br>最后发现要确保报表所需的控件存在以及版本正确。</p>
+<pre><code>Microsoft.ReportViewer.Common.dll 
+Microsoft.ReportViewer.DataVisualization.dll 
+Microsoft.ReportViewer.ProcessingObjectModel.dll 
+Microsoft.ReportViewer.WinForms.dll</code></pre><p>这四个搞定后终于正常了！ 最后别忘了语言资源的使用<br>─zh-Hans </p>
+<pre><code>Microsoft.ReportViewer.Common.resources.dll
+Microsoft.ReportViewer.DataVisualization.resources.dll 
+Microsoft.ReportViewer.Design.resources.dll 
+Microsoft.ReportViewer.WinForms.resources.dll</code></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/c-mysql-parameter-must-be-defined.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/18/c-mysql-parameter-must-be-defined.html" class="post-title-link" itemprop="url">C# MySql “Parameter '@??' must be defined”</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-18 18:31:42" itemprop="dateCreated datePublished" datetime="2016-10-18T18:31:42+08:00">2016-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 17:12:28" itemprop="dateModified" datetime="2020-05-14T17:12:28+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/zh-CN/2016/10/18/c-mysql-parameter-must-be-defined.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/10/18/c-mysql-parameter-must-be-defined.html" class="cy_cmt_count" data-xid="zh-CN/2016/10/18/c-mysql-parameter-must-be-defined.html" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>720</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>C# 一段程序如下，执行出错，错误信息是 “Parameter ‘@rowNum’ must be defined” 但是直接在 mySql workbatch 中运行是正确的！！ 原因和在？ 搜索一下， 看到老外的网站说 连接串要加上 ： “Allow User Variables=True”, 再试验一次，发现可以了！！ string mySqlConnString = @”Database=testDB ; User Id = root; Password =password;Data source=10.10.10.107;”; MySql.Data.MySqlClient.MySqlConnection mySqlConn = new MySql.Data.MySqlClient.MySqlConnection(); mySqlConn.ConnectionString = mySqlConnString; mySqlConn.Open(); MySql.Data.MySqlClient.MySqlCommand mySqlCmd = new MySql.Data.MySqlClient.MySqlCommand(); //declare @rowNumber as integer; mySqlCmd.Connection = mySqlConn; mySqlCmd.CommandText = “set @rowNum:=0; create temporary table T_729540255 as ( Select @rowNum:=ifnull(@rowNum,0)+1 as Temp_id, A.employee_id,A.employee_no From employee A)”; mySqlCmd.ExecuteNonQuery();</p>
 
       
     </div>
@@ -1166,7 +1202,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/09/10/e5-88-9b-e5-bb-baword-e6-96-87-e6-a1-a3.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/csharp%20%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -1180,7 +1216,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2019/09/10/e5-88-9b-e5-bb-baword-e6-96-87-e6-a1-a3.html" class="post-title-link" itemprop="url">创建Word文档</a>
+            <a href="/zh-CN/2016/10/18/csharp%20%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html" class="post-title-link" itemprop="url">C#通用数据库操作类</a>
         </h2>
 
         <div class="post-meta">
@@ -1190,14 +1226,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-09-10 23:30:26" itemprop="dateCreated datePublished" datetime="2019-09-10T23:30:26+08:00">2019-09-10</time>
+              <time title="创建时间：2016-10-18 18:23:17" itemprop="dateCreated datePublished" datetime="2016-10-18T18:23:17+08:00">2016-10-18</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
+                <time title="修改时间：2020-05-14 17:10:06" itemprop="dateModified" datetime="2020-05-14T17:10:06+08:00">2020-05-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1205,7 +1241,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
                 </span>
             </span>
 
@@ -1219,8 +1255,8 @@
       <span class="post-meta-item-text">Changyan：</span>
     
     
-      <a title="changyan" href="/zh-CN/2019/09/10/e5-88-9b-e5-bb-baword-e6-96-87-e6-a1-a3.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/09/10/e5-88-9b-e5-bb-baword-e6-96-87-e6-a1-a3.html" class="cy_cmt_count" data-xid="zh-CN/2019/09/10/e5-88-9b-e5-bb-baword-e6-96-87-e6-a1-a3.html" itemprop="commentCount"></span>
+      <a title="changyan" href="/zh-CN/2016/10/18/csharp%20%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://www.fesugar.com/zh-CN/2016/10/18/csharp%20%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html" class="cy_cmt_count" data-xid="zh-CN/2016/10/18/csharp 通用数据库操作类.html" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -1231,14 +1267,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
+              <span>76</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -1250,399 +1286,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="创建Word文档"><a href="#创建Word文档" class="headerlink" title="创建Word文档"></a>创建Word文档</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>操作Word文档之前首先要创建Word文档，如果系统中已经安装Office办公软件，可以在文件夹中单击”右键”/“新建”/“Microsoft Word文档”来创建Word文档，那么，怎样使用C#来创建Word文档呢？这正是实例中将要介绍的内容，实例运行效果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1530_Word1.png" alt=""></p>
-<p>图1 使用C#创建Word文档</p>
-<p>实例运行中单击”创建Word文档”按钮，会根据用户选择的路径位置创建Word文档，而文档的名称就是当前系统日期与时间。创建的Word文档如图2所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1530_Word2.png" alt=""></p>
-<p>图2 创建的Word文档</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例重点在于向读者介绍怎样使用Documents集合的Add方法方便的创建Word文档，下面对本实例用到的关键技术进行详细讲解。 使用C#操作Word文档前首先要创建Word应用程序对象（Application对象），Application对象的Documents属性会返回Documents对象，Documents对象是Word应用程序打开的Word文档的集合，使用Documents对象的Add方法可以方便的创建Word文档。Add方法的语法格式如下：</p>
-<p>Document Documents.Add(ref object Template, ref object NewTemplate, ref object DocumentType, ref object Visible);</p>
-<p>Add方法中的参数说明如表1所示。 表1 Add方法中的参数说明</p>
-<p>参数</p>
-<p>描述</p>
-<p>Template</p>
-<p>创建Word文档所使用的模板，如果省略此参数Word会使用Normal模板</p>
-<p>NewTemplate</p>
-<p>是否将文档以模板形式打开，默认值为False</p>
-<p>DocumentType</p>
-<p>设定创建文档的类型，参数接收枚举成员，默认值为wdNewBlankDocument</p>
-<p>Visible</p>
-<p>打开的文档是否可见，默认值为True</p>
-<p>注意：创建Word文档时可以根据Add方法的第一个参数(Template)来设置创建Word文档所使用的模板。</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为NewWord。 （2）使用C#操作Word文档，首先要确定本地计算机中已经安装Office办公软件，实例中使用的Office版本为2003。只有安装Office2003后C#才可以引用与Word相关的COM组件。C#引用COM组件的具体步骤为：选中当前项目，单击鼠标右键，在弹出的快捷菜单中选择”添加引用”选项，弹出”添加引用”对话框，如图3所示。在”添加引用”对话框中单击”COM”选项卡，在选项卡中选中”Microsoft Word 11.0 Ojbect Library”项，单击”确定”按钮完成添加。成功添加”COM”组件的引用后，可以在程序代码中引用命名空间”using Word = Microsoft.Office.Interop.Word;”。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1530_Word3.png" alt="">)<img data-src="https://cdn.fesugar.com/2019/09/091019_1530_Word4.png" alt=""></p>
-<p>图3 添加COM组件</p>
-<p>（3）更改默认窗体Form1的Name属性为Frm_Main，更改Text属性为”创建Word文档”，并向窗体中添加一个TextBox控件，此控件用于显示Word文档保存路径；向窗体中添加3个Button按钮，这3个按钮分别用于选择文档保存路径、创建Word文档和显示Word文档。 （4）程序主要代码如下：</p>
-<p>private void btn_New_Click(object sender, EventArgs e)<br>{<br>    btn_New.Enabled = false;                                        //将新建按钮设置为不可用<br>    ThreadPool.QueueUserWorkItem(                                    //开始线程池<br>    (pp) =&gt;                                                //使用lambda表达式<br>{<br>        G_wa = new Microsoft.Office.Interop.Word.Application();                //创建应用程序对象<br>    object P_obj = “Normal.dot”;                                //定义文档模板<br>    Word.Document P_wd = G_wa.Documents.Add(                    //向Word应用程序中添加文档<br>    ref P_obj, ref G_missing, ref G_missing, ref G_missing);<br>        G_str_path = string.Format(                                //计算文件保存路径<br>    @”{0}\{1}”, G_FolderBrowserDialog.SelectedPath,<br>    DateTime.Now.ToString(“yyyy年M月d日h时s分m秒fff毫秒”) + “.doc”);<br>        P_wd.SaveAs(                                        //保存Word文件<br>    ref G_str_path,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing);<br>        ((Word._Application)G_wa.Application).Quit(                        //退出应用程序<br>    ref G_missing, ref G_missing, ref G_missing);<br>        this.Invoke(                                            //调用窗体线程<br>    (MethodInvoker)(() =&gt;                                //使用lambda表达式<br>{<br>        MessageBox.Show(“Word文档已经创建”, “提示！”);            //提示已经创建Word<br>    btn_display.Enabled = true;                            //启用显示按钮<br>}));<br>    });<br>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟002：通过Visible属性设置Word文档是否可见！ 在Form窗体编程中可以设置窗体的Visible属性从而控制窗体是否可见，使用C#操作Word文档时，则可以通过设置Application对象的Visible属性控制Word文档是否可见。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/09/10/e5-90-91word-e6-96-87-e6-a1-a3-e4-b8-ad-e5-86-99-e5-85-a5-e6-96-87-e5-ad-97.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2019/09/10/e5-90-91word-e6-96-87-e6-a1-a3-e4-b8-ad-e5-86-99-e5-85-a5-e6-96-87-e5-ad-97.html" class="post-title-link" itemprop="url">向Word文档中写入文字</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-10 23:29:34" itemprop="dateCreated datePublished" datetime="2019-09-10T23:29:34+08:00">2019-09-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/zh-CN/2019/09/10/e5-90-91word-e6-96-87-e6-a1-a3-e4-b8-ad-e5-86-99-e5-85-a5-e6-96-87-e5-ad-97.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/09/10/e5-90-91word-e6-96-87-e6-a1-a3-e4-b8-ad-e5-86-99-e5-85-a5-e6-96-87-e5-ad-97.html" class="cy_cmt_count" data-xid="zh-CN/2019/09/10/e5-90-91word-e6-96-87-e6-a1-a3-e4-b8-ad-e5-86-99-e5-85-a5-e6-96-87-e5-ad-97.html" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="向Word文档中写入文字"><a href="#向Word文档中写入文字" class="headerlink" title="向Word文档中写入文字"></a>向Word文档中写入文字</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>Word有着强大的文本编辑功能，我们可以轻松的在Word中输入文本内容，更改文字字体，设置文字大小、颜色，方便的对文本内容排版。在前面的实例中已经详细介绍了怎样使用C#创建Word文档，本实例将会使用C#方便的向指定的Word文档中输入文本内容。实例运行效果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1529_Word1.png" alt=""></p>
-<p>图1 向Word文档中写入文字</p>
-<p>实例运行中单击”创建Word文档”按钮，会根据用户选择的路径位置创建Word文档并向文档中添加文字，而文档的名称就是当前系统日期与时间。创建的Word文档如图2所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1529_Word2.png" alt=""></p>
-<p>图2 被写入文字的Word文档</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例重点在于向读者介绍怎样使用Word文档中Range属性向Word中添加文本信息，下面对本实例用到的关键技术进行详细讲解。 读取或设置Word文档中的文本内容的方式基本相同，首先是得到文本内容的范围，然后通过范围对象读取或设置文本信息。实例中首先使用了Paragraphs集合中的索引获取Word文档中的段落对象，然后通过Paragraph段落对象的Range属性得到文档中段落的范围，最后通过范围对象的Text属性获取或设置段落内的文本信息。</p>
-<p>说明：在Word文档的操作中也可以使用Range对象的Collapse方法折叠Range对象。折叠后的Range对象将不包含文本或其它信息，只是标注文档中的一个位置。</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AddLetter。 （2）使用C#操作Word文档，需要引用相关的COM组件，引用COM组件的步骤请参照实例426中的设计过程。 （3）更改默认窗体Form1的Name属性为Frm_Main，更改Text属性为”向Word文档中写入文字”，并向窗体中添加两个TextBox控件，控件分别用输入字符串和显示Word文档保存路径；向窗体中添加3个Button按钮，这3个按钮分别用于选择文档保存路径、创建Word文档和显示Word文档。 （4）程序主要代码如下：</p>
-<p>private void btn_New_Click(object sender, EventArgs e)<br>{<br>    btn_New.Enabled = false;                                            //停用新建按钮<br>    ThreadPool.QueueUserWorkItem(                                        //使用线程池<br>    (P_temp) =&gt;                                                //使用lambda表达式<br>{<br>        G_wa = new Word.Application();                                    //创建Word应用程序对象<br>    Word.Document P_wd = G_wa.Documents.Add(                        //建立新文档<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing);<br>        Word.Range P_Range = P_wd.Paragraphs[1].Range;                        //得到文档的范围对象<br>    P_Range.Text = txt_add.Text;                                    //向文档中添加字符串<br>    G_str_path = string.Format(                                    //计算文件保存路径<br>    @”{0}\{1}”, G_FolderBrowserDialog.SelectedPath,<br>    DateTime.Now.ToString(“yyyy年M月d日h时s分m秒fff毫秒”) + “.doc”);<br>        P_wd.SaveAs(                                            //保存Word文件<br>    ref G_str_path,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing);<br>        ((Word._Application)G_wa.Application).Quit(                            //退出应用程序<br>    ref G_missing, ref G_missing, ref G_missing);<br>        this.Invoke(                                                //开始执行窗体线程<br>    (MethodInvoker)(() =&gt;                                    //使用lambda表达式<br>{<br>        btn_Display.Enabled = true;                                //启用显示按钮<br>    MessageBox.Show(“成功创建Word文档！”, “提示！”);                //弹出消息对话框<br>}));<br>    });<br>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟003：Range属性的妙用！ 通过Document对象的Range方法可以返回一个Range对象，如果Range方法中的参数是默认参数，此时的Range是文档中所有内容的范围，可以通过Range.Text属性获取或设置Range对象范围内的文本内容。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e6-8f-92-e5-85-a5-e5-9b-be-e7-89-87.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e6-8f-92-e5-85-a5-e5-9b-be-e7-89-87.html" class="post-title-link" itemprop="url">在Word文档中插入图片</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-10 23:28:24" itemprop="dateCreated datePublished" datetime="2019-09-10T23:28:24+08:00">2019-09-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e6-8f-92-e5-85-a5-e5-9b-be-e7-89-87.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e6-8f-92-e5-85-a5-e5-9b-be-e7-89-87.html" class="cy_cmt_count" data-xid="zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e6-8f-92-e5-85-a5-e5-9b-be-e7-89-87.html" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="在Word文档中插入图片"><a href="#在Word文档中插入图片" class="headerlink" title="在Word文档中插入图片"></a>在Word文档中插入图片</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>在Word文档的使用过程中，我们可以轻松的向文档中插入图片信息，那么，怎样使用C#向Word文档中插入图片呢？本实例将会介绍一种方法，可以方便的实现上述功能。实例运行效果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1528_Word1.png" alt=""></p>
-<p>图1 在Word文档中插入图片</p>
-<p>实例运行中单击”创建Word文档”按钮，会根据用户选择的路径位置创建Word文档并向文档中添加图片，而文档的名称就是当前系统日期与时间。创建的Word文档如图2所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1528_Word2.png" alt=""></p>
-<p>图2 被插入图片的Word文档</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例重点在于向读者介绍怎样使用InlineShapes集合的AddPicture方法向Word文档中插入图片，下面对本实例用到的关键技术进行详细讲解。 使用Documents对象的Add方法可以创建Word文档，使用Open方法可以打开Word文档，当得到文档对象后可以根据InlineShapes属性得到InlineShape对象的集合，InlineShape对象包括图片、ActiveX控件等信息。使用InlineShapes集合的AddPicture方法可以方便的向文档中插入图片，AddPicture方法的语法格式如下：</p>
-<p>InlineShape AddPicture(string FileName, ref object LinkToFile, ref object SaveWithDocument, ref object Range);</p>
-<p>AddPicture方法中的参数说明如表1所示。 表1 AddPicture方法中的参数说明</p>
-<p>参数</p>
-<p>描述</p>
-<p>FileName</p>
-<p>将要插入的图片文件名称及路径</p>
-<p>LinkToFile</p>
-<p>如果为true，则将图片链接到创建该对象的文件；如果为false则将图片作为该文件的独立副本，默认为false</p>
-<p>SaveWithDocument</p>
-<p>如果为true，则链接的图片与工作表一起保存，默认为false</p>
-<p>Range</p>
-<p>插入图片的范围</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AddImage。 （2）使用C#操作Word文档，需要引用相关的COM组件，引用COM组件的步骤请参照实例426中的设计过程。 （3）更改默认窗体Form1的Name属性为Frm_Main，更改Text属性为”在Word文档中插入图片”，并向窗体中添加两个TextBox控件，控件分别用显示图片路径和显示Word文档保存路径；向窗体中添加4个Button按钮，这4个按钮分别用于选择向Word文档中插入的图片、选择Word文档保存路径、创建Word文档和显示Word文档。 （4）程序主要代码如下：</p>
-<p>private void btn_New_Click(object sender, EventArgs e)<br>{<br>    btn_New.Enabled = false;                                            //停用新建按钮<br>    ThreadPool.QueueUserWorkItem(                                        //使用线程池<br>    (P_temp) =&gt;                                                //使用lambda表达式<br>{<br>        G_wa = new Word.Application();                                    //创建Word应用程序对象<br>    Word.Document P_wd = G_wa.Documents.Add(                        //建立新文档<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing);<br>        Word.Range P_Range = P_wd.Paragraphs[1].Range;                        //得到段落范围<br>    object P_Ranges = P_Range;                                    //创建ojbect对象<br>    P_wd.InlineShapes.AddPicture(                                    //向文档中插入图片<br>    G_OpenFileDialog.FileName, ref G_missing, ref G_missing, ref P_Ranges);<br>        G_str_path = string.Format(                                    //计算文件保存路径<br>    @”{0}\{1}”, G_FolderBrowserDialog.SelectedPath,<br>    DateTime.Now.ToString(“yyyy年M月d日h时s分m秒fff毫秒”) + “.doc”);<br>        P_wd.SaveAs(                                            //保存Word文件<br>    ref G_str_path,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing);<br>        ((Word._Application)G_wa.Application).Quit(                            //退出应用程序<br>    ref G_missing, ref G_missing, ref G_missing);<br>        this.Invoke(                                                //开始执行窗体线程<br>    (MethodInvoker)(() =&gt;                                    //使用lambda表达式<br>{<br>        btn_Display.Enabled = true;                                //启用显示按钮<br>    MessageBox.Show(“成功创建Word文档！”, “提示！”);                //弹出消息对话框<br>}));<br>    });<br>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟004：可以使用AddPicture方法向Word中插入多个图片！ 实例中已经介绍使用AddPicture方法向Word文档中插入图片，如果已经理解了插入图片的方法，那么向文档中插入多个图片实现起来也会变得很简单，AddPicture方法的最后一个参数是指定将图片插入到Word文档中的哪个范围，可以根据自己的选择将多个图片插入到文档中不同位置。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e7-bb-98-e5-88-b6-e8-a1-a8-e6-a0-bc.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e7-bb-98-e5-88-b6-e8-a1-a8-e6-a0-bc.html" class="post-title-link" itemprop="url">在Word文档中绘制表格</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-10 23:27:26" itemprop="dateCreated datePublished" datetime="2019-09-10T23:27:26+08:00">2019-09-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 03:27:05" itemprop="dateModified" datetime="2020-05-10T03:27:05+08:00">2020-05-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e7-bb-98-e5-88-b6-e8-a1-a8-e6-a0-bc.html#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://www.fesugar.com/zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e7-bb-98-e5-88-b6-e8-a1-a8-e6-a0-bc.html" class="cy_cmt_count" data-xid="zh-CN/2019/09/10/e5-9c-a8word-e6-96-87-e6-a1-a3-e4-b8-ad-e7-bb-98-e5-88-b6-e8-a1-a8-e6-a0-bc.html" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.9k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="在Word文档中绘制表格"><a href="#在Word文档中绘制表格" class="headerlink" title="在Word文档中绘制表格"></a>在Word文档中绘制表格</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>使用Excel可以方便的处理表格信息，但是在Word中也可以简单的使用表格，在Word菜单中单击”表格”/“插入”/“表格”，在插入表格窗口中添加表格的行数和列数，最后单击”确定”按钮插入表格。在实例中我们可以使用C#方便的向指定的Word文档中插入表格，并在表格中添加相应信息。实例运行效果如图1所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1527_Word1.png" alt=""></p>
-<p>图1 在Word文档中绘制表格</p>
-<p>实例运行中单击”创建Word文档”按钮，会根据用户选择的路径位置创建Word文档并向文档中绘制表格，而文档的名称就是当前系统日期与时间。创建的Word文档如图2所示。</p>
-<p><img data-src="https://cdn.fesugar.com/2019/09/091019_1527_Word2.png" alt=""></p>
-<p>图2 Word文档中的表格</p>
-<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例重点在于向读者介绍怎样使用Tabels集合的Add方法在文档中绘制表格，下面对本实例用到的关键技术进行详细讲解。 通过Document对象的Tables属性可以得到Tables集合，使用Tables集合对象的Add方法可以轻松的在Word文档中绘制表格，Add方法的语法格式如下：</p>
-<p>Table Add(Range Range, int NumRows, int NumColumns, ref object DefaultTableBehavior, ref object AutoFitBehavior);</p>
-<p>Add方法中的参数说明如表1所示。 表1 Add方法中的参数说明</p>
-<p>参数</p>
-<p>描述</p>
-<p>Range</p>
-<p>插入表格所在的范围</p>
-<p>NumRows</p>
-<p>插入表格的行数</p>
-<p>NumColumns</p>
-<p>插入表格的列数</p>
-<p>DefaultTableBehavior</p>
-<p>WdDefaultTableBehavior枚举值，指定表格的自适应方式</p>
-<p>AutoFitBehavior</p>
-<p>WdAutoFitBehavior枚举值，指定表格的自适应方式</p>
-<p>说明：在Word文档中插入表格后可以使用表格对象的Cell方法获取或设置表格中的文本内容，Cell方法接受两个参数，两个参数分别为表格中行与列的索引，要注意一点，表格中的行与列的索引值从1开始。</p>
-<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AddTable。 （2）使用C#操作Word文档，需要引用相关的COM组件，引用COM组件的步骤请参照实例426中的设计过程。 （3）更改默认窗体Form1的Name属性为Frm_Main，更改Text属性为”在Word文档中绘制表格”，并向窗体中添加3个TextBox控件，3个TextBox控件分别用显示Word文档保存路径、设置插入表格行数和设置插入表格列数；向窗体中添加3个Button按钮，这3个按钮分别用于选择Word文档保存路径、创建Word文档和显示Word文档。 （4）程序主要代码如下：</p>
-<p>private void btn_New_Click(object sender, EventArgs e)<br>{<br>    G_ToolProgressBar.Minimum = 1;                                        //设置进度条最小值<br>    G_ToolProgressBar.Maximum = int.Parse(txt_row.Text) + 1;                         //设置进度条最大值<br>    btn_New.Enabled = false;                                            //停用新建按钮<br>    ThreadPool.QueueUserWorkItem(                                        //使用线程池<br>    (P_temp) =&gt;                                                //使用lambda表达式<br>{<br>        G_wa = new Word.Application();                                    //创建Word应用程序对象<br>    Word.Document P_wd = G_wa.Documents.Add(                        //建立新文档<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing);<br>        Word.Range P_Range = P_wd.Paragraphs[1].Range;                        //得到文档范围对象<br>    object P_DefaultTable =                                         //创建表格参数对象<br>    Word.WdDefaultTableBehavior.wdWord8TableBehavior;<br>        object P_AutoFit = Word.WdAutoFitBehavior.wdAutoFitWindow;                 //创建表格参数对象<br>    Word.Table P_WordTable = P_Range.Tables.Add(                        //向文档中添加表格<br>    P_Range, int.Parse(txt_row.Text), int.Parse(txt_column.Text), ref P_DefaultTable, ref P_AutoFit);<br>        for (int i = 1; i &lt; int.Parse(txt_row.Text) + 1; i++)<br>        {<br>            for (int j = 1; j &lt; int.Parse(txt_column.Text) + 1; j++)<br>            {<br>                P_WordTable.Cell(i, j).Range.Text =                            //向表格中添加数据<br>            string.Format(“{0}行 {1}列”, i.ToString(), j.ToString());<br>                Thread.Sleep(10);                                    //线程挂起10毫秒<br>        }<br>            this.Invoke(                                            //调用窗体线程<br>        (MethodInvoker)(() =&gt;                                 //使用Lambda表达式<br>{<br>        G_ToolProgressBar.Value = i + 1;                        //设置进度信息<br>}));<br>        }<br>        G_str_path = string.Format(                                    //计算文件保存路径<br>    @”{0}\{1}”, G_FolderBrowserDialog.SelectedPath,<br>    DateTime.Now.ToString(“yyyy年M月d日h时s分m秒fff毫秒”) + “.doc”);<br>        P_wd.SaveAs(                                            //保存Word文件<br>    ref G_str_path,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing, ref G_missing,<br>    ref G_missing, ref G_missing, ref G_missing);<br>        ((Word._Application)G_wa.Application).Quit(                            //退出应用程序<br>    ref G_missing, ref G_missing, ref G_missing);<br>        this.Invoke(                                                //开始执行窗体线程<br>    (MethodInvoker)(() =&gt;                                    //使用lambda表达式<br>{<br>        btn_Display.Enabled = true;                                //启用显示按钮<br>    MessageBox.Show(“成功创建Word文档！”, “提示！”);                //弹出消息对话框<br>}));<br>    });<br>}</p>
-<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟005：使用Cell方法轻松的获取或设置表格中的文本信息！ 表格对象的Cell方法提供了两个参数并返回一个Range对象。方法中的两个参数分别为表格对象中的行与列的索引，有一点要注意，参数中行与列的索引都是从1开始的，根据两个参数可以找到并返回表格中的单元格的Range对象，并可以根据Range对象的Text属性获取或设置单元格的文本内容。</p>
+          <p>各种搜集数据库操作完整类，在一篇博文留言中发现了一个开源的 Dbhelper 试了下，用起来很爽。。。<br>博文地址 <a href="http://www.cnblogs.com/podolski/p/5152537.html" target="_blank" rel="noopener">波多尔斯基</a> <img data-src="https://cdn.fesugar.com/2016/10/2016-10-18-10232965.png" alt="8720161018181711"> DbHelper<br>开源地址 <a href="https://devlib.codeplex.com/SourceControl/latest#Main/Source/DevLib.Data/DbHelper.cs" target="_blank" rel="noopener">DevLib</a> <img data-src="https://cdn.fesugar.com/2016/10/2016-10-18-10241644.png" alt="8720161018182238"></p>
 
       
     </div>
@@ -1661,7 +1305,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1728,7 +1372,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">139</span>
+          <span class="site-state-item-count">47</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1739,7 +1383,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1811,13 +1455,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">380k</span>
+    <span title="站点总字数">178k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">5:45</span>
+    <span title="站点阅读时长">2:42</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
