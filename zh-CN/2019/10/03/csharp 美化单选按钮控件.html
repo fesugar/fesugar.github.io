@@ -291,13 +291,34 @@
             </span>
 
           
+            <span id="/zh-CN/2019/10/03/csharp%20%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html" class="post-meta-item leancloud_visitors" data-flag-title="美化单选按钮控件" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
               <span class="post-meta-item-text">阅读次数：</span>
               <span id="busuanzi_value_page_pv"></span>
-            </span><br>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2019/10/03/csharp%20%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2019/10/03/csharp%20%E7%BE%8E%E5%8C%96%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -445,7 +466,7 @@
 
           </div>
           
-    <div class="comments" id="gitalk-container"></div>
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -784,23 +805,32 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
   
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
 <script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : '454130475a01a5fe5d86',
-      clientSecret: '5fe327859636fa2f69f9cb7af4d4d1c13f8e0e92',
-      repo        : 'fesugar.github.io',
-      owner       : 'fesugar',
-      admin       : ['fesugar'],
-      id          : 'c521af5c7a09865fab2fbf5fe27e3580',
-        language: 'zh-CN',
-      distractionFreeMode: true
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
     });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : 'eGDbDnOz7C4Oy1lPTskLhWER-gzGzoHsz',
+      appKey     : 'cUSoHeoBjT9RJ7yBXEupoAhY',
+      placeholder: "~写下你的评论...",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
 });
 </script>
 
