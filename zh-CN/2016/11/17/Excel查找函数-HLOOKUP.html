@@ -25,24 +25,24 @@
     var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="现在有这样一个需求，现一工作簿中有sheet1和sheet2两个表； sheet1表如下  sheet2表如下：  我们可以看到序号这列是不重复的，这就好办了，说使用查找功能来回切换复制粘贴，如果有几百几千条的数据甚至更多这工作量可想而知。。。 现在就请我们的主角登场，那就是 VLOOKUP 查找函数： 如果需要在表格或区域中按行查找内容，可使用 VLOOKUP，它是一个查找和引用函数。例如，按部">
+  <meta name="description" content="现在有这样一个需求，现一工作簿中有sheet1和sheet2两个表； sheet1表如下  sheet2表如下：  我们可以看到序号这列是不重复的，这就好办了，说使用查找功能来回切换复制粘贴，如果有几百几千条的数据甚至更多这工作量可想而知。。。 现在就请我们的主角登场，那就是 HLOOKUP 查找函数： 在表格的首行或数值数组中搜索值，然后返回表格或数组中指定行的所在列中的值。 当比较值位于数据表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Excel 查找函数 VLOOKUP">
-<meta property="og:url" content="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0%20VLOOKUP.html">
+<meta property="og:title" content="Excel 查找函数 HLOOKUP">
+<meta property="og:url" content="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html">
 <meta property="og:site_name" content="佛系糖果的博客">
-<meta property="og:description" content="现在有这样一个需求，现一工作簿中有sheet1和sheet2两个表； sheet1表如下  sheet2表如下：  我们可以看到序号这列是不重复的，这就好办了，说使用查找功能来回切换复制粘贴，如果有几百几千条的数据甚至更多这工作量可想而知。。。 现在就请我们的主角登场，那就是 VLOOKUP 查找函数： 如果需要在表格或区域中按行查找内容，可使用 VLOOKUP，它是一个查找和引用函数。例如，按部">
+<meta property="og:description" content="现在有这样一个需求，现一工作簿中有sheet1和sheet2两个表； sheet1表如下  sheet2表如下：  我们可以看到序号这列是不重复的，这就好办了，说使用查找功能来回切换复制粘贴，如果有几百几千条的数据甚至更多这工作量可想而知。。。 现在就请我们的主角登场，那就是 HLOOKUP 查找函数： 在表格的首行或数值数组中搜索值，然后返回表格或数组中指定行的所在列中的值。 当比较值位于数据表">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.fesugar.com/2016/11/2016-11-17-12313219.png">
-<meta property="og:image" content="https://cdn.fesugar.com/2016/11/2016-11-17-12351034.png">
-<meta property="og:image" content="https://cdn.fesugar.com/2016/11/2016-11-17-12392045.png">
-<meta property="article:published_time" content="2016-11-17T12:08:45.000Z">
-<meta property="article:modified_time" content="2020-05-14T23:18:05.837Z">
+<meta property="og:image" content="https://cdn.fesugar.com/2016/11/2016-11-17-12404525.png">
+<meta property="og:image" content="https://cdn.fesugar.com/2016/11/2016-11-18-03583564.png">
+<meta property="og:image" content="https://cdn.fesugar.com/2016/11/2016-11-18-03553482.png">
+<meta property="article:published_time" content="2016-11-17T12:09:42.000Z">
+<meta property="article:modified_time" content="2020-05-14T23:17:59.564Z">
 <meta property="article:author" content="fesugar">
 <meta property="article:tag" content="Excel">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.fesugar.com/2016/11/2016-11-17-12313219.png">
+<meta name="twitter:image" content="https://cdn.fesugar.com/2016/11/2016-11-17-12404525.png">
 
-<link rel="canonical" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0%20VLOOKUP.html">
+<link rel="canonical" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html">
 
 
 <script id="page-configurations">
@@ -55,7 +55,7 @@
   };
 </script>
 
-  <title>Excel 查找函数 VLOOKUP | 佛系糖果的博客</title>
+  <title>Excel 查找函数 HLOOKUP | 佛系糖果的博客</title>
   
 
 
@@ -228,7 +228,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0%20VLOOKUP.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -241,7 +241,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Excel 查找函数 VLOOKUP
+          Excel 查找函数 HLOOKUP
         </h1>
 
         <div class="post-meta">
@@ -251,14 +251,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-11-17 20:08:45" itemprop="dateCreated datePublished" datetime="2016-11-17T20:08:45+08:00">2016-11-17</time>
+              <time title="创建时间：2016-11-17 20:09:42" itemprop="dateCreated datePublished" datetime="2016-11-17T20:09:42+08:00">2016-11-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-15 07:18:05" itemprop="dateModified" datetime="2020-05-15T07:18:05+08:00">2020-05-15</time>
+                <time title="修改时间：2020-05-15 07:17:59" itemprop="dateModified" datetime="2020-05-15T07:17:59+08:00">2020-05-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -275,7 +275,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0%20VLOOKUP.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 查找函数 VLOOKUP" title="阅读次数">
+            <span id="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 查找函数 HLOOKUP" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -297,8 +297,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0%20VLOOKUP.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0%20VLOOKUP.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -308,7 +308,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>368</span>
+              <span>344</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -327,9 +327,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>现在有这样一个需求，现一工作簿中有sheet1和sheet2两个表； sheet1表如下 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-17-12313219.png" alt="fea91479292194"> sheet2表如下： <img data-src="https://cdn.fesugar.com/2016/11/2016-11-17-12351034.png" alt="fb5c1479292435"> 我们可以看到序号这列是不重复的，这就好办了，说使用查找功能来回切换复制粘贴，如果有几百几千条的数据甚至更多这工作量可想而知。。。 现在就请我们的主角登场，那就是 VLOOKUP 查找函数： 如果需要在表格或区域中按行查找内容，可使用 VLOOKUP，它是一个查找和引用函数。例如，按部件号查找汽车部件的价格。 在这一最简单的形式中，VLOOKUP 函数表示： =VLOOKUP（要查找的值、要在其中查找值的区域、区域中包含返回值的列号、精确匹配或近似匹配 – 指定为 0/FALSE or 1/TRUE）。 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-17-12392045.png" alt="10fb1479292717"></p>
-<p>=VLOOKUP(A3,Sheet1!A:B,2,FALSE)</p>
-<p>VLOOKUP(需要查找的值,在哪个范围内查找,显示的值属于查找范围的第几列,精确查找)</p>
+        <p>现在有这样一个需求，现一工作簿中有sheet1和sheet2两个表； sheet1表如下 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-17-12404525.png" alt="4a471479295530"> sheet2表如下： <img data-src="https://cdn.fesugar.com/2016/11/2016-11-18-03583564.png" alt="fb5c1479295531"> 我们可以看到序号这列是不重复的，这就好办了，说使用查找功能来回切换复制粘贴，如果有几百几千条的数据甚至更多这工作量可想而知。。。 现在就请我们的主角登场，那就是 HLOOKUP 查找函数： 在表格的首行或数值数组中搜索值，然后返回表格或数组中指定行的所在列中的值。 当比较值位于数据表格的首行时，如果要向下查看指定的行数，则可使用 HLOOKUP。 当比较值位于所需查找的数据的左边一列时，则可使用 VLOOKUP。 HLOOKUP 中的 H 代表“行”。 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-18-03553482.png" alt="10fb1479295533"></p>
+<p>=HLOOKUP(B2,Sheet1!2:3,2,FALSE)</p>
+<p>HLOOKUP(需要查找的值,在哪个范围内查找,显示的值属于查找范围的第几行,精确查找)</p>
 
     </div>
 
@@ -365,7 +365,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0%20VLOOKUP.html" title="Excel 查找函数 VLOOKUP">https://www.fesugar.com/zh-CN/2016/11/17/Excel查找函数 VLOOKUP.html</a>
+    <a href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html" title="Excel 查找函数 HLOOKUP">https://www.fesugar.com/zh-CN/2016/11/17/Excel查找函数-HLOOKUP.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -405,12 +405,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/zh-CN/2016/11/17/Excel%E4%B8%ADIF%E5%87%BD%E6%95%B0%E7%9A%84%E7%94%A8%E5%A4%84.html" rel="prev" title="Excel 中 IF 函数的用处">
-      <i class="fa fa-chevron-left"></i> Excel 中 IF 函数的用处
+    <a href="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-VLOOKUP.html" rel="prev" title="Excel 查找函数 VLOOKUP">
+      <i class="fa fa-chevron-left"></i> Excel 查找函数 VLOOKUP
     </a></div>
       <div class="post-nav-item">
-    <a href="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0%20HLOOKUP.html" rel="next" title="Excel 查找函数 HLOOKUP">
-      Excel 查找函数 HLOOKUP <i class="fa fa-chevron-right"></i>
+    <a href="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97%E7%AC%A6.html" rel="next" title="Excel 截取单元格指定字符后面的字符">
+      Excel 截取单元格指定字符后面的字符 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
