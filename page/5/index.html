@@ -236,6 +236,127 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html" class="post-title-link" itemprop="url">C# 获取光标闪烁频率</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-25 12:44:02" itemprop="dateCreated datePublished" datetime="2018-01-25T12:44:02+08:00">2018-01-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 19:00:45" itemprop="dateModified" datetime="2020-05-14T19:00:45+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/csharp/" itemprop="url" rel="index"><span itemprop="name">csharp</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 获取光标闪烁频率" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>409</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>引入DLL函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[DllImport(&quot;user32.dll&quot;, EntryPoint &#x3D; &quot;GetCaretBlinkTime&quot;)]</span><br><span class="line"></span><br><span class="line">public extern static int GetDoubleClickTime();</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">完整代码，创建一个窗体拖入一个文本框控件</span><br><span class="line"></span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>, EntryPoint = <span class="meta-string">"GetCaretBlinkTime"</span>)</span>]</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">GetCaretBlinkTime</span>(<span class="params"></span>)</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Form1</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>private void Form1_Load(object sender, EventArgs e)
+{
+    textBox1.Text = Convert.ToString(GetDoubleClickTime());
+}</code></pre><p><img data-src="https://cdn.fesugar.com/2018/01/2018-01-25-04364497.png" alt=""></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1269,125 +1390,10 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-VLOOKUP.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-VLOOKUP.html" class="post-title-link" itemprop="url">Excel 查找函数 VLOOKUP</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2016-11-17 20:08:45" itemprop="dateCreated datePublished" datetime="2016-11-17T20:08:45+08:00">2016-11-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-15 07:18:05" itemprop="dateModified" datetime="2020-05-15T07:18:05+08:00">2020-05-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/Office16/" itemprop="url" rel="index"><span itemprop="name">Office16</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-VLOOKUP.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 查找函数 VLOOKUP" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-VLOOKUP.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-VLOOKUP.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>368</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>现在有这样一个需求，现一工作簿中有sheet1和sheet2两个表； sheet1表如下 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-17-12313219.png" alt="fea91479292194"> sheet2表如下： <img data-src="https://cdn.fesugar.com/2016/11/2016-11-17-12351034.png" alt="fb5c1479292435"> 我们可以看到序号这列是不重复的，这就好办了，说使用查找功能来回切换复制粘贴，如果有几百几千条的数据甚至更多这工作量可想而知。。。 现在就请我们的主角登场，那就是 VLOOKUP 查找函数： 如果需要在表格或区域中按行查找内容，可使用 VLOOKUP，它是一个查找和引用函数。例如，按部件号查找汽车部件的价格。 在这一最简单的形式中，VLOOKUP 函数表示： =VLOOKUP（要查找的值、要在其中查找值的区域、区域中包含返回值的列号、精确匹配或近似匹配 – 指定为 0/FALSE or 1/TRUE）。 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-17-12392045.png" alt="10fb1479292717"></p>
-<p>=VLOOKUP(A3,Sheet1!A:B,2,FALSE)</p>
-<p>VLOOKUP(需要查找的值,在哪个范围内查找,显示的值属于查找范围的第几列,精确查找)</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1454,7 +1460,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
-          <span class="site-state-item-count">80</span>
+          <span class="site-state-item-count">81</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1540,13 +1546,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">232k</span>
+    <span title="站点总字数">233k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:31</span>
+    <span title="站点阅读时长">3:32</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
