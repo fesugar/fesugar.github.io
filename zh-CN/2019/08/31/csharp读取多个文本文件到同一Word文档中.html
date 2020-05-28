@@ -25,22 +25,29 @@
     var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="VB.NET 操作 access 数据库 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394">
+  <meta name="description" content="来源:明日科技   读取多个文本文件到同一Word文档中实例说明读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。  图1 读取多个文本文件到同一Word文档中实例运行中单击”浏览”按钮，会将用户所选择文本">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VB.NET 操作 access 数据库">
-<meta property="og:url" content="https://www.fesugar.com/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html">
+<meta property="og:title" content="读取多个文本文件到同一Word文档中">
+<meta property="og:url" content="https://www.fesugar.com/zh-CN/2019/08/31/csharp%E8%AF%BB%E5%8F%96%E5%A4%9A%E4%B8%AA%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%88%B0%E5%90%8C%E4%B8%80Word%E6%96%87%E6%A1%A3%E4%B8%AD.html">
 <meta property="og:site_name" content="佛系糖果的博客">
-<meta property="og:description" content="VB.NET 操作 access 数据库 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394">
+<meta property="og:description" content="来源:明日科技   读取多个文本文件到同一Word文档中实例说明读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。  图1 读取多个文本文件到同一Word文档中实例运行中单击”浏览”按钮，会将用户所选择文本">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2016-10-10T07:21:08.000Z">
-<meta property="article:modified_time" content="2020-05-15T06:49:00.109Z">
+<meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word1.png">
+<meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word2.png">
+<meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word3.png">
+<meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word4.png">
+<meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word5.png">
+<meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word6.png">
+<meta property="article:published_time" content="2019-08-31T14:29:04.000Z">
+<meta property="article:modified_time" content="2020-05-28T18:51:31.838Z">
 <meta property="article:author" content="fesugar">
 <meta property="article:tag" content=".NET">
-<meta property="article:tag" content="VB.NET">
 <meta property="article:tag" content="Visual Studio">
+<meta property="article:tag" content="C#">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word1.png">
 
-<link rel="canonical" href="https://www.fesugar.com/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html">
+<link rel="canonical" href="https://www.fesugar.com/zh-CN/2019/08/31/csharp%E8%AF%BB%E5%8F%96%E5%A4%9A%E4%B8%AA%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%88%B0%E5%90%8C%E4%B8%80Word%E6%96%87%E6%A1%A3%E4%B8%AD.html">
 
 
 <script id="page-configurations">
@@ -53,7 +60,7 @@
   };
 </script>
 
-  <title>VB.NET 操作 access 数据库 | 佛系糖果的博客</title>
+  <title>读取多个文本文件到同一Word文档中 | 佛系糖果的博客</title>
   
 
 
@@ -226,7 +233,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/08/31/csharp%E8%AF%BB%E5%8F%96%E5%A4%9A%E4%B8%AA%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%88%B0%E5%90%8C%E4%B8%80Word%E6%96%87%E6%A1%A3%E4%B8%AD.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -239,7 +246,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          VB.NET 操作 access 数据库
+          读取多个文本文件到同一Word文档中
         </h1>
 
         <div class="post-meta">
@@ -249,14 +256,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2016-10-10 15:21:08" itemprop="dateCreated datePublished" datetime="2016-10-10T15:21:08+08:00">2016-10-10</time>
+              <time title="创建时间：2019-08-31 22:29:04" itemprop="dateCreated datePublished" datetime="2019-08-31T22:29:04+08:00">2019-08-31</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-15 14:49:00" itemprop="dateModified" datetime="2020-05-15T14:49:00+08:00">2020-05-15</time>
+                <time title="修改时间：2020-05-29 02:51:31" itemprop="dateModified" datetime="2020-05-29T02:51:31+08:00">2020-05-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -264,12 +271,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
                 </span>
             </span>
 
           
-            <span id="/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html" class="post-meta-item leancloud_visitors" data-flag-title="VB.NET 操作 access 数据库" title="阅读次数">
+            <span id="/zh-CN/2019/08/31/csharp%E8%AF%BB%E5%8F%96%E5%A4%9A%E4%B8%AA%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%88%B0%E5%90%8C%E4%B8%80Word%E6%96%87%E6%A1%A3%E4%B8%AD.html" class="post-meta-item leancloud_visitors" data-flag-title="读取多个文本文件到同一Word文档中" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -291,8 +298,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2019/08/31/csharp%E8%AF%BB%E5%8F%96%E5%A4%9A%E4%B8%AA%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%88%B0%E5%90%8C%E4%B8%80Word%E6%96%87%E6%A1%A3%E4%B8%AD.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2019/08/31/csharp%E8%AF%BB%E5%8F%96%E5%A4%9A%E4%B8%AA%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%88%B0%E5%90%8C%E4%B8%80Word%E6%96%87%E6%A1%A3%E4%B8%AD.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -302,14 +309,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.2k</span>
+              <span>2.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -321,8 +328,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>VB.NET 操作 access 数据库</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">'添加引用 Imports System.Data.OleDb</span></span><br><span class="line"></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> 操作 mdb 数据库进行查询/添加/修改/删除</span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="DataSource"&gt;</span>指定连接到的数据源的名称。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="Provider"&gt;</span>指定连接字符串关联的数据提供程序的名称。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="Password"&gt;</span>指定连接到的数据源的密码。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="OleDbCmd"&gt;</span>指定 SQL 命令。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="Options"&gt;</span>指定执行的状态 1:检测是否注册 2:验证登陆 </span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> 3:查询数据 4:添加/修改/删除 数据 5:获取地址ID 。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="Getstring"&gt;</span>指定返回的数据。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;remarks&gt;</span><span class="doctag">&lt;/remarks&gt;</span></span></span><br><span class="line"><span class="keyword">Public</span> <span class="keyword">Function</span> Access_db(</span><br><span class="line">                    <span class="keyword">ByVal</span> DataSource <span class="keyword">As</span> <span class="built_in">String</span>,</span><br><span class="line">                    <span class="keyword">ByVal</span> Provider <span class="keyword">As</span> <span class="built_in">String</span>,</span><br><span class="line">                    <span class="keyword">ByVal</span> Password <span class="keyword">As</span> <span class="built_in">String</span>,</span><br><span class="line">                    <span class="keyword">ByVal</span> OleDbCmd <span class="keyword">As</span> <span class="built_in">String</span>,</span><br><span class="line">                    <span class="keyword">ByVal</span> Options <span class="keyword">As</span> <span class="built_in">Integer</span>,</span><br><span class="line">                    <span class="keyword">ByRef</span> Getstring <span class="keyword">As</span> <span class="built_in">String</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">' 声明为创建和管理由 OleDbConnection 类使用的连接字符串的内容提供了一种简单方法。</span></span><br><span class="line">    <span class="keyword">Dim</span> builder <span class="keyword">As</span> <span class="keyword">New</span> OleDbConnectionStringBuilder()</span><br><span class="line">    <span class="comment">' 获取或设置要连接到的数据源的名称。</span></span><br><span class="line">    builder.DataSource = DataSource</span><br><span class="line">    <span class="comment">' 获取或设置一个字符串，该字符串包含与内部连接字符串关联的数据提供程序的名称。</span></span><br><span class="line">    builder.Provider = Provider</span><br><span class="line">    <span class="comment">' 将带有指定键和值的项添加到 DbConnectionStringBuilder 中。</span></span><br><span class="line">    builder.Add(<span class="string">"Jet OLEDB:Database Password"</span>, Password)</span><br><span class="line">    <span class="comment">' builder("User Id") = "Admin;NewValue=Bad"</span></span><br><span class="line">    <span class="comment">' 控制台输出显示连接字符串</span></span><br><span class="line">    Console.WriteLine(builder.ConnectionString)</span><br><span class="line"></span><br><span class="line">    <span class="comment">' If the connection string is null, use a default.</span></span><br><span class="line">    <span class="keyword">If</span> builder.ConnectionString = <span class="string">""</span> <span class="keyword">Then</span></span><br><span class="line">        builder.ConnectionString = <span class="string">"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\test.mdb;User Id=username;Password=pass;"</span></span><br><span class="line">    <span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">' This sample assumes that you have a database named</span></span><br><span class="line">    <span class="comment">' C:\\Sample.mdb available.</span></span><br><span class="line">    <span class="keyword">Using</span> connection <span class="keyword">As</span> <span class="keyword">New</span> OleDbConnection(builder.ConnectionString)</span><br><span class="line"></span><br><span class="line">        <span class="comment">' The insertSQL string contains a SQL statement that</span></span><br><span class="line">        <span class="comment">' inserts a new row in the source table.</span></span><br><span class="line">        <span class="keyword">Dim</span> command <span class="keyword">As</span> <span class="keyword">New</span> OleDbCommand(OleDbCmd)</span><br><span class="line">        <span class="comment">' 获取或设置在终止对执行命令的尝试并生成错误之前的等待时间。</span></span><br><span class="line">        command.CommandTimeout = <span class="number">20</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">' Set the Connection to the new OleDbConnection.</span></span><br><span class="line">        command.Connection = connection</span><br><span class="line"></span><br><span class="line">        <span class="comment">' Open the connection and execute the insert command.</span></span><br><span class="line">        <span class="keyword">Try</span></span><br><span class="line">            connection.Open()</span><br><span class="line">            <span class="comment">' Do something with the database here.</span></span><br><span class="line"></span><br><span class="line">            Console.WriteLine(<span class="string">"query:"</span> &amp; command.ExecuteNonQuery())</span><br><span class="line"></span><br><span class="line">            <span class="keyword">Select</span> <span class="keyword">Case</span> Options</span><br><span class="line"></span><br><span class="line">                <span class="keyword">Case</span> <span class="number">2</span> <span class="comment">' 验证登录</span></span><br><span class="line">                    <span class="keyword">Dim</span> reader <span class="keyword">As</span> OleDbDataReader = command.ExecuteReader()</span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Read before accessing data.</span></span><br><span class="line">                    <span class="keyword">While</span> reader.Read()</span><br><span class="line">                        <span class="comment">' ReadSingleRow(CType(reader, IDataRecord))</span></span><br><span class="line">                        Getstring = reader(<span class="string">"Info_username"</span>.ToString) &amp; reader(<span class="string">"Info_password"</span>.ToString)</span><br><span class="line">                        Console.WriteLine(Getstring)</span><br><span class="line">                        <span class="comment">'Console.WriteLine(reader("字段名"))</span></span><br><span class="line">                        <span class="comment">'Console.WriteLine(reader(0).ToString)</span></span><br><span class="line">                    <span class="keyword">End</span> <span class="keyword">While</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Close when done reading.</span></span><br><span class="line">                    reader.Close()</span><br><span class="line"></span><br><span class="line">                <span class="keyword">Case</span> <span class="number">3</span> <span class="comment">' 查询数据</span></span><br><span class="line">                    <span class="keyword">Dim</span> reader <span class="keyword">As</span> OleDbDataReader = command.ExecuteReader()</span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Read before accessing data.</span></span><br><span class="line">                    <span class="keyword">While</span> reader.Read()</span><br><span class="line"></span><br><span class="line">                        Getstring = reader(<span class="string">"compellation"</span>).ToString</span><br><span class="line">                    <span class="keyword">End</span> <span class="keyword">While</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Close when done reading.</span></span><br><span class="line">                    reader.Close()</span><br><span class="line">                <span class="keyword">Case</span> <span class="number">4</span> <span class="comment">' 添加数据/更新数据/删除数据</span></span><br><span class="line">                    <span class="keyword">Return</span> <span class="literal">True</span>.ToString</span><br><span class="line">                <span class="keyword">Case</span> <span class="number">5</span> <span class="comment">' 获取地址ID</span></span><br><span class="line">                    <span class="keyword">Dim</span> reader <span class="keyword">As</span> OleDbDataReader = command.ExecuteReader()</span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Read before accessing data.</span></span><br><span class="line">                    <span class="keyword">While</span> reader.Read()</span><br><span class="line">                        <span class="comment">' ReadSingleRow(CType(reader, IDataRecord))</span></span><br><span class="line">                        Getstring = reader(<span class="string">"ID"</span>).ToString</span><br><span class="line">                        <span class="comment">'Console.WriteLine(reader("字段名"))</span></span><br><span class="line">                        <span class="comment">'Console.WriteLine(reader(0).ToString)</span></span><br><span class="line">                    <span class="keyword">End</span> <span class="keyword">While</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Close when done reading.</span></span><br><span class="line">                    reader.Close()</span><br><span class="line"></span><br><span class="line">                <span class="keyword">Case</span> <span class="keyword">Else</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">End</span> <span class="keyword">Select</span></span><br><span class="line">        <span class="keyword">Catch</span> ex <span class="keyword">As</span> System.InvalidOperationException</span><br><span class="line">            <span class="keyword">Return</span> <span class="string">"InvalidOperationException"</span> <span class="comment">' 未注册 oledb4.0</span></span><br><span class="line">        <span class="keyword">Catch</span> ex <span class="keyword">As</span> System.Data.OleDb.OleDbException</span><br><span class="line">            <span class="keyword">Return</span> <span class="string">"OleDbException"</span> <span class="comment">' 数据库连接错误</span></span><br><span class="line">        <span class="keyword">Catch</span> ex <span class="keyword">As</span> Exception</span><br><span class="line">            Console.WriteLine(ex.Message)</span><br><span class="line">        <span class="keyword">End</span> <span class="keyword">Try</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">End</span> <span class="keyword">Using</span></span><br></pre></td></tr></table></figure>
+        <div>
+<li>来源:<a href="http://renwu.mingrisoft.com/" target="_blank" rel="external nofollow">明日科技</a></li>
+</div>
+
+<h2 id="读取多个文本文件到同一Word文档中"><a href="#读取多个文本文件到同一Word文档中" class="headerlink" title="读取多个文本文件到同一Word文档中"></a>读取多个文本文件到同一Word文档中</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。</p>
+<p><img data-src="https://cdn.fesugar.com/2019/08/083119_1428_Word1.png" alt=""></p>
+<p>图1 读取多个文本文件到同一Word文档中<br>实例运行中单击”浏览”按钮，会将用户所选择文本文件的路径放入文件列表中，后期可以遍历文件列表使用StreamReader依次读取每一个文本文件的内容到Word文档中，多个文本文件如图2、3、4和5所示。</p>
+<p><img data-src="https://cdn.fesugar.com/2019/08/083119_1428_Word2.png" alt=""></p>
+<p>图2 第一个文本文件</p>
+<p><img data-src="https://cdn.fesugar.com/2019/08/083119_1428_Word3.png" alt=""></p>
+<p>图3 第二个文本文件</p>
+<p><img data-src="https://cdn.fesugar.com/2019/08/083119_1428_Word4.png" alt=""></p>
+<p>图4 第3个文本文件</p>
+<p><img data-src="https://cdn.fesugar.com/2019/08/083119_1428_Word5.png" alt=""></p>
+<p>图5 第4个文本文件 实例运行中单击”创建Word文档”按钮，首先会创建一个Word文档，然后将多个文本文件的内容写入文本文档。被写入多个文本文件内容的Word文档如图6所示。</p>
+<p><img data-src="https://cdn.fesugar.com/2019/08/083119_1428_Word6.png" alt=""></p>
+<p>图6 被写入多个文本文件内容的Word文档</p>
+<h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在实现时，主要用到了StreamReader对象依次读取用户指定的文本文件集合中的字符串信息，并将字符串信息写入到Word文档。</p>
+<h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为Multi-TxtToWord。<br>（2）使用C#操作Word文档，需要引用相关的COM组件，引用COM组件的步骤请参照实例”创建Word文档”中的设计过程。<br>（3）更改默认窗体Form1的Name属性为Frm_Main，更改Text属性为”读取多个文本文件到同一Word文档中”，向窗体中添加一个ListBox控件，用于显示文本文件的集合；向窗体中添加4个Button按钮，按钮分别用于向ListBox中添加文本文件路径、选择Word文档保存路径、创建Word文档和显示Word文档。<br>（4）程序主要代码如下：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">btn_New_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    btn_New.Enabled = <span class="literal">false</span>;		<span class="comment">//停用创建按钮</span></span><br><span class="line">    ThreadPool.QueueUserWorkItem(	<span class="comment">//使用线程池</span></span><br><span class="line">        (P_temp) =&gt;<span class="comment">//使用lambda表达式</span></span><br><span class="line">        &#123;</span><br><span class="line">            G_wa = <span class="keyword">new</span> Word.Application();<span class="comment">//创建Word应用程序对象</span></span><br><span class="line">            Word.Document P_wd = G_wa.Documents.Add(<span class="comment">//创建新文档</span></span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            Word.Range P_Range = P_wd.Paragraphs[<span class="number">1</span>].Range;<span class="comment">//得到文档段落范围</span></span><br><span class="line">            <span class="keyword">foreach</span> (<span class="keyword">string</span> s <span class="keyword">in</span> G_List_FileName)		<span class="comment">//遍历文件集合</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">using</span> (StreamReader P_StreamReader =	<span class="comment">//创建文件读取器对象</span></span><br><span class="line">                     <span class="keyword">new</span> StreamReader(s, Encoding.Default))</span><br><span class="line">                &#123;</span><br><span class="line">                    P_Range.Text += P_StreamReader.ReadToEnd();		<span class="comment">//读取文本到Word文档</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            G_str_path = <span class="keyword">string</span>.Format(<span class="comment">//计算文件保存路径</span></span><br><span class="line">                <span class="string">@"&#123;0&#125;\\&#123;1&#125;"</span>, G_FolderBrowserDialog.SelectedPath,</span><br><span class="line">                DateTime.Now.ToString(<span class="string">"yyyy年M月d日h时s分m秒fff毫秒"</span>) + <span class="string">".doc"</span>);</span><br><span class="line">            P_wd.SaveAs(		<span class="comment">//保存Word文件</span></span><br><span class="line">                <span class="keyword">ref</span> G_str_path,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            ((Word._Application)G_wa.Application).Quit(	<span class="comment">//退出应用程序</span></span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            <span class="keyword">this</span>.Invoke(<span class="comment">//开始执行窗体线程</span></span><br><span class="line">                (MethodInvoker)(() =&gt;<span class="comment">//使用lambda表达式</span></span><br><span class="line">                &#123;</span><br><span class="line">                    btn_Display.Enabled = <span class="literal">true</span>;		<span class="comment">//启用显示按钮</span></span><br><span class="line">                    MessageBox.Show(<span class="string">"添加文档成功！"</span>, <span class="string">"提示！"</span>);		<span class="comment">//弹出消息对话框</span></span><br><span class="line">                &#125;));</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟013：合理使用StreamReader对象的ReadToEnd方法!<br>使用StreamReader对象的ReadToEnd方法可以方便的一次性全部读取出文本文件的所有文本信息，适当的使用此方法会使文件操作更加便捷。</p>
+
     </div>
 
     
@@ -357,7 +384,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.fesugar.com/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html" title="VB.NET 操作 access 数据库">https://www.fesugar.com/zh-CN/2016/10/10/VB.NET-操作-access-数据库.html</a>
+    <a href="https://www.fesugar.com/zh-CN/2019/08/31/csharp%E8%AF%BB%E5%8F%96%E5%A4%9A%E4%B8%AA%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%88%B0%E5%90%8C%E4%B8%80Word%E6%96%87%E6%A1%A3%E4%B8%AD.html" title="读取多个文本文件到同一Word文档中">https://www.fesugar.com/zh-CN/2019/08/31/csharp读取多个文本文件到同一Word文档中.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -389,8 +416,8 @@
           
           <div class="post-tags">
               <a href="/tags/NET/" rel="tag"><i class="fa fa-tag"></i> .NET</a>
-              <a href="/tags/VB-NET/" rel="tag"><i class="fa fa-tag"></i> VB.NET</a>
               <a href="/tags/Visual-Studio/" rel="tag"><i class="fa fa-tag"></i> Visual Studio</a>
+              <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C#</a>
           </div>
 
         
@@ -399,12 +426,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/zh-CN/2016/10/10/VB.NET-%E8%B0%83%E7%94%A8%E7%8B%AC%E7%AB%8Bdll%E7%9A%84%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html" rel="prev" title="VB.NET 调用独立 dll 的简单示例">
-      <i class="fa fa-chevron-left"></i> VB.NET 调用独立 dll 的简单示例
+    <a href="/zh-CN/2019/08/08/csharp%E5%88%A9%E7%94%A8Excel%E5%AF%B9%E6%95%B0%E6%8D%AE%E8%BF%9B%E8%A1%8C%E5%A4%9A%E8%A1%A8%E8%AE%A1%E7%AE%97.html" rel="prev" title="利用Excel对数据进行多表计算">
+      <i class="fa fa-chevron-left"></i> 利用Excel对数据进行多表计算
     </a></div>
       <div class="post-nav-item">
-    <a href="/zh-CN/2016/10/12/ajax-jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99-Uncaught-SyntaxError-Unexpected-token.html" rel="next" title="ajax jsonp跨域请求数据出错 Uncaught SyntaxError: Unexpected token :">
-      ajax jsonp跨域请求数据出错 Uncaught SyntaxError: Unexpected token : <i class="fa fa-chevron-right"></i>
+    <a href="/zh-CN/2019/09/10/DataGridView%E5%92%8CBindingSource%E5%A4%8D%E5%90%88%E6%8E%A7%E4%BB%B6.html" rel="next" title="DataGridView和BindingSource复合控件">
+      DataGridView和BindingSource复合控件 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -465,6 +492,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#读取多个文本文件到同一Word文档中"><span class="nav-number">1.</span> <span class="nav-text">读取多个文本文件到同一Word文档中</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例说明"><span class="nav-number">1.1.</span> <span class="nav-text">实例说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关键技术"><span class="nav-number">1.2.</span> <span class="nav-text">关键技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计过程"><span class="nav-number">1.3.</span> <span class="nav-text">设计过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#秘笈心法"><span class="nav-number">1.4.</span> <span class="nav-text">秘笈心法</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

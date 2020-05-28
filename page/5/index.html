@@ -236,6 +236,233 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html" class="post-title-link" itemprop="url">C# 设置计算机名称</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-09-06 10:37:32" itemprop="dateCreated datePublished" datetime="2018-09-06T10:37:32+08:00">2018-09-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 18:59:45" itemprop="dateModified" datetime="2020-05-14T18:59:45+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/csharp/" itemprop="url" rel="index"><span itemprop="name">csharp</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 设置计算机名称" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>632</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>设置修改当前计算机名称  </p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> System.ComponentModel;</span><br><span class="line"><span class="keyword">using</span> System.Windows.Forms;</span><br><span class="line"><span class="keyword">using</span> Microsoft.VisualBasic.Devices;</span><br><span class="line"><span class="keyword">using</span> System.Runtime.InteropServices;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">ModifyComputerName</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">Frm_Main</span> : <span class="title">Form</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Frm_Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"kernel32.dll"</span>)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">int</span> <span class="title">SetComputerName</span>(<span class="params"><span class="keyword">string</span> ipComputerName</span>)</span>;<span class="comment">//重写API函数</span></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Frm_Main_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            Computer computer = <span class="keyword">new</span> Computer();<span class="comment">//创建计算机对象</span></span><br><span class="line">            textBox1.Text = computer.Name;<span class="comment">//显示计算机名称</span></span><br><span class="line"></span><br><span class="line">            SetComputerName(textBox2.Text);<span class="comment">//修改计算机名称</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html" class="post-title-link" itemprop="url">C# 获取鼠标按键数量</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-25 13:37:45" itemprop="dateCreated datePublished" datetime="2018-01-25T13:37:45+08:00">2018-01-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 18:59:22" itemprop="dateModified" datetime="2020-05-14T18:59:22+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/csharp/" itemprop="url" rel="index"><span itemprop="name">csharp</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 获取鼠标按键数量" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>510</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">引入DLL函数</span><br><span class="line"></span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>, EntryPoint = <span class="meta-string">"GetSystemMetrics"</span>)</span>]</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">GetSystemMetrics</span>(<span class="params"><span class="keyword">int</span> intcount</span>)</span>;</span><br></pre></td></tr></table></figure>
+<p>完整代码，创建一个窗体拖入一个文本框控件</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">const</span> <span class="keyword">int</span> SM_CMOUSEBUTTONS = <span class="number">43</span>;<span class="comment">//定义一个常量值</span></span><br><span class="line"></span><br><span class="line">[<span class="meta">DllImport(<span class="meta-string">"user32.dll"</span>, EntryPoint = <span class="meta-string">"GetSystemMetrics"</span>)</span>]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">GetSystemMetrics</span>(<span class="params"><span class="keyword">int</span> intcount</span>)</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Form1</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    InitializeComponent();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> jishu = GetSystemMetrics(SM_CMOUSEBUTTONS); <span class="comment">//获取鼠标按键数</span></span><br><span class="line">    textBox1.Text = Convert.ToString(jishu);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1160,236 +1387,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97%E7%AC%A6.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97%E7%AC%A6.html" class="post-title-link" itemprop="url">Excel 截取单元格指定字符后面的字符</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2016-11-17 20:10:22" itemprop="dateCreated datePublished" datetime="2016-11-17T20:10:22+08:00">2016-11-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-15 07:18:32" itemprop="dateModified" datetime="2020-05-15T07:18:32+08:00">2020-05-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/Office16/" itemprop="url" rel="index"><span itemprop="name">Office16</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97%E7%AC%A6.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 截取单元格指定字符后面的字符" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97%E7%AC%A6.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E5%90%8E%E9%9D%A2%E7%9A%84%E5%AD%97%E7%AC%A6.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>433</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>现有一列数据如 ABCD-A-E5 ，需要获取最后一个短横线 “-”后面的数据也就是E5该怎么做呢？ <img data-src="https://cdn.fesugar.com/2016/11/2016-11-18-04001969.png" alt="4a471479361950"></p>
-<p>=TRIM(RIGHT(SUBSTITUTE(A3,”-“,REPT(“ “,50)),50))</p>
-<p>这里用到几个函数来看一下 <strong>TRIM 函数</strong> 说明 除了单词之间的单个空格外，清除文本中所有的空格。在从其他应用程序中获取带有不规则空格的文本时，可以使用函数 TRIM。 要点  TRIM 函数设计用于清除文本中的 7 位 ASCII 空格字符（值 32）。在 Unicode 字符集中，有一个称为不间断空格字符的额外空格字符，其十进制值为 160。该字符通常在网页中用作 HTML 实体 &nbsp;。TRIM 函数本身不删除此不间断空格字符。 <strong>RIGHT 函数</strong> 说明 RIGHT 根据所指定的字符数返回文本字符串中最后一个或多个字符。 <strong>SUBSTITUTE 函数</strong> 说明 在文本字符串中用 new_text 替代 old_text。 <strong>REPT 函数</strong> 说明 按照给定的次数重复显示文本。可以通过函数 REPT 来不断地重复显示某一文本字符串，对单元格进行填充。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html" class="post-title-link" itemprop="url">Excel 查找函数 HLOOKUP</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2016-11-17 20:09:42" itemprop="dateCreated datePublished" datetime="2016-11-17T20:09:42+08:00">2016-11-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-15 07:17:59" itemprop="dateModified" datetime="2020-05-15T07:17:59+08:00">2020-05-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/Office16/" itemprop="url" rel="index"><span itemprop="name">Office16</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 查找函数 HLOOKUP" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/Excel%E6%9F%A5%E6%89%BE%E5%87%BD%E6%95%B0-HLOOKUP.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>344</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>现在有这样一个需求，现一工作簿中有sheet1和sheet2两个表； sheet1表如下 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-17-12404525.png" alt="4a471479295530"> sheet2表如下： <img data-src="https://cdn.fesugar.com/2016/11/2016-11-18-03583564.png" alt="fb5c1479295531"> 我们可以看到序号这列是不重复的，这就好办了，说使用查找功能来回切换复制粘贴，如果有几百几千条的数据甚至更多这工作量可想而知。。。 现在就请我们的主角登场，那就是 HLOOKUP 查找函数： 在表格的首行或数值数组中搜索值，然后返回表格或数组中指定行的所在列中的值。 当比较值位于数据表格的首行时，如果要向下查看指定的行数，则可使用 HLOOKUP。 当比较值位于所需查找的数据的左边一列时，则可使用 VLOOKUP。 HLOOKUP 中的 H 代表“行”。 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-18-03553482.png" alt="10fb1479295533"></p>
-<p>=HLOOKUP(B2,Sheet1!2:3,2,FALSE)</p>
-<p>HLOOKUP(需要查找的值,在哪个范围内查找,显示的值属于查找范围的第几行,精确查找)</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1460,7 +1457,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
-          <span class="site-state-item-count">81</span>
+          <span class="site-state-item-count">83</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1546,13 +1543,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">233k</span>
+    <span title="站点总字数">236k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:32</span>
+    <span title="站点阅读时长">3:35</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>

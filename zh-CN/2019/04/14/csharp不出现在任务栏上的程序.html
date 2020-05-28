@@ -34,7 +34,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.fesugar.com/2019/04/2019-04-14-14112010.png">
 <meta property="article:published_time" content="2019-04-14T14:12:47.000Z">
-<meta property="article:modified_time" content="2020-05-14T11:00:36.193Z">
+<meta property="article:modified_time" content="2020-05-28T18:47:38.256Z">
 <meta property="article:author" content="fesugar">
 <meta property="article:tag" content=".NET">
 <meta property="article:tag" content="Visual Studio">
@@ -258,7 +258,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-14 19:00:36" itemprop="dateModified" datetime="2020-05-14T19:00:36+08:00">2020-05-14</time>
+                <time title="修改时间：2020-05-29 02:47:38" itemprop="dateModified" datetime="2020-05-29T02:47:38+08:00">2020-05-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -334,7 +334,7 @@
 <h2 id="不出现在任务栏上的程序"><a href="#不出现在任务栏上的程序" class="headerlink" title="不出现在任务栏上的程序"></a>不出现在任务栏上的程序</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>一般的Windows应用程序启动后，系统会在任务栏中添加一个工具按钮，表示程序正在运行，该按钮中的文字就是程序或窗口的标题名称。但是一些黑客程序和一些系统程序在启动后，任务栏中不会出现这些程序的按钮，这样的程序通常在后台运行，有时用户根本不会察觉，那么这是怎么实现的呢？本实例将介绍如何控制程序是否显示在任务栏中。运行结果如图1所示。<br><img data-src="https://cdn.fesugar.com/2019/04/2019-04-14-14112010.png" alt=""> 图1 不出现在任务栏上的程序</p>
 <h3 id="技术要点"><a href="#技术要点" class="headerlink" title="技术要点"></a>技术要点</h3><p>本实例通过使用Form类的ShowInTaskbar属性来控制程序是否显示在任务栏中。ShowInTaskbar属性用来获取或设置一个值，该值指示是否在Windows任务栏中显示窗体。其语法格式如下：<br>public bool ShowInTaskbar { get; set; }<br>属性值：如果为True，则运行时在Windows任务栏中显示窗体，否则为False。默认为True。</p>
 <h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><p>（1）新建一个Windows应用程序，将其命名为“不出现在任务栏上的程序”，默认主窗体为Form1。<br>（2）在Form1窗体中添加两个RadioButton控件，用来控制程序图标是否出现在任务栏中。<br>（3）主要程序代码。</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (radioButton1.Checked)							<span class="comment">//如果选中radioButton1</span></span><br><span class="line">        <span class="keyword">this</span>.ShowInTaskbar = <span class="literal">true</span>;						<span class="comment">//将ShowInTaskbar属性设为true，在任务栏显示</span></span><br><span class="line">    <span class="keyword">else</span>												<span class="comment">//否则</span></span><br><span class="line">        <span class="keyword">this</span>.ShowInTaskbar = <span class="literal">false</span>;						<span class="comment">//将ShowInTaskbar属性设为false，不在任务栏显示</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (radioButton1.Checked)	<span class="comment">//如果选中radioButton1</span></span><br><span class="line">        <span class="keyword">this</span>.ShowInTaskbar = <span class="literal">true</span>;<span class="comment">//将ShowInTaskbar属性设为true，在任务栏显示</span></span><br><span class="line">    <span class="keyword">else</span><span class="comment">//否则</span></span><br><span class="line">        <span class="keyword">this</span>.ShowInTaskbar = <span class="literal">false</span>;<span class="comment">//将ShowInTaskbar属性设为false，不在任务栏显示</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -492,7 +492,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
-          <span class="site-state-item-count">81</span>
+          <span class="site-state-item-count">83</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -578,13 +578,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">233k</span>
+    <span title="站点总字数">236k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:32</span>
+    <span title="站点阅读时长">3:35</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
