@@ -22,7 +22,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
@@ -236,7 +236,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2019/01/13/hdicpdci69.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -250,7 +250,120 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html" class="post-title-link" itemprop="url">C# 设置计算机名称</a>
+            <a href="/zh-CN/2019/01/13/hdicpdci69.html" class="post-title-link" itemprop="url">CMD 获取 WinRE 状态</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-13 12:33:37" itemprop="dateCreated datePublished" datetime="2019-01-13T12:33:37+08:00">2019-01-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 19:06:27" itemprop="dateModified" datetime="2020-05-14T19:06:27+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/Windows-bash/" itemprop="url" rel="index"><span itemprop="name">Windows_bash</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/zh-CN/2019/01/13/hdicpdci69.html" class="post-meta-item leancloud_visitors" data-flag-title="CMD 获取 WinRE 状态" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2019/01/13/hdicpdci69.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2019/01/13/hdicpdci69.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>249</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>查询 bcdedit /enum 启动项的 ‘recoveryenabled’ 字段判断 Windows RE 开启状态</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"> <span class="keyword">for</span> /f <span class="string">"tokens=1,2 delims= "</span> %%i <span class="keyword">in</span> (<span class="string">'bcdedit /enum'</span>) <span class="keyword">do</span> (</span><br><span class="line">  <span class="keyword">if</span> /i <span class="string">'%%i'</span>==<span class="string">'recoveryenabled'</span> (</span><br><span class="line">    <span class="keyword">if</span> /i <span class="string">'%%j'</span>==<span class="string">'yes'</span> (<span class="built_in">echo</span> [%time%][%~n0] WinRE is Enabled&amp; <span class="built_in">exit</span> /b 0)</span><br><span class="line">  )</span><br><span class="line"> )</span><br><span class="line"> <span class="built_in">echo</span> [%time%][%~n0] WinRE is Disabled</span><br><span class="line"> <span class="built_in">exit</span> /b 1</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/09/06/uvynb82t3w.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2018/09/06/uvynb82t3w.html" class="post-title-link" itemprop="url">C# 设置计算机名称</a>
         </h2>
 
         <div class="post-meta">
@@ -284,7 +397,7 @@
             </span>
 
           
-            <span id="/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 设置计算机名称" title="阅读次数">
+            <span id="/zh-CN/2018/09/06/uvynb82t3w.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 设置计算机名称" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -299,8 +412,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/09/06/csharp%E8%AE%BE%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D%E7%A7%B0.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2018/09/06/uvynb82t3w.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/09/06/uvynb82t3w.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -349,7 +462,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/xsgtgokw0f.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -363,7 +476,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html" class="post-title-link" itemprop="url">C# 获取鼠标按键数量</a>
+            <a href="/zh-CN/2018/01/25/xsgtgokw0f.html" class="post-title-link" itemprop="url">C# 获取鼠标按键数量</a>
         </h2>
 
         <div class="post-meta">
@@ -397,7 +510,7 @@
             </span>
 
           
-            <span id="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 获取鼠标按键数量" title="阅读次数">
+            <span id="/zh-CN/2018/01/25/xsgtgokw0f.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 获取鼠标按键数量" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -412,8 +525,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E6%95%B0%E9%87%8F.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2018/01/25/xsgtgokw0f.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/01/25/xsgtgokw0f.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -463,7 +576,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/p7jorlts0i.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -477,7 +590,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html" class="post-title-link" itemprop="url">C# 获取光标闪烁频率</a>
+            <a href="/zh-CN/2018/01/25/p7jorlts0i.html" class="post-title-link" itemprop="url">C# 获取光标闪烁频率</a>
         </h2>
 
         <div class="post-meta">
@@ -511,7 +624,7 @@
             </span>
 
           
-            <span id="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 获取光标闪烁频率" title="阅读次数">
+            <span id="/zh-CN/2018/01/25/p7jorlts0i.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 获取光标闪烁频率" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -526,8 +639,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E5%85%89%E6%A0%87%E9%97%AA%E7%83%81%E9%A2%91%E7%8E%87.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2018/01/25/p7jorlts0i.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/01/25/p7jorlts0i.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -584,7 +697,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2018/01/25/dxz19widl5.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -598,7 +711,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html" class="post-title-link" itemprop="url">C# 获取鼠标双击间隔时间</a>
+            <a href="/zh-CN/2018/01/25/dxz19widl5.html" class="post-title-link" itemprop="url">C# 获取鼠标双击间隔时间</a>
         </h2>
 
         <div class="post-meta">
@@ -632,7 +745,7 @@
             </span>
 
           
-            <span id="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 获取鼠标双击间隔时间" title="阅读次数">
+            <span id="/zh-CN/2018/01/25/dxz19widl5.html" class="post-meta-item leancloud_visitors" data-flag-title="C# 获取鼠标双击间隔时间" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -647,8 +760,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/01/25/csharp%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E9%97%B4%E9%9A%94%E6%97%B6%E9%97%B4.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2018/01/25/dxz19widl5.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2018/01/25/dxz19widl5.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -698,7 +811,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/12/11/Excel%E9%98%B2%E6%AD%A2%E6%9F%90%E5%88%97%E5%8D%95%E5%85%83%E6%A0%BC%E8%BE%93%E5%85%A5%E9%87%8D%E5%A4%8D%E5%86%85%E5%AE%B9.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2017/03/02/byvrdtx99g.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -712,7 +825,122 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/12/11/Excel%E9%98%B2%E6%AD%A2%E6%9F%90%E5%88%97%E5%8D%95%E5%85%83%E6%A0%BC%E8%BE%93%E5%85%A5%E9%87%8D%E5%A4%8D%E5%86%85%E5%AE%B9.html" class="post-title-link" itemprop="url">Excel 防止某列单元格输入重复内容</a>
+            <a href="/zh-CN/2017/03/02/byvrdtx99g.html" class="post-title-link" itemprop="url">DataTable 和 Json 互转</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-02 22:57:49" itemprop="dateCreated datePublished" datetime="2017-03-02T22:57:49+08:00">2017-03-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-31 12:01:54" itemprop="dateModified" datetime="2020-05-31T12:01:54+08:00">2020-05-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/zh-CN/2017/03/02/byvrdtx99g.html" class="post-meta-item leancloud_visitors" data-flag-title="DataTable 和 Json 互转" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2017/03/02/byvrdtx99g.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2017/03/02/byvrdtx99g.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <div>
+<li>来源:<a href="http://www.oschina.net/code/snippet_1242747_23565" target="_blank" rel="external nofollow">csdn</a></li>
+</div>
+
+<p>发现有博友贴出的转换代码</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">string</span> <span class="title">DataTableToJson</span>(<span class="params">System.Data.DataTable dt</span>)  </span></span><br><span class="line"><span class="function"></span>     &#123;  </span><br><span class="line">         StringBuilder Json = <span class="keyword">new</span> StringBuilder();  </span><br><span class="line">         Json.Append(<span class="string">"["</span>);  </span><br><span class="line">         <span class="keyword">if</span> (dt.Rows.Count &gt; <span class="number">0</span>)  </span><br><span class="line">         &#123;  </span><br><span class="line">             <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; dt.Rows.Count; i++)  </span><br><span class="line">             &#123;  </span><br><span class="line">                 Json.Append(<span class="string">"&#123;"</span>);  </span><br><span class="line">                 <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; dt.Columns.Count; j++)  </span><br><span class="line">                 &#123;  </span><br><span class="line">                     Json.Append(<span class="string">"\\"</span><span class="string">" + dt.Columns[j].ColumnName.ToString() + "</span>\\<span class="string">":\\"</span><span class="string">" + dt.Rows[i][j].ToString() + "</span>\\<span class="string">""</span>);  </span><br><span class="line">                     <span class="keyword">if</span> (j &lt; dt.Columns.Count - <span class="number">1</span>)  </span><br><span class="line">                     &#123;  </span><br><span class="line">                         Json.Append(<span class="string">","</span>);  </span><br><span class="line">                     &#125;  </span><br><span class="line">                 &#125;  </span><br><span class="line">                 Json.Append(<span class="string">"&#125;"</span>);  </span><br><span class="line">                 <span class="keyword">if</span> (i &lt; dt.Rows.Count - <span class="number">1</span>)  </span><br><span class="line">                 &#123;  </span><br><span class="line">                     Json.Append(<span class="string">","</span>);  </span><br><span class="line">                 &#125;  </span><br><span class="line">             &#125;  </span><br><span class="line">         &#125;  </span><br><span class="line">         <span class="comment">//  Json.Append("]&#125;");  </span></span><br><span class="line">         Json.Append(<span class="string">"]"</span>);  </span><br><span class="line">         <span class="keyword">return</span> Json.ToString();  </span><br><span class="line">     &#125;   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> DataTable <span class="title">JsonToDataTable</span>(<span class="params"><span class="keyword">string</span> strJson</span>)  </span></span><br><span class="line"><span class="function"></span>        &#123;  </span><br><span class="line">            <span class="keyword">string</span> strTableName = <span class="string">"Temp"</span>;  </span><br><span class="line">            DataTable tb = <span class="literal">null</span>;  </span><br><span class="line">  </span><br><span class="line">            <span class="keyword">var</span> rg = <span class="keyword">new</span> Regex(<span class="string">@"(?&lt;=&#123;)[^&#125;]+(?=&#125;)"</span>);  </span><br><span class="line">            MatchCollection mc = rg.Matches(strJson);  </span><br><span class="line">  </span><br><span class="line">            <span class="keyword">if</span>(mc.Count==<span class="number">0</span>)  </span><br><span class="line">            &#123;  </span><br><span class="line">                <span class="keyword">return</span> <span class="literal">null</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">string</span> strRow = mc[<span class="number">0</span>].Value;  </span><br><span class="line">            <span class="keyword">string</span>[] strRows = strRow.Split(<span class="string">','</span>);  </span><br><span class="line">            <span class="keyword">if</span> (tb == <span class="literal">null</span>)  </span><br><span class="line">            &#123;  </span><br><span class="line">                tb = <span class="keyword">new</span> DataTable();  </span><br><span class="line">                tb.TableName = strTableName;  </span><br><span class="line">                <span class="keyword">foreach</span> (<span class="keyword">string</span> str <span class="keyword">in</span> strRows)  </span><br><span class="line">                &#123;  </span><br><span class="line">                    <span class="keyword">var</span> dc = <span class="keyword">new</span> DataColumn();  </span><br><span class="line">                    <span class="keyword">string</span>[] strCell = str.Split(<span class="string">':'</span>);  </span><br><span class="line">                    dc.ColumnName = strCell[<span class="number">0</span>].Replace(<span class="string">"\\"</span><span class="string">", "</span><span class="string">");  </span></span><br><span class="line"><span class="string">                    tb.Columns.Add(dc);  </span></span><br><span class="line"><span class="string">                &#125;  </span></span><br><span class="line"><span class="string">                tb.AcceptChanges();  </span></span><br><span class="line"><span class="string">            &#125;  </span></span><br><span class="line"><span class="string">  </span></span><br><span class="line"><span class="string">            JsonArray arr = JsonConvert.Import(strJson) as JsonArray;  </span></span><br><span class="line"><span class="string">  </span></span><br><span class="line"><span class="string">            foreach (JsonObject obj in arr)  </span></span><br><span class="line"><span class="string">            &#123;  </span></span><br><span class="line"><span class="string">                DataRow dr = tb.NewRow();  </span></span><br><span class="line"><span class="string">                for (int j = 0; j &lt; tb.Columns.Count; j++)  </span></span><br><span class="line"><span class="string">                &#123;  </span></span><br><span class="line"><span class="string">                    dr[tb.Columns[j].ColumnName] = obj[tb.Columns[j].ColumnName];  </span></span><br><span class="line"><span class="string">                &#125;  </span></span><br><span class="line"><span class="string">                tb.Rows.Add(dr);  </span></span><br><span class="line"><span class="string">            &#125;  </span></span><br><span class="line"><span class="string">  </span></span><br><span class="line"><span class="string">            tb.AcceptChanges();  </span></span><br><span class="line"><span class="string">  </span></span><br><span class="line"><span class="string">            return tb;  </span></span><br><span class="line"><span class="string">        &#125;</span></span><br></pre></td></tr></table></figure>
+<p>发现下面的更加方便实用</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> Newtonsoft.Json;</span><br><span class="line"><span class="keyword">using</span> Newtonsoft.Json.Converters;</span><br><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Data;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">socketClient.Tool</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> Json 工具 引用了 Newtonsoft.Json.dll</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">JsonTool</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> DataTable 转换为 Json 格式的字符串</span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name="dt"&gt;</span><span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">DataTable2Json</span>(<span class="params">DataTable dt</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            String json = JsonConvert.SerializeObject(dt, <span class="keyword">new</span> DataTableConverter());</span><br><span class="line">            <span class="keyword">return</span> json;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> Json 格式字符串转换为 DataTable</span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name="json"&gt;</span><span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line">        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DataTable <span class="title">Json2DataTable</span>(<span class="params">String json</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            DataTable tb = (DataTable)JsonConvert.DeserializeObject(json, <span class="keyword">typeof</span>(DataTable));</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> tb;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    <span class="string">''</span><span class="string">' &lt;summary&gt;</span></span><br><span class="line"><span class="string">    '</span><span class="string">''</span> Json 格式字符串转换为 DataTable</span><br><span class="line">    <span class="string">''</span><span class="string">' &lt;/summary&gt;</span></span><br><span class="line"><span class="string">    '</span><span class="string">''</span> &lt;param name=<span class="string">"json"</span>&gt;&lt;/param&gt;</span><br><span class="line">    <span class="string">''</span><span class="string">' &lt;returns&gt;&lt;/returns&gt;</span></span><br><span class="line"><span class="string">    Public Shared Function Json2DataTable(ByVal json As String) As DataTable</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Return DirectCast(JsonConvert.DeserializeObject(analysis.json.JsonDecode(json, "data"), GetType(DataTable)), DataTable)</span></span><br><span class="line"><span class="string">    End Function</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/12/11/q59hgasev1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/12/11/q59hgasev1.html" class="post-title-link" itemprop="url">Excel 防止某列单元格输入重复内容</a>
         </h2>
 
         <div class="post-meta">
@@ -746,7 +974,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/12/11/Excel%E9%98%B2%E6%AD%A2%E6%9F%90%E5%88%97%E5%8D%95%E5%85%83%E6%A0%BC%E8%BE%93%E5%85%A5%E9%87%8D%E5%A4%8D%E5%86%85%E5%AE%B9.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 防止某列单元格输入重复内容" title="阅读次数">
+            <span id="/zh-CN/2016/12/11/q59hgasev1.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 防止某列单元格输入重复内容" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -761,8 +989,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/12/11/Excel%E9%98%B2%E6%AD%A2%E6%9F%90%E5%88%97%E5%8D%95%E5%85%83%E6%A0%BC%E8%BE%93%E5%85%A5%E9%87%8D%E5%A4%8D%E5%86%85%E5%AE%B9.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/12/11/Excel%E9%98%B2%E6%AD%A2%E6%9F%90%E5%88%97%E5%8D%95%E5%85%83%E6%A0%BC%E8%BE%93%E5%85%A5%E9%87%8D%E5%A4%8D%E5%86%85%E5%AE%B9.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/12/11/q59hgasev1.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/12/11/q59hgasev1.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -811,7 +1039,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86-Mysql-%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/12/06/e7ssilrbnl.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -825,7 +1053,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86-Mysql-%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html" class="post-title-link" itemprop="url">收集整理 Mysql 的一些用法</a>
+            <a href="/zh-CN/2016/12/06/e7ssilrbnl.html" class="post-title-link" itemprop="url">收集整理 Mysql 的一些用法</a>
         </h2>
 
         <div class="post-meta">
@@ -855,7 +1083,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86-Mysql-%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html" class="post-meta-item leancloud_visitors" data-flag-title="收集整理 Mysql 的一些用法" title="阅读次数">
+            <span id="/zh-CN/2016/12/06/e7ssilrbnl.html" class="post-meta-item leancloud_visitors" data-flag-title="收集整理 Mysql 的一些用法" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -870,8 +1098,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86-Mysql-%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86-Mysql-%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/12/06/e7ssilrbnl.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/12/06/e7ssilrbnl.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -911,7 +1139,7 @@
 <p>9、说明：创建视图：<code>create view viewname as select statement</code> 删除视图：<code>drop view viewname</code></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/zh-CN/2016/12/06/%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86-Mysql-%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95.html#more" rel="contents">
+              <a class="btn" href="/zh-CN/2016/12/06/e7ssilrbnl.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -935,7 +1163,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/28/Excel%E6%8D%9F%E5%9D%8F%E6%96%87%E6%A1%A3%E7%9A%84%E5%A4%84%E7%90%86.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/28/bo76vmops4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -949,7 +1177,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/11/28/Excel%E6%8D%9F%E5%9D%8F%E6%96%87%E6%A1%A3%E7%9A%84%E5%A4%84%E7%90%86.html" class="post-title-link" itemprop="url">Excel 损坏文档的处理</a>
+            <a href="/zh-CN/2016/11/28/bo76vmops4.html" class="post-title-link" itemprop="url">Excel 损坏文档的处理</a>
         </h2>
 
         <div class="post-meta">
@@ -983,7 +1211,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/11/28/Excel%E6%8D%9F%E5%9D%8F%E6%96%87%E6%A1%A3%E7%9A%84%E5%A4%84%E7%90%86.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 损坏文档的处理" title="阅读次数">
+            <span id="/zh-CN/2016/11/28/bo76vmops4.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 损坏文档的处理" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -998,8 +1226,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/11/28/Excel%E6%8D%9F%E5%9D%8F%E6%96%87%E6%A1%A3%E7%9A%84%E5%A4%84%E7%90%86.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/28/Excel%E6%8D%9F%E5%9D%8F%E6%96%87%E6%A1%A3%E7%9A%84%E5%A4%84%E7%90%86.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/11/28/bo76vmops4.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/28/bo76vmops4.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1048,7 +1276,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%8B%BC%E5%87%91%E5%AD%97%E7%AC%A6%E4%B8%B2.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/0tutol0ycx.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -1062,7 +1290,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/11/17/Excel%E6%8B%BC%E5%87%91%E5%AD%97%E7%AC%A6%E4%B8%B2.html" class="post-title-link" itemprop="url">Excel 拼凑字符串</a>
+            <a href="/zh-CN/2016/11/17/0tutol0ycx.html" class="post-title-link" itemprop="url">Excel 拼凑字符串</a>
         </h2>
 
         <div class="post-meta">
@@ -1096,7 +1324,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/11/17/Excel%E6%8B%BC%E5%87%91%E5%AD%97%E7%AC%A6%E4%B8%B2.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 拼凑字符串" title="阅读次数">
+            <span id="/zh-CN/2016/11/17/0tutol0ycx.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 拼凑字符串" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -1111,8 +1339,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/11/17/Excel%E6%8B%BC%E5%87%91%E5%AD%97%E7%AC%A6%E4%B8%B2.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/Excel%E6%8B%BC%E5%87%91%E5%AD%97%E7%AC%A6%E4%B8%B2.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/11/17/0tutol0ycx.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/0tutol0ycx.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1142,236 +1370,6 @@
 
       
           <p>Excel 中拼凑字符串的几种方法 <img data-src="https://cdn.fesugar.com/2016/11/2016-11-18-03562237.png" alt="5d691479364493"> <strong>CONCATENATE 函数</strong> 说明 CONCATENATE 函数可将最多 255 个文本字符串联接成一个文本字符串。联接项可以是文本、数字、单元格引用或这些项的组合。例如，如果您的工作表的单元格 A1 中包含某个人的名字，单元格 B1 中包含这个人的姓氏，那么，您可以通过使用以下公式将这两个值合并到另一个单元格中： =CONCATENATE(A1,” “,B1)此示例中的第二个参数 (“ “) 为空格字符。您必须将希望在结果中显示的任意空格或标点符号指定为使用双引号括起来的参数。 <strong>&amp; 连接符</strong> 说明 &amp;符号将各种需要进行拼凑的单元格或字符连接起来。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%AF%B9%E5%BA%94%E6%93%8D%E4%BD%9C.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2016/11/17/Excel%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%AF%B9%E5%BA%94%E6%93%8D%E4%BD%9C.html" class="post-title-link" itemprop="url">Excel 多个条件进行对应操作</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2016-11-17 20:11:26" itemprop="dateCreated datePublished" datetime="2016-11-17T20:11:26+08:00">2016-11-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-15 07:18:16" itemprop="dateModified" datetime="2020-05-15T07:18:16+08:00">2020-05-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/Office16/" itemprop="url" rel="index"><span itemprop="name">Office16</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/zh-CN/2016/11/17/Excel%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%AF%B9%E5%BA%94%E6%93%8D%E4%BD%9C.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 多个条件进行对应操作" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/zh-CN/2016/11/17/Excel%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%AF%B9%E5%BA%94%E6%93%8D%E4%BD%9C.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/Excel%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%AF%B9%E5%BA%94%E6%93%8D%E4%BD%9C.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>374</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>有如下情况，给出一组条件，如何针对给出的条件进行对应的操作？ <img data-src="https://cdn.fesugar.com/2016/11/2016-11-18-03570165.png" alt="663e1479363466"></p>
-<p>=CHOOSE(MATCH(B4+C4,{5,3,2},),”是5”,”是3”,”是2”)</p>
-<p>这里用到几个函数来看一下 <strong>CHOOSE 函数</strong> 说明 使用 index_num 返回数值参数列表中的数值。使用 CHOOSE 可以根据索引号从最多 254 个数值中选择一个。例如，如果 value1 到 value7 表示一周的 7 天，当将 1 到 7 之间的数字用作 index_num 时，则 CHOOSE 返回其中的某一天。 <strong>MATCH 函数</strong> 说明 MATCH 函数可在单元格区域 （区域：工作表上的两个或多个单元格。区域中的单元格可以相邻或不相邻。）中搜索指定项，然后返回该项在单元格区域中的相对位置。例如，如果单元格区域 A1:A3 包含值 5、25 和 38，则以下公式： =MATCH(25,A1:A3,0) 会返回数字 2，因为值 25 是单元格区域中的第二项。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E7%82%B9%E5%AD%97%E7%AC%A6%E5%89%8D%E9%9D%A2%E7%9A%84%E6%95%B0%E6%8D%AE.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E7%82%B9%E5%AD%97%E7%AC%A6%E5%89%8D%E9%9D%A2%E7%9A%84%E6%95%B0%E6%8D%AE.html" class="post-title-link" itemprop="url">Excel 截取单元格指点字符前面的数据</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2016-11-17 20:10:53" itemprop="dateCreated datePublished" datetime="2016-11-17T20:10:53+08:00">2016-11-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-15 07:18:27" itemprop="dateModified" datetime="2020-05-15T07:18:27+08:00">2020-05-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/Office16/" itemprop="url" rel="index"><span itemprop="name">Office16</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E7%82%B9%E5%AD%97%E7%AC%A6%E5%89%8D%E9%9D%A2%E7%9A%84%E6%95%B0%E6%8D%AE.html" class="post-meta-item leancloud_visitors" data-flag-title="Excel 截取单元格指点字符前面的数据" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E7%82%B9%E5%AD%97%E7%AC%A6%E5%89%8D%E9%9D%A2%E7%9A%84%E6%95%B0%E6%8D%AE.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/11/17/Excel%E6%88%AA%E5%8F%96%E5%8D%95%E5%85%83%E6%A0%BC%E6%8C%87%E7%82%B9%E5%AD%97%E7%AC%A6%E5%89%8D%E9%9D%A2%E7%9A%84%E6%95%B0%E6%8D%AE.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>208</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>现有一列数据如 dwAB_C3F_G，要求获取从单元格第二个字符开始至第一个下划线”_”中间的数据也就是wAB该怎么做呢？ <img data-src="https://cdn.fesugar.com/2016/11/2016-11-18-03575278.png" alt="53e61479362838"></p>
-<p>=MID(A3,2,FIND(“_”,A3)-2)</p>
-<p>这里用到几个函数来看一下 <strong>MID 函数</strong> 说明 MID 返回文本字符串中从指定位置开始的特定数目的字符，该数目由用户指定。 <strong>FIND 函数</strong> 说明 函数 FIND 用于在第二个文本串中定位第一个文本串，并返回第一个文本串的起始位置的值，该值从第二个文本串的第一个字符算起。</p>
 
       
     </div>
@@ -1457,7 +1455,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
-          <span class="site-state-item-count">83</span>
+          <span class="site-state-item-count">85</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1543,13 +1541,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">236k</span>
+    <span title="站点总字数">240k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:35</span>
+    <span title="站点阅读时长">3:38</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
@@ -1561,92 +1559,6 @@
 
 
 
-<script data-pjax>
-  (function() {
-    function leancloudSelector(url) {
-      url = encodeURI(url);
-      return document.getElementById(url).querySelector('.leancloud-visitors-count');
-    }
-
-    function addCount(Counter) {
-      var visitors = document.querySelector('.leancloud_visitors');
-      var url = decodeURI(visitors.id);
-      var title = visitors.dataset.flagTitle;
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            var counter = results[0];
-            leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .catch(error => {
-                console.error('Failed to save visitor count', error);
-              });
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    function showTime(Counter) {
-      var visitors = document.querySelectorAll('.leancloud_visitors');
-      var entries = [...visitors].map(element => {
-        return decodeURI(element.id);
-      });
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          for (let url of entries) {
-            let target = results.find(item => item.url === url);
-            leancloudSelector(url).innerText = target ? target.time : 0;
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    let { app_id, app_key, server_url } = {"enable":true,"app_id":"lAFKI0xWU7wKC517X85fUl27-MdYXbMMI","app_key":"clgkJqMeQreiDvqcvhN11y96","server_url":null,"security":true};
-    function fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${api_server}/1.1${url}`, {
-          method,
-          headers: {
-            'X-LC-Id'     : app_id,
-            'X-LC-Key'    : app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        if (CONFIG.hostname !== location.hostname) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    }
-
-    let api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
-
-    if (api_server) {
-      fetchData(api_server);
-    } else {
-      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-        .then(response => response.json())
-        .then(({ api_server }) => {
-          fetchData('https://' + api_server);
-        });
-    }
-  })();
-</script>
 
 
       </div>
@@ -1814,7 +1726,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     });
     new Valine({
       el         : '#valine-comments',
-      verify     : true,
+      verify     : false,
       notify     : false,
       appId      : 'lAFKI0xWU7wKC517X85fUl27-MdYXbMMI',
       appKey     : 'clgkJqMeQreiDvqcvhN11y96',
@@ -1822,7 +1734,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       avatar     : 'identicon',
       meta       : guest,
       pageSize   : '10' || 10,
-      visitor    : false,
+      visitor    : true,
       lang       : 'zh-cn' || 'zh-cn',
       path       : location.pathname,
       recordIP   : false,

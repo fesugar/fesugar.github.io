@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<meta name="keywords" content="fesugar,甜甜糖,甜甜糖个人博客,甜甜糖博客,如何做个人博客网站,严圣川,严圣川个人网站,佛系糖果,小程序,多线程csharp,.net,c语言,vb,php,小程序radio样式,小程序开发">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="1、说明：创建数据库 Create DATABASE database-name 2、说明：删除数据库 drop database dbname 3、说明：备份sql server —创建 备份数据的 device USE master EXEC sp_addumpdevice &#39;disk&#39;, &#39;testBack&#39;, &#39;c:\mssql7backup\MyN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="收集整理 Mysql 的一些用法">
+<meta property="og:url" content="https://www.fesugar.com/zh-CN/2016/12/06/e7ssilrbnl.html">
+<meta property="og:site_name" content="佛系糖果的博客">
+<meta property="og:description" content="1、说明：创建数据库 Create DATABASE database-name 2、说明：删除数据库 drop database dbname 3、说明：备份sql server —创建 备份数据的 device USE master EXEC sp_addumpdevice &#39;disk&#39;, &#39;testBack&#39;, &#39;c:\mssql7backup\MyN">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-12-06T00:49:42.000Z">
+<meta property="article:modified_time" content="2020-05-14T09:19:57.521Z">
+<meta property="article:author" content="fesugar">
+<meta property="article:tag" content="MySql">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.fesugar.com/zh-CN/2016/12/06/e7ssilrbnl.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>收集整理 Mysql 的一些用法 | 佛系糖果的博客</title>
+  
+
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c708aaffb3b844ecd872db5ea0e68d8f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="佛系糖果的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">佛系糖果的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">行到水穷处，坐看云起时</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-knowledge">
+
+    <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" rel="section"><i class="fa fa-book fa-fw"></i>知识</a>
+
+  </li>
+        <li class="menu-item menu-item-study">
+
+    <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" rel="section"><i class="fa fa-edit fa-fw"></i>学习</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-comment fa-fw"></i>留言簿</a>
+
+  </li>
+        <li class="menu-item menu-item-weiyu">
+
+    <a href="/weiyu/" rel="section"><i class="fa fa-eye fa-fw"></i>微语</a>
+
+  </li>
+        <li class="menu-item menu-item-disclaimer">
+
+    <a href="/disclaimer/" rel="section"><i class="fa fa-bell fa-fw"></i>条款声明</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-coffee fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/fesugar" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/12/06/e7ssilrbnl.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          收集整理 Mysql 的一些用法
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-12-06 08:49:42" itemprop="dateCreated datePublished" datetime="2016-12-06T08:49:42+08:00">2016-12-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 17:19:57" itemprop="dateModified" datetime="2020-05-14T17:19:57+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B9%A6%E7%B1%8D%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">书籍文档</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/zh-CN/2016/12/06/e7ssilrbnl.html" class="post-meta-item leancloud_visitors" data-flag-title="收集整理 Mysql 的一些用法" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2016/12/06/e7ssilrbnl.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/12/06/e7ssilrbnl.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>13k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>12 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>1、说明：创建数据库 <code>Create DATABASE database-name</code></p>
+<p>2、说明：删除数据库 <code>drop database dbname</code></p>
+<p>3、说明：备份sql server —<br>创建 备份数据的 device <code>USE master EXEC sp_addumpdevice &#39;disk&#39;, &#39;testBack&#39;, &#39;c:\mssql7backup\MyNwind_1.dat&#39;</code> —<br>开始 备份 <code>BACKUP DATABASE pubs TO testBack</code></p>
+<p>4、说明：创建新表 <code>create table tabname(col1 type1 [not null] [primary key],col2 type2 [not null],..)</code><br>    根据已有的表创建新表：<br>    A：<code>create table tab_new like tab_old (使用旧表创建新表)</code><br>    B：<code>create table tab_new as select col1,col2… from tab_old definition only</code></p>
+<p>5、说明：删除新表 <code>drop table tabname</code></p>
+<p>6、说明：增加一个列 <code>Alter table tabname add column col type</code> 注：列增加后将不能删除。DB2中列加上后数据类型也不能改变，唯一能改变的是增加varchar类型 的长度。</p>
+<p>7、说明：添加主键： <code>Alter table tabname add primary key(col)</code> 说明：删除主键： <code>Alter table tabname drop primary key(col)</code></p>
+<p>8、说明：创建索引：<code>create [unique] index idxname on tabname(col….)</code> 删除索引：<code>drop index idxname</code> 注：索引是不可更改的，想更改必须删除重新建。</p>
+<p>9、说明：创建视图：<code>create view viewname as select statement</code> 删除视图：<code>drop view viewname</code></p>
+<a id="more"></a>
+<p>10、说明：几个简单的基本的sql语句<br>    选择：<code>select * from table1 where 范围</code><br>    插入：<code>insert into table1(field1,field2) values(value1,value2)</code> 删除：<code>delete from table1 where 范围</code><br>    更新：<code>update table1 set field1=value1 where 范围</code><br>    查找：<code>select * from table1 where field1 like &#39;%value1%&#39; ---like的语法很精妙，查资料!</code><br>    排序：<code>select * from table1 order by field1,field2 [desc]</code><br>    总数：<code>select count as totalcount from table1</code><br>    求和：<code>select sum(field1) as sumvalue from table1</code><br>    平均：<code>select avg(field1) as avgvalue from table1</code><br>    最大：<code>select max(field1) as maxvalue from table1</code><br>    最小：<code>select min(field1) as minvalue from table1</code></p>
+<p>11、说明：几个高级查询运算词<br>    A： UNION 运算符 UNION 运算符通过组合其他两个结果表（例如 TABLE1 和 TABLE2）并消去表中任何重复行而派生 出一个结果表。当 ALL 随 UNION 一起使用时（即 UNION ALL），不消除重复行。两种情况下，派 生表的每一行不是来自 TABLE1 就是来自 TABLE2。<br>    B： EXCEPT 运算符 EXCEPT 运算符通过包括所有在 TABLE1 中但不在 TABLE2 中的行并消除所有重复行而派生出一个 结果表。当 ALL 随 EXCEPT 一起使用时 (EXCEPT ALL)，不消除重复行。<br>    C： INTERSECT 运算符 INTERSECT 运算符通过只包括 TABLE1 和 TABLE2 中都有的行并消除所有重复行而派生出一个结果 表。当 ALL 随 INTERSECT 一起使用时 (INTERSECT ALL)，不消除重复行。<br>注：使用运算词的几个查询结果行必须是一致的。</p>
+<p>12、说明：使用外连接<br>    A、left outer join： 左外连接（左连接）：结果集几包括连接表的匹配行，也包括左连接表的所有行。<br>    sql: <code>select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</code><br>    B：right outer join: 右外连接(右连接)：结果集既包括连接表的匹配连接行，也包括右连接表的所有行。<br>    C：full outer join： 全外连接：不仅包括符号连接表的匹配行，还包括两个连接表中的所有记录。</p>
+<p>13、说明：复制表(只复制结构,源表名：a 新表名：b) (Access可用)<br>    法一：<code>select * into b from a where 1&lt;&gt;1</code><br>    法二：<code>select top 0 * into b from a</code></p>
+<p>14、说明：拷贝表(拷贝数据,源表名：a 目标表名：b) (Access可用) <code>insert into b(a, b, c) select d,e,f from b;</code></p>
+<p>15、说明：跨数据库之间表的拷贝(具体数据使用绝对路径) (Access可用)<br>    <code>insert into b(a, b, c) select d,e,f from b in ‘具体数据库&#39; where 条件 例子：..from b in &#39;&quot;&amp;Server.MapPath(&quot;.&quot;)&amp;&quot;\data.mdb&quot; &amp;&quot;&#39; where..</code></p>
+<p>16、说明：子查询(表名1：a 表名2：b)<br>    <code>select a,b,c from a where a IN (select d from b ) 或者: select a,b,c from a where a IN (1,2,3)</code></p>
+<p>17、说明：显示文章、提交人和最后回复时间<br>    <code>select a.title,a.username,b.adddate from table a,(select max(adddate) adddate from table where table.title=a.title) b</code></p>
+<p>18.说明：外连接查询(表名1：a 表名2：b)<br>    <code>select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</code></p>
+<p>19、说明：在线视图查询(表名1：a )<br>    <code>select * from (Select a,b,c FROM a) T where t.a &gt; 1;</code></p>
+<p>20、说明：between的用法,between限制查询数据范围时包括了边界值,not between不包括<br>    <code>select * from table1 where time between time1 and time2 select a,b,c, from table1 where a not between 数值1 and 数值2</code></p>
+<p>21、说明：in 的使用方法<br>    <code>select * from table1 where a [not] in (‘值1&#39;,&#39;值2&#39;,&#39;值4&#39;,&#39;值6&#39;)</code></p>
+<p>22、说明：两张关联表，删除主表中已经在副表中没有的信息<br>    <code>delete from table1 where not exists ( select * from table2 where table1.field1=table2.field1 )</code></p>
+<p>23、说明：四表联查问题：<br>    <code>select * from a left inner join b on a.a=b.b right inner join c on a.a=c.c inner join d on a.a=d.d where .....</code></p>
+<p>24、说明：日程安排提前五分钟提醒<br>    sql: select * from 日程安排 where datediff(‘minute’,f开始时间,getdate())&gt;5</p>
+<p>25、说明：一条sql 语句搞定数据库分页<br>    <code>select top 10 b.* from (select top 20 主键字段,排序字段 from 表名 order by 排序字段 desc) a,表名 b where b.主键字段 = a.主键字段 order by a.排序字段</code></p>
+<p>26、说明：前10条记录<br>    <code>select top 10 * form table1 where 范围</code></p>
+<p>27、说明：选择在每一组b值相同的数据中对应的a最大的记录的所有信息(类似这样的用法可以用 于论坛每月排行榜,每月热销产品分析,按科目成绩排名,等等.)<br>    <code>select a,b,c from tablename ta where a=(select max(a) from tablename tb where tb.b=ta.b)</code></p>
+<p>28、说明：包括所有在 TableA 中但不在 TableB和TableC 中的行并消除所有重复行而派生出一个 结果表<br>    <code>(select a from tableA ) except (select a from tableB) except (select a from tableC)</code></p>
+<p>29、说明：随机取出10条数据<br>    <code>select top 10 * from tablename order by newid()</code></p>
+<p>30、说明：随机选择记录<br>    <code>select newid()</code></p>
+<p>31、说明：删除重复记录<br>    <code>Delete from tablename where id not in (select max(id) from tablename group by col1,col2,...)</code></p>
+<p>32、说明：列出数据库里所有的表名<br>    select name from sysobjects where type=’U’</p>
+<p>33、说明：列出表里的所有的<br>    <code>select name from syscolumns where id=object_id(&#39;TableName&#39;)</code></p>
+<p>34、说明：列示type、vender、pcs字段，以type字段排列，case可以方便地实现多重选择，类似 select 中的case。<br>    <code>select type,sum(case vender when &#39;A&#39; then pcs else 0 end),sum(case vender when &#39;C&#39; then pcs else 0 end),sum(case vender when &#39;B&#39; then pcs else 0 end) FROM tablename group by type</code> 显示结果： type vender pcs 电脑 A 1 电脑 A 1 光盘 B 2 光盘 A 2 手机 B 3 手机 C 3</p>
+<p>35、说明：初始化表<br>    table1 TRUNCATE TABLE table1</p>
+<p>36、说明：选择从10到15的记录<br>    <code>select top 5 * from (select top 15 * from table order by id asc) table_别名 order by id desc</code><br>随机选择数据库记录的方法（使用Randomize函数，通过SQL语句实现）<br>对存储在数据库中的数据来说，随机数特性能给出上面的效果，但它们可能太慢了些。你不能 要求ASP“找个随机数”然后打印出来。<br>实际上常见的解决方案是建立如下所示的循环：<br>    <code>Randomize RNumber = Int(Rnd*499) +1</code> While Not objRec.EOF If objRec(“ID”) = RNumber THEN … 这里是执行脚本 … end if objRec.MoveNext Wend 这很容易理解。<br>首先，你取出1到500范围之内的一个随机数（假设500就是数据库内记录的总 数）。然后，你遍历每一记录来测试ID 的值、检查其是否匹配RNumber。满足条件的话就执行由 THEN 关键字开始的那一块代码。假如你的RNumber 等于495，那么要循环一遍数据库花的时间可就 长了。虽然500这个数字看起来大了些，但相比更为稳固的企业解决方案这还是个小型数据库了， 后者通常在一个数据库内就包含了成千上万条记录。这时候不就死定了？<br>采用SQL，你就可以很快地找出准确的记录并且打开一个只包含该记录的recordset，如下所示 ：<br>    <code>Randomize RNumber = Int(Rnd*499) + 1</code><br>    sql = “Select * FROM Customers Where ID = “ &amp; RNumber set objRec = ObjConn.Execute(SQL) Response.WriteRNumber &amp; “ = “ &amp; objRec(“ID”) &amp; “ “ &amp; objRec(“c_email”) 不必写出RNumber 和ID，你只需要检查匹配情况即可。<br>    只要你对以上代码的工作满意，你自可 按需操作“随机”记录。Recordset没有包含其他内容，因此你很快就能找到你需要的记录这样就 大大降低了处理时间。 再谈随机数 现在你下定决心要榨干Random 函数的最后一滴油，那么你可能会一次取出多条随机记录或者 想采用一定随机范围内的记录。把上面的标准Random 示例扩展一下就可以用SQL应对上面两种情况 了。<br>    为了取出几条随机选择的记录并存放在同一recordset内，你可以存储三个随机数，然后查询 数据库获得匹配这些数字的记录：<br>        <code>sql = &quot;Select * FROM Customers Where ID = &quot; &amp; RNumber &amp; &quot; or ID = &quot; &amp; RNumber2 &amp; &quot; or ID = &quot; &amp; RNumber3</code> 假如你想选出10条记录（也许是每次页面装载时的10条链接的列表），你可以用BETWEEN 或者 数学等式选出第一条记录和适当数量的递增记录。这一操作可以通过好几种方式来完成，但是 Select 语句只显示一种可能（这里的ID 是自动生成的号码）：<br>            <code>sql = &quot;Select * FROM Customers Where ID BETWEEN &quot; &amp; RNumber &amp; &quot; AND &quot; &amp; RNumber &amp; &quot;+ 9&quot;</code> 注意：以上代码的执行目的不是检查数据库内是否有9条并发记录。 随机读取若干条记录，测试过 Access语法：Select top 10 * From 表名 orDER BY Rnd(id) sql server:select top n * from 表名 order by newid() mysqlelect * From 表名 order By rand() Limit n Access左连接语法(最近开发要用左连接,Access帮助什么都没有,网上没有Access的SQL说明,只有 自己测试, 现在记下以备后查) 语法elect table1.fd1,table1,fd2,table2.fd2 From table1 left join table2 on table1.fd1,table2.fd1 where … 使用SQL语句 用…代替过长的字符串显示 语法： SQL数据库：select case when len(field)&gt;10 then left(field,10)+’…’ else field end as news_name,news_id from tablename Access数据库：Select iif(len(field)&gt;2,left(field,2)+’…’,field) FROM tablename; Conn.Execute说明 Execute方法 该方法用于执行SQL语句。根据SQL语句执行后是否返回记录集，该方法的使用格式分为以下两 种：<br>（1）.执行SQL查询语句时，将返回查询得到的记录集。用法为： Set 对象变量名=连接对象.Execute(“SQL 查询语言”) Execute方法调用后，会自动创建记录集对象，并将查询结果存储在该记录对象中，通过Set 方法，将记录集赋给指定的对象保存，以后对象变量就代表了该记录集对象。<br>（2）．执行SQL的操作性语言时，没有记录集的返回。此时用法为： 连接对象.Execute “SQL 操作性语句” [, RecordAffected][, Option] ?RecordAffected 为可选项，此出可放置一个变量，SQL语句执行后，所生效的记录 数会自动保存到该变量中。通过访问该变量，就可知道SQL语句队多少条记录进行了操作。 ?Option 可选项，该参数的取值通常为adCMDText，它用于告诉ADO，应该将Execute 方法之后的第一个字符解释为命令文本。通过指定该参数，可使执行更高效。 *BeginTrans、RollbackTrans、CommitTrans方法 这三个方法是连接对象提供的用于事务处理的方法。BeginTrans用于开始一个事物； RollbackTrans用于回滚事务；CommitTrans用于提交所有的事务处理结果，即确认事务的处理。 事务处理可以将一组操作视为一个整体，只有全部语句都成功执行后，事务处理才算成功；若 其中有一个语句执行失败，则整个处理就算失败，并恢复到处里前的状态。 BeginTrans和CommitTrans用于标记事务的开始和结束，在这两个之间的语句，就是作为事务 处理的语句。判断事务处理是否成功，可通过连接对象的Error集合来实现，若Error集合的成员个 数不为0，则说明有错误发生，事务处理失败。Error集合中的每一个Error对象，代表一个错误信 息。</p>
+<p>37、一道SQL语句面试题，关于group by 表内容： 2005-05-09 胜 2005-05-09 胜 2005-05-09 负 2005-05-09 负 2005-05-10 胜 2005-05-10 负 2005-05-10 负 如果要生成下列结果, 该如何写sql语句? 胜 负 2005-05-09 2 2 2005-05-10 1 2 答：代码如下： <code>create table #tmp(rq varchar(10),shengfu nchar(1)) insert into #tmp values(&#39;2005-05-09&#39;,&#39;胜&#39;) insert into #tmp values(&#39;2005-05-09&#39;,&#39;胜&#39;) insert into #tmp values(&#39;2005-05-09&#39;,&#39;负&#39;) insert into #tmp values(&#39;2005-05-09&#39;,&#39;负&#39;) insert into #tmp values(&#39;2005-05-10&#39;,&#39;胜&#39;) insert into #tmp values(&#39;2005-05-10&#39;,&#39;负&#39;) insert into #tmp values(&#39;2005-05-10&#39;,&#39;负&#39;) 1)select rq, sum(case when shengfu=&#39;胜&#39; then 1 else 0 end)&#39;胜&#39;,sum(case when shengfu=&#39; 负&#39; then 1 else 0 end)&#39;负&#39; from #tmp group by rq 2) select N.rq,N.勝,M.負 from ( select rq,勝=count(*) from #tmp where shengfu=&#39;胜&#39;group by rq)N inner join (select rq,負=count(*) from #tmp where shengfu=&#39;负&#39;group by rq)M on N.rq=M.rq
+3)select a.col001,a.a1 胜,b.b1 负 from (select col001,count(col001) a1 from temp1 where col002=&#39;胜&#39; group by col001) a, (select col001,count(col001) b1 from temp1 where col002=&#39;负&#39; group by col001) b where a.col001=b.col001</code></p>
+<p>38、请教一个面试中遇到的SQL语句的查询问题 表中有A B C三列,用SQL语句实现：当A列大于B列时选择A列否则选择B列，当B列大于C列时选择B列 否则选择C列。 示例如下: <code>select (case when a&gt;b then a else b end ), (case when b&gt;c then b esle c end) from table_name</code></p>
+<p>39、一个日期判断的sql语句？ 请取出tb_send表中日期(SendTime字段)为当天的所有记录?(SendTime字段为datetime型，包含日 期与时间) 示例如下: <code>select * from tb where datediff(dd,SendTime,getdate())=0</code></p>
+<p>40、有一张表，里面有3个字段：语文，数学，英语。其中有3条记录分别表示语文70分，数学80分 ，英语58分，请用一条sql语句查询出这三条记录并按以下条件显示出来（并写出您的思路）： 大于或等于80表示优秀，大于或等于60表示及格，小于60分表示不及格。 显示格式： 语文 数学 英语 及格 优秀 不及格 示例如下： <code>select (case when 语文&gt;=80 then &#39;优秀&#39; when 语文&gt;=60 then &#39;及格&#39; else &#39;不及格&#39;) as 语文, (case when 数学&gt;=80 then &#39;优秀&#39; when 数学&gt;=60 then &#39;及格&#39; else &#39;不及格&#39;) as 数学, (case when 英语&gt;=80 then &#39;优秀&#39; when 英语&gt;=60 then &#39;及格&#39; else &#39;不及格&#39;) as 英语, from table</code></p>
+<p>41、在sqlserver2000中请用sql创建一张用户临时表和系统临时表，里面包含两个字段ID和 IDValues,类型都是int型，并解释下两者的区别? 用户临时表:create table #xx(ID int, IDValues int) 系统临时表:create table ##xx(ID int, IDValues int) 区别: 用户临时表只对创建这个表的用户的Session可见,对其他进程是不可见的. 当创建它的进程消失时这个临时表就自动删除. 全局临时表对整个SQL Server实例都可见,但是所有访问它的Session都消失的时候,它也自动删除.</p>
+<p>42、sqlserver2000是一种大型数据库，他的存储容量只受存储介质的限制，请问它是通过什么方 式实现这种无限容量机制的。 它的所有数据都存储在数据文件中(*.dbf),所以只要文件够大,SQL Server的存储容量是可以扩 大的. SQL Server 2000 数据库有三种类型的文件： 主要数据文件 主要数据文件是数据库的起点，指向数据库中文件的其它部分。每个数据库都有一个主要数据文件 。主要数据文件的推荐文件扩展名是 .mdf。 次要数据文件 次要数据文件包含除主要数据文件外的所有数据文件。有些数据库可能没有次要数据文件，而有些 数据库则有多个次要数据文件。次要数据文件的推荐文件扩展名是 .ndf。 日志文件 日志文件包含恢复数据库所需的所有日志信息。每个数据库必须至少有一个日志文件，但可以不止 一个。日志文件的推荐文件扩展名是 .ldf。</p>
+<p>43、请用一个sql语句得出结果 从table1,table2中取出如table3所列格式数据，注意提供的数据及结果不准确，只是作为一个格 式向大家请教。 如使用存储过程也可以。 table1 月份mon 部门dep 业绩yj 一月份 01 10 一月份 02 10 一月份 03 5 二月份 02 8 二月份 04 9 三月份 03 8 table2 部门dep 部门名称dname ——————————– 01 国内业务一部 02 国内业务二部 03 国内业务三部 04 国际业务部 table3 （result） 部门dep 一月份 二月份 三月份 ————————————– 01 10 null null 02 10 8 null 03 null 5 8 04 null null 9 ——————————————</p>
+<p>1) <code>select a.部门名称dname,b.业绩yj as &#39;一月份&#39;,c.业绩yj as &#39;二月份&#39;,d.业绩yj as &#39;三月份&#39; from table1 a,table2 b,table2 c,table2 d where a.部门dep = b.部门dep and b.月份mon = &#39;一月份&#39; and a.部门dep = c.部门dep and c.月份mon = &#39;二月份&#39; and a.部门dep = d.部门dep and d.月份mon = &#39;三月份&#39; and
+2) select a.dep, sum(case when b.mon=1 then b.yj else 0 end) as &#39;一月份&#39;, sum(case when b.mon=2 then b.yj else 0 end) as &#39;二月份&#39;, sum(case when b.mon=3 then b.yj else 0 end) as &#39;三月份&#39;, sum(case when b.mon=4 then b.yj else 0 end) as &#39;四月份&#39;, sum(case when b.mon=5 then b.yj else 0 end) as &#39;五月份&#39;, sum(case when b.mon=6 then b.yj else 0 end) as &#39;六月份&#39;, sum(case when b.mon=7 then b.yj else 0 end) as &#39;七月份&#39;, sum(case when b.mon=8 then b.yj else 0 end) as &#39;八月份&#39;, sum(case when b.mon=9 then b.yj else 0 end) as &#39;九月份&#39;, sum(case when b.mon=10 then b.yj else 0 end) as &#39;十月份&#39;, sum(case when b.mon=11 then b.yj else 0 end) as &#39;十一月份&#39;, sum(case when b.mon=12 then b.yj else 0 end) as &#39;十二月份&#39;, from table2 a left join table1 b on a.dep=b.dep</code></p>
+<p>44、华为一道面试题 一个表中的Id有多个记录，把所有这个id的记录查出来，并显示有多少条记录。 ————————————————-<br><code>select id, Count(*) from tb group by id having count(*)&gt;1 select*from(select count(ID) as count from table group by ID)T where T.count&gt;1</code><br>【mysql】mysql 常用建表语句 . 分类：<br>【07-MySql数据库】<br>【06-基础知识】 2012-03-27 23:31 43383人阅读 评论(3) 收藏 举报 mysqltableemailinsertnullqq<br>【1】建立员工档案表 要求字段：员工员工编号，员工姓名，性别，工资，email，入职时间，部门。<br>【2】合理选择数据类型及字段修饰符，要求有NOT NULL，auto_increment, primary key等。 <code>-- -- make by kakane --</code> DROP TABLE IF EXISTS `workers_info`; CREATE TABLE `workers_info` ( `id` int(11) NOT NULL AUTO_INCREMENT, `workername` varchar(20) NOT NULL, `sex` enum(F,M,S), `salary` int(11) DEFAULT ‘0’, `email` varchar(30), `EmployedDates` date, `department` varchar(30), PRIMARY KEY (`id`) ) ENGINE=MyISAM DEFAULT CHARSET=utf8; mysql&gt; alter table workers_info ADD sex enum(‘F’,’M’,’S’);<br>【3】查看表的结构 <code>mysql&gt; desc workers_info;</code><br>【4】新增qq和tel字段，要求tel字段位于email前，要求入职时间是最后一个字段 <code>mysql&gt; ALTER TABLE workers_info ADD tel varchar(15) after salary; mysql&gt; ALTER TABLE workers_info ADD qq int; ALTER TABLE workers_info MODIFY EmployedDates date after qq;</code><br>【5】把email字段修改成mailbox <code>mysql&gt; ALTER TABLE workers_info CHANGE email mailbox varchar(30);</code><br>【6】向表里添加10条记录 <code>mysql&gt; INSERT INTO workers_info values(NULL,&#39;xing&#39;,10000,&#39;1598232123&#39;,&#39;xing@qq.com&#39;,&#39;yanfa&#39;,736019646,20121221); mysql&gt; INSERT INTO workers_info (workername,salary,tel,mailbox,department,qq,EmployedDates) values(&#39;xing&#39;,10000,&#39;1598232123&#39;,&#39;xing@qq.com&#39;,&#39;yanfa&#39;,736019646,20121221);</code><br>【7】修改其中两条记录的tel和mailbox <code>mysql&gt; UPDATE workers_info SET mailbox = &#39;haha@qq.com&#39; WHERE id = 14; mysql&gt; UPDATE workers_info SET mailbox = &#39;haha@qq.com&#39;,tel=&#39;1246543423&#39; WHERE id = 13;</code><br>【8】查看所添加记录 <code>mysql&gt; select * from workers_info;</code><br>【9】查看姓名和入职时间记录 <code>mysql&gt; select workername,EmployedDates from workers_info;</code><br>【10】查询入职时间在2003年以前的 <code>mysql&gt; select * from workers_info where year(EmployedDates) &lt; 2003;
+【11】查询工资最高和最低的员工姓名 mysql&gt; select * from workers_info ORDER BY salary limit 1; mysql&gt; select * from workers_info ORDER BY salary desc limit 1;</code><br>【12】查询平均工资 <code>mysql&gt; select avg(salary) from workers_info;</code><br>【13】统计男员工人数、女员工人数 <code>mysql&gt; select count(男) from workers_info where sex=&quot;M&quot;; mysql&gt; select count(男) from workers_info where sex=&quot;M&quot;;</code><br>【14】按照入职时间先后进行排序，并显示前5位员工姓名 <code>mysql&gt; select * from workers_info ORDER BY EmployedDates limit 5;</code></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>觉得文章有用？请我喝杯咖啡~</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="//cdn.fesugar.com/static/img/wxqrcode.png" alt="fesugar 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="//cdn.fesugar.com/static/img/zfbqrcode.png" alt="fesugar 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>fesugar
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.fesugar.com/zh-CN/2016/12/06/e7ssilrbnl.html" title="收集整理 Mysql 的一些用法">https://www.fesugar.com/zh-CN/2016/12/06/e7ssilrbnl.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/MySql/" rel="tag"><i class="fa fa-tag"></i> MySql</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/zh-CN/2016/11/28/bo76vmops4.html" rel="prev" title="Excel 损坏文档的处理">
+      <i class="fa fa-chevron-left"></i> Excel 损坏文档的处理
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/zh-CN/2016/12/11/q59hgasev1.html" rel="next" title="Excel 防止某列单元格输入重复内容">
+      Excel 防止某列单元格输入重复内容 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fesugar"
+      src="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+  <p class="site-author-name" itemprop="name">fesugar</p>
+  <div class="site-description" itemprop="description">个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+          <span class="site-state-item-count">85</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="//github.com/fesugar" target="_blank" rel="noopener" title="GitHub → &#x2F;&#x2F;github.com&#x2F;fesugar"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:fesugar@fesugar.com" title="E-Mail → mailto:fesugar@fesugar.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="//weibo.com/u/1756351303" target="_blank" rel="noopener" title="Weibo → &#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1756351303"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="//cdn.fesugar.com/static/img/mmqrcode1476199323338.png" target="_blank" rel="noopener" title="WeChat → &#x2F;&#x2F;cdn.fesugar.com&#x2F;static&#x2F;img&#x2F;mmqrcode1476199323338.png"><i class="fab fa-weixin fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.fesugar.com/" title="http:&#x2F;&#x2F;www.fesugar.com&#x2F;">甜甜糖博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.allenlan.com/" title="http:&#x2F;&#x2F;www.allenlan.com&#x2F;" rel="noopener" target="_blank">不忘初心</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://my.oschina.net/u/2955242" title="https:&#x2F;&#x2F;my.oschina.net&#x2F;u&#x2F;2955242" rel="noopener" target="_blank">fesugar</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.mxxia.com/" title="http:&#x2F;&#x2F;www.mxxia.com" rel="noopener" target="_blank">梦想霞博客</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">苏ICP备15051349号-1 </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fesugar</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">240k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:38</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js"></script>
+
+
+  
+  <script data-pjax>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+    <div id="pjax">
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'lAFKI0xWU7wKC517X85fUl27-MdYXbMMI',
+      appKey     : 'clgkJqMeQreiDvqcvhN11y96',
+      placeholder: "说点什么...",
+      avatar     : 'identicon',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+    </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haru02.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+</html>

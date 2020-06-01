@@ -22,7 +22,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志|非专业人士；|三线小城市普通打工仔一名；|养家糊口不易~~~~~~">
@@ -236,7 +236,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/csharp-mysql-parameter-must-be-defined.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/19qzv18n1t.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -250,7 +250,248 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/10/18/csharp-mysql-parameter-must-be-defined.html" class="post-title-link" itemprop="url">C# MySql “Parameter '@??' must be defined”</a>
+            <a href="/zh-CN/2016/10/18/19qzv18n1t.html" class="post-title-link" itemprop="url">vb.net的异步读写数据流（使用线程、委托）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-18 18:53:06" itemprop="dateCreated datePublished" datetime="2016-10-18T18:53:06+08:00">2016-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-15 14:57:03" itemprop="dateModified" datetime="2020-05-15T14:57:03+08:00">2020-05-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/zh-CN/2016/10/18/19qzv18n1t.html" class="post-meta-item leancloud_visitors" data-flag-title="vb.net的异步读写数据流（使用线程、委托）" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2016/10/18/19qzv18n1t.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/18/19qzv18n1t.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <div>
+<li>来源:<a href="http://blog.csdn.net/dzweather/article/details/12859675" target="_blank" rel="external nofollow">白话魔法师</a></li>
+</div>
+
+<p>在理解异步读写前，了解一下线程和委托是必要的。</p>
+<h2 id="一、线程与委托"><a href="#一、线程与委托" class="headerlink" title="一、线程与委托"></a><strong>一、线程与委托</strong></h2><p>1、为什么要用异步？<br>无论是MemoryStream，BufferedStream，FileStream数据流，一旦的读写开始，应用程序就会处于停滞状况。 直到数据读写完成，并返回。 文件数据的读写基本上是一种非常消耗资源的过程，处理的数据量越大，I/O对系统性能的影响就越明显。 为了避免长时间等待I/O操作使程序处理“瘫痪”状态，异步I/O就显得非常重要。 异步的实现就是使用一个新的线程来完成，主线程的任务并不影响，这样大大提高了程序的效能。<br>2、线程<br>每个程序有一个主线程，如果一个循环处于主线程中，程序在较长的循环，将出现“不响应”的情况。<br>线程在System.Threading中。线程创建可专用于一个功能块（方法、函数），<br>线程的开始用Start方法<br>线程的结束用Abort方法<br>下面感受一下线程作用：<br>窗体上添加两Button，两个TextBox，代码如下，点击Button1启动循环，接着点击Button2.</p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Public</span> <span class="keyword">Class</span> Form1</span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> Button1_Click(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> EventArgs) <span class="keyword">Handles</span> Button1.Click</span><br><span class="line"><span class="keyword">Dim</span> i <span class="keyword">As</span> Int32</span><br><span class="line"><span class="keyword">For</span> i = <span class="number">0</span> <span class="keyword">To</span> <span class="number">123451</span></span><br><span class="line">TextBox1.<span class="keyword">Text</span> = i</span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> Button2_Click(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> EventArgs) <span class="keyword">Handles</span> Button2.Click</span><br><span class="line">TextBox2.<span class="keyword">Text</span> = <span class="string">"终于出现奇迹"</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Class</span></span><br></pre></td></tr></table></figure>
+<p><img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-03510221.jpg" alt="20131018232354031"><br>可以明显看到虽然点击了Button1，但TextBox1的内容并没有什么变化，同时，在点击Button2时，TextBox并没有内容显示。<br>这是因为线程正被循环一直占用，暂时无法响应Button2,直到循环完成后，它才终于忙过来处理Button2. 这会给用户造成“程序已经无响应、死了”的误会。<br>下面改善上面的做法，新建一个线程来专门处理循环，这样就不影响主线程响应Button2:</p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Imports</span> System.Threading</span><br><span class="line"><span class="keyword">Public</span> <span class="keyword">Class</span> Form1</span><br><span class="line"><span class="keyword">Dim</span> mythread <span class="keyword">As</span> Thread</span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> Button1_Click(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> EventArgs) <span class="keyword">Handles</span> Button1.Click</span><br><span class="line">mythread = <span class="keyword">New</span> Thread(<span class="keyword">AddressOf</span> ShowNumber) <span class="comment">'构造线程</span></span><br><span class="line">mythread.Name = <span class="string">"myShowNumber"</span></span><br><span class="line">mythread.Start() <span class="comment">'启动线程</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> ShowNumber()</span><br><span class="line"><span class="keyword">Dim</span> i <span class="keyword">As</span> Int32</span><br><span class="line"><span class="keyword">For</span> i = <span class="number">0</span> <span class="keyword">To</span> <span class="number">123451</span></span><br><span class="line">TextBox1.<span class="keyword">Text</span> = i</span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"></span><br><span class="line">mythread.Abort() <span class="comment">'终止线程</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> Button2_Click(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> EventArgs) <span class="keyword">Handles</span> Button2.Click</span><br><span class="line">TextBox2.<span class="keyword">Text</span> = <span class="string">"终于出现奇迹"</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Class</span></span><br></pre></td></tr></table></figure>
+<p>然而一点击，发现出错，提示：线程间操作无效: 从不是创建控件“TextBox1”的线程访问它。<br><img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-03511671.jpg" alt="20131018232937109"><br>这是因为Textbox1是主线程中的，却在另一个新的线程中访问，这种是不安全的，相当于去别人房间使用电视机。 怎么办？这里可以用委托，委托能够进别人房间的人去使用电视机。<br>3、委托 委托的思想，就是自己不能干或不想干的事，委托另一个有能力或有权限的人去干那件事。 实际上，我们一直要用委托思想，比如基本类型的变量名。Dim i As Integer i变量名就是相当于委托，实际上，一个变量代表的是指定内存地址中的值，如果不用变量名，就得实际上引用这个内存的地址。<br>而我们就用“变量名”来干操作这个地址里的东西。<br>除了变量名可以用委托一样，方法也可以用委托，这就是我们普通所说的委托。<br>定义和使用大致与变量名的方式一样：<br>（1）定义委托类型： Private Delegate Sub MyDelegate(byval k as int32) ‘参数多种，多个） 这里类似定义变量的类型一样。<br>（2）定义要赋的具体“值”： 这里的具体值，不是值，而是一个具体的方法，方法的形式必须与上面定义保持一致。就象变量名是整形时，赋值也应该是整形，而不是String.<br>例如：Private Sub YourSelfMethod(byval m as int32) ‘方法名自定，但形式与（1）保持一致。<br>（3）调用这个值： 也就是委托去办事。用Invoke方法：Control.Invoke(New MyDelegate(AddressOf YourSelfMethod), intValue)<br>这一步就把（1），（2）使用上了。<br>下面接着上面的例子，使用委托来调用Form1中的TextBox1.</p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Imports</span> System.Threading</span><br><span class="line"><span class="keyword">Public</span> <span class="keyword">Class</span> Form1</span><br><span class="line"><span class="keyword">Dim</span> mythread <span class="keyword">As</span> Thread</span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Delegate</span> <span class="keyword">Sub</span> VoidShow(<span class="keyword">ByRef</span> i <span class="keyword">As</span> Int32) <span class="comment">'定义要委托的类型</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> Button1_Click(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> EventArgs) <span class="keyword">Handles</span> Button1.Click</span><br><span class="line">mythread = <span class="keyword">New</span> Thread(<span class="keyword">AddressOf</span> ShowNumber)</span><br><span class="line">mythread.Name = <span class="string">"myShowNumber"</span></span><br><span class="line">mythread.Start()</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> ShowNumber()</span><br><span class="line"><span class="keyword">Dim</span> i <span class="keyword">As</span> Int32</span><br><span class="line"><span class="keyword">For</span> i = <span class="number">0</span> <span class="keyword">To</span> <span class="number">123451</span></span><br><span class="line"><span class="comment">'TextBox1.Text = i</span></span><br><span class="line"><span class="keyword">Me</span>.Invoke(<span class="keyword">New</span> VoidShow(<span class="keyword">AddressOf</span> TureShowNumber), i) <span class="comment">'用New构造委托，再用Invoke执行</span></span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"></span><br><span class="line">mythread.Abort()</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="comment">'新加入的被委托要做的事</span></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> TureShowNumber(<span class="keyword">ByRef</span> i <span class="keyword">As</span> Int32)</span><br><span class="line">TextBox1.<span class="keyword">Text</span> = i</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> Button2_Click(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> EventArgs) <span class="keyword">Handles</span> Button2.Click</span><br><span class="line">TextBox2.<span class="keyword">Text</span> = <span class="string">"终于出现奇迹"</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Class</span></span><br></pre></td></tr></table></figure>
+<p><img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-03513149.jpg" alt="20131018234015031"><br>点击Buttton1，可以看到因为新线程的使用，TextBox1中的数字一直在变量。<br>而且，同时点击Button2程序不会“死机”，很快地响应。<br>注意的是：因为线程的中止使用的是强制中断Abort，所以即时窗体会显示：<br>System.Threading.ThreadAbortException 类型的第一次机会异常在 mscorlib.dll中发生 这个不影响使用。<br><img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-03514830.jpg" alt="20131018235058765"></p>
+<h2 id="二、异步读写"><a href="#二、异步读写" class="headerlink" title="二、异步读写"></a><strong>二、异步读写</strong></h2><p>异步I/O与同步I/O最大的不同在于： 同步I/O只有完成整个I/O操作后，程序才会进行下一步（所以这之前象死机一样）。<br>异步I/O在操作读写操作的同时，程序可以继续下一步工作，不影响程序其它执行。 简单地说，主线程和新线程各自执行，不相互影响。<br>即流程如下：<br><img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-03523916.jpg" alt="20131019140401312"><br>程序（主线程）在左边开始时，就建立了新线程进行异步读写。<br>在异步开始时，就传入了一个回调参数，这个用于异步完成时，自动调用这个参数所指的过程。<br>其中的IAsyncResult表示异步操作的状态。结束异步操作时需要这个参数。<br>一般我们在I/O操作时都是同步，异步在FileStream构造时就必须指明文件采用的异步方法：</p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Public</span> <span class="keyword">Sub</span> <span class="keyword">New</span> ( _</span><br><span class="line">path <span class="keyword">As</span> <span class="built_in">String</span>, _</span><br><span class="line">mode <span class="keyword">As</span> FileMode, _</span><br><span class="line">access <span class="keyword">As</span> FileAccess, _</span><br><span class="line">share <span class="keyword">As</span> FileShare, _</span><br><span class="line">bufferSize <span class="keyword">As</span> <span class="built_in">Integer</span>, _ <span class="comment">'缓冲大小</span></span><br><span class="line">useAsync <span class="keyword">As</span> <span class="built_in">Boolean</span> _ <span class="comment">'True为异步</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>下面看一下异步操作的例子：<br>1、委托：只是为了在线程中调用窗体中的控件TextBox1来显示状态。<br>2、线程：是异步I/O的必要过程<br>3、回调函数：这是异步完成后，自动来通知或告之，异步I/O已经完成了（否则，怎么知道异步的结束呢？）</p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Imports</span> System.IO</span><br><span class="line"><span class="keyword">Imports</span> System.Threading</span><br><span class="line"><span class="keyword">Public</span> <span class="keyword">Class</span> Form1</span><br><span class="line"><span class="keyword">Dim</span> btArray(<span class="number">15</span>) <span class="keyword">As</span> <span class="built_in">Byte</span></span><br><span class="line"><span class="keyword">Dim</span> fs <span class="keyword">As</span> FileStream</span><br><span class="line"><span class="keyword">Dim</span> myThread <span class="keyword">As</span> Thread</span><br><span class="line"><span class="keyword">Dim</span> blnProcess <span class="keyword">As</span> <span class="built_in">Boolean</span> <span class="comment">'进程是否使用标志</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Delegate</span> <span class="keyword">Sub</span> ShowMyMessage(<span class="keyword">ByVal</span> str <span class="keyword">As</span> <span class="built_in">String</span>) <span class="comment">'线程中无法调用窗体控件，用委托解决</span></span><br><span class="line"></span><br><span class="line"><span class="comment">'启动写或读进程</span></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> Button1_Click(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> EventArgs) <span class="keyword">Handles</span> Button1.Click</span><br><span class="line">TextBox1.<span class="keyword">Text</span> = <span class="string">""</span></span><br><span class="line"><span class="keyword">Try</span></span><br><span class="line"><span class="keyword">If</span> RadioButton2.Checked = <span class="literal">True</span> <span class="keyword">Then</span> <span class="comment">'写选中</span></span><br><span class="line">myThread = <span class="keyword">New</span> Thread(<span class="keyword">AddressOf</span> WriteData)</span><br><span class="line">myThread.Name = <span class="string">"WriteBulkData"</span></span><br><span class="line">myThread.Start()</span><br><span class="line"><span class="keyword">Else</span></span><br><span class="line">myThread = <span class="keyword">New</span> Thread(<span class="keyword">AddressOf</span> ReadData)</span><br><span class="line">myThread.Name = <span class="string">"ReadBulkData"</span></span><br><span class="line">myThread.Start()</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"><span class="keyword">Catch</span> ex <span class="keyword">As</span> Exception</span><br><span class="line">MessageBox.Show(ex.Message)</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Try</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> WriteData()</span><br><span class="line"><span class="keyword">Try</span></span><br><span class="line">fs = <span class="keyword">New</span> FileStream(<span class="string">"D:\\11.txt"</span>, FileMode.Open, FileAccess.Write, FileShare.Write, <span class="number">16</span>, <span class="literal">True</span>)</span><br><span class="line"><span class="keyword">Dim</span> myWCB <span class="keyword">As</span> <span class="keyword">New</span> AsyncCallback(<span class="keyword">AddressOf</span> MyAsyncWriteCallBack)</span><br><span class="line">blnProcess = <span class="literal">True</span></span><br><span class="line">fs.BeginWrite(btArray, <span class="number">0</span>, <span class="number">12</span>, myWCB, <span class="literal">Nothing</span>)</span><br><span class="line">ProcessMessage(<span class="string">"Write"</span>)</span><br><span class="line">fs.Close()</span><br><span class="line"><span class="keyword">Catch</span> ex <span class="keyword">As</span> Exception</span><br><span class="line">MessageBox.Show(ex.Message)</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Try</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> ReadData()</span><br><span class="line"><span class="keyword">Try</span></span><br><span class="line">fs = <span class="keyword">New</span> FileStream(<span class="string">"d:\\11.txt"</span>, FileMode.Open, FileAccess.Read, FileShare.Read, <span class="number">16</span>, <span class="literal">True</span>)</span><br><span class="line"><span class="keyword">Dim</span> myRCB <span class="keyword">As</span> <span class="keyword">New</span> AsyncCallback(<span class="keyword">AddressOf</span> MyAsyncReadCallBack)</span><br><span class="line">blnProcess = <span class="literal">True</span></span><br><span class="line">fs.BeginRead(btArray, <span class="number">0</span>, <span class="number">16</span>, myRCB, <span class="literal">Nothing</span>)</span><br><span class="line">ProcessMessage(<span class="string">"Read"</span>)</span><br><span class="line">fs.Close()</span><br><span class="line"><span class="keyword">Catch</span> ex <span class="keyword">As</span> Exception</span><br><span class="line">MessageBox.Show(ex.Message)</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Try</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> MyAsyncWriteCallBack(<span class="keyword">ByVal</span> myIar <span class="keyword">As</span> IAsyncResult)</span><br><span class="line">Thread.Sleep(<span class="number">50</span>)</span><br><span class="line">blnProcess = <span class="literal">False</span></span><br><span class="line">fs.EndWrite(myIar)</span><br><span class="line"></span><br><span class="line"><span class="comment">'委托显示信息</span></span><br><span class="line"><span class="keyword">Dim</span> str <span class="keyword">As</span> <span class="built_in">String</span> = <span class="string">" 异步线程数据写入完成。"</span></span><br><span class="line"><span class="keyword">Me</span>.Invoke(<span class="keyword">New</span> ShowMyMessage(<span class="keyword">AddressOf</span> ShowMessage), str)</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> MyAsyncReadCallBack(<span class="keyword">ByVal</span> myIar <span class="keyword">As</span> IAsyncResult)</span><br><span class="line">Thread.Sleep(<span class="number">50</span>)</span><br><span class="line">blnProcess = <span class="literal">False</span></span><br><span class="line">fs.EndRead(myIar)</span><br><span class="line"></span><br><span class="line"><span class="comment">'委托显示信息</span></span><br><span class="line"><span class="keyword">Dim</span> str <span class="keyword">As</span> <span class="built_in">String</span> = <span class="string">" 异步线程数据读取完成。"</span></span><br><span class="line"><span class="keyword">Me</span>.Invoke(<span class="keyword">New</span> ShowMyMessage(<span class="keyword">AddressOf</span> ShowMessage), str)</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> ShowMessage(<span class="keyword">ByVal</span> str <span class="keyword">As</span> <span class="built_in">String</span>)</span><br><span class="line">TextBox1.<span class="keyword">Text</span> &amp;amp;= Now.ToString &amp;amp; str &amp;amp; vbCrLf</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> ProcessMessage(<span class="keyword">ByVal</span> strRW <span class="keyword">As</span> <span class="built_in">String</span>)</span><br><span class="line"><span class="keyword">Dim</span> strMessage <span class="keyword">As</span> <span class="built_in">String</span> = <span class="string">""</span></span><br><span class="line"><span class="keyword">If</span> strRW = <span class="string">"Read"</span> <span class="keyword">Then</span></span><br><span class="line">strMessage = <span class="string">" 判断异步正在读取..."</span></span><br><span class="line"><span class="keyword">Else</span></span><br><span class="line">strMessage = <span class="string">" 判断异步正在写入..."</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Do</span> <span class="keyword">While</span> blnProcess = <span class="literal">True</span></span><br><span class="line"><span class="keyword">Me</span>.Invoke(<span class="keyword">New</span> ShowMyMessage(<span class="keyword">AddressOf</span> ShowMessage), strMessage)</span><br><span class="line"><span class="keyword">Loop</span></span><br><span class="line">Thread.Sleep(<span class="number">50</span>)</span><br><span class="line"></span><br><span class="line">strMessage = <span class="string">" 判断读写已经完成。"</span></span><br><span class="line"><span class="keyword">Me</span>.Invoke(<span class="keyword">New</span> ShowMyMessage(<span class="keyword">AddressOf</span> ShowMessage), strMessage)</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Class</span></span><br></pre></td></tr></table></figure>
+<p><img data-src="https://cdn.fesugar.com/2016/11/2016-11-05-03520934.jpg" alt="20131019121609734"><br>上面通过一个循环不断判断异步进行得怎么样（实际上是用的全局blnProcess来判断）<br>因为是例子，数据量不大，所以在过程加加入Sleep来延迟异步还在进行中。<br>为了减少显示的信息，把时间延时量减小到50毫秒。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/o7zumbmsyu.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/18/o7zumbmsyu.html" class="post-title-link" itemprop="url">An error occurred during local report processing</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-18 18:40:32" itemprop="dateCreated datePublished" datetime="2016-10-18T18:40:32+08:00">2016-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-14 19:31:18" itemprop="dateModified" datetime="2020-05-14T19:31:18+08:00">2020-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/zh-CN/2016/10/18/o7zumbmsyu.html" class="post-meta-item leancloud_visitors" data-flag-title="An error occurred during local report processing" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/zh-CN/2016/10/18/o7zumbmsyu.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/18/o7zumbmsyu.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>485</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在.net平台使用 RDLC 进行报表开发，本机测试正常，到别的机器不是没反应就是报 An error occurred during local report processing 等错误<br>最后发现要确保报表所需的控件存在以及版本正确。</p>
+<pre><code>Microsoft.ReportViewer.Common.dll 
+Microsoft.ReportViewer.DataVisualization.dll 
+Microsoft.ReportViewer.ProcessingObjectModel.dll 
+Microsoft.ReportViewer.WinForms.dll</code></pre><p>这四个搞定后终于正常了！ 最后别忘了语言资源的使用<br>─zh-Hans </p>
+<pre><code>Microsoft.ReportViewer.Common.resources.dll
+Microsoft.ReportViewer.DataVisualization.resources.dll 
+Microsoft.ReportViewer.Design.resources.dll 
+Microsoft.ReportViewer.WinForms.resources.dll</code></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/bkwbs07c88.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
+      <meta itemprop="name" content="fesugar">
+      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="佛系糖果的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/zh-CN/2016/10/18/bkwbs07c88.html" class="post-title-link" itemprop="url">C# MySql “Parameter '@??' must be defined”</a>
         </h2>
 
         <div class="post-meta">
@@ -280,7 +521,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/10/18/csharp-mysql-parameter-must-be-defined.html" class="post-meta-item leancloud_visitors" data-flag-title="C# MySql “Parameter '@??' must be defined”" title="阅读次数">
+            <span id="/zh-CN/2016/10/18/bkwbs07c88.html" class="post-meta-item leancloud_visitors" data-flag-title="C# MySql “Parameter '@??' must be defined”" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -295,8 +536,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/10/18/csharp-mysql-parameter-must-be-defined.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/18/csharp-mysql-parameter-must-be-defined.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/10/18/bkwbs07c88.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/18/bkwbs07c88.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -345,7 +586,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/csharp%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/tdxovi9ce2.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -359,7 +600,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/10/18/csharp%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html" class="post-title-link" itemprop="url">C#通用数据库操作类</a>
+            <a href="/zh-CN/2016/10/18/tdxovi9ce2.html" class="post-title-link" itemprop="url">C#通用数据库操作类</a>
         </h2>
 
         <div class="post-meta">
@@ -389,7 +630,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/10/18/csharp%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html" class="post-meta-item leancloud_visitors" data-flag-title="C#通用数据库操作类" title="阅读次数">
+            <span id="/zh-CN/2016/10/18/tdxovi9ce2.html" class="post-meta-item leancloud_visitors" data-flag-title="C#通用数据库操作类" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -404,8 +645,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/10/18/csharp%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/18/csharp%E9%80%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%B1%BB.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/10/18/tdxovi9ce2.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/18/tdxovi9ce2.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -454,7 +695,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/csharp-MySqlHelper%E7%B1%BB.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/18/ajmruk8ey0.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -468,7 +709,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/10/18/csharp-MySqlHelper%E7%B1%BB.html" class="post-title-link" itemprop="url">C# MySqlHelper 类</a>
+            <a href="/zh-CN/2016/10/18/ajmruk8ey0.html" class="post-title-link" itemprop="url">C# MySqlHelper 类</a>
         </h2>
 
         <div class="post-meta">
@@ -498,7 +739,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/10/18/csharp-MySqlHelper%E7%B1%BB.html" class="post-meta-item leancloud_visitors" data-flag-title="C# MySqlHelper 类" title="阅读次数">
+            <span id="/zh-CN/2016/10/18/ajmruk8ey0.html" class="post-meta-item leancloud_visitors" data-flag-title="C# MySqlHelper 类" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -557,7 +798,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/13/windows-%E4%B8%AD%E5%93%88%E5%B8%8C%E6%A0%A1%E9%AA%8C%E5%B7%A5%E5%85%B7.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/13/jtpp4ii5pm.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -571,7 +812,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/10/13/windows-%E4%B8%AD%E5%93%88%E5%B8%8C%E6%A0%A1%E9%AA%8C%E5%B7%A5%E5%85%B7.html" class="post-title-link" itemprop="url">windows 中哈希校验工具</a>
+            <a href="/zh-CN/2016/10/13/jtpp4ii5pm.html" class="post-title-link" itemprop="url">windows 中哈希校验工具</a>
         </h2>
 
         <div class="post-meta">
@@ -601,7 +842,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/10/13/windows-%E4%B8%AD%E5%93%88%E5%B8%8C%E6%A0%A1%E9%AA%8C%E5%B7%A5%E5%85%B7.html" class="post-meta-item leancloud_visitors" data-flag-title="windows 中哈希校验工具" title="阅读次数">
+            <span id="/zh-CN/2016/10/13/jtpp4ii5pm.html" class="post-meta-item leancloud_visitors" data-flag-title="windows 中哈希校验工具" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -616,8 +857,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/10/13/windows-%E4%B8%AD%E5%93%88%E5%B8%8C%E6%A0%A1%E9%AA%8C%E5%B7%A5%E5%85%B7.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/13/windows-%E4%B8%AD%E5%93%88%E5%B8%8C%E6%A0%A1%E9%AA%8C%E5%B7%A5%E5%85%B7.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/10/13/jtpp4ii5pm.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/13/jtpp4ii5pm.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -666,7 +907,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/13/windows-%E4%B8%8B%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/13/srbvj2f1rk.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -680,7 +921,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/10/13/windows-%E4%B8%8B%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7.html" class="post-title-link" itemprop="url">windows 下端口扫描工具</a>
+            <a href="/zh-CN/2016/10/13/srbvj2f1rk.html" class="post-title-link" itemprop="url">windows 下端口扫描工具</a>
         </h2>
 
         <div class="post-meta">
@@ -710,7 +951,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/10/13/windows-%E4%B8%8B%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7.html" class="post-meta-item leancloud_visitors" data-flag-title="windows 下端口扫描工具" title="阅读次数">
+            <span id="/zh-CN/2016/10/13/srbvj2f1rk.html" class="post-meta-item leancloud_visitors" data-flag-title="windows 下端口扫描工具" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -725,8 +966,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/10/13/windows-%E4%B8%8B%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/13/windows-%E4%B8%8B%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/10/13/srbvj2f1rk.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/13/srbvj2f1rk.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -775,7 +1016,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/13/bk5axo5uql.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -789,7 +1030,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html" class="post-title-link" itemprop="url">18位身份证号码合法性计算</a>
+            <a href="/zh-CN/2016/10/13/bk5axo5uql.html" class="post-title-link" itemprop="url">18位身份证号码合法性计算</a>
         </h2>
 
         <div class="post-meta">
@@ -819,7 +1060,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html" class="post-meta-item leancloud_visitors" data-flag-title="18位身份证号码合法性计算" title="阅读次数">
+            <span id="/zh-CN/2016/10/13/bk5axo5uql.html" class="post-meta-item leancloud_visitors" data-flag-title="18位身份证号码合法性计算" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -834,8 +1075,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/10/13/bk5axo5uql.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/13/bk5axo5uql.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -867,7 +1108,7 @@
           <h5 id="来看下合法性计算方法"><a href="#来看下合法性计算方法" class="headerlink" title="来看下合法性计算方法"></a>来看下合法性计算方法</h5><h6 id="1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。"><a href="#1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。" class="headerlink" title="1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。"></a>1、将前面的身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。</h6><h6 id="2、将这17位数字和系数相乘的结果相加。"><a href="#2、将这17位数字和系数相乘的结果相加。" class="headerlink" title="2、将这17位数字和系数相乘的结果相加。"></a>2、将这17位数字和系数相乘的结果相加。</h6><h6 id="3、用加出来和除以11，看余数是多少？"><a href="#3、用加出来和除以11，看余数是多少？" class="headerlink" title="3、用加出来和除以11，看余数是多少？"></a>3、用加出来和除以11，看余数是多少？</h6><h6 id="4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X-－9－8－7－6－5－4－3－2。-即馀数0对应1，馀数1对应0，馀数2对应X…"><a href="#4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X-－9－8－7－6－5－4－3－2。-即馀数0对应1，馀数1对应0，馀数2对应X…" class="headerlink" title="4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X －9－8－7－6－5－4－3－2。(即馀数0对应1，馀数1对应0，馀数2对应X…)"></a>4、余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字。其分别对应的最后一位身份证的号码为1－0－X －9－8－7－6－5－4－3－2。(即馀数0对应1，馀数1对应0，馀数2对应X…)</h6><h6 id="5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。"><a href="#5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。" class="headerlink" title="5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。"></a>5、通过上面得知如果余数是3，就会在身份证的第18位数字上出现的是9。如果对应的数字是2，身份证的最后一位号码就是罗马数字x。</h6><h6 id="例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。"><a href="#例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。" class="headerlink" title="例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。"></a>例如：某男性的身份证号码为【53010219200508011x】，我们看看这个身份证是不是合法的身份证。</h6><h6 id="首先我们得出前17位的乘积和【-5-7-3-9-0-10-1-5-0-8-2-4-1-2-9-1-2-6-0-3-0-7-5-9-0-10-8-5-0-8-1-4-1-2-】是189，然后用189除以11得出的结果是189-11-17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。"><a href="#首先我们得出前17位的乘积和【-5-7-3-9-0-10-1-5-0-8-2-4-1-2-9-1-2-6-0-3-0-7-5-9-0-10-8-5-0-8-1-4-1-2-】是189，然后用189除以11得出的结果是189-11-17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。" class="headerlink" title="首先我们得出前17位的乘积和【(5*7)+(3*9)+(0*10)+(1*5)+(0*8)+(2*4)+(1*2)+(9*1)+(2*6)+(0*3)+(0*7)+(5*9)+(0*10)+(8*5)+(0*8)+(1*4)+(1*2)】是189，然后用189除以11得出的结果是189/11=17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。"></a>首先我们得出前17位的乘积和【(5*7)+(3*9)+(0*10)+(1*5)+(0*8)+(2*4)+(1*2)+(9*1)+(2*6)+(0*3)+(0*7)+(5*9)+(0*10)+(8*5)+(0*8)+(1*4)+(1*2)】是189，然后用189除以11得出的结果是189/11=17—-2，也就是说其余数是2。最后通过对应规则就可以知道余数2对应的检验码是X。所以，可以判定这是一个正确的身份证号码。</h6>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/zh-CN/2016/10/13/18%E4%BD%8D%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E5%90%88%E6%B3%95%E6%80%A7%E8%AE%A1%E7%AE%97.html#more" rel="contents">
+              <a class="btn" href="/zh-CN/2016/10/13/bk5axo5uql.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -891,7 +1132,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/12/ajax-jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99-Uncaught-SyntaxError-Unexpected-token.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/12/pfvd4f4ivr.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -905,7 +1146,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/10/12/ajax-jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99-Uncaught-SyntaxError-Unexpected-token.html" class="post-title-link" itemprop="url">ajax jsonp跨域请求数据出错 Uncaught SyntaxError: Unexpected token :</a>
+            <a href="/zh-CN/2016/10/12/pfvd4f4ivr.html" class="post-title-link" itemprop="url">ajax jsonp跨域请求数据出错 Uncaught SyntaxError: Unexpected token :</a>
         </h2>
 
         <div class="post-meta">
@@ -935,7 +1176,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/10/12/ajax-jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99-Uncaught-SyntaxError-Unexpected-token.html" class="post-meta-item leancloud_visitors" data-flag-title="ajax jsonp跨域请求数据出错 Uncaught SyntaxError: Unexpected token :" title="阅读次数">
+            <span id="/zh-CN/2016/10/12/pfvd4f4ivr.html" class="post-meta-item leancloud_visitors" data-flag-title="ajax jsonp跨域请求数据出错 Uncaught SyntaxError: Unexpected token :" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -950,8 +1191,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/10/12/ajax-jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99-Uncaught-SyntaxError-Unexpected-token.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/12/ajax-jsonp%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE%E5%87%BA%E9%94%99-Uncaught-SyntaxError-Unexpected-token.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/10/12/pfvd4f4ivr.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/12/pfvd4f4ivr.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1002,7 +1243,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html">
+    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/10/urdloqy4ws.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
@@ -1016,7 +1257,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html" class="post-title-link" itemprop="url">VB.NET 操作 access 数据库</a>
+            <a href="/zh-CN/2016/10/10/urdloqy4ws.html" class="post-title-link" itemprop="url">VB.NET 操作 access 数据库</a>
         </h2>
 
         <div class="post-meta">
@@ -1046,7 +1287,7 @@
             </span>
 
           
-            <span id="/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html" class="post-meta-item leancloud_visitors" data-flag-title="VB.NET 操作 access 数据库" title="阅读次数">
+            <span id="/zh-CN/2016/10/10/urdloqy4ws.html" class="post-meta-item leancloud_visitors" data-flag-title="VB.NET 操作 access 数据库" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -1061,8 +1302,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/10/VB.NET-%E6%93%8D%E4%BD%9C-access-%E6%95%B0%E6%8D%AE%E5%BA%93.html" itemprop="commentCount"></span>
+    <a title="valine" href="/zh-CN/2016/10/10/urdloqy4ws.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/10/urdloqy4ws.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1093,234 +1334,6 @@
       
           <p>VB.NET 操作 access 数据库</p>
 <figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">'添加引用 Imports System.Data.OleDb</span></span><br><span class="line"></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> 操作 mdb 数据库进行查询/添加/修改/删除</span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="DataSource"&gt;</span>指定连接到的数据源的名称。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="Provider"&gt;</span>指定连接字符串关联的数据提供程序的名称。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="Password"&gt;</span>指定连接到的数据源的密码。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="OleDbCmd"&gt;</span>指定 SQL 命令。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="Options"&gt;</span>指定执行的状态 1:检测是否注册 2:验证登陆 </span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> 3:查询数据 4:添加/修改/删除 数据 5:获取地址ID 。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="Getstring"&gt;</span>指定返回的数据。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;remarks&gt;</span><span class="doctag">&lt;/remarks&gt;</span></span></span><br><span class="line"><span class="keyword">Public</span> <span class="keyword">Function</span> Access_db(</span><br><span class="line">                    <span class="keyword">ByVal</span> DataSource <span class="keyword">As</span> <span class="built_in">String</span>,</span><br><span class="line">                    <span class="keyword">ByVal</span> Provider <span class="keyword">As</span> <span class="built_in">String</span>,</span><br><span class="line">                    <span class="keyword">ByVal</span> Password <span class="keyword">As</span> <span class="built_in">String</span>,</span><br><span class="line">                    <span class="keyword">ByVal</span> OleDbCmd <span class="keyword">As</span> <span class="built_in">String</span>,</span><br><span class="line">                    <span class="keyword">ByVal</span> Options <span class="keyword">As</span> <span class="built_in">Integer</span>,</span><br><span class="line">                    <span class="keyword">ByRef</span> Getstring <span class="keyword">As</span> <span class="built_in">String</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">' 声明为创建和管理由 OleDbConnection 类使用的连接字符串的内容提供了一种简单方法。</span></span><br><span class="line">    <span class="keyword">Dim</span> builder <span class="keyword">As</span> <span class="keyword">New</span> OleDbConnectionStringBuilder()</span><br><span class="line">    <span class="comment">' 获取或设置要连接到的数据源的名称。</span></span><br><span class="line">    builder.DataSource = DataSource</span><br><span class="line">    <span class="comment">' 获取或设置一个字符串，该字符串包含与内部连接字符串关联的数据提供程序的名称。</span></span><br><span class="line">    builder.Provider = Provider</span><br><span class="line">    <span class="comment">' 将带有指定键和值的项添加到 DbConnectionStringBuilder 中。</span></span><br><span class="line">    builder.Add(<span class="string">"Jet OLEDB:Database Password"</span>, Password)</span><br><span class="line">    <span class="comment">' builder("User Id") = "Admin;NewValue=Bad"</span></span><br><span class="line">    <span class="comment">' 控制台输出显示连接字符串</span></span><br><span class="line">    Console.WriteLine(builder.ConnectionString)</span><br><span class="line"></span><br><span class="line">    <span class="comment">' If the connection string is null, use a default.</span></span><br><span class="line">    <span class="keyword">If</span> builder.ConnectionString = <span class="string">""</span> <span class="keyword">Then</span></span><br><span class="line">        builder.ConnectionString = <span class="string">"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\test.mdb;User Id=username;Password=pass;"</span></span><br><span class="line">    <span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">' This sample assumes that you have a database named</span></span><br><span class="line">    <span class="comment">' C:\\Sample.mdb available.</span></span><br><span class="line">    <span class="keyword">Using</span> connection <span class="keyword">As</span> <span class="keyword">New</span> OleDbConnection(builder.ConnectionString)</span><br><span class="line"></span><br><span class="line">        <span class="comment">' The insertSQL string contains a SQL statement that</span></span><br><span class="line">        <span class="comment">' inserts a new row in the source table.</span></span><br><span class="line">        <span class="keyword">Dim</span> command <span class="keyword">As</span> <span class="keyword">New</span> OleDbCommand(OleDbCmd)</span><br><span class="line">        <span class="comment">' 获取或设置在终止对执行命令的尝试并生成错误之前的等待时间。</span></span><br><span class="line">        command.CommandTimeout = <span class="number">20</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">' Set the Connection to the new OleDbConnection.</span></span><br><span class="line">        command.Connection = connection</span><br><span class="line"></span><br><span class="line">        <span class="comment">' Open the connection and execute the insert command.</span></span><br><span class="line">        <span class="keyword">Try</span></span><br><span class="line">            connection.Open()</span><br><span class="line">            <span class="comment">' Do something with the database here.</span></span><br><span class="line"></span><br><span class="line">            Console.WriteLine(<span class="string">"query:"</span> &amp; command.ExecuteNonQuery())</span><br><span class="line"></span><br><span class="line">            <span class="keyword">Select</span> <span class="keyword">Case</span> Options</span><br><span class="line"></span><br><span class="line">                <span class="keyword">Case</span> <span class="number">2</span> <span class="comment">' 验证登录</span></span><br><span class="line">                    <span class="keyword">Dim</span> reader <span class="keyword">As</span> OleDbDataReader = command.ExecuteReader()</span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Read before accessing data.</span></span><br><span class="line">                    <span class="keyword">While</span> reader.Read()</span><br><span class="line">                        <span class="comment">' ReadSingleRow(CType(reader, IDataRecord))</span></span><br><span class="line">                        Getstring = reader(<span class="string">"Info_username"</span>.ToString) &amp; reader(<span class="string">"Info_password"</span>.ToString)</span><br><span class="line">                        Console.WriteLine(Getstring)</span><br><span class="line">                        <span class="comment">'Console.WriteLine(reader("字段名"))</span></span><br><span class="line">                        <span class="comment">'Console.WriteLine(reader(0).ToString)</span></span><br><span class="line">                    <span class="keyword">End</span> <span class="keyword">While</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Close when done reading.</span></span><br><span class="line">                    reader.Close()</span><br><span class="line"></span><br><span class="line">                <span class="keyword">Case</span> <span class="number">3</span> <span class="comment">' 查询数据</span></span><br><span class="line">                    <span class="keyword">Dim</span> reader <span class="keyword">As</span> OleDbDataReader = command.ExecuteReader()</span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Read before accessing data.</span></span><br><span class="line">                    <span class="keyword">While</span> reader.Read()</span><br><span class="line"></span><br><span class="line">                        Getstring = reader(<span class="string">"compellation"</span>).ToString</span><br><span class="line">                    <span class="keyword">End</span> <span class="keyword">While</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Close when done reading.</span></span><br><span class="line">                    reader.Close()</span><br><span class="line">                <span class="keyword">Case</span> <span class="number">4</span> <span class="comment">' 添加数据/更新数据/删除数据</span></span><br><span class="line">                    <span class="keyword">Return</span> <span class="literal">True</span>.ToString</span><br><span class="line">                <span class="keyword">Case</span> <span class="number">5</span> <span class="comment">' 获取地址ID</span></span><br><span class="line">                    <span class="keyword">Dim</span> reader <span class="keyword">As</span> OleDbDataReader = command.ExecuteReader()</span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Read before accessing data.</span></span><br><span class="line">                    <span class="keyword">While</span> reader.Read()</span><br><span class="line">                        <span class="comment">' ReadSingleRow(CType(reader, IDataRecord))</span></span><br><span class="line">                        Getstring = reader(<span class="string">"ID"</span>).ToString</span><br><span class="line">                        <span class="comment">'Console.WriteLine(reader("字段名"))</span></span><br><span class="line">                        <span class="comment">'Console.WriteLine(reader(0).ToString)</span></span><br><span class="line">                    <span class="keyword">End</span> <span class="keyword">While</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">' Call Close when done reading.</span></span><br><span class="line">                    reader.Close()</span><br><span class="line"></span><br><span class="line">                <span class="keyword">Case</span> <span class="keyword">Else</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">End</span> <span class="keyword">Select</span></span><br><span class="line">        <span class="keyword">Catch</span> ex <span class="keyword">As</span> System.InvalidOperationException</span><br><span class="line">            <span class="keyword">Return</span> <span class="string">"InvalidOperationException"</span> <span class="comment">' 未注册 oledb4.0</span></span><br><span class="line">        <span class="keyword">Catch</span> ex <span class="keyword">As</span> System.Data.OleDb.OleDbException</span><br><span class="line">            <span class="keyword">Return</span> <span class="string">"OleDbException"</span> <span class="comment">' 数据库连接错误</span></span><br><span class="line">        <span class="keyword">Catch</span> ex <span class="keyword">As</span> Exception</span><br><span class="line">            Console.WriteLine(ex.Message)</span><br><span class="line">        <span class="keyword">End</span> <span class="keyword">Try</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">End</span> <span class="keyword">Using</span></span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/10/VB.NET-%E8%B0%83%E7%94%A8%E7%8B%AC%E7%AB%8Bdll%E7%9A%84%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2016/10/10/VB.NET-%E8%B0%83%E7%94%A8%E7%8B%AC%E7%AB%8Bdll%E7%9A%84%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html" class="post-title-link" itemprop="url">VB.NET 调用独立 dll 的简单示例</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2016-10-10 09:30:59" itemprop="dateCreated datePublished" datetime="2016-10-10T09:30:59+08:00">2016-10-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-15 14:58:27" itemprop="dateModified" datetime="2020-05-15T14:58:27+08:00">2020-05-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/zh-CN/2016/10/10/VB.NET-%E8%B0%83%E7%94%A8%E7%8B%AC%E7%AB%8Bdll%E7%9A%84%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html" class="post-meta-item leancloud_visitors" data-flag-title="VB.NET 调用独立 dll 的简单示例" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/zh-CN/2016/10/10/VB.NET-%E8%B0%83%E7%94%A8%E7%8B%AC%E7%AB%8Bdll%E7%9A%84%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/10/VB.NET-%E8%B0%83%E7%94%A8%E7%8B%AC%E7%AB%8Bdll%E7%9A%84%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>300</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>VB.NET 编译独立dll供exe使用<br>dll 代码</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Public</span> <span class="keyword">Class</span> Class1</span><br><span class="line">    <span class="keyword">Public</span> <span class="keyword">Shared</span> <span class="keyword">Function</span> sum(<span class="keyword">ByVal</span> a, <span class="keyword">ByVal</span> b)</span><br><span class="line">        <span class="keyword">Return</span> a + b</span><br><span class="line">    <span class="keyword">End</span> <span class="keyword">Function</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Class</span></span><br></pre></td></tr></table></figure>
-<p>exe 代码（记得引用编译好的dll文件）</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Public</span> <span class="keyword">Class</span> Form1</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">Private</span> <span class="keyword">Sub</span> Form1_Load(<span class="keyword">ByVal</span> sender <span class="keyword">As</span> System.<span class="built_in">Object</span>, <span class="keyword">ByVal</span> e <span class="keyword">As</span> System.EventArgs) <span class="keyword">Handles</span> <span class="keyword">MyBase</span>.Load</span><br><span class="line">        MsgBox(ClassLibrary1.Class1.sum(<span class="number">122</span>, <span class="number">555</span>))</span><br><span class="line">    <span class="keyword">End</span> <span class="keyword">Sub</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Class</span></span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.fesugar.com/zh-CN/2016/10/10/csharp-VB.NET-%E8%A7%A3%E6%9E%90-JSON.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="//cdn.fesugar.com/2019/04/2019-04-04-16060550-150x150.jpg">
-      <meta itemprop="name" content="fesugar">
-      <meta itemprop="description" content="个人博客，分享自己的实践脚印的互联网技术以及实际应用的日志<br/>|非专业人士；<br/>|三线小城市普通打工仔一名；<br/>|养家糊口不易~<br/>~~~~~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="佛系糖果的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/zh-CN/2016/10/10/csharp-VB.NET-%E8%A7%A3%E6%9E%90-JSON.html" class="post-title-link" itemprop="url">C# VB .NET 解析 JSON</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2016-10-10 09:19:54" itemprop="dateCreated datePublished" datetime="2016-10-10T09:19:54+08:00">2016-10-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-14 17:19:56" itemprop="dateModified" datetime="2020-05-14T17:19:56+08:00">2020-05-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/zh-CN/2016/10/10/csharp-VB.NET-%E8%A7%A3%E6%9E%90-JSON.html" class="post-meta-item leancloud_visitors" data-flag-title="C# VB .NET 解析 JSON" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/zh-CN/2016/10/10/csharp-VB.NET-%E8%A7%A3%E6%9E%90-JSON.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/zh-CN/2016/10/10/csharp-VB.NET-%E8%A7%A3%E6%9E%90-JSON.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.5k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>如何在 .NET 程序中解析 JSON 使用 Newtonsoft.Json 第三方类来操纵 Newtonsoft.Json 是.NET 下开源的json格式序列号和反序列化的类库 官方网站: <a href="http://json.codeplex.com/" target="_blank" rel="noopener">http://json.codeplex.com/</a></p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Imports</span> System.<span class="keyword">Text</span>.RegularExpressions</span><br><span class="line"><span class="keyword">Imports</span> Newtonsoft.Json</span><br><span class="line"><span class="keyword">Imports</span> Newtonsoft.Json.Linq</span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> json序列化</span></span><br><span class="line"><span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">Public</span> <span class="keyword">Class</span> json</span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> 解析JSON数据</span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="empData"&gt;</span>源数据<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;param name="key"&gt;</span>指定值下的数据，可省略。<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="doctag">'''</span> <span class="doctag">&lt;returns&gt;</span>0 非 json 数据<span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line">    <span class="keyword">Public</span> <span class="keyword">Shared</span> <span class="keyword">Function</span> JsonDecode(<span class="keyword">ByVal</span> empData, <span class="keyword">Optional</span> <span class="keyword">ByVal</span> key1 = <span class="literal">Nothing</span>, <span class="keyword">Optional</span> <span class="keyword">ByVal</span> key2 = <span class="literal">Nothing</span>, <span class="keyword">Optional</span> <span class="keyword">ByVal</span> arry_i = <span class="literal">Nothing</span>) <span class="keyword">As</span> <span class="built_in">String</span></span><br><span class="line">        <span class="keyword">Try</span></span><br><span class="line">            <span class="keyword">If</span> IsJson(empData) = <span class="literal">False</span> <span class="keyword">Then</span> <span class="keyword">Return</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">If</span> arry_i <span class="keyword">IsNot</span> <span class="literal">Nothing</span> <span class="keyword">Then</span></span><br><span class="line">                <span class="comment">'http://blog.csdn.net/goodelephant/article/details/24769421</span></span><br><span class="line">                <span class="keyword">Return</span> <span class="built_in">CType</span>(JsonConvert.DeserializeObject(empData), JObject)(key1)(arry_i)(key2).ToString()   <span class="comment">'这个是解析数组  下标。。</span></span><br><span class="line">            <span class="keyword">End</span> <span class="keyword">If</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            <span class="keyword">If</span> key1 = <span class="literal">Nothing</span> <span class="keyword">Then</span> <span class="keyword">Return</span> <span class="built_in">CType</span>(JsonConvert.DeserializeObject(empData), JObject).ToString</span><br><span class="line"></span><br><span class="line">            <span class="keyword">If</span> key2 = <span class="literal">Nothing</span> <span class="keyword">Then</span> <span class="keyword">Return</span> <span class="built_in">CType</span>(JsonConvert.DeserializeObject(empData), JObject)(key1).ToString()</span><br><span class="line"></span><br><span class="line">            <span class="keyword">Return</span> <span class="built_in">CType</span>(JsonConvert.DeserializeObject(empData), JObject)(key1)(key2).ToString()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">Catch</span> ex <span class="keyword">As</span> Exception</span><br><span class="line">            <span class="keyword">Return</span> ex.Message</span><br><span class="line">        <span class="keyword">End</span> <span class="keyword">Try</span></span><br><span class="line">    <span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/zh-CN/2016/10/10/csharp-VB.NET-%E8%A7%A3%E6%9E%90-JSON.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
     </div>
 
@@ -1405,7 +1418,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
-          <span class="site-state-item-count">83</span>
+          <span class="site-state-item-count">85</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1491,13 +1504,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">236k</span>
+    <span title="站点总字数">240k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:35</span>
+    <span title="站点阅读时长">3:38</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
@@ -1509,92 +1522,6 @@
 
 
 
-<script data-pjax>
-  (function() {
-    function leancloudSelector(url) {
-      url = encodeURI(url);
-      return document.getElementById(url).querySelector('.leancloud-visitors-count');
-    }
-
-    function addCount(Counter) {
-      var visitors = document.querySelector('.leancloud_visitors');
-      var url = decodeURI(visitors.id);
-      var title = visitors.dataset.flagTitle;
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            var counter = results[0];
-            leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .catch(error => {
-                console.error('Failed to save visitor count', error);
-              });
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    function showTime(Counter) {
-      var visitors = document.querySelectorAll('.leancloud_visitors');
-      var entries = [...visitors].map(element => {
-        return decodeURI(element.id);
-      });
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          for (let url of entries) {
-            let target = results.find(item => item.url === url);
-            leancloudSelector(url).innerText = target ? target.time : 0;
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    let { app_id, app_key, server_url } = {"enable":true,"app_id":"lAFKI0xWU7wKC517X85fUl27-MdYXbMMI","app_key":"clgkJqMeQreiDvqcvhN11y96","server_url":null,"security":true};
-    function fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${api_server}/1.1${url}`, {
-          method,
-          headers: {
-            'X-LC-Id'     : app_id,
-            'X-LC-Key'    : app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        if (CONFIG.hostname !== location.hostname) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    }
-
-    let api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
-
-    if (api_server) {
-      fetchData(api_server);
-    } else {
-      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-        .then(response => response.json())
-        .then(({ api_server }) => {
-          fetchData('https://' + api_server);
-        });
-    }
-  })();
-</script>
 
 
       </div>
@@ -1762,7 +1689,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     });
     new Valine({
       el         : '#valine-comments',
-      verify     : true,
+      verify     : false,
       notify     : false,
       appId      : 'lAFKI0xWU7wKC517X85fUl27-MdYXbMMI',
       appKey     : 'clgkJqMeQreiDvqcvhN11y96',
@@ -1770,7 +1697,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       avatar     : 'identicon',
       meta       : guest,
       pageSize   : '10' || 10,
-      visitor    : false,
+      visitor    : true,
       lang       : 'zh-cn' || 'zh-cn',
       path       : location.pathname,
       recordIP   : false,
