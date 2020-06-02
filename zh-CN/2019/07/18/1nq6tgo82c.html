@@ -34,7 +34,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.fesugar.com/2019/07/2019-07-18-15094990.png">
 <meta property="article:published_time" content="2019-07-18T15:10:28.000Z">
-<meta property="article:modified_time" content="2020-05-28T18:47:33.887Z">
+<meta property="article:modified_time" content="2020-06-02T20:32:07.989Z">
 <meta property="article:author" content="fesugar">
 <meta property="article:tag" content=".NET">
 <meta property="article:tag" content="C#">
@@ -258,7 +258,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-29 02:47:33" itemprop="dateModified" datetime="2020-05-29T02:47:33+08:00">2020-05-29</time>
+                <time title="修改时间：2020-06-03 04:32:07" itemprop="dateModified" datetime="2020-06-03T04:32:07+08:00">2020-06-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -327,21 +327,10 @@
 <h2 id="异步加载并播放声音文件"><a href="#异步加载并播放声音文件" class="headerlink" title="异步加载并播放声音文件"></a>异步加载并播放声音文件</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>一般情况下，在加载某些文件时，如果都进行同步加载，那么将浪费很多不必要的时间，因为有些文件并不是用户想要的，因此应该实现异步加载，只加载需要的文件。本实例实现了异步加载并播放声音的功能，实例运行结果如图1所示。<br><img data-src="https://cdn.fesugar.com/2019/07/2019-07-18-15094990.png" alt=""><br>图1 异步加载并播放声音文件</p>
 <h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例实现时主要用到SoundPlayer类，该类用来控制.wav文件中的声音播放。在播放.wav文件前，首先定位该文件的位置，此时用到该类的SoundLocation属性，该属性的功能是获取或设置要加载的.wav文件的文件路径或URL。然后用到该类的LoadAsync方法，该方法的作用是使用新线程从流或Web资源中加载.wav文件。下面对本实例中用到的关键技术进行详细的讲解。<br>（1）SoundLocation属性 该属性值的类型是System.String，它的作用是从中加载.wav文件的文件路径或URL，如果不存在文件路径，则为String.Empty。默认为String.Empty。其语法格式如下： public string SoundLocation { get; set; }<br>（2）LoadAsync方法 该方法用来从流中或者Web资源中异步加载文件，其语法格式如下： public void LoadAsync()<br>说明：程序中使用SoundPlayer类时，首先需要在命名空间区域添加System.Media命名空间。</p>
 <h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AsynchronismLoadPlayVoice。<br>（2）更改默认窗体Form1的Name属性为Frm_Main，在该窗体中添加一个TextBox控件，用来显示所要播放的文件路径；添加两个Button控件，分别用来打开.wav文件和播放音乐文件。<br>（3）程序主要代码如下：</p>
-<pre><code class="chsarp">private void play_Click(object sender,EventArgs e)
-{
-    try
-    {
-        SoundPlayer player = new SoundPlayer();    //声明一个控制WAV文件的声音播放文件对象
-        player.SoundLocation = path.Text;        //指定声音文件的路径
-        player.LoadAsync();    //设置播放的方法
-        player.Play();        //播放声音文件
-    }
-    catch (Exception ex)
-    {
-        MessageBox.Show(ex.Message);
-    }
-}
-</code></pre>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">play_Click</span>(<span class="params"><span class="keyword">object</span> sender,EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">try</span></span><br><span class="line">    &#123;</span><br><span class="line">        SoundPlayer player = <span class="keyword">new</span> SoundPlayer();    <span class="comment">//声明一个控制WAV文件的声音播放文件对象</span></span><br><span class="line">        player.SoundLocation = path.Text;        <span class="comment">//指定声音文件的路径</span></span><br><span class="line">        player.LoadAsync();    <span class="comment">//设置播放的方法</span></span><br><span class="line">        player.Play();        <span class="comment">//播放声音文件</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Exception ex)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.Show(ex.Message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟008：使用Exception类捕捉异常。<br>所有.NET里的异常都可被称为Exception。虽然说异常多种多样，但基本上它们都是Exception。这个说法可以打一个简单比喻，就像是无论黑猫、白猫、花猫，它们都是“猫”一样。</p>
 
     </div>
@@ -385,25 +374,6 @@
   </li>
 </ul>
 </div>
-
-        
-
-  <div class="followme">
-    <p>欢迎关注我的其它发布渠道</p>
-
-    <div class="social-list">
-
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
-  </div>
 
 
       <footer class="post-footer">
@@ -612,7 +582,7 @@
   </div>
 
   
-  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
+  <script size="200" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
   <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
@@ -695,7 +665,7 @@ window.addEventListener('pjax:success', () => {
 
 
   <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
-    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js"></script>
 
 
   

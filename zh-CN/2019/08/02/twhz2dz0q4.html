@@ -25,16 +25,16 @@
     var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="来源:明日科技   向文件中写入追加数据实例说明本实例使用StreamWriter类的Write方法实现向文件中写入数据，首先选择要写入数据的文件，然后在窗体下方的TextBox控件中输入要写入的内容，最后单击“写入”按钮写入数据。实例运行效果如图1所示。图1 向文件中写入追加数据 关键技术本实例主要用到了StreamWriter类的构造方法和Write方法，下面对本实例中用到的关键技术进行详细">
+  <meta name="description" content="来源:明日科技   向文件中写入追加数据 实例说明本实例使用StreamWriter类的Write方法实现向文件中写入数据，首先选择要写入数据的文件，然后在窗体下方的TextBox控件中输入要写入的内容，最后单击“写入”按钮写入数据。实例运行效果如图1所示。图1 向文件中写入追加数据 关键技术本实例主要用到了StreamWriter类的构造方法和Write方法，下面对本实例中用到的关键技术进行详">
 <meta property="og:type" content="article">
 <meta property="og:title" content="向文件中写入追加数据">
 <meta property="og:url" content="https://www.fesugar.com/zh-CN/2019/08/02/twhz2dz0q4.html">
 <meta property="og:site_name" content="佛系糖果的博客">
-<meta property="og:description" content="来源:明日科技   向文件中写入追加数据实例说明本实例使用StreamWriter类的Write方法实现向文件中写入数据，首先选择要写入数据的文件，然后在窗体下方的TextBox控件中输入要写入的内容，最后单击“写入”按钮写入数据。实例运行效果如图1所示。图1 向文件中写入追加数据 关键技术本实例主要用到了StreamWriter类的构造方法和Write方法，下面对本实例中用到的关键技术进行详细">
+<meta property="og:description" content="来源:明日科技   向文件中写入追加数据 实例说明本实例使用StreamWriter类的Write方法实现向文件中写入数据，首先选择要写入数据的文件，然后在窗体下方的TextBox控件中输入要写入的内容，最后单击“写入”按钮写入数据。实例运行效果如图1所示。图1 向文件中写入追加数据 关键技术本实例主要用到了StreamWriter类的构造方法和Write方法，下面对本实例中用到的关键技术进行详">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.fesugar.com/2019/08/2019-08-02-12061083.png">
 <meta property="article:published_time" content="2019-08-02T12:06:40.000Z">
-<meta property="article:modified_time" content="2020-05-28T18:47:36.216Z">
+<meta property="article:modified_time" content="2020-06-02T19:44:31.730Z">
 <meta property="article:author" content="fesugar">
 <meta property="article:tag" content=".NET">
 <meta property="article:tag" content="C#">
@@ -258,7 +258,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-29 02:47:36" itemprop="dateModified" datetime="2020-05-29T02:47:36+08:00">2020-05-29</time>
+                <time title="修改时间：2020-06-03 03:44:31" itemprop="dateModified" datetime="2020-06-03T03:44:31+08:00">2020-06-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -297,7 +297,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.2k</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -320,34 +320,12 @@
 <li>来源:<a href="http://renwu.mingrisoft.com/" target="_blank" rel="external nofollow">明日科技</a></li>
 </div>
 
-<h2 id="向文件中写入追加数据"><a href="#向文件中写入追加数据" class="headerlink" title="向文件中写入追加数据"></a>向文件中写入追加数据</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用StreamWriter类的Write方法实现向文件中写入数据，首先选择要写入数据的文件，然后在窗体下方的TextBox控件中输入要写入的内容，最后单击“写入”按钮写入数据。实例运行效果如图1所示。<br><img data-src="https://cdn.fesugar.com/2019/08/2019-08-02-12061083.png" alt=""><br>图1 向文件中写入追加数据</p>
+<h2 id="向文件中写入追加数据"><a href="#向文件中写入追加数据" class="headerlink" title="向文件中写入追加数据"></a>向文件中写入追加数据</h2><hr>
+<h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>本实例使用StreamWriter类的Write方法实现向文件中写入数据，首先选择要写入数据的文件，然后在窗体下方的TextBox控件中输入要写入的内容，最后单击“写入”按钮写入数据。实例运行效果如图1所示。<br><img data-src="https://cdn.fesugar.com/2019/08/2019-08-02-12061083.png" alt=""><br>图1 向文件中写入追加数据</p>
 <h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例主要用到了StreamWriter类的构造方法和Write方法，下面对本实例中用到的关键技术进行详细讲解。<br>（1）StreamReader类的构造方法 该方法实现使用默认编码和缓冲区大小，为指定路径上的指定文件初始化StreamWriter 类的新实例。其语法格式如下：<br> public StreamWriter(string path)<br> 参数说明<br> path：要向其中写入的完整文件路径。<br>（2）StreamWriter类的Write方法 该方法实现将字符串写入流，该方法的重载形式有多种。本实例的方法如下：<br> public override void Write(string value)<br> 参数说明<br> value：要写入流的字符串。如果 value 为空，则不写入任何内容。</p>
 <h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为AddDataToFile。<br>（2）在默认窗体Form1中添加两个文本框，分别用来显示文件路径和输入要写入文件的内容；添加Button控件，分别用来打开指定文件和向该文件中写入内容。<br>（3）程序主要代码如下：</p>
-<pre><code class="csharp"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button2_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
-<span class="function"></span>{
-    <span class="keyword">if</span> (String.IsNullOrEmpty(textBox1.Text.Trim()))<span class="comment">//若未选择文件</span>
-    {
-        MessageBox.Show(<span class="string">"请设置文件"</span>);
-        <span class="keyword">return</span>;
-    }
-    <span class="keyword">if</span> (String.IsNullOrEmpty(textBox2.Text.Trim()))<span class="comment">//若未输入要写入文件的内容</span>
-    {
-        MessageBox.Show(<span class="string">"请输入要写入的文件内容"</span>);
-        <span class="keyword">return</span>;
-    }
-    <span class="keyword">try</span>
-    {
-        StreamWriter SWriter = <span class="keyword">new</span> StreamWriter(textBox1.Text);    <span class="comment">//创建StreamWriter对象</span>
-        SWriter.Write(textBox2.Text);        <span class="comment">//向文件中写入指定的内容</span>
-        SWriter.Close();    <span class="comment">//关闭StreamWriter对象和基础流</span>
-        MessageBox.Show(<span class="string">"写入文件成功！"</span>);
-    }
-    <span class="keyword">catch</span> (Exception ex)
-    {
-        MessageBox.Show(ex.Message);
-    }
-}
-</code></pre>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button2_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (String.IsNullOrEmpty(textBox1.Text.Trim()))<span class="comment">//若未选择文件</span></span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.Show(&amp;quot; 请设置文件 &amp; quot;);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (String.IsNullOrEmpty(textBox2.Text.Trim()))<span class="comment">//若未输入要写入文件的内容</span></span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.Show(&amp;quot; 请输入要写入的文件内容 &amp; quot;);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span></span><br><span class="line">    &#123;</span><br><span class="line">        StreamWriter SWriter = <span class="keyword">new</span> StreamWriter(textBox1.Text);    <span class="comment">//创建StreamWriter对象</span></span><br><span class="line">        SWriter.Write(textBox2.Text);        <span class="comment">//向文件中写入指定的内容</span></span><br><span class="line">        SWriter.Close();    <span class="comment">//关闭StreamWriter对象和基础流</span></span><br><span class="line">        MessageBox.Show(&amp;quot; 写入文件成功！&amp;quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Exception ex)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.Show(ex.Message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟008：使用StreamWriter类写文本文件。<br>StreamWriter类实现了TextWriter抽象类，常用来向文本文件中写入数据。</p>
 
     </div>
@@ -391,25 +369,6 @@
   </li>
 </ul>
 </div>
-
-        
-
-  <div class="followme">
-    <p>欢迎关注我的其它发布渠道</p>
-
-    <div class="social-list">
-
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
-  </div>
 
 
       <footer class="post-footer">
@@ -618,7 +577,7 @@
   </div>
 
   
-  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
+  <script size="200" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
   <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
@@ -701,7 +660,7 @@ window.addEventListener('pjax:success', () => {
 
 
   <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
-    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js"></script>
 
 
   

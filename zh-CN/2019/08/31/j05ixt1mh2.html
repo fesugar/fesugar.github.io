@@ -25,12 +25,12 @@
     var CONFIG = {"hostname":"www.fesugar.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"bounceDownIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="来源:明日科技   读取多个文本文件到同一Word文档中实例说明读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。  图1 读取多个文本文件到同一Word文档中实例运行中单击”浏览”按钮，会将用户所选择文本">
+  <meta name="description" content="来源:明日科技   读取多个文本文件到同一Word文档中 实例说明读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。  图1 读取多个文本文件到同一Word文档中实例运行中单击”浏览”按钮，会将用户所选择文">
 <meta property="og:type" content="article">
 <meta property="og:title" content="读取多个文本文件到同一Word文档中">
 <meta property="og:url" content="https://www.fesugar.com/zh-CN/2019/08/31/j05ixt1mh2.html">
 <meta property="og:site_name" content="佛系糖果的博客">
-<meta property="og:description" content="来源:明日科技   读取多个文本文件到同一Word文档中实例说明读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。  图1 读取多个文本文件到同一Word文档中实例运行中单击”浏览”按钮，会将用户所选择文本">
+<meta property="og:description" content="来源:明日科技   读取多个文本文件到同一Word文档中 实例说明读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。  图1 读取多个文本文件到同一Word文档中实例运行中单击”浏览”按钮，会将用户所选择文">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word1.png">
 <meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word2.png">
@@ -39,7 +39,7 @@
 <meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word5.png">
 <meta property="og:image" content="https://cdn.fesugar.com/2019/08/083119_1428_Word6.png">
 <meta property="article:published_time" content="2019-08-31T14:29:04.000Z">
-<meta property="article:modified_time" content="2020-05-28T18:51:31.838Z">
+<meta property="article:modified_time" content="2020-06-02T20:16:24.778Z">
 <meta property="article:author" content="fesugar">
 <meta property="article:tag" content=".NET">
 <meta property="article:tag" content="C#">
@@ -263,7 +263,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-29 02:51:31" itemprop="dateModified" datetime="2020-05-29T02:51:31+08:00">2020-05-29</time>
+                <time title="修改时间：2020-06-03 04:16:24" itemprop="dateModified" datetime="2020-06-03T04:16:24+08:00">2020-06-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -325,7 +325,8 @@
 <li>来源:<a href="http://renwu.mingrisoft.com/" target="_blank" rel="external nofollow">明日科技</a></li>
 </div>
 
-<h2 id="读取多个文本文件到同一Word文档中"><a href="#读取多个文本文件到同一Word文档中" class="headerlink" title="读取多个文本文件到同一Word文档中"></a>读取多个文本文件到同一Word文档中</h2><h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。</p>
+<h2 id="读取多个文本文件到同一Word文档中"><a href="#读取多个文本文件到同一Word文档中" class="headerlink" title="读取多个文本文件到同一Word文档中"></a>读取多个文本文件到同一Word文档中</h2><hr>
+<h3 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h3><p>读取多个文本文件到同一个Word文档中的实现方法与读取单个文本文件到Word文档基本相同，先根据用户选择的文本文件集合使用StreamReader读取每一个文本文件的文本内容，然后将所有文本文件的内容写入Word文档。实例运行效果如图1所示。</p>
 <p><img data-src="https://cdn.fesugar.com/2019/08/083119_1428_Word1.png" alt=""></p>
 <p>图1 读取多个文本文件到同一Word文档中<br>实例运行中单击”浏览”按钮，会将用户所选择文本文件的路径放入文件列表中，后期可以遍历文件列表使用StreamReader依次读取每一个文本文件的内容到Word文档中，多个文本文件如图2、3、4和5所示。</p>
 <p><img data-src="https://cdn.fesugar.com/2019/08/083119_1428_Word2.png" alt=""></p>
@@ -340,7 +341,8 @@
 <p>图6 被写入多个文本文件内容的Word文档</p>
 <h3 id="关键技术"><a href="#关键技术" class="headerlink" title="关键技术"></a>关键技术</h3><p>本实例在实现时，主要用到了StreamReader对象依次读取用户指定的文本文件集合中的字符串信息，并将字符串信息写入到Word文档。</p>
 <h3 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h3><p>（1）打开Visual Studio 2008开发环境，新建一个Windows窗体应用程序，命名为Multi-TxtToWord。<br>（2）使用C#操作Word文档，需要引用相关的COM组件，引用COM组件的步骤请参照实例”创建Word文档”中的设计过程。<br>（3）更改默认窗体Form1的Name属性为Frm_Main，更改Text属性为”读取多个文本文件到同一Word文档中”，向窗体中添加一个ListBox控件，用于显示文本文件的集合；向窗体中添加4个Button按钮，按钮分别用于向ListBox中添加文本文件路径、选择Word文档保存路径、创建Word文档和显示Word文档。<br>（4）程序主要代码如下：</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">btn_New_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    btn_New.Enabled = <span class="literal">false</span>;		<span class="comment">//停用创建按钮</span></span><br><span class="line">    ThreadPool.QueueUserWorkItem(	<span class="comment">//使用线程池</span></span><br><span class="line">        (P_temp) =&gt;<span class="comment">//使用lambda表达式</span></span><br><span class="line">        &#123;</span><br><span class="line">            G_wa = <span class="keyword">new</span> Word.Application();<span class="comment">//创建Word应用程序对象</span></span><br><span class="line">            Word.Document P_wd = G_wa.Documents.Add(<span class="comment">//创建新文档</span></span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            Word.Range P_Range = P_wd.Paragraphs[<span class="number">1</span>].Range;<span class="comment">//得到文档段落范围</span></span><br><span class="line">            <span class="keyword">foreach</span> (<span class="keyword">string</span> s <span class="keyword">in</span> G_List_FileName)		<span class="comment">//遍历文件集合</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">using</span> (StreamReader P_StreamReader =	<span class="comment">//创建文件读取器对象</span></span><br><span class="line">                     <span class="keyword">new</span> StreamReader(s, Encoding.Default))</span><br><span class="line">                &#123;</span><br><span class="line">                    P_Range.Text += P_StreamReader.ReadToEnd();		<span class="comment">//读取文本到Word文档</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            G_str_path = <span class="keyword">string</span>.Format(<span class="comment">//计算文件保存路径</span></span><br><span class="line">                <span class="string">@"&#123;0&#125;\\&#123;1&#125;"</span>, G_FolderBrowserDialog.SelectedPath,</span><br><span class="line">                DateTime.Now.ToString(<span class="string">"yyyy年M月d日h时s分m秒fff毫秒"</span>) + <span class="string">".doc"</span>);</span><br><span class="line">            P_wd.SaveAs(		<span class="comment">//保存Word文件</span></span><br><span class="line">                <span class="keyword">ref</span> G_str_path,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            ((Word._Application)G_wa.Application).Quit(	<span class="comment">//退出应用程序</span></span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            <span class="keyword">this</span>.Invoke(<span class="comment">//开始执行窗体线程</span></span><br><span class="line">                (MethodInvoker)(() =&gt;<span class="comment">//使用lambda表达式</span></span><br><span class="line">                &#123;</span><br><span class="line">                    btn_Display.Enabled = <span class="literal">true</span>;		<span class="comment">//启用显示按钮</span></span><br><span class="line">                    MessageBox.Show(<span class="string">"添加文档成功！"</span>, <span class="string">"提示！"</span>);		<span class="comment">//弹出消息对话框</span></span><br><span class="line">                &#125;));</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">btn_New_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    btn_New.Enabled = <span class="literal">false</span>;        <span class="comment">//停用创建按钮</span></span><br><span class="line">    ThreadPool.QueueUserWorkItem(    <span class="comment">//使用线程池</span></span><br><span class="line">        (P_temp) =&gt;<span class="comment">//使用lambda表达式</span></span><br><span class="line">        &#123;</span><br><span class="line">            G_wa = <span class="keyword">new</span> Word.Application();<span class="comment">//创建Word应用程序对象</span></span><br><span class="line">            Word.Document P_wd = G_wa.Documents.Add(<span class="comment">//创建新文档</span></span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            Word.Range P_Range = P_wd.Paragraphs[<span class="number">1</span>].Range;<span class="comment">//得到文档段落范围</span></span><br><span class="line">            <span class="keyword">foreach</span> (<span class="keyword">string</span> s <span class="keyword">in</span> G_List_FileName)        <span class="comment">//遍历文件集合</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">using</span> (StreamReader P_StreamReader =    <span class="comment">//创建文件读取器对象</span></span><br><span class="line">                     <span class="keyword">new</span> StreamReader(s, Encoding.Default))</span><br><span class="line">                &#123;</span><br><span class="line">                    P_Range.Text += P_StreamReader.ReadToEnd();        <span class="comment">//读取文本到Word文档</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            G_str_path = <span class="keyword">string</span>.Format(<span class="comment">//计算文件保存路径</span></span><br><span class="line">                <span class="string">@"&#123;0&#125;\\&#123;1&#125;"</span>, G_FolderBrowserDialog.SelectedPath,</span><br><span class="line">                DateTime.Now.ToString(<span class="string">"yyyy年M月d日h时s分m秒fff毫秒"</span>) + <span class="string">".doc"</span>);</span><br><span class="line">            P_wd.SaveAs(        <span class="comment">//保存Word文件</span></span><br><span class="line">                <span class="keyword">ref</span> G_str_path,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing,</span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            ((Word._Application)G_wa.Application).Quit(    <span class="comment">//退出应用程序</span></span><br><span class="line">                <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing, <span class="keyword">ref</span> G_missing);</span><br><span class="line">            <span class="keyword">this</span>.Invoke(<span class="comment">//开始执行窗体线程</span></span><br><span class="line">                (MethodInvoker)(() =&gt;<span class="comment">//使用lambda表达式</span></span><br><span class="line">                &#123;</span><br><span class="line">                    btn_Display.Enabled = <span class="literal">true</span>;        <span class="comment">//启用显示按钮</span></span><br><span class="line">                    MessageBox.Show(<span class="string">"添加文档成功！"</span>, <span class="string">"提示！"</span>);        <span class="comment">//弹出消息对话框</span></span><br><span class="line">                &#125;));</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h3 id="秘笈心法"><a href="#秘笈心法" class="headerlink" title="秘笈心法"></a>秘笈心法</h3><p>心法领悟013：合理使用StreamReader对象的ReadToEnd方法!<br>使用StreamReader对象的ReadToEnd方法可以方便的一次性全部读取出文本文件的所有文本信息，适当的使用此方法会使文件操作更加便捷。</p>
 
     </div>
@@ -384,25 +386,6 @@
   </li>
 </ul>
 </div>
-
-        
-
-  <div class="followme">
-    <p>欢迎关注我的其它发布渠道</p>
-
-    <div class="social-list">
-
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
-  </div>
 
 
       <footer class="post-footer">
@@ -611,7 +594,7 @@
   </div>
 
   
-  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
+  <script size="200" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
   <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
@@ -694,7 +677,7 @@ window.addEventListener('pjax:success', () => {
 
 
   <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
-    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js"></script>
 
 
   
